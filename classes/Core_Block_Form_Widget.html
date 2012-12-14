@@ -22,7 +22,6 @@
 <li><a>Packages</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
-<li><a href="../packages/Zend.html"><i class="icon-folder-open"></i> Zend</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -33,13 +32,13 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">466</span></a></li>
+                <span class="label label-info">271</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
-                <span class="label label-info">7</span>
+                <span class="label label-info">5</span>
 </li></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">0</span></a></li>
+                <span class="label label-info">1</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -94,7 +93,9 @@ Create from class name if not defined</span><pre>getBlockName()</pre></a></li>
 <li class="method public inherited"><a href="#method_getCache" title="getCache :: Get cache object"><span class="description">Get cache object</span><pre>getCache()</pre></a></li>
 <li class="method public inherited"><a href="#method_getCacheId" title="getCacheId :: Generate cache id"><span class="description">Generate cache id</span><pre>getCacheId()</pre></a></li>
 <li class="method public inherited"><a href="#method_getEngine" title="getEngine :: Get rendering core engine"><span class="description">Get rendering core engine</span><pre>getEngine()</pre></a></li>
-<li class="method public "><a href="#method_getForm" title="getForm :: Get form internal object"><span class="description">Get form internal object</span><pre>getForm()</pre></a></li>
+<li class="method public "><a href="#method_getForm" title="getForm :: Get form internal object
+Instantiate decorators for new form instance"><span class="description">Get form internal object
+Instantiate decorators for new form instance</span><pre>getForm()</pre></a></li>
 <li class="method public inherited"><a href="#method_getLogger" title="getLogger :: Gets logger instance"><span class="description">Gets logger instance</span><pre>getLogger()</pre></a></li>
 <li class="method public inherited"><a href="#method_getRequest" title="getRequest :: Get front controller request object"><span class="description">Get front controller request object</span><pre>getRequest()</pre></a></li>
 <li class="method public inherited"><a href="#method_getResponse" title="getResponse :: Get front controller response"><span class="description">Get front controller response</span><pre>getResponse()</pre></a></li>
@@ -189,7 +190,9 @@ Proxied to engine</span><pre>setScriptPath()</pre></a></li>
 </li>
 </ul>
 <div class="element class">
-<p class="short_description">Zend Framework</p>
+<p class="short_description">Concrete Form block class
+No need template for it
+Implementing Zend_Form like forms with all it functional</p>
 <div class="details">
 <div class="long_description"><p>LICENSE</p>
 
@@ -202,20 +205,28 @@ obtain it through the world-wide-web, please send an email
 to license@zend.com so we can send you a copy immediately.</p></div>
 <table class="table table-bordered">
 <tr>
+<th>category</th>
+<td>Core</td>
+</tr>
+<tr>
 <th>package</th>
-<td><a href="../packages/Default.html">Core_Block</a></td>
+<td><a href="../packages/Core.Block.Core.Block.Form.html">Core_Block</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Core_Block_Form</td>
 </tr>
 <tr>
 <th>copyright</th>
 <td>Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)</td>
 </tr>
 <tr>
-<th>version</th>
-<td>$Id: View.php 0.1 2012-12-12 pavlenko $</td>
+<th>license</th>
+<td><a href="http://framework.zend.com/license/new-bsd">New BSD License</a></td>
 </tr>
 <tr>
-<th>author</th>
-<td><a href="">Pavlenko Evgeniy</a></td>
+<th>version</th>
+<td>$Id: View.php 0.1 2012-12-12 pavlenko $</td>
 </tr>
 </table>
 <h3>
@@ -252,7 +263,7 @@ to license@zend.com so we can send you a copy immediately.</p></div>
 </div>
 <a id="method___call"></a><div class="element clickable method public method___call" data-toggle="collapse" data-target=".method___call .collapse">
 <h2>Proxy methods call to Zend form</h2>
-<pre>__call(string $method, array $args) : mixed | <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<pre>__call(string $method, array $args) : mixed</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"><p>(non-PHPdoc)</p></div>
@@ -263,16 +274,13 @@ to license@zend.com so we can send you a copy immediately.</p></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$method</h4>
-<code>string</code>
-</div>
+<code>string</code><p>Method for call in Zend_Form</p></div>
 <div class="subelement argument">
 <h4>$args</h4>
-<code>array</code>
-</div>
+<code>array</code><p>Method arguments array</p></div>
 <h3>Returns</h3>
 <div class="subelement response">
-<code>mixed</code><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code>
-</div>
+<code>mixed</code>Result wery depended by called method</div>
 </div></div>
 </div>
 <a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
@@ -457,7 +465,7 @@ Proxied to engine</h2>
 </div>
 <a id="method_addBlockChild"></a><div class="element clickable method public method_addBlockChild" data-toggle="collapse" data-target=".method_addBlockChild .collapse">
 <h2>Add single child block</h2>
-<pre>addBlockChild(string | <a href="../classes/Core_View_Block.html">\Core_View_Block</a> $child, $placement) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<pre>addBlockChild(string | \Core_View_Block $child, $placement) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -468,7 +476,7 @@ Proxied to engine</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$child</h4>
-<code>string</code><code><a href="../classes/Core_View_Block.html">\Core_View_Block</a></code>
+<code>string</code><code>\Core_View_Block</code>
 </div>
 <div class="subelement argument"><h4>$placement</h4></div>
 <h3>Exceptions</h3>
@@ -768,7 +776,8 @@ Create from class name if not defined</h2>
 </div></div>
 </div>
 <a id="method_getForm"></a><div class="element clickable method public method_getForm" data-toggle="collapse" data-target=".method_getForm .collapse">
-<h2>Get form internal object</h2>
+<h2>Get form internal object
+Instantiate decorators for new form instance</h2>
 <pre>getForm() : \Zend_Form</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
@@ -964,9 +973,11 @@ Create from class name if not defined</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$name</h4>
-<code>string</code><p>overrided script name</p></div>
+<code>string</code><p>Name of script !!! use BLOCK_DUMMY constant for preventing errors</p>
+</div>
 <h3>Returns</h3>
-<div class="subelement response"><code>string</code></div>
+<div class="subelement response">
+<code>string</code>XHTML</div>
 </div></div>
 </div>
 <a id="method_renderBlockChilds"></a><div class="element clickable method public method_renderBlockChilds" data-toggle="collapse" data-target=".method_renderBlockChilds .collapse">
@@ -1250,8 +1261,7 @@ Proxied to engine</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$options</h4>
-<code>array</code>
-</div>
+<code>array</code><p>Array of Zend_Form like options can be supplied</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
 </div></div>
@@ -1720,7 +1730,7 @@ Proxied to engine</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2012-12-14T14:55:09+02:00.<br></footer></div>
+            generated on 2012-12-14T17:59:05+02:00.<br></footer></div>
 </div>
 </body>
 </html>

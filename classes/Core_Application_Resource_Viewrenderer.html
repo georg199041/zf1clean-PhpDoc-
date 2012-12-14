@@ -22,7 +22,6 @@
 <li><a>Packages</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
-<li><a href="../packages/Zend.html"><i class="icon-folder-open"></i> Zend</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -33,13 +32,13 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">466</span></a></li>
+                <span class="label label-info">271</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
-                <span class="label label-info">7</span>
+                <span class="label label-info">5</span>
 </li></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">0</span></a></li>
+                <span class="label label-info">1</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -68,8 +67,8 @@
 <li class="nav-header protected">» Protected
                     <ul>
 <li class="property protected "><a href="#property__booleanOptions" title="$_booleanOptions :: Methods names wich have boolean argument"><span class="description"></span><pre>$_booleanOptions</pre></a></li>
-<li class="property protected "><a href="#property__helperClass" title="$_helperClass :: "><span class="description"></span><pre>$_helperClass</pre></a></li>
-<li class="property protected "><a href="#property__helperFile" title="$_helperFile :: "><span class="description"></span><pre>$_helperFile</pre></a></li>
+<li class="property protected "><a href="#property__helperClass" title="$_helperClass :: Used view renderer class name in helper"><span class="description"></span><pre>$_helperClass</pre></a></li>
+<li class="property protected "><a href="#property__helperFile" title="$_helperFile :: Used view renderer action helper path"><span class="description"></span><pre>$_helperFile</pre></a></li>
 <li class="property protected "><a href="#property__instanceOptions" title="$_instanceOptions :: Methods names wich have object argument"><span class="description"></span><pre>$_instanceOptions</pre></a></li>
 <li class="property protected "><a href="#property__stringOptions" title="$_stringOptions :: Methods names wich have string argument"><span class="description"></span><pre>$_stringOptions</pre></a></li>
 </ul>
@@ -87,33 +86,26 @@
 </li>
 </ul>
 <div class="element class">
-<p class="short_description">View renderer instantiate resource</p>
+<p class="short_description">View renderer instantiate resource
+Can configure many options before displatching request</p>
 <div class="details">
 <div class="long_description"></div>
 <table class="table table-bordered">
-<tr>
-<th>author</th>
-<td><a href="">Pavlenko Evgeniy</a></td>
-</tr>
 <tr>
 <th>category</th>
 <td>Core</td>
 </tr>
 <tr>
 <th>package</th>
-<td><a href="../packages/Core.Application.Resource.html">Core_Application</a></td>
-</tr>
-<tr>
-<th>version</th>
-<td>2.3</td>
+<td><a href="../packages/Core.Application.Core.Application.Resource.html">Core_Application</a></td>
 </tr>
 <tr>
 <th>subpackage</th>
-<td>Resource</td>
+<td>Core_Application_Resource</td>
 </tr>
 <tr>
 <th>copyright</th>
-<td>Copyright (c) 2012 SunNY Creative Technologies. (http://www.sunny.net)</td>
+<td>Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)</td>
 </tr>
 <tr>
 <th>license</th>
@@ -124,14 +116,14 @@
 <i class="icon-custom icon-method"></i> Methods</h3>
 <a id="method_init"></a><div class="element clickable method public method_init" data-toggle="collapse" data-target=".method_init .collapse">
 <h2>Init resource method</h2>
-<pre>init() </pre>
+<pre>init() : \Zend_Controller_Action_Helper_Abstract | \Zend_Controller_Action_Helper_ViewRenderer</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>(non-PHPdoc)</p></div>
-<table class="table table-bordered"><tr>
-<th>see</th>
-<td><a href="">\Zend_Application_Resource_Resource::init()</a></td>
-</tr></table>
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Zend_Controller_Action_Helper_Abstract</code><code>\Zend_Controller_Action_Helper_ViewRenderer</code>
+</div>
 </div></div>
 </div>
 <h3>
@@ -144,13 +136,13 @@
 </div>
 <a id="property__helperClass"> </a><div class="element clickable property protected property__helperClass" data-toggle="collapse" data-target=".property__helperClass .collapse">
 <h2></h2>
-<pre>$_helperClass </pre>
+<pre>$_helperClass : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property__helperFile"> </a><div class="element clickable property protected property__helperFile" data-toggle="collapse" data-target=".property__helperFile .collapse">
 <h2></h2>
-<pre>$_helperFile </pre>
+<pre>$_helperFile : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -173,7 +165,7 @@
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2012-12-14T14:55:09+02:00.<br></footer></div>
+            generated on 2012-12-14T17:59:05+02:00.<br></footer></div>
 </div>
 </body>
 </html>

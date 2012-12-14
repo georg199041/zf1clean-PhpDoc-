@@ -22,7 +22,6 @@
 <li><a>Packages</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
-<li><a href="../packages/Zend.html"><i class="icon-folder-open"></i> Zend</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -33,13 +32,13 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">466</span></a></li>
+                <span class="label label-info">271</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
-                <span class="label label-info">7</span>
+                <span class="label label-info">5</span>
 </li></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">0</span></a></li>
+                <span class="label label-info">1</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -79,8 +78,9 @@ Proxied to engine</span><pre>addBasePath()</pre></a></li>
 <li class="method public inherited"><a href="#method_addBlockChilds" title="addBlockChilds :: Add childs blocks"><span class="description">Add childs blocks</span><pre>addBlockChilds()</pre></a></li>
 <li class="method public inherited"><a href="#method_assign" title="assign :: Assign propert(y|ies)"><span class="description">Assign propert(y|ies)</span><pre>assign()</pre></a></li>
 <li class="method public inherited"><a href="#method_clearVars" title="clearVars :: Clear all properties"><span class="description">Clear all properties</span><pre>clearVars()</pre></a></li>
-<li class="method public "><a href="#method_createPaginator" title="createPaginator :: "><span class="description">createPaginator()
-        </span><pre>createPaginator()</pre></a></li>
+<li class="method public "><a href="#method_createPaginator" title="createPaginator :: Instantiate local copy of paginator
+For we can use custo, pagination styles on same pages"><span class="description">Instantiate local copy of paginator
+For we can use custo, pagination styles on same pages</span><pre>createPaginator()</pre></a></li>
 <li class="method public inherited"><a href="#method_delAttribute" title="delAttribute :: Delete attribute"><span class="description">Delete attribute</span><pre>delAttribute()</pre></a></li>
 <li class="method public inherited"><a href="#method_delAttributes" title="delAttributes :: Delete array of attributes"><span class="description">Delete array of attributes</span><pre>delAttributes()</pre></a></li>
 <li class="method public inherited"><a href="#method_delBlockChild" title="delBlockChild :: Delete block from childs"><span class="description">Delete block from childs</span><pre>delBlockChild()</pre></a></li>
@@ -95,35 +95,33 @@ Create from class name if not defined</span><pre>getBlockName()</pre></a></li>
 <li class="method public inherited"><a href="#method_getBlockPlacement" title="getBlockPlacement :: Get block placement"><span class="description">Get block placement</span><pre>getBlockPlacement()</pre></a></li>
 <li class="method public inherited"><a href="#method_getCache" title="getCache :: Get cache object"><span class="description">Get cache object</span><pre>getCache()</pre></a></li>
 <li class="method public inherited"><a href="#method_getCacheId" title="getCacheId :: Generate cache id"><span class="description">Generate cache id</span><pre>getCacheId()</pre></a></li>
-<li class="method public "><a href="#method_getCurrentPageNumber" title="getCurrentPageNumber :: "><span class="description">getCurrentPageNumber()
-        </span><pre>getCurrentPageNumber()</pre></a></li>
+<li class="method public "><a href="#method_getCurrentPageNumber" title="getCurrentPageNumber :: Get current page number"><span class="description">Get current page number</span><pre>getCurrentPageNumber()</pre></a></li>
 <li class="method public inherited"><a href="#method_getEngine" title="getEngine :: Get rendering core engine"><span class="description">Get rendering core engine</span><pre>getEngine()</pre></a></li>
-<li class="method public "><a href="#method_getItemCountPerPage" title="getItemCountPerPage :: "><span class="description">getItemCountPerPage()
-        </span><pre>getItemCountPerPage()</pre></a></li>
+<li class="method public "><a href="#method_getItemCountPerPage" title="getItemCountPerPage :: Get items count per page (for build limited db queries as example)"><span class="description">Get items count per page (for build limited db queries as example)</span><pre>getItemCountPerPage()</pre></a></li>
 <li class="method public inherited"><a href="#method_getLogger" title="getLogger :: Gets logger instance"><span class="description">Gets logger instance</span><pre>getLogger()</pre></a></li>
-<li class="method public "><a href="#method_getPaginator" title="getPaginator :: "><span class="description">getPaginator()
-        </span><pre>getPaginator()</pre></a></li>
-<li class="method public "><a href="#method_getPartial" title="getPartial :: "><span class="description">getPartial()
-        </span><pre>getPartial()</pre></a></li>
+<li class="method public "><a href="#method_getPaginator" title="getPaginator :: Gets paginator object
+Try to instantiate if it not exists"><span class="description">Gets paginator object
+Try to instantiate if it not exists</span><pre>getPaginator()</pre></a></li>
+<li class="method public "><a href="#method_getPartial" title="getPartial :: Get partial script path
+Set it to default if not exists
+THis file must be in fule system an be readable"><span class="description">Get partial script path
+Set it to default if not exists
+THis file must be in fule system an be readable</span><pre>getPartial()</pre></a></li>
 <li class="method public inherited"><a href="#method_getRequest" title="getRequest :: Get front controller request object"><span class="description">Get front controller request object</span><pre>getRequest()</pre></a></li>
-<li class="method public "><a href="#method_getRequestPageKey" title="getRequestPageKey :: "><span class="description">getRequestPageKey()
-        </span><pre>getRequestPageKey()</pre></a></li>
-<li class="method public "><a href="#method_getRequestRowsKey" title="getRequestRowsKey :: "><span class="description">getRequestRowsKey()
-        </span><pre>getRequestRowsKey()</pre></a></li>
+<li class="method public "><a href="#method_getRequestPageKey" title="getRequestPageKey :: Get 'page' request key"><span class="description">Get 'page' request key</span><pre>getRequestPageKey()</pre></a></li>
+<li class="method public "><a href="#method_getRequestRowsKey" title="getRequestRowsKey :: Get 'rows' request key"><span class="description">Get 'rows' request key</span><pre>getRequestRowsKey()</pre></a></li>
 <li class="method public inherited"><a href="#method_getResponse" title="getResponse :: Get front controller response"><span class="description">Get front controller response</span><pre>getResponse()</pre></a></li>
 <li class="method public inherited"><a href="#method_getScriptName" title="getScriptName :: Get script name"><span class="description">Get script name</span><pre>getScriptName()</pre></a></li>
 <li class="method public inherited"><a href="#method_getScriptPaths" title="getScriptPaths :: Get search script paths"><span class="description">Get search script paths</span><pre>getScriptPaths()</pre></a></li>
-<li class="method public "><a href="#method_getScrollingStyle" title="getScrollingStyle :: "><span class="description">getScrollingStyle()
-        </span><pre>getScrollingStyle()</pre></a></li>
-<li class="method public "><a href="#method_getTotalItemsCount" title="getTotalItemsCount :: "><span class="description">getTotalItemsCount()
-        </span><pre>getTotalItemsCount()</pre></a></li>
+<li class="method public "><a href="#method_getScrollingStyle" title="getScrollingStyle :: Get pagination scrolling style"><span class="description">Get pagination scrolling style</span><pre>getScrollingStyle()</pre></a></li>
+<li class="method public "><a href="#method_getTotalItemsCount" title="getTotalItemsCount :: Get total items count"><span class="description">Get total items count</span><pre>getTotalItemsCount()</pre></a></li>
 <li class="method public inherited"><a href="#method_hasAttribute" title="hasAttribute :: Check for has attribute"><span class="description">Check for has attribute</span><pre>hasAttribute()</pre></a></li>
 <li class="method public inherited"><a href="#method_hasAttributes" title="hasAttributes :: Check for has all attributes"><span class="description">Check for has all attributes</span><pre>hasAttributes()</pre></a></li>
 <li class="method public inherited"><a href="#method_init" title="init :: Extensions initialize method"><span class="description">Extensions initialize method</span><pre>init()</pre></a></li>
 <li class="method public inherited"><a href="#method_isCacheable" title="isCacheable :: Check if localy cache s enabled"><span class="description">Check if localy cache s enabled</span><pre>isCacheable()</pre></a></li>
 <li class="method public inherited"><a href="#method_isRendered" title="isRendered :: Check if rendered flag set"><span class="description">Check if rendered flag set</span><pre>isRendered()</pre></a></li>
 <li class="method public inherited"><a href="#method_preRender" title="preRender :: Direct before render initializations"><span class="description">Direct before render initializations</span><pre>preRender()</pre></a></li>
-<li class="method public "><a href="#method_render" title="render :: Render script, highlighter and blocks"><span class="description">Render script, highlighter and blocks</span><pre>render()</pre></a></li>
+<li class="method public "><a href="#method_render" title="render :: Render pagination HTML"><span class="description">Render pagination HTML</span><pre>render()</pre></a></li>
 <li class="method public inherited"><a href="#method_renderBlockChilds" title="renderBlockChilds :: Render only blocks of specified placement"><span class="description">Render only blocks of specified placement</span><pre>renderBlockChilds()</pre></a></li>
 <li class="method public inherited"><a href="#method_setAttribute" title="setAttribute :: Set attribute"><span class="description">Set attribute</span><pre>setAttribute()</pre></a></li>
 <li class="method public inherited"><a href="#method_setAttributes" title="setAttributes :: Set array of attributes at once"><span class="description">Set array of attributes at once</span><pre>setAttributes()</pre></a></li>
@@ -136,29 +134,21 @@ Proxied to engine</span><pre>setBasePath()</pre></a></li>
 <li class="method public inherited"><a href="#method_setBlockPlacement" title="setBlockPlacement :: Set block placement relative to arent"><span class="description">Set block placement relative to arent</span><pre>setBlockPlacement()</pre></a></li>
 <li class="method public inherited"><a href="#method_setCache" title="setCache :: Set new cache object"><span class="description">Set new cache object</span><pre>setCache()</pre></a></li>
 <li class="method public inherited"><a href="#method_setCacheable" title="setCacheable :: Set local use cache"><span class="description">Set local use cache</span><pre>setCacheable()</pre></a></li>
-<li class="method public "><a href="#method_setCurrentPageNumber" title="setCurrentPageNumber :: "><span class="description">setCurrentPageNumber()
-        </span><pre>setCurrentPageNumber()</pre></a></li>
-<li class="method public "><a href="#method_setItemCountPerPage" title="setItemCountPerPage :: "><span class="description">setItemCountPerPage()
-        </span><pre>setItemCountPerPage()</pre></a></li>
+<li class="method public "><a href="#method_setCurrentPageNumber" title="setCurrentPageNumber :: Set new page number"><span class="description">Set new page number</span><pre>setCurrentPageNumber()</pre></a></li>
+<li class="method public "><a href="#method_setItemCountPerPage" title="setItemCountPerPage :: Set items count per page limit"><span class="description">Set items count per page limit</span><pre>setItemCountPerPage()</pre></a></li>
 <li class="method public inherited"><a href="#method_setLogger" title="setLogger :: Set new logger instance"><span class="description">Set new logger instance</span><pre>setLogger()</pre></a></li>
 <li class="method public inherited"><a href="#method_setOptions" title="setOptions :: Set all options at once"><span class="description">Set all options at once</span><pre>setOptions()</pre></a></li>
-<li class="method public "><a href="#method_setPaginator" title="setPaginator :: "><span class="description">setPaginator()
-        </span><pre>setPaginator()</pre></a></li>
-<li class="method public "><a href="#method_setPartial" title="setPartial :: "><span class="description">setPartial()
-        </span><pre>setPartial()</pre></a></li>
+<li class="method public "><a href="#method_setPaginator" title="setPaginator :: Set paginator instance"><span class="description">Set paginator instance</span><pre>setPaginator()</pre></a></li>
+<li class="method public "><a href="#method_setPartial" title="setPartial :: Set partial script path"><span class="description">Set partial script path</span><pre>setPartial()</pre></a></li>
 <li class="method public inherited"><a href="#method_setRendered" title="setRendered :: Set rendered flag"><span class="description">Set rendered flag</span><pre>setRendered()</pre></a></li>
-<li class="method public "><a href="#method_setRequestPageKey" title="setRequestPageKey :: "><span class="description">setRequestPageKey()
-        </span><pre>setRequestPageKey()</pre></a></li>
-<li class="method public "><a href="#method_setRequestRowsKey" title="setRequestRowsKey :: "><span class="description">setRequestRowsKey()
-        </span><pre>setRequestRowsKey()</pre></a></li>
+<li class="method public "><a href="#method_setRequestPageKey" title="setRequestPageKey :: Set 'page' request key"><span class="description">Set 'page' request key</span><pre>setRequestPageKey()</pre></a></li>
+<li class="method public "><a href="#method_setRequestRowsKey" title="setRequestRowsKey :: Set 'rows' request key"><span class="description">Set 'rows' request key</span><pre>setRequestRowsKey()</pre></a></li>
 <li class="method public inherited"><a href="#method_setScriptName" title="setScriptName :: Set new script name"><span class="description">Set new script name</span><pre>setScriptName()</pre></a></li>
 <li class="method public inherited"><a href="#method_setScriptPath" title="setScriptPath :: Set script search path
 Proxied to engine"><span class="description">Set script search path
 Proxied to engine</span><pre>setScriptPath()</pre></a></li>
-<li class="method public "><a href="#method_setScrollingStyle" title="setScrollingStyle :: "><span class="description">setScrollingStyle()
-        </span><pre>setScrollingStyle()</pre></a></li>
-<li class="method public "><a href="#method_setTotalItemsCount" title="setTotalItemsCount :: "><span class="description">setTotalItemsCount()
-        </span><pre>setTotalItemsCount()</pre></a></li>
+<li class="method public "><a href="#method_setScrollingStyle" title="setScrollingStyle :: Set pagination scrolling style"><span class="description">Set pagination scrolling style</span><pre>setScrollingStyle()</pre></a></li>
+<li class="method public "><a href="#method_setTotalItemsCount" title="setTotalItemsCount :: Set total items count (from mapper as example)"><span class="description">Set total items count (from mapper as example)</span><pre>setTotalItemsCount()</pre></a></li>
 <li class="method public inherited"><a href="#method_toArray" title="toArray :: Converts all variables to array representation"><span class="description">Converts all variables to array representation</span><pre>toArray()</pre></a></li>
 <li class="method public inherited"><a href="#method_toHtmlAttributes" title="toHtmlAttributes :: Render attributes to use in html/xml tags"><span class="description">Render attributes to use in html/xml tags</span><pre>toHtmlAttributes()</pre></a></li>
 </ul>
@@ -189,18 +179,20 @@ Proxied to engine</span><pre>setScriptPath()</pre></a></li>
 <li class="property protected inherited"><a href="#property__blockPlacment" title="$_blockPlacment :: Plock placement relative to parent"><span class="description"></span><pre>$_blockPlacment</pre></a></li>
 <li class="property protected inherited"><a href="#property__cache" title="$_cache :: Global cache object"><span class="description"></span><pre>$_cache</pre></a></li>
 <li class="property protected inherited"><a href="#property__cacheable" title="$_cacheable :: Cache local use flag"><span class="description"></span><pre>$_cacheable</pre></a></li>
-<li class="property protected "><a href="#property__currentPageNumber" title="$_currentPageNumber :: "><span class="description"></span><pre>$_currentPageNumber</pre></a></li>
+<li class="property protected "><a href="#property__currentPageNumber" title="$_currentPageNumber :: Current page number
+Depended by request object"><span class="description"></span><pre>$_currentPageNumber</pre></a></li>
 <li class="property protected inherited"><a href="#property__engine" title="$_engine :: Global engine object"><span class="description"></span><pre>$_engine</pre></a></li>
-<li class="property protected "><a href="#property__itemCountPerPage" title="$_itemCountPerPage :: "><span class="description"></span><pre>$_itemCountPerPage</pre></a></li>
+<li class="property protected "><a href="#property__itemCountPerPage" title="$_itemCountPerPage :: Items list on page count"><span class="description"></span><pre>$_itemCountPerPage</pre></a></li>
 <li class="property protected inherited"><a href="#property__logger" title="$_logger :: Logger instance"><span class="description"></span><pre>$_logger</pre></a></li>
-<li class="property protected "><a href="#property__paginator" title="$_paginator :: "><span class="description"></span><pre>$_paginator</pre></a></li>
-<li class="property protected "><a href="#property__partial" title="$_partial :: "><span class="description"></span><pre>$_partial</pre></a></li>
+<li class="property protected "><a href="#property__paginator" title="$_paginator :: Pagination object"><span class="description"></span><pre>$_paginator</pre></a></li>
+<li class="property protected "><a href="#property__partial" title="$_partial :: Partial script path for use in render method
+Must be a valid path and readable"><span class="description"></span><pre>$_partial</pre></a></li>
 <li class="property protected inherited"><a href="#property__rendered" title="$_rendered :: Flag of rendering completed"><span class="description"></span><pre>$_rendered</pre></a></li>
-<li class="property protected "><a href="#property__requestPageKey" title="$_requestPageKey :: "><span class="description"></span><pre>$_requestPageKey</pre></a></li>
-<li class="property protected "><a href="#property__requestRowsKey" title="$_requestRowsKey :: "><span class="description"></span><pre>$_requestRowsKey</pre></a></li>
+<li class="property protected "><a href="#property__requestPageKey" title="$_requestPageKey :: Request object key from wich can retrieve page number"><span class="description"></span><pre>$_requestPageKey</pre></a></li>
+<li class="property protected "><a href="#property__requestRowsKey" title="$_requestRowsKey :: Request object key from wich can retrieve rows on page count"><span class="description"></span><pre>$_requestRowsKey</pre></a></li>
 <li class="property protected inherited"><a href="#property__scriptName" title="$_scriptName :: Template script name"><span class="description"></span><pre>$_scriptName</pre></a></li>
-<li class="property protected "><a href="#property__scrollingStyle" title="$_scrollingStyle :: "><span class="description"></span><pre>$_scrollingStyle</pre></a></li>
-<li class="property protected "><a href="#property__totalItemsCount" title="$_totalItemsCount :: "><span class="description"></span><pre>$_totalItemsCount</pre></a></li>
+<li class="property protected "><a href="#property__scrollingStyle" title="$_scrollingStyle :: Pagination scrolling style option"><span class="description"></span><pre>$_scrollingStyle</pre></a></li>
+<li class="property protected "><a href="#property__totalItemsCount" title="$_totalItemsCount :: Total items count in result"><span class="description"></span><pre>$_totalItemsCount</pre></a></li>
 </ul>
 </li>
 <li class="nav-header">
@@ -225,7 +217,7 @@ Proxied to engine</span><pre>setScriptPath()</pre></a></li>
 </li>
 </ul>
 <div class="element class">
-<p class="short_description">Zend Framework</p>
+<p class="short_description">Render pagination template from Zend_Paginator like class</p>
 <div class="details">
 <div class="long_description"><p>LICENSE</p>
 
@@ -238,20 +230,28 @@ obtain it through the world-wide-web, please send an email
 to license@zend.com so we can send you a copy immediately.</p></div>
 <table class="table table-bordered">
 <tr>
+<th>category</th>
+<td>Core</td>
+</tr>
+<tr>
 <th>package</th>
-<td><a href="../packages/Default.html">Core_Block</a></td>
+<td><a href="../packages/Core.Block.Core.Block.Pagination.html">Core_Block</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Core_Block_Pagination</td>
 </tr>
 <tr>
 <th>copyright</th>
 <td>Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)</td>
 </tr>
 <tr>
-<th>version</th>
-<td>$Id: View.php 0.1 2012-12-12 pavlenko $</td>
+<th>license</th>
+<td><a href="http://framework.zend.com/license/new-bsd">New BSD License</a></td>
 </tr>
 <tr>
-<th>author</th>
-<td><a href="">Pavlenko Evgeniy</a></td>
+<th>version</th>
+<td>$Id: View.php 0.1 2012-12-12 pavlenko $</td>
 </tr>
 </table>
 <h3>
@@ -493,7 +493,7 @@ Proxied to engine</h2>
 </div>
 <a id="method_addBlockChild"></a><div class="element clickable method public method_addBlockChild" data-toggle="collapse" data-target=".method_addBlockChild .collapse">
 <h2>Add single child block</h2>
-<pre>addBlockChild(string | <a href="../classes/Core_View_Block.html">\Core_View_Block</a> $child, $placement) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<pre>addBlockChild(string | \Core_View_Block $child, $placement) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -504,7 +504,7 @@ Proxied to engine</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$child</h4>
-<code>string</code><code><a href="../classes/Core_View_Block.html">\Core_View_Block</a></code>
+<code>string</code><code>\Core_View_Block</code>
 </div>
 <div class="subelement argument"><h4>$placement</h4></div>
 <h3>Exceptions</h3>
@@ -574,11 +574,15 @@ Proxied to engine</h2>
 </div></div>
 </div>
 <a id="method_createPaginator"></a><div class="element clickable method public method_createPaginator" data-toggle="collapse" data-target=".method_createPaginator .collapse">
-<h2>createPaginator()
-        </h2>
-<pre>createPaginator() </pre>
+<h2>Instantiate local copy of paginator
+For we can use custo, pagination styles on same pages</h2>
+<pre>createPaginator() : \Zend_Paginator</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Paginator</code></div>
+</div></div>
 </div>
 <a id="method_delAttribute"></a><div class="element clickable method public method_delAttribute" data-toggle="collapse" data-target=".method_delAttribute .collapse">
 <h2>Delete attribute</h2>
@@ -797,11 +801,14 @@ Create from class name if not defined</h2>
 </div></div>
 </div>
 <a id="method_getCurrentPageNumber"></a><div class="element clickable method public method_getCurrentPageNumber" data-toggle="collapse" data-target=".method_getCurrentPageNumber .collapse">
-<h2>getCurrentPageNumber()
-        </h2>
-<pre>getCurrentPageNumber() </pre>
+<h2>Get current page number</h2>
+<pre>getCurrentPageNumber() : int</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
 </div>
 <a id="method_getEngine"></a><div class="element clickable method public method_getEngine" data-toggle="collapse" data-target=".method_getEngine .collapse">
 <h2>Get rendering core engine</h2>
@@ -818,11 +825,14 @@ Create from class name if not defined</h2>
 </div></div>
 </div>
 <a id="method_getItemCountPerPage"></a><div class="element clickable method public method_getItemCountPerPage" data-toggle="collapse" data-target=".method_getItemCountPerPage .collapse">
-<h2>getItemCountPerPage()
-        </h2>
-<pre>getItemCountPerPage() </pre>
+<h2>Get items count per page (for build limited db queries as example)</h2>
+<pre>getItemCountPerPage() : int</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
 </div>
 <a id="method_getLogger"></a><div class="element clickable method public method_getLogger" data-toggle="collapse" data-target=".method_getLogger .collapse">
 <h2>Gets logger instance</h2>
@@ -839,18 +849,27 @@ Create from class name if not defined</h2>
 </div></div>
 </div>
 <a id="method_getPaginator"></a><div class="element clickable method public method_getPaginator" data-toggle="collapse" data-target=".method_getPaginator .collapse">
-<h2>getPaginator()
-        </h2>
-<pre>getPaginator() </pre>
+<h2>Gets paginator object
+Try to instantiate if it not exists</h2>
+<pre>getPaginator() : \Zend_Paginator</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Paginator</code></div>
+</div></div>
 </div>
 <a id="method_getPartial"></a><div class="element clickable method public method_getPartial" data-toggle="collapse" data-target=".method_getPartial .collapse">
-<h2>getPartial()
-        </h2>
-<pre>getPartial() </pre>
+<h2>Get partial script path
+Set it to default if not exists
+THis file must be in fule system an be readable</h2>
+<pre>getPartial() : string</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
 </div>
 <a id="method_getRequest"></a><div class="element clickable method public method_getRequest" data-toggle="collapse" data-target=".method_getRequest .collapse">
 <h2>Get front controller request object</h2>
@@ -867,18 +886,24 @@ Create from class name if not defined</h2>
 </div></div>
 </div>
 <a id="method_getRequestPageKey"></a><div class="element clickable method public method_getRequestPageKey" data-toggle="collapse" data-target=".method_getRequestPageKey .collapse">
-<h2>getRequestPageKey()
-        </h2>
-<pre>getRequestPageKey() </pre>
+<h2>Get 'page' request key</h2>
+<pre>getRequestPageKey() : string</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
 </div>
 <a id="method_getRequestRowsKey"></a><div class="element clickable method public method_getRequestRowsKey" data-toggle="collapse" data-target=".method_getRequestRowsKey .collapse">
-<h2>getRequestRowsKey()
-        </h2>
-<pre>getRequestRowsKey() </pre>
+<h2>Get 'rows' request key</h2>
+<pre>getRequestRowsKey() : string</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
 </div>
 <a id="method_getResponse"></a><div class="element clickable method public method_getResponse" data-toggle="collapse" data-target=".method_getResponse .collapse">
 <h2>Get front controller response</h2>
@@ -925,18 +950,24 @@ Create from class name if not defined</h2>
 </div></div>
 </div>
 <a id="method_getScrollingStyle"></a><div class="element clickable method public method_getScrollingStyle" data-toggle="collapse" data-target=".method_getScrollingStyle .collapse">
-<h2>getScrollingStyle()
-        </h2>
-<pre>getScrollingStyle() </pre>
+<h2>Get pagination scrolling style</h2>
+<pre>getScrollingStyle() : string</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
 </div>
 <a id="method_getTotalItemsCount"></a><div class="element clickable method public method_getTotalItemsCount" data-toggle="collapse" data-target=".method_getTotalItemsCount .collapse">
-<h2>getTotalItemsCount()
-        </h2>
-<pre>getTotalItemsCount() </pre>
+<h2>Get total items count</h2>
+<pre>getTotalItemsCount() : int</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
 </div>
 <a id="method_hasAttribute"></a><div class="element clickable method public method_hasAttribute" data-toggle="collapse" data-target=".method_hasAttribute .collapse">
 <h2>Check for has attribute</h2>
@@ -1041,7 +1072,7 @@ Create from class name if not defined</h2>
 </div></div>
 </div>
 <a id="method_render"></a><div class="element clickable method public method_render" data-toggle="collapse" data-target=".method_render .collapse">
-<h2>Render script, highlighter and blocks</h2>
+<h2>Render pagination HTML</h2>
 <pre>render(string $name) : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
@@ -1049,7 +1080,7 @@ Create from class name if not defined</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$name</h4>
-<code>string</code><p>overrided script name</p></div>
+<code>string</code><p>Not set, use BLOCK_DUMMY for preventing render errors</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
 </div></div>
@@ -1261,25 +1292,33 @@ Proxied to engine</h2>
 </div></div>
 </div>
 <a id="method_setCurrentPageNumber"></a><div class="element clickable method public method_setCurrentPageNumber" data-toggle="collapse" data-target=".method_setCurrentPageNumber .collapse">
-<h2>setCurrentPageNumber()
-        </h2>
-<pre>setCurrentPageNumber($page) </pre>
+<h2>Set new page number</h2>
+<pre>setCurrentPageNumber(int $page) : <a href="../classes/Core_Block_Pagination_Widget.html">\Core_Block_Pagination_Widget</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$page</h4></div>
+<div class="subelement argument">
+<h4>$page</h4>
+<code>int</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Pagination_Widget.html">\Core_Block_Pagination_Widget</a></code></div>
 </div></div>
 </div>
 <a id="method_setItemCountPerPage"></a><div class="element clickable method public method_setItemCountPerPage" data-toggle="collapse" data-target=".method_setItemCountPerPage .collapse">
-<h2>setItemCountPerPage()
-        </h2>
-<pre>setItemCountPerPage($count) </pre>
+<h2>Set items count per page limit</h2>
+<pre>setItemCountPerPage(int $count) : <a href="../classes/Core_Block_Pagination_Widget.html">\Core_Block_Pagination_Widget</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$count</h4></div>
+<div class="subelement argument">
+<h4>$count</h4>
+<code>int</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Pagination_Widget.html">\Core_Block_Pagination_Widget</a></code></div>
 </div></div>
 </div>
 <a id="method_setLogger"></a><div class="element clickable method public method_setLogger" data-toggle="collapse" data-target=".method_setLogger .collapse">
@@ -1321,25 +1360,33 @@ Proxied to engine</h2>
 </div></div>
 </div>
 <a id="method_setPaginator"></a><div class="element clickable method public method_setPaginator" data-toggle="collapse" data-target=".method_setPaginator .collapse">
-<h2>setPaginator()
-        </h2>
-<pre>setPaginator(\Zend_Paginator $paginator) </pre>
+<h2>Set paginator instance</h2>
+<pre>setPaginator(\Zend_Paginator $paginator) : <a href="../classes/Core_Block_Pagination_Widget.html">\Core_Block_Pagination_Widget</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$paginator</h4></div>
+<div class="subelement argument">
+<h4>$paginator</h4>
+<code>\Zend_Paginator</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Pagination_Widget.html">\Core_Block_Pagination_Widget</a></code></div>
 </div></div>
 </div>
 <a id="method_setPartial"></a><div class="element clickable method public method_setPartial" data-toggle="collapse" data-target=".method_setPartial .collapse">
-<h2>setPartial()
-        </h2>
-<pre>setPartial($partial) </pre>
+<h2>Set partial script path</h2>
+<pre>setPartial(string $partial) : <a href="../classes/Core_Block_Pagination_Widget.html">\Core_Block_Pagination_Widget</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$partial</h4></div>
+<div class="subelement argument">
+<h4>$partial</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Pagination_Widget.html">\Core_Block_Pagination_Widget</a></code></div>
 </div></div>
 </div>
 <a id="method_setRendered"></a><div class="element clickable method public method_setRendered" data-toggle="collapse" data-target=".method_setRendered .collapse">
@@ -1362,25 +1409,33 @@ Proxied to engine</h2>
 </div></div>
 </div>
 <a id="method_setRequestPageKey"></a><div class="element clickable method public method_setRequestPageKey" data-toggle="collapse" data-target=".method_setRequestPageKey .collapse">
-<h2>setRequestPageKey()
-        </h2>
-<pre>setRequestPageKey($key) </pre>
+<h2>Set 'page' request key</h2>
+<pre>setRequestPageKey(string $key) : <a href="../classes/Core_Block_Pagination_Widget.html">\Core_Block_Pagination_Widget</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$key</h4></div>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Pagination_Widget.html">\Core_Block_Pagination_Widget</a></code></div>
 </div></div>
 </div>
 <a id="method_setRequestRowsKey"></a><div class="element clickable method public method_setRequestRowsKey" data-toggle="collapse" data-target=".method_setRequestRowsKey .collapse">
-<h2>setRequestRowsKey()
-        </h2>
-<pre>setRequestRowsKey($key) </pre>
+<h2>Set 'rows' request key</h2>
+<pre>setRequestRowsKey(string $key) : <a href="../classes/Core_Block_Pagination_Widget.html">\Core_Block_Pagination_Widget</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$key</h4></div>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Pagination_Widget.html">\Core_Block_Pagination_Widget</a></code></div>
 </div></div>
 </div>
 <a id="method_setScriptName"></a><div class="element clickable method public method_setScriptName" data-toggle="collapse" data-target=".method_setScriptName .collapse">
@@ -1423,25 +1478,33 @@ Proxied to engine</h2>
 </div></div>
 </div>
 <a id="method_setScrollingStyle"></a><div class="element clickable method public method_setScrollingStyle" data-toggle="collapse" data-target=".method_setScrollingStyle .collapse">
-<h2>setScrollingStyle()
-        </h2>
-<pre>setScrollingStyle($style) </pre>
+<h2>Set pagination scrolling style</h2>
+<pre>setScrollingStyle(string $style) : <a href="../classes/Core_Block_Pagination_Widget.html">\Core_Block_Pagination_Widget</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$style</h4></div>
+<div class="subelement argument">
+<h4>$style</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Pagination_Widget.html">\Core_Block_Pagination_Widget</a></code></div>
 </div></div>
 </div>
 <a id="method_setTotalItemsCount"></a><div class="element clickable method public method_setTotalItemsCount" data-toggle="collapse" data-target=".method_setTotalItemsCount .collapse">
-<h2>setTotalItemsCount()
-        </h2>
-<pre>setTotalItemsCount($count) </pre>
+<h2>Set total items count (from mapper as example)</h2>
+<pre>setTotalItemsCount(int $count) : <a href="../classes/Core_Block_Pagination_Widget.html">\Core_Block_Pagination_Widget</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$count</h4></div>
+<div class="subelement argument">
+<h4>$count</h4>
+<code>int</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Pagination_Widget.html">\Core_Block_Pagination_Widget</a></code></div>
 </div></div>
 </div>
 <a id="method_toArray"></a><div class="element clickable method public method_toArray" data-toggle="collapse" data-target=".method_toArray .collapse">
@@ -1735,7 +1798,7 @@ Proxied to engine</h2>
 </div>
 <a id="property__currentPageNumber"> </a><div class="element clickable property protected property__currentPageNumber" data-toggle="collapse" data-target=".property__currentPageNumber .collapse">
 <h2></h2>
-<pre>$_currentPageNumber </pre>
+<pre>$_currentPageNumber : int</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -1753,7 +1816,7 @@ Proxied to engine</h2>
 </div>
 <a id="property__itemCountPerPage"> </a><div class="element clickable property protected property__itemCountPerPage" data-toggle="collapse" data-target=".property__itemCountPerPage .collapse">
 <h2></h2>
-<pre>$_itemCountPerPage </pre>
+<pre>$_itemCountPerPage : int</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -1771,13 +1834,13 @@ Proxied to engine</h2>
 </div>
 <a id="property__paginator"> </a><div class="element clickable property protected property__paginator" data-toggle="collapse" data-target=".property__paginator .collapse">
 <h2></h2>
-<pre>$_paginator </pre>
+<pre>$_paginator : \Zend_Paginator</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property__partial"> </a><div class="element clickable property protected property__partial" data-toggle="collapse" data-target=".property__partial .collapse">
 <h2></h2>
-<pre>$_partial </pre>
+<pre>$_partial : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -1795,13 +1858,13 @@ Proxied to engine</h2>
 </div>
 <a id="property__requestPageKey"> </a><div class="element clickable property protected property__requestPageKey" data-toggle="collapse" data-target=".property__requestPageKey .collapse">
 <h2></h2>
-<pre>$_requestPageKey </pre>
+<pre>$_requestPageKey : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property__requestRowsKey"> </a><div class="element clickable property protected property__requestRowsKey" data-toggle="collapse" data-target=".property__requestRowsKey .collapse">
 <h2></h2>
-<pre>$_requestRowsKey </pre>
+<pre>$_requestRowsKey : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -1819,13 +1882,13 @@ Proxied to engine</h2>
 </div>
 <a id="property__scrollingStyle"> </a><div class="element clickable property protected property__scrollingStyle" data-toggle="collapse" data-target=".property__scrollingStyle .collapse">
 <h2></h2>
-<pre>$_scrollingStyle </pre>
+<pre>$_scrollingStyle : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property__totalItemsCount"> </a><div class="element clickable property protected property__totalItemsCount" data-toggle="collapse" data-target=".property__totalItemsCount .collapse">
 <h2></h2>
-<pre>$_totalItemsCount </pre>
+<pre>$_totalItemsCount : int</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -1886,7 +1949,7 @@ Proxied to engine</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2012-12-14T14:55:09+02:00.<br></footer></div>
+            generated on 2012-12-14T17:59:06+02:00.<br></footer></div>
 </div>
 </body>
 </html>

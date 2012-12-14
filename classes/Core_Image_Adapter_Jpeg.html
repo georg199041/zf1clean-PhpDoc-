@@ -22,7 +22,6 @@
 <li><a>Packages</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
-<li><a href="../packages/Zend.html"><i class="icon-folder-open"></i> Zend</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -33,13 +32,13 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">466</span></a></li>
+                <span class="label label-info">271</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
-                <span class="label label-info">7</span>
+                <span class="label label-info">5</span>
 </li></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
-                <span class="label label-info">0</span></a></li>
+                <span class="label label-info">1</span></a></li>
 </ul>
 </li>
 </ul></div>
@@ -123,22 +122,22 @@
 <li class="nav-header protected">» Protected
                     <ul>
 <li class="property protected inherited"><a href="#property__backgroundColor" title="$_backgroundColor :: Background color code"><span class="description"></span><pre>$_backgroundColor</pre></a></li>
-<li class="property protected inherited"><a href="#property__compression" title="$_compression :: "><span class="description"></span><pre>$_compression</pre></a></li>
-<li class="property protected inherited"><a href="#property__height" title="$_height :: "><span class="description"></span><pre>$_height</pre></a></li>
-<li class="property protected inherited"><a href="#property__lifeTime" title="$_lifeTime :: "><span class="description"></span><pre>$_lifeTime</pre></a></li>
-<li class="property protected inherited"><a href="#property__method" title="$_method :: "><span class="description"></span><pre>$_method</pre></a></li>
+<li class="property protected inherited"><a href="#property__compression" title="$_compression :: Compression to use in output"><span class="description"></span><pre>$_compression</pre></a></li>
+<li class="property protected inherited"><a href="#property__height" title="$_height :: Image old height"><span class="description"></span><pre>$_height</pre></a></li>
+<li class="property protected inherited"><a href="#property__lifeTime" title="$_lifeTime :: Image life time in cache"><span class="description"></span><pre>$_lifeTime</pre></a></li>
+<li class="property protected inherited"><a href="#property__method" title="$_method :: Used resize method name"><span class="description"></span><pre>$_method</pre></a></li>
 <li class="property protected inherited"><a href="#property__needResizeSmallerThan" title="$_needResizeSmallerThan :: Need resize smaller images"><span class="description"></span><pre>$_needResizeSmallerThan</pre></a></li>
-<li class="property protected inherited"><a href="#property__newHeight" title="$_newHeight :: "><span class="description"></span><pre>$_newHeight</pre></a></li>
-<li class="property protected inherited"><a href="#property__newOffsetLeft" title="$_newOffsetLeft :: "><span class="description"></span><pre>$_newOffsetLeft</pre></a></li>
-<li class="property protected inherited"><a href="#property__newOffsetTop" title="$_newOffsetTop :: "><span class="description"></span><pre>$_newOffsetTop</pre></a></li>
-<li class="property protected inherited"><a href="#property__newWidth" title="$_newWidth :: "><span class="description"></span><pre>$_newWidth</pre></a></li>
-<li class="property protected inherited"><a href="#property__offsetLeft" title="$_offsetLeft :: "><span class="description"></span><pre>$_offsetLeft</pre></a></li>
-<li class="property protected inherited"><a href="#property__offsetTop" title="$_offsetTop :: "><span class="description"></span><pre>$_offsetTop</pre></a></li>
+<li class="property protected inherited"><a href="#property__newHeight" title="$_newHeight :: New image height"><span class="description"></span><pre>$_newHeight</pre></a></li>
+<li class="property protected inherited"><a href="#property__newOffsetLeft" title="$_newOffsetLeft :: New image left offset"><span class="description"></span><pre>$_newOffsetLeft</pre></a></li>
+<li class="property protected inherited"><a href="#property__newOffsetTop" title="$_newOffsetTop :: New top image offset"><span class="description"></span><pre>$_newOffsetTop</pre></a></li>
+<li class="property protected inherited"><a href="#property__newWidth" title="$_newWidth :: New image width"><span class="description"></span><pre>$_newWidth</pre></a></li>
+<li class="property protected inherited"><a href="#property__offsetLeft" title="$_offsetLeft :: Image old offset of canvas left"><span class="description"></span><pre>$_offsetLeft</pre></a></li>
+<li class="property protected inherited"><a href="#property__offsetTop" title="$_offsetTop :: Image old offset of canvas top"><span class="description"></span><pre>$_offsetTop</pre></a></li>
 <li class="property protected inherited"><a href="#property__path" title="$_path :: Path to image file"><span class="description"></span><pre>$_path</pre></a></li>
 <li class="property protected inherited"><a href="#property__resource" title="$_resource :: Image resource container"><span class="description"></span><pre>$_resource</pre></a></li>
 <li class="property protected inherited"><a href="#property__savePath" title="$_savePath :: Path to save image to"><span class="description"></span><pre>$_savePath</pre></a></li>
 <li class="property protected inherited"><a href="#property__transparensyPreserved" title="$_transparensyPreserved :: Preserved transparensy flag"><span class="description"></span><pre>$_transparensyPreserved</pre></a></li>
-<li class="property protected inherited"><a href="#property__width" title="$_width :: "><span class="description"></span><pre>$_width</pre></a></li>
+<li class="property protected inherited"><a href="#property__width" title="$_width :: Image old width"><span class="description"></span><pre>$_width</pre></a></li>
 </ul>
 </li>
 <li class="nav-header">
@@ -164,25 +163,29 @@
 </li>
 </ul>
 <div class="element class">
-<p class="short_description">Image JPEG adapter</p>
+<p class="short_description">Base image processing class</p>
 <div class="details">
 <div class="long_description"></div>
 <table class="table table-bordered">
 <tr>
-<th>author</th>
-<td><a href="">Pavlenko Evgeniy</a></td>
-</tr>
-<tr>
-<th>version</th>
-<td>2.3</td>
-</tr>
-<tr>
-<th>copyright</th>
-<td>Copyright (c) 2012 SunNY Creative Technologies. (http://www.sunny.net)</td>
+<th>category</th>
+<td>Core</td>
 </tr>
 <tr>
 <th>package</th>
-<td><a href="../packages/Default.html">Core_Image</a></td>
+<td><a href="../packages/Core.Image.Core.Image.Adapter.html">Core_Image</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Core_Image_Adapter</td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://framework.zend.com/license/new-bsd">New BSD License</a></td>
 </tr>
 </table>
 <h3>
@@ -1013,7 +1016,7 @@
 </div>
 <a id="method__save"></a><div class="element clickable method protected method__save" data-toggle="collapse" data-target=".method__save .collapse">
 <h2>Save image to file</h2>
-<pre>_save() </pre>
+<pre>_save() : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -1292,7 +1295,7 @@
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2012-12-14T14:55:09+02:00.<br></footer></div>
+            generated on 2012-12-14T17:59:06+02:00.<br></footer></div>
 </div>
 </body>
 </html>
