@@ -1,0 +1,1279 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \Core_Block_View</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Zend.html"><i class="icon-folder-open"></i> Zend</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">466</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">7</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___" title="__ :: Helper function to translate some strings"><span class="description">Helper function to translate some strings</span><pre>__()</pre></a></li>
+<li class="method public "><a href="#method___call" title="__call :: Proxy undefined methods to engine"><span class="description">Proxy undefined methods to engine</span><pre>__call()</pre></a></li>
+<li class="method public "><a href="#method___construct" title="__construct :: Constructor"><span class="description">Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___get" title="__get :: Get property
+Currently not used"><span class="description">Get property
+Currently not used</span><pre>__get()</pre></a></li>
+<li class="method public "><a href="#method___isset" title="__isset :: Check property exists"><span class="description">Check property exists</span><pre>__isset()</pre></a></li>
+<li class="method public "><a href="#method___set" title="__set :: Set new property"><span class="description">Set new property</span><pre>__set()</pre></a></li>
+<li class="method public "><a href="#method___toString" title="__toString :: Rendering by echo call"><span class="description">Rendering by echo call</span><pre>__toString()</pre></a></li>
+<li class="method public "><a href="#method___unset" title="__unset :: Delete property"><span class="description">Delete property</span><pre>__unset()</pre></a></li>
+<li class="method public inherited"><a href="#method_addAttribute" title="addAttribute :: Add attribute"><span class="description">Add attribute</span><pre>addAttribute()</pre></a></li>
+<li class="method public inherited"><a href="#method_addAttributes" title="addAttributes :: Add array of attributes"><span class="description">Add array of attributes</span><pre>addAttributes()</pre></a></li>
+<li class="method public "><a href="#method_addBasePath" title="addBasePath :: Add base path
+Proxied to engine"><span class="description">Add base path
+Proxied to engine</span><pre>addBasePath()</pre></a></li>
+<li class="method public "><a href="#method_addBlockChild" title="addBlockChild :: Add single child block"><span class="description">Add single child block</span><pre>addBlockChild()</pre></a></li>
+<li class="method public "><a href="#method_addBlockChilds" title="addBlockChilds :: Add childs blocks"><span class="description">Add childs blocks</span><pre>addBlockChilds()</pre></a></li>
+<li class="method public "><a href="#method_assign" title="assign :: Assign propert(y|ies)"><span class="description">Assign propert(y|ies)</span><pre>assign()</pre></a></li>
+<li class="method public "><a href="#method_clearVars" title="clearVars :: Clear all properties"><span class="description">Clear all properties</span><pre>clearVars()</pre></a></li>
+<li class="method public inherited"><a href="#method_delAttribute" title="delAttribute :: Delete attribute"><span class="description">Delete attribute</span><pre>delAttribute()</pre></a></li>
+<li class="method public inherited"><a href="#method_delAttributes" title="delAttributes :: Delete array of attributes"><span class="description">Delete array of attributes</span><pre>delAttributes()</pre></a></li>
+<li class="method public "><a href="#method_delBlockChild" title="delBlockChild :: Delete block from childs"><span class="description">Delete block from childs</span><pre>delBlockChild()</pre></a></li>
+<li class="method public inherited"><a href="#method_getAttribute" title="getAttribute :: Get attribute"><span class="description">Get attribute</span><pre>getAttribute()</pre></a></li>
+<li class="method public inherited"><a href="#method_getAttributes" title="getAttributes :: Get all attributes"><span class="description">Get all attributes</span><pre>getAttributes()</pre></a></li>
+<li class="method public "><a href="#method_getBlockChild" title="getBlockChild :: Get block by name"><span class="description">Get block by name</span><pre>getBlockChild()</pre></a></li>
+<li class="method public "><a href="#method_getBlockChilds" title="getBlockChilds :: Get childs blocks"><span class="description">Get childs blocks</span><pre>getBlockChilds()</pre></a></li>
+<li class="method public "><a href="#method_getBlockName" title="getBlockName :: Get block name
+Create from class name if not defined"><span class="description">Get block name
+Create from class name if not defined</span><pre>getBlockName()</pre></a></li>
+<li class="method public "><a href="#method_getBlockParent" title="getBlockParent :: Get parent block"><span class="description">Get parent block</span><pre>getBlockParent()</pre></a></li>
+<li class="method public "><a href="#method_getBlockPlacement" title="getBlockPlacement :: Get block placement"><span class="description">Get block placement</span><pre>getBlockPlacement()</pre></a></li>
+<li class="method public "><a href="#method_getCache" title="getCache :: Get cache object"><span class="description">Get cache object</span><pre>getCache()</pre></a></li>
+<li class="method public "><a href="#method_getCacheId" title="getCacheId :: Generate cache id"><span class="description">Generate cache id</span><pre>getCacheId()</pre></a></li>
+<li class="method public "><a href="#method_getEngine" title="getEngine :: Get rendering core engine"><span class="description">Get rendering core engine</span><pre>getEngine()</pre></a></li>
+<li class="method public "><a href="#method_getLogger" title="getLogger :: Gets logger instance"><span class="description">Gets logger instance</span><pre>getLogger()</pre></a></li>
+<li class="method public "><a href="#method_getRequest" title="getRequest :: Get front controller request object"><span class="description">Get front controller request object</span><pre>getRequest()</pre></a></li>
+<li class="method public "><a href="#method_getResponse" title="getResponse :: Get front controller response"><span class="description">Get front controller response</span><pre>getResponse()</pre></a></li>
+<li class="method public "><a href="#method_getScriptName" title="getScriptName :: Get script name"><span class="description">Get script name</span><pre>getScriptName()</pre></a></li>
+<li class="method public "><a href="#method_getScriptPaths" title="getScriptPaths :: Get search script paths"><span class="description">Get search script paths</span><pre>getScriptPaths()</pre></a></li>
+<li class="method public inherited"><a href="#method_hasAttribute" title="hasAttribute :: Check for has attribute"><span class="description">Check for has attribute</span><pre>hasAttribute()</pre></a></li>
+<li class="method public inherited"><a href="#method_hasAttributes" title="hasAttributes :: Check for has all attributes"><span class="description">Check for has all attributes</span><pre>hasAttributes()</pre></a></li>
+<li class="method public "><a href="#method_init" title="init :: Extensions initialize method"><span class="description">Extensions initialize method</span><pre>init()</pre></a></li>
+<li class="method public "><a href="#method_isCacheable" title="isCacheable :: Check if localy cache s enabled"><span class="description">Check if localy cache s enabled</span><pre>isCacheable()</pre></a></li>
+<li class="method public "><a href="#method_isRendered" title="isRendered :: Check if rendered flag set"><span class="description">Check if rendered flag set</span><pre>isRendered()</pre></a></li>
+<li class="method public "><a href="#method_preRender" title="preRender :: Direct before render initializations"><span class="description">Direct before render initializations</span><pre>preRender()</pre></a></li>
+<li class="method public "><a href="#method_render" title="render :: Render script, highlighter and blocks"><span class="description">Render script, highlighter and blocks</span><pre>render()</pre></a></li>
+<li class="method public "><a href="#method_renderBlockChilds" title="renderBlockChilds :: Render only blocks of specified placement"><span class="description">Render only blocks of specified placement</span><pre>renderBlockChilds()</pre></a></li>
+<li class="method public inherited"><a href="#method_setAttribute" title="setAttribute :: Set attribute"><span class="description">Set attribute</span><pre>setAttribute()</pre></a></li>
+<li class="method public inherited"><a href="#method_setAttributes" title="setAttributes :: Set array of attributes at once"><span class="description">Set array of attributes at once</span><pre>setAttributes()</pre></a></li>
+<li class="method public "><a href="#method_setBasePath" title="setBasePath :: Set base path
+Proxied to engine"><span class="description">Set base path
+Proxied to engine</span><pre>setBasePath()</pre></a></li>
+<li class="method public "><a href="#method_setBlockChilds" title="setBlockChilds :: Set childs blocks"><span class="description">Set childs blocks</span><pre>setBlockChilds()</pre></a></li>
+<li class="method public "><a href="#method_setBlockName" title="setBlockName :: Set block name"><span class="description">Set block name</span><pre>setBlockName()</pre></a></li>
+<li class="method public "><a href="#method_setBlockParent" title="setBlockParent :: Set parent block"><span class="description">Set parent block</span><pre>setBlockParent()</pre></a></li>
+<li class="method public "><a href="#method_setBlockPlacement" title="setBlockPlacement :: Set block placement relative to arent"><span class="description">Set block placement relative to arent</span><pre>setBlockPlacement()</pre></a></li>
+<li class="method public "><a href="#method_setCache" title="setCache :: Set new cache object"><span class="description">Set new cache object</span><pre>setCache()</pre></a></li>
+<li class="method public "><a href="#method_setCacheable" title="setCacheable :: Set local use cache"><span class="description">Set local use cache</span><pre>setCacheable()</pre></a></li>
+<li class="method public "><a href="#method_setLogger" title="setLogger :: Set new logger instance"><span class="description">Set new logger instance</span><pre>setLogger()</pre></a></li>
+<li class="method public "><a href="#method_setOptions" title="setOptions :: Set all options at once"><span class="description">Set all options at once</span><pre>setOptions()</pre></a></li>
+<li class="method public "><a href="#method_setRendered" title="setRendered :: Set rendered flag"><span class="description">Set rendered flag</span><pre>setRendered()</pre></a></li>
+<li class="method public "><a href="#method_setScriptName" title="setScriptName :: Set new script name"><span class="description">Set new script name</span><pre>setScriptName()</pre></a></li>
+<li class="method public "><a href="#method_setScriptPath" title="setScriptPath :: Set script search path
+Proxied to engine"><span class="description">Set script search path
+Proxied to engine</span><pre>setScriptPath()</pre></a></li>
+<li class="method public "><a href="#method_toArray" title="toArray :: Converts all variables to array representation"><span class="description">Converts all variables to array representation</span><pre>toArray()</pre></a></li>
+<li class="method public inherited"><a href="#method_toHtmlAttributes" title="toHtmlAttributes :: Render attributes to use in html/xml tags"><span class="description">Render attributes to use in html/xml tags</span><pre>toHtmlAttributes()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method__cacheId" title="_cacheId :: Generate cache id"><span class="description">Generate cache id</span><pre>_cacheId()</pre></a></li>
+<li class="method protected "><a href="#method__cacheLoad" title="_cacheLoad :: Helper for load cache record data"><span class="description">Helper for load cache record data</span><pre>_cacheLoad()</pre></a></li>
+<li class="method protected "><a href="#method__cacheSave" title="_cacheSave :: Helper for save cache record data"><span class="description">Helper for save cache record data</span><pre>_cacheSave()</pre></a></li>
+<li class="method protected "><a href="#method__cacheTest" title="_cacheTest :: Helper for test cache record exists"><span class="description">Helper for test cache record exists</span><pre>_cacheTest()</pre></a></li>
+<li class="method protected "><a href="#method__findAndRenderBlock" title="_findAndRenderBlock :: Try to render 'BLOCK' strategy"><span class="description">Try to render 'BLOCK' strategy</span><pre>_findAndRenderBlock()</pre></a></li>
+<li class="method protected "><a href="#method__getBlockNames" title="_getBlockNames :: Get block name variants for loader"><span class="description">Get block name variants for loader</span><pre>_getBlockNames()</pre></a></li>
+<li class="method protected "><a href="#method__getScriptFile" title="_getScriptFile :: Search script file"><span class="description">Search script file</span><pre>_getScriptFile()</pre></a></li>
+<li class="method protected "><a href="#method__log" title="_log :: Add log message"><span class="description">Add log message</span><pre>_log()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected inherited"><a href="#property__attributes" title="$_attributes :: Attributes container"><span class="description"></span><pre>$_attributes</pre></a></li>
+<li class="property protected "><a href="#property__blockAvailablePlacements" title="$_blockAvailablePlacements :: All available placements for comarison functions"><span class="description"></span><pre>$_blockAvailablePlacements</pre></a></li>
+<li class="property protected "><a href="#property__blockChilds" title="$_blockChilds :: Array of childs blocks"><span class="description"></span><pre>$_blockChilds</pre></a></li>
+<li class="property protected "><a href="#property__blockName" title="$_blockName :: Internal block name"><span class="description"></span><pre>$_blockName</pre></a></li>
+<li class="property protected "><a href="#property__blockParent" title="$_blockParent :: Parent block object"><span class="description"></span><pre>$_blockParent</pre></a></li>
+<li class="property protected "><a href="#property__blockPlacment" title="$_blockPlacment :: Plock placement relative to parent"><span class="description"></span><pre>$_blockPlacment</pre></a></li>
+<li class="property protected "><a href="#property__cache" title="$_cache :: Global cache object"><span class="description"></span><pre>$_cache</pre></a></li>
+<li class="property protected "><a href="#property__cacheable" title="$_cacheable :: Cache local use flag"><span class="description"></span><pre>$_cacheable</pre></a></li>
+<li class="property protected "><a href="#property__engine" title="$_engine :: Global engine object"><span class="description"></span><pre>$_engine</pre></a></li>
+<li class="property protected "><a href="#property__logger" title="$_logger :: Logger instance"><span class="description"></span><pre>$_logger</pre></a></li>
+<li class="property protected "><a href="#property__rendered" title="$_rendered :: Flag of rendering completed"><span class="description"></span><pre>$_rendered</pre></a></li>
+<li class="property protected "><a href="#property__scriptName" title="$_scriptName :: Template script name"><span class="description"></span><pre>$_scriptName</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_BLOCK_CACHEMANAGER_KEY" title="BLOCK_CACHEMANAGER_KEY :: Cache manager place key"><span class="description">Cache manager place key</span><pre>BLOCK_CACHEMANAGER_KEY</pre></a></li>
+<li class="constant  "><a href="#constant_BLOCK_DUMMY" title="BLOCK_DUMMY :: Dummy string, uses fron no script file required renreds"><span class="description">Dummy string, uses fron no script file required renreds</span><pre>BLOCK_DUMMY</pre></a></li>
+<li class="constant  "><a href="#constant_BLOCK_PLACEMENT_AFTER" title="BLOCK_PLACEMENT_AFTER :: "><span class="description">BLOCK_PLACEMENT_AFTER</span><pre>BLOCK_PLACEMENT_AFTER</pre></a></li>
+<li class="constant  "><a href="#constant_BLOCK_PLACEMENT_BEFORE" title="BLOCK_PLACEMENT_BEFORE :: "><span class="description">BLOCK_PLACEMENT_BEFORE</span><pre>BLOCK_PLACEMENT_BEFORE</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\Core_Block_View"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Core_Block_View.html">Core_Block_View</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Zend Framework</p>
+<div class="details">
+<div class="long_description"><p>LICENSE</p>
+
+<p>This source file is subject to the new BSD license that is bundled
+with this package in the file LICENSE.txt.
+It is also available through the world-wide-web at this URL:
+http://framework.zend.com/license/new-bsd
+If you did not receive a copy of the license and are unable to
+obtain it through the world-wide-web, please send an email
+to license@zend.com so we can send you a copy immediately.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Core</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Core.Block.html">Core_Block</a></td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://framework.zend.com/license/new-bsd">New BSD License</a></td>
+</tr>
+<tr>
+<th>version</th>
+<td>$Id: View.php 0.1 2012-12-12 pavlenko $</td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="">Pavlenko Evgeniy</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___"></a><div class="element clickable method public method___" data-toggle="collapse" data-target=".method___ .collapse">
+<h2>Helper function to translate some strings</h2>
+<pre>__(string $string) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Internaly use Zend_Translate</p>
+
+<p>Usage anywhere in block class or in template:
+<php>
+    $this->__('Untranslated string');
+</php></p></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="">\Zend_Translate</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$string</h4>
+<code>string</code><p>Input string in default language</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Translated into selected language string</div>
+</div></div>
+</div>
+<a id="method___call"></a><div class="element clickable method public method___call" data-toggle="collapse" data-target=".method___call .collapse">
+<h2>Proxy undefined methods to engine</h2>
+<pre>__call(string $method, array $args) : mixed | <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$args</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code>
+</div>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Constructor</h2>
+<pre>__construct(array | \Zend_Config $options) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code><code>\Zend_Config</code>
+</div>
+</div></div>
+</div>
+<a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
+<h2>Get property
+Currently not used</h2>
+<pre>__get(mixed $key) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>mixed</code>
+</div>
+</div></div>
+</div>
+<a id="method___isset"></a><div class="element clickable method public method___isset" data-toggle="collapse" data-target=".method___isset .collapse">
+<h2>Check property exists</h2>
+<pre>__isset(mixed $key) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>mixed</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method___set"></a><div class="element clickable method public method___set" data-toggle="collapse" data-target=".method___set .collapse">
+<h2>Set new property</h2>
+<pre>__set(mixed $key, mixed $val) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>mixed</code>
+</div>
+<div class="subelement argument">
+<h4>$val</h4>
+<code>mixed</code>
+</div>
+</div></div>
+</div>
+<a id="method___toString"></a><div class="element clickable method public method___toString" data-toggle="collapse" data-target=".method___toString .collapse">
+<h2>Rendering by echo call</h2>
+<pre>__toString() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method___unset"></a><div class="element clickable method public method___unset" data-toggle="collapse" data-target=".method___unset .collapse">
+<h2>Delete property</h2>
+<pre>__unset(mixed $key) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>mixed</code>
+</div>
+</div></div>
+</div>
+<a id="method_addAttribute"></a><div class="element clickable method public method_addAttribute" data-toggle="collapse" data-target=".method_addAttribute .collapse">
+<h2>Add attribute</h2>
+<pre>addAttribute(\numeric | string $key, mixed $val) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::addAttribute()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>\numeric</code><code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$val</h4>
+<code>mixed</code>
+</div>
+</div></div>
+</div>
+<a id="method_addAttributes"></a><div class="element clickable method public method_addAttributes" data-toggle="collapse" data-target=".method_addAttributes .collapse">
+<h2>Add array of attributes</h2>
+<pre>addAttributes(array $attributes) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::addAttributes()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$attributes</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a id="method_addBasePath"></a><div class="element clickable method public method_addBasePath" data-toggle="collapse" data-target=".method_addBasePath .collapse">
+<h2>Add base path
+Proxied to engine</h2>
+<pre>addBasePath(string $path, string $classPrefix) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$classPrefix</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
+</div></div>
+</div>
+<a id="method_addBlockChild"></a><div class="element clickable method public method_addBlockChild" data-toggle="collapse" data-target=".method_addBlockChild .collapse">
+<h2>Add single child block</h2>
+<pre>addBlockChild(string | <a href="../classes/Core_View_Block.html">\Core_View_Block</a> $child, $placement) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$child</h4>
+<code>string</code><code><a href="../classes/Core_View_Block.html">\Core_View_Block</a></code>
+</div>
+<div class="subelement argument"><h4>$placement</h4></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code></th>
+<td>If not found</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
+</div></div>
+</div>
+<a id="method_addBlockChilds"></a><div class="element clickable method public method_addBlockChilds" data-toggle="collapse" data-target=".method_addBlockChilds .collapse">
+<h2>Add childs blocks</h2>
+<pre>addBlockChilds(array $childs, $placement) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$childs</h4>
+<code>array</code>
+</div>
+<div class="subelement argument"><h4>$placement</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
+</div></div>
+</div>
+<a id="method_assign"></a><div class="element clickable method public method_assign" data-toggle="collapse" data-target=".method_assign .collapse">
+<h2>Assign propert(y|ies)</h2>
+<pre>assign(mixed $spec, mixed $value) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$spec</h4>
+<code>mixed</code>
+</div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
+</div></div>
+</div>
+<a id="method_clearVars"></a><div class="element clickable method public method_clearVars" data-toggle="collapse" data-target=".method_clearVars .collapse">
+<h2>Clear all properties</h2>
+<pre>clearVars() : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
+</div></div>
+</div>
+<a id="method_delAttribute"></a><div class="element clickable method public method_delAttribute" data-toggle="collapse" data-target=".method_delAttribute .collapse">
+<h2>Delete attribute</h2>
+<pre>delAttribute(\numeric | string $key) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::delAttribute()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>\numeric</code><code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_delAttributes"></a><div class="element clickable method public method_delAttributes" data-toggle="collapse" data-target=".method_delAttributes .collapse">
+<h2>Delete array of attributes</h2>
+<pre>delAttributes(array $keys) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::delAttributes()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$keys</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a id="method_delBlockChild"></a><div class="element clickable method public method_delBlockChild" data-toggle="collapse" data-target=".method_delBlockChild .collapse">
+<h2>Delete block from childs</h2>
+<pre>delBlockChild(string $name) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
+</div></div>
+</div>
+<a id="method_getAttribute"></a><div class="element clickable method public method_getAttribute" data-toggle="collapse" data-target=".method_getAttribute .collapse">
+<h2>Get attribute</h2>
+<pre>getAttribute(\numeric | string $key) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::getAttribute()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>\numeric</code><code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_getAttributes"></a><div class="element clickable method public method_getAttributes" data-toggle="collapse" data-target=".method_getAttributes .collapse">
+<h2>Get all attributes</h2>
+<pre>getAttributes() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::getAttributes()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getBlockChild"></a><div class="element clickable method public method_getBlockChild" data-toggle="collapse" data-target=".method_getBlockChild .collapse">
+<h2>Get block by name</h2>
+<pre>getBlockChild(string $name) : null | <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code>
+</div>
+</div></div>
+</div>
+<a id="method_getBlockChilds"></a><div class="element clickable method public method_getBlockChilds" data-toggle="collapse" data-target=".method_getBlockChilds .collapse">
+<h2>Get childs blocks</h2>
+<pre>getBlockChilds($placement) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$placement</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getBlockName"></a><div class="element clickable method public method_getBlockName" data-toggle="collapse" data-target=".method_getBlockName .collapse">
+<h2>Get block name
+Create from class name if not defined</h2>
+<pre>getBlockName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getBlockParent"></a><div class="element clickable method public method_getBlockParent" data-toggle="collapse" data-target=".method_getBlockParent .collapse">
+<h2>Get parent block</h2>
+<pre>getBlockParent() : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
+</div></div>
+</div>
+<a id="method_getBlockPlacement"></a><div class="element clickable method public method_getBlockPlacement" data-toggle="collapse" data-target=".method_getBlockPlacement .collapse">
+<h2>Get block placement</h2>
+<pre>getBlockPlacement() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getCache"></a><div class="element clickable method public method_getCache" data-toggle="collapse" data-target=".method_getCache .collapse">
+<h2>Get cache object</h2>
+<pre>getCache() : \Zend_Cache_Core</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Cache_Core</code></div>
+</div></div>
+</div>
+<a id="method_getCacheId"></a><div class="element clickable method public method_getCacheId" data-toggle="collapse" data-target=".method_getCacheId .collapse">
+<h2>Generate cache id</h2>
+<pre>getCacheId() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getEngine"></a><div class="element clickable method public method_getEngine" data-toggle="collapse" data-target=".method_getEngine .collapse">
+<h2>Get rendering core engine</h2>
+<pre>getEngine() : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
+</div></div>
+</div>
+<a id="method_getLogger"></a><div class="element clickable method public method_getLogger" data-toggle="collapse" data-target=".method_getLogger .collapse">
+<h2>Gets logger instance</h2>
+<pre>getLogger() : \Zend_Log</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Log</code></div>
+</div></div>
+</div>
+<a id="method_getRequest"></a><div class="element clickable method public method_getRequest" data-toggle="collapse" data-target=".method_getRequest .collapse">
+<h2>Get front controller request object</h2>
+<pre>getRequest() : \Zend_Controller_Request_Http</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Controller_Request_Http</code></div>
+</div></div>
+</div>
+<a id="method_getResponse"></a><div class="element clickable method public method_getResponse" data-toggle="collapse" data-target=".method_getResponse .collapse">
+<h2>Get front controller response</h2>
+<pre>getResponse() : \Zend_Controller_Response_Abstract</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Controller_Response_Abstract</code></div>
+</div></div>
+</div>
+<a id="method_getScriptName"></a><div class="element clickable method public method_getScriptName" data-toggle="collapse" data-target=".method_getScriptName .collapse">
+<h2>Get script name</h2>
+<pre>getScriptName() : null | string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_getScriptPaths"></a><div class="element clickable method public method_getScriptPaths" data-toggle="collapse" data-target=".method_getScriptPaths .collapse">
+<h2>Get search script paths</h2>
+<pre>getScriptPaths() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_hasAttribute"></a><div class="element clickable method public method_hasAttribute" data-toggle="collapse" data-target=".method_hasAttribute .collapse">
+<h2>Check for has attribute</h2>
+<pre>hasAttribute(\numeric | string $key) : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::hasAttribute()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>\numeric</code><code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_hasAttributes"></a><div class="element clickable method public method_hasAttributes" data-toggle="collapse" data-target=".method_hasAttributes .collapse">
+<h2>Check for has all attributes</h2>
+<pre>hasAttributes(array $keys) : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::hasAttributes()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$keys</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_init"></a><div class="element clickable method public method_init" data-toggle="collapse" data-target=".method_init .collapse">
+<h2>Extensions initialize method</h2>
+<pre>init() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_isCacheable"></a><div class="element clickable method public method_isCacheable" data-toggle="collapse" data-target=".method_isCacheable .collapse">
+<h2>Check if localy cache s enabled</h2>
+<pre>isCacheable() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_isRendered"></a><div class="element clickable method public method_isRendered" data-toggle="collapse" data-target=".method_isRendered .collapse">
+<h2>Check if rendered flag set</h2>
+<pre>isRendered() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_preRender"></a><div class="element clickable method public method_preRender" data-toggle="collapse" data-target=".method_preRender .collapse">
+<h2>Direct before render initializations</h2>
+<pre>preRender() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_render"></a><div class="element clickable method public method_render" data-toggle="collapse" data-target=".method_render .collapse">
+<h2>Render script, highlighter and blocks</h2>
+<pre>render(string $name) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>overrided script name</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_renderBlockChilds"></a><div class="element clickable method public method_renderBlockChilds" data-toggle="collapse" data-target=".method_renderBlockChilds .collapse">
+<h2>Render only blocks of specified placement</h2>
+<pre>renderBlockChilds(string $placement) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$placement</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_setAttribute"></a><div class="element clickable method public method_setAttribute" data-toggle="collapse" data-target=".method_setAttribute .collapse">
+<h2>Set attribute</h2>
+<pre>setAttribute(\numeric | string $key, mixed $val) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::setAttribute()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>\numeric</code><code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$val</h4>
+<code>mixed</code>
+</div>
+</div></div>
+</div>
+<a id="method_setAttributes"></a><div class="element clickable method public method_setAttributes" data-toggle="collapse" data-target=".method_setAttributes .collapse">
+<h2>Set array of attributes at once</h2>
+<pre>setAttributes(array $attributes) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::setAttributes()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$attributes</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a id="method_setBasePath"></a><div class="element clickable method public method_setBasePath" data-toggle="collapse" data-target=".method_setBasePath .collapse">
+<h2>Set base path
+Proxied to engine</h2>
+<pre>setBasePath(string $path, string $classPrefix) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$classPrefix</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
+</div></div>
+</div>
+<a id="method_setBlockChilds"></a><div class="element clickable method public method_setBlockChilds" data-toggle="collapse" data-target=".method_setBlockChilds .collapse">
+<h2>Set childs blocks</h2>
+<pre>setBlockChilds(array $childs, $placement) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$childs</h4>
+<code>array</code>
+</div>
+<div class="subelement argument"><h4>$placement</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
+</div></div>
+</div>
+<a id="method_setBlockName"></a><div class="element clickable method public method_setBlockName" data-toggle="collapse" data-target=".method_setBlockName .collapse">
+<h2>Set block name</h2>
+<pre>setBlockName(string $name) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
+</div></div>
+</div>
+<a id="method_setBlockParent"></a><div class="element clickable method public method_setBlockParent" data-toggle="collapse" data-target=".method_setBlockParent .collapse">
+<h2>Set parent block</h2>
+<pre>setBlockParent(\Core_Block_View $parent) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$parent</h4>
+<code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
+</div></div>
+</div>
+<a id="method_setBlockPlacement"></a><div class="element clickable method public method_setBlockPlacement" data-toggle="collapse" data-target=".method_setBlockPlacement .collapse">
+<h2>Set block placement relative to arent</h2>
+<pre>setBlockPlacement(string $placement) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$placement</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
+</div></div>
+</div>
+<a id="method_setCache"></a><div class="element clickable method public method_setCache" data-toggle="collapse" data-target=".method_setCache .collapse">
+<h2>Set new cache object</h2>
+<pre>setCache(\Zend_Cache_Core $core) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$core</h4>
+<code>\Zend_Cache_Core</code>
+</div>
+</div></div>
+</div>
+<a id="method_setCacheable"></a><div class="element clickable method public method_setCacheable" data-toggle="collapse" data-target=".method_setCacheable .collapse">
+<h2>Set local use cache</h2>
+<pre>setCacheable(string $flag) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
+</div></div>
+</div>
+<a id="method_setLogger"></a><div class="element clickable method public method_setLogger" data-toggle="collapse" data-target=".method_setLogger .collapse">
+<h2>Set new logger instance</h2>
+<pre>setLogger(array | \Zend_Log $logger) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$logger</h4>
+<code>array</code><code>\Zend_Log</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
+</div></div>
+</div>
+<a id="method_setOptions"></a><div class="element clickable method public method_setOptions" data-toggle="collapse" data-target=".method_setOptions .collapse">
+<h2>Set all options at once</h2>
+<pre>setOptions(array $options) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
+</div></div>
+</div>
+<a id="method_setRendered"></a><div class="element clickable method public method_setRendered" data-toggle="collapse" data-target=".method_setRendered .collapse">
+<h2>Set rendered flag</h2>
+<pre>setRendered(boolean $flag) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>boolean</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
+</div></div>
+</div>
+<a id="method_setScriptName"></a><div class="element clickable method public method_setScriptName" data-toggle="collapse" data-target=".method_setScriptName .collapse">
+<h2>Set new script name</h2>
+<pre>setScriptName(string $name) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
+</div></div>
+</div>
+<a id="method_setScriptPath"></a><div class="element clickable method public method_setScriptPath" data-toggle="collapse" data-target=".method_setScriptPath .collapse">
+<h2>Set script search path
+Proxied to engine</h2>
+<pre>setScriptPath(string $path) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
+</div></div>
+</div>
+<a id="method_toArray"></a><div class="element clickable method public method_toArray" data-toggle="collapse" data-target=".method_toArray .collapse">
+<h2>Converts all variables to array representation</h2>
+<pre>toArray() : \array();</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\array();</code></div>
+</div></div>
+</div>
+<a id="method_toHtmlAttributes"></a><div class="element clickable method public method_toHtmlAttributes" data-toggle="collapse" data-target=".method_toHtmlAttributes .collapse">
+<h2>Render attributes to use in html/xml tags</h2>
+<pre>toHtmlAttributes() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::toHtmlAttributes()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__cacheId"></a><div class="element clickable method protected method__cacheId" data-toggle="collapse" data-target=".method__cacheId .collapse">
+<h2>Generate cache id</h2>
+<pre>_cacheId() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__cacheLoad"></a><div class="element clickable method protected method__cacheLoad" data-toggle="collapse" data-target=".method__cacheLoad .collapse">
+<h2>Helper for load cache record data</h2>
+<pre>_cacheLoad(string $id) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method__cacheSave"></a><div class="element clickable method protected method__cacheSave" data-toggle="collapse" data-target=".method__cacheSave .collapse">
+<h2>Helper for save cache record data</h2>
+<pre>_cacheSave(mixed $data, string $id) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>mixed</code>
+</div>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method__cacheTest"></a><div class="element clickable method protected method__cacheTest" data-toggle="collapse" data-target=".method__cacheTest .collapse">
+<h2>Helper for test cache record exists</h2>
+<pre>_cacheTest(string $id) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method__findAndRenderBlock"></a><div class="element clickable method protected method__findAndRenderBlock" data-toggle="collapse" data-target=".method__findAndRenderBlock .collapse">
+<h2>Try to render 'BLOCK' strategy</h2>
+<pre>_findAndRenderBlock() : boolean | string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code><code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method__getBlockNames"></a><div class="element clickable method protected method__getBlockNames" data-toggle="collapse" data-target=".method__getBlockNames .collapse">
+<h2>Get block name variants for loader</h2>
+<pre>_getBlockNames() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method__getScriptFile"></a><div class="element clickable method protected method__getScriptFile" data-toggle="collapse" data-target=".method__getScriptFile .collapse">
+<h2>Search script file</h2>
+<pre>_getScriptFile() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__log"></a><div class="element clickable method protected method__log" data-toggle="collapse" data-target=".method__log .collapse">
+<h2>Add log message</h2>
+<pre>_log(string $message, string $priority) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$message</h4>
+<code>string</code><p>Log message</p></div>
+<div class="subelement argument">
+<h4>$priority</h4>
+<code>string</code><p>Log priority (message status)</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__attributes"> </a><div class="element clickable property protected property__attributes" data-toggle="collapse" data-target=".property__attributes .collapse">
+<h2></h2>
+<pre>$_attributes : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::$$_attributes</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__blockAvailablePlacements"> </a><div class="element clickable property protected property__blockAvailablePlacements" data-toggle="collapse" data-target=".property__blockAvailablePlacements .collapse">
+<h2></h2>
+<pre>$_blockAvailablePlacements : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__blockChilds"> </a><div class="element clickable property protected property__blockChilds" data-toggle="collapse" data-target=".property__blockChilds .collapse">
+<h2></h2>
+<pre>$_blockChilds : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__blockName"> </a><div class="element clickable property protected property__blockName" data-toggle="collapse" data-target=".property__blockName .collapse">
+<h2></h2>
+<pre>$_blockName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__blockParent"> </a><div class="element clickable property protected property__blockParent" data-toggle="collapse" data-target=".property__blockParent .collapse">
+<h2></h2>
+<pre>$_blockParent : null | <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__blockPlacment"> </a><div class="element clickable property protected property__blockPlacment" data-toggle="collapse" data-target=".property__blockPlacment .collapse">
+<h2></h2>
+<pre>$_blockPlacment : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__cache"> </a><div class="element clickable property protected property__cache" data-toggle="collapse" data-target=".property__cache .collapse">
+<h2></h2>
+<pre>$_cache : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__cacheable"> </a><div class="element clickable property protected property__cacheable" data-toggle="collapse" data-target=".property__cacheable .collapse">
+<h2></h2>
+<pre>$_cacheable : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__engine"> </a><div class="element clickable property protected property__engine" data-toggle="collapse" data-target=".property__engine .collapse">
+<h2></h2>
+<pre>$_engine : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__logger"> </a><div class="element clickable property protected property__logger" data-toggle="collapse" data-target=".property__logger .collapse">
+<h2></h2>
+<pre>$_logger : \Zend_Log</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__rendered"> </a><div class="element clickable property protected property__rendered" data-toggle="collapse" data-target=".property__rendered .collapse">
+<h2></h2>
+<pre>$_rendered : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__scriptName"> </a><div class="element clickable property protected property__scriptName" data-toggle="collapse" data-target=".property__scriptName .collapse">
+<h2></h2>
+<pre>$_scriptName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_BLOCK_CACHEMANAGER_KEY"> </a><div class="element clickable constant  constant_BLOCK_CACHEMANAGER_KEY" data-toggle="collapse" data-target=".constant_BLOCK_CACHEMANAGER_KEY .collapse">
+<h2>Cache manager place key</h2>
+<pre>BLOCK_CACHEMANAGER_KEY </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_BLOCK_DUMMY"> </a><div class="element clickable constant  constant_BLOCK_DUMMY" data-toggle="collapse" data-target=".constant_BLOCK_DUMMY .collapse">
+<h2>Dummy string, uses fron no script file required renreds</h2>
+<pre>BLOCK_DUMMY </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_BLOCK_PLACEMENT_AFTER"> </a><div class="element clickable constant  constant_BLOCK_PLACEMENT_AFTER" data-toggle="collapse" data-target=".constant_BLOCK_PLACEMENT_AFTER .collapse">
+<h2>BLOCK_PLACEMENT_AFTER</h2>
+<pre>BLOCK_PLACEMENT_AFTER </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_BLOCK_PLACEMENT_BEFORE"> </a><div class="element clickable constant  constant_BLOCK_PLACEMENT_BEFORE" data-toggle="collapse" data-target=".constant_BLOCK_PLACEMENT_BEFORE .collapse">
+<h2>BLOCK_PLACEMENT_BEFORE</h2>
+<pre>BLOCK_PLACEMENT_BEFORE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2012-12-14T14:55:09+02:00.<br></footer></div>
+</div>
+</body>
+</html>

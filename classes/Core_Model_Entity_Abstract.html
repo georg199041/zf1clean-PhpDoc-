@@ -1,0 +1,477 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \Core_Model_Entity_Abstract</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Zend.html"><i class="icon-folder-open"></i> Zend</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">466</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">7</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___call" title="__call :: Methodical call all methotds"><span class="description">Methodical call all methotds</span><pre>__call()</pre></a></li>
+<li class="method public "><a href="#method___construct" title="__construct :: Constructor"><span class="description">Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___get" title="__get :: Alias of get"><span class="description">Alias of get</span><pre>__get()</pre></a></li>
+<li class="method public "><a href="#method___isset" title="__isset :: Alias of has method"><span class="description">Alias of has method</span><pre>__isset()</pre></a></li>
+<li class="method public "><a href="#method___set" title="__set :: Alias of set"><span class="description">Alias of set</span><pre>__set()</pre></a></li>
+<li class="method public "><a href="#method___unset" title="__unset :: Alias of uns"><span class="description">Alias of uns</span><pre>__unset()</pre></a></li>
+<li class="method public "><a href="#method_delete" title="delete :: Delete entity"><span class="description">Delete entity</span><pre>delete()</pre></a></li>
+<li class="method public "><a href="#method_fill" title="fill :: Fill entity data"><span class="description">Fill entity data</span><pre>fill()</pre></a></li>
+<li class="method public "><a href="#method_getCollection" title="getCollection :: Get parent collection if exists"><span class="description">Get parent collection if exists</span><pre>getCollection()</pre></a></li>
+<li class="method public "><a href="#method_getMapper" title="getMapper :: Get mapper for self-operations"><span class="description">Get mapper for self-operations</span><pre>getMapper()</pre></a></li>
+<li class="method public "><a href="#method_offsetExists" title="offsetExists :: Alias of has method
+Required by ArrayAccess"><span class="description">Alias of has method
+Required by ArrayAccess</span><pre>offsetExists()</pre></a></li>
+<li class="method public "><a href="#method_offsetGet" title="offsetGet :: Alias of get
+Required by ArrayAccess"><span class="description">Alias of get
+Required by ArrayAccess</span><pre>offsetGet()</pre></a></li>
+<li class="method public "><a href="#method_offsetSet" title="offsetSet :: Alias of set
+Required by ArrayAccess"><span class="description">Alias of set
+Required by ArrayAccess</span><pre>offsetSet()</pre></a></li>
+<li class="method public "><a href="#method_offsetUnset" title="offsetUnset :: Alias of uns
+Required by ArrayAccess"><span class="description">Alias of uns
+Required by ArrayAccess</span><pre>offsetUnset()</pre></a></li>
+<li class="method public "><a href="#method_save" title="save :: Save entity"><span class="description">Save entity</span><pre>save()</pre></a></li>
+<li class="method public "><a href="#method_setCollection" title="setCollection :: Set parent collection or reset collection property"><span class="description">Set parent collection or reset collection property</span><pre>setCollection()</pre></a></li>
+<li class="method public "><a href="#method_setMapper" title="setMapper :: Set mapper for self-operations"><span class="description">Set mapper for self-operations</span><pre>setMapper()</pre></a></li>
+<li class="method public "><a href="#method_toArray" title="toArray :: Converts object to Array representation"><span class="description">Converts object to Array representation</span><pre>toArray()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method__del" title="_del :: Internal deleter"><span class="description">Internal deleter</span><pre>_del()</pre></a></li>
+<li class="method protected "><a href="#method__get" title="_get :: Internal getter"><span class="description">Internal getter</span><pre>_get()</pre></a></li>
+<li class="method protected "><a href="#method__has" title="_has :: Internal checker"><span class="description">Internal checker</span><pre>_has()</pre></a></li>
+<li class="method protected "><a href="#method__set" title="_set :: Internal setter"><span class="description">Internal setter</span><pre>_set()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property__collection" title="$_collection :: Parent collection object"><span class="description"></span><pre>$_collection</pre></a></li>
+<li class="property protected "><a href="#property__data" title="$_data :: Data container"><span class="description"></span><pre>$_data</pre></a></li>
+<li class="property protected "><a href="#property__mapper" title="$_mapper :: Mapper container"><span class="description"></span><pre>$_mapper</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\Core_Model_Entity_Abstract"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Core_Model_Entity_Abstract.html">Core_Model_Entity_Abstract</a>
+</li>
+</ul>
+<div class="element class"><div class="details">
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___call"></a><div class="element clickable method public method___call" data-toggle="collapse" data-target=".method___call .collapse">
+<h2>Methodical call all methotds</h2>
+<pre>__call(string $method, mixed $arguments) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$arguments</h4>
+<code>mixed</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Constructor</h2>
+<pre>__construct(array $data) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code><p>Initial data of object</p></div>
+</div></div>
+</div>
+<a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
+<h2>Alias of get</h2>
+<pre>__get(mixed $offset) : mixed | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$offset</h4>
+<code>mixed</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method___isset"></a><div class="element clickable method public method___isset" data-toggle="collapse" data-target=".method___isset .collapse">
+<h2>Alias of has method</h2>
+<pre>__isset(mixed $offset) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$offset</h4>
+<code>mixed</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method___set"></a><div class="element clickable method public method___set" data-toggle="collapse" data-target=".method___set .collapse">
+<h2>Alias of set</h2>
+<pre>__set(mixed $offset, mixed $value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$offset</h4>
+<code>mixed</code>
+</div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code>
+</div>
+</div></div>
+</div>
+<a id="method___unset"></a><div class="element clickable method public method___unset" data-toggle="collapse" data-target=".method___unset .collapse">
+<h2>Alias of uns</h2>
+<pre>__unset(mixed $offset) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$offset</h4>
+<code>mixed</code>
+</div>
+</div></div>
+</div>
+<a id="method_delete"></a><div class="element clickable method public method_delete" data-toggle="collapse" data-target=".method_delete .collapse">
+<h2>Delete entity</h2>
+<pre>delete() : <a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></code></div>
+</div></div>
+</div>
+<a id="method_fill"></a><div class="element clickable method public method_fill" data-toggle="collapse" data-target=".method_fill .collapse">
+<h2>Fill entity data</h2>
+<pre>fill(array $data) : <a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></code></div>
+</div></div>
+</div>
+<a id="method_getCollection"></a><div class="element clickable method public method_getCollection" data-toggle="collapse" data-target=".method_getCollection .collapse">
+<h2>Get parent collection if exists</h2>
+<pre>getCollection() : null | <a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code><a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></code>
+</div>
+</div></div>
+</div>
+<a id="method_getMapper"></a><div class="element clickable method public method_getMapper" data-toggle="collapse" data-target=".method_getMapper .collapse">
+<h2>Get mapper for self-operations</h2>
+<pre>getMapper() : <a href="../classes/Core_Model_Mapper_Abstract.html">\Core_Model_Mapper_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Model_Mapper_Abstract.html">\Core_Model_Mapper_Abstract</a></code></div>
+</div></div>
+</div>
+<a id="method_offsetExists"></a><div class="element clickable method public method_offsetExists" data-toggle="collapse" data-target=".method_offsetExists .collapse">
+<h2>Alias of has method
+Required by ArrayAccess</h2>
+<pre>offsetExists($offset) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>(non-PHPdoc)</p></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="">\ArrayAccess::offsetExists()</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$offset</h4></div>
+</div></div>
+</div>
+<a id="method_offsetGet"></a><div class="element clickable method public method_offsetGet" data-toggle="collapse" data-target=".method_offsetGet .collapse">
+<h2>Alias of get
+Required by ArrayAccess</h2>
+<pre>offsetGet(mixed $offset) : mixed | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>(non-PHPdoc)</p></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="">\ArrayAccess::offsetGet()</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$offset</h4>
+<code>mixed</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_offsetSet"></a><div class="element clickable method public method_offsetSet" data-toggle="collapse" data-target=".method_offsetSet .collapse">
+<h2>Alias of set
+Required by ArrayAccess</h2>
+<pre>offsetSet($offset, $value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>(non-PHPdoc)</p></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="">\ArrayAccess::offsetSet()</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$offset</h4></div>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_offsetUnset"></a><div class="element clickable method public method_offsetUnset" data-toggle="collapse" data-target=".method_offsetUnset .collapse">
+<h2>Alias of uns
+Required by ArrayAccess</h2>
+<pre>offsetUnset($offset) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>(non-PHPdoc)</p></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="">\ArrayAccess::offsetUnset()</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$offset</h4></div>
+</div></div>
+</div>
+<a id="method_save"></a><div class="element clickable method public method_save" data-toggle="collapse" data-target=".method_save .collapse">
+<h2>Save entity</h2>
+<pre>save() : <a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></code></div>
+</div></div>
+</div>
+<a id="method_setCollection"></a><div class="element clickable method public method_setCollection" data-toggle="collapse" data-target=".method_setCollection .collapse">
+<h2>Set parent collection or reset collection property</h2>
+<pre>setCollection(\Core_Model_Collection_Abstract $collection) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$collection</h4>
+<code><a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></code>
+</div>
+</div></div>
+</div>
+<a id="method_setMapper"></a><div class="element clickable method public method_setMapper" data-toggle="collapse" data-target=".method_setMapper .collapse">
+<h2>Set mapper for self-operations</h2>
+<pre>setMapper(\Core_Model_Mapper_Abstract $mapper) : <a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mapper</h4>
+<code><a href="../classes/Core_Model_Mapper_Abstract.html">\Core_Model_Mapper_Abstract</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></code></div>
+</div></div>
+</div>
+<a id="method_toArray"></a><div class="element clickable method public method_toArray" data-toggle="collapse" data-target=".method_toArray .collapse">
+<h2>Converts object to Array representation</h2>
+<pre>toArray() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method__del"></a><div class="element clickable method protected method__del" data-toggle="collapse" data-target=".method__del .collapse">
+<h2>Internal deleter</h2>
+<pre>_del(string $key) : <a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></code></div>
+</div></div>
+</div>
+<a id="method__get"></a><div class="element clickable method protected method__get" data-toggle="collapse" data-target=".method__get .collapse">
+<h2>Internal getter</h2>
+<pre>_get(string $key) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method__has"></a><div class="element clickable method protected method__has" data-toggle="collapse" data-target=".method__has .collapse">
+<h2>Internal checker</h2>
+<pre>_has(string $key) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method__set"></a><div class="element clickable method protected method__set" data-toggle="collapse" data-target=".method__set .collapse">
+<h2>Internal setter</h2>
+<pre>_set(string $key, mixed $val) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$val</h4>
+<code>mixed</code>
+</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__collection"> </a><div class="element clickable property protected property__collection" data-toggle="collapse" data-target=".property__collection .collapse">
+<h2></h2>
+<pre>$_collection : <a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__data"> </a><div class="element clickable property protected property__data" data-toggle="collapse" data-target=".property__data .collapse">
+<h2></h2>
+<pre>$_data : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__mapper"> </a><div class="element clickable property protected property__mapper" data-toggle="collapse" data-target=".property__mapper .collapse">
+<h2></h2>
+<pre>$_mapper : <a href="../classes/Core_Model_Mapper_Abstract.html">\Core_Model_Mapper_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2012-12-14T14:55:09+02:00.<br></footer></div>
+</div>
+</body>
+</html>

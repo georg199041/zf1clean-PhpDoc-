@@ -1,0 +1,767 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \Core_Model_Mapper_Abstract</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Zend.html"><i class="icon-folder-open"></i> Zend</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">466</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">7</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_create" title="create :: Create entity object"><span class="description">Create entity object</span><pre>create()</pre></a></li>
+<li class="method public "><a href="#method_createCollection" title="createCollection :: Create collection object"><span class="description">Create collection object</span><pre>createCollection()</pre></a></li>
+<li class="method public "><a href="#method_delete" title="delete :: Delete entity"><span class="description">Delete entity</span><pre>delete()</pre></a></li>
+<li class="method public "><a href="#method_deleteCollection" title="deleteCollection :: Delete all collection entities"><span class="description">Delete all collection entities</span><pre>deleteCollection()</pre></a></li>
+<li class="method public "><a href="#method_fetchAll" title="fetchAll :: Fetch collection"><span class="description">Fetch collection</span><pre>fetchAll()</pre></a></li>
+<li class="method public "><a href="#method_fetchBranch" title="fetchBranch :: "><span class="description">fetchBranch()
+        </span><pre>fetchBranch()</pre></a></li>
+<li class="method public "><a href="#method_fetchCount" title="fetchCount :: Fetch total count of entities from data source"><span class="description">Fetch total count of entities from data source</span><pre>fetchCount()</pre></a></li>
+<li class="method public "><a href="#method_fetchPrimaryAll" title="fetchPrimaryAll :: Fetch only pk fields"><span class="description">Fetch only pk fields</span><pre>fetchPrimaryAll()</pre></a></li>
+<li class="method public "><a href="#method_fetchRow" title="fetchRow :: Fetch single row"><span class="description">Fetch single row</span><pre>fetchRow()</pre></a></li>
+<li class="method public "><a href="#method_fetchTree" title="fetchTree :: Fetch rows for tree like data structure"><span class="description">Fetch rows for tree like data structure</span><pre>fetchTree()</pre></a></li>
+<li class="method public "><a href="#method_find" title="find :: Find entity by pk value"><span class="description">Find entity by pk value</span><pre>find()</pre></a></li>
+<li class="method public "><a href="#method_findCollection" title="findCollection :: Find collection by pk values"><span class="description">Find collection by pk values</span><pre>findCollection()</pre></a></li>
+<li class="method public "><a href="#method_formatBranch" title="formatBranch :: "><span class="description">formatBranch()
+        </span><pre>formatBranch()</pre></a></li>
+<li class="method public "><a href="#method_formatTree" title="formatTree :: Post format tree structure"><span class="description">Post format tree structure</span><pre>formatTree()</pre></a></li>
+<li class="method public "><a href="#method_getClassName" title="getClassName :: Get current class name"><span class="description">Get current class name</span><pre>getClassName()</pre></a></li>
+<li class="method public "><a href="#method_getCollectionClassName" title="getCollectionClassName :: Get collection class name"><span class="description">Get collection class name</span><pre>getCollectionClassName()</pre></a></li>
+<li class="method public "><a href="#method_getEntityClassName" title="getEntityClassName :: Get entity class name"><span class="description">Get entity class name</span><pre>getEntityClassName()</pre></a></li>
+<li class="method public "><a href="#method_getSource" title="getSource :: Get source object"><span class="description">Get source object</span><pre>getSource()</pre></a></li>
+<li class="method public "><a href="#method_getSourceClassName" title="getSourceClassName :: Get source class name"><span class="description">Get source class name</span><pre>getSourceClassName()</pre></a></li>
+<li class="method public "><a href="#method_pageToOffset" title="pageToOffset :: Convert page number to offset value for fetch operations"><span class="description">Convert page number to offset value for fetch operations</span><pre>pageToOffset()</pre></a></li>
+<li class="method public "><a href="#method_save" title="save :: Save entity"><span class="description">Save entity</span><pre>save()</pre></a></li>
+<li class="method public "><a href="#method_saveCollection" title="saveCollection :: Save all collection entities"><span class="description">Save all collection entities</span><pre>saveCollection()</pre></a></li>
+<li class="method public "><a href="#method_setClassName" title="setClassName :: Set new current class name"><span class="description">Set new current class name</span><pre>setClassName()</pre></a></li>
+<li class="method public "><a href="#method_setCollectionClassName" title="setCollectionClassName :: Set new collection class name"><span class="description">Set new collection class name</span><pre>setCollectionClassName()</pre></a></li>
+<li class="method public "><a href="#method_setEntityClassName" title="setEntityClassName :: Set new entity class name"><span class="description">Set new entity class name</span><pre>setEntityClassName()</pre></a></li>
+<li class="method public "><a href="#method_setSource" title="setSource :: Set source object"><span class="description">Set source object</span><pre>setSource()</pre></a></li>
+<li class="method public "><a href="#method_setSourceClassName" title="setSourceClassName :: Set new source class name"><span class="description">Set new source class name</span><pre>setSourceClassName()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method__afterDeleteRow" title="_afterDeleteRow :: Postprocess delete $entity"><span class="description">Postprocess delete $entity</span><pre>_afterDeleteRow()</pre></a></li>
+<li class="method protected "><a href="#method__afterDeleteRows" title="_afterDeleteRows :: Postprocess delete $collection"><span class="description">Postprocess delete $collection</span><pre>_afterDeleteRows()</pre></a></li>
+<li class="method protected "><a href="#method__afterFetchRow" title="_afterFetchRow :: Postprocess fetch $entity"><span class="description">Postprocess fetch $entity</span><pre>_afterFetchRow()</pre></a></li>
+<li class="method protected "><a href="#method__afterFetchRows" title="_afterFetchRows :: Postprocess fetch collection"><span class="description">Postprocess fetch collection</span><pre>_afterFetchRows()</pre></a></li>
+<li class="method protected "><a href="#method__afterSaveRow" title="_afterSaveRow :: Postprocess Save $entity"><span class="description">Postprocess Save $entity</span><pre>_afterSaveRow()</pre></a></li>
+<li class="method protected "><a href="#method__afterSaveRows" title="_afterSaveRows :: Postprocess Save $collection"><span class="description">Postprocess Save $collection</span><pre>_afterSaveRows()</pre></a></li>
+<li class="method protected "><a href="#method__beforeDeleteRow" title="_beforeDeleteRow :: Preprocess delete $entity"><span class="description">Preprocess delete $entity</span><pre>_beforeDeleteRow()</pre></a></li>
+<li class="method protected "><a href="#method__beforeDeleteRows" title="_beforeDeleteRows :: Preprocess delete $collection"><span class="description">Preprocess delete $collection</span><pre>_beforeDeleteRows()</pre></a></li>
+<li class="method protected "><a href="#method__beforeFetchRow" title="_beforeFetchRow :: Preprocess fetch $entity"><span class="description">Preprocess fetch $entity</span><pre>_beforeFetchRow()</pre></a></li>
+<li class="method protected "><a href="#method__beforeFetchRows" title="_beforeFetchRows :: Preprocess fetch collection"><span class="description">Preprocess fetch collection</span><pre>_beforeFetchRows()</pre></a></li>
+<li class="method protected "><a href="#method__beforeSaveRow" title="_beforeSaveRow :: Preprocess Save $entity"><span class="description">Preprocess Save $entity</span><pre>_beforeSaveRow()</pre></a></li>
+<li class="method protected "><a href="#method__beforeSaveRows" title="_beforeSaveRows :: Preprocess Save $collection"><span class="description">Preprocess Save $collection</span><pre>_beforeSaveRows()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property__className" title="$_className :: Instance class name"><span class="description"></span><pre>$_className</pre></a></li>
+<li class="property protected "><a href="#property__collectionClassName" title="$_collectionClassName :: Collection class name"><span class="description"></span><pre>$_collectionClassName</pre></a></li>
+<li class="property protected "><a href="#property__entityClassName" title="$_entityClassName :: Entity class name"><span class="description"></span><pre>$_entityClassName</pre></a></li>
+<li class="property protected "><a href="#property__primaryName" title="$_primaryName :: PK name"><span class="description"></span><pre>$_primaryName</pre></a></li>
+<li class="property protected "><a href="#property__source" title="$_source :: Source container"><span class="description"></span><pre>$_source</pre></a></li>
+<li class="property protected "><a href="#property__sourceClassName" title="$_sourceClassName :: Source class name"><span class="description"></span><pre>$_sourceClassName</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\Core_Model_Mapper_Abstract"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Core_Model_Mapper_Abstract.html">Core_Model_Mapper_Abstract</a>
+</li>
+</ul>
+<div class="element class"><div class="details">
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_create"></a><div class="element clickable method public method_create" data-toggle="collapse" data-target=".method_create .collapse">
+<h2>Create entity object</h2>
+<pre>create(array $data) : <a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></code></div>
+</div></div>
+</div>
+<a id="method_createCollection"></a><div class="element clickable method public method_createCollection" data-toggle="collapse" data-target=".method_createCollection .collapse">
+<h2>Create collection object</h2>
+<pre>createCollection(array $data) : <a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></code></div>
+</div></div>
+</div>
+<a id="method_delete"></a><div class="element clickable method public method_delete" data-toggle="collapse" data-target=".method_delete .collapse">
+<h2>Delete entity</h2>
+<pre>delete(\Core_Model_Entity_Abstract $entity) : <a href="../classes/Core_Model_Mapper_Abstract.html">\Core_Model_Mapper_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$entity</h4>
+<code><a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Model_Mapper_Abstract.html">\Core_Model_Mapper_Abstract</a></code></div>
+</div></div>
+</div>
+<a id="method_deleteCollection"></a><div class="element clickable method public method_deleteCollection" data-toggle="collapse" data-target=".method_deleteCollection .collapse">
+<h2>Delete all collection entities</h2>
+<pre>deleteCollection(\Core_Model_Collection_Abstract $collection) : <a href="../classes/Core_Model_Mapper_Abstract.html">\Core_Model_Mapper_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$collection</h4>
+<code><a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Model_Mapper_Abstract.html">\Core_Model_Mapper_Abstract</a></code></div>
+</div></div>
+</div>
+<a id="method_fetchAll"></a><div class="element clickable method public method_fetchAll" data-toggle="collapse" data-target=".method_fetchAll .collapse">
+<h2>Fetch collection</h2>
+<pre>fetchAll(array $where, string | array $order, integer $count, integer $offset) : <a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$where</h4>
+<code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$order</h4>
+<code>string</code><code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$count</h4>
+<code>integer</code>
+</div>
+<div class="subelement argument">
+<h4>$offset</h4>
+<code>integer</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></code></div>
+</div></div>
+</div>
+<a id="method_fetchBranch"></a><div class="element clickable method public method_fetchBranch" data-toggle="collapse" data-target=".method_fetchBranch .collapse">
+<h2>fetchBranch()
+        </h2>
+<pre>fetchBranch(array $where, $order, array $options) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$where</h4></div>
+<div class="subelement argument"><h4>$order</h4></div>
+<div class="subelement argument"><h4>$options</h4></div>
+</div></div>
+</div>
+<a id="method_fetchCount"></a><div class="element clickable method public method_fetchCount" data-toggle="collapse" data-target=".method_fetchCount .collapse">
+<h2>Fetch total count of entities from data source</h2>
+<pre>fetchCount(array $where) : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$where</h4>
+<code>array</code><p>[OPTIONAL] Where clause</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>integer</code>Total count of objects</div>
+</div></div>
+</div>
+<a id="method_fetchPrimaryAll"></a><div class="element clickable method public method_fetchPrimaryAll" data-toggle="collapse" data-target=".method_fetchPrimaryAll .collapse">
+<h2>Fetch only pk fields</h2>
+<pre>fetchPrimaryAll(array $where, string | array $order, integer $count, integer $offset) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$where</h4>
+<code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$order</h4>
+<code>string</code><code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$count</h4>
+<code>integer</code>
+</div>
+<div class="subelement argument">
+<h4>$offset</h4>
+<code>integer</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_fetchRow"></a><div class="element clickable method public method_fetchRow" data-toggle="collapse" data-target=".method_fetchRow .collapse">
+<h2>Fetch single row</h2>
+<pre>fetchRow(array $where, string | array $order) : null | <a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$where</h4>
+<code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$order</h4>
+<code>string</code><code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code><a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></code>
+</div>
+</div></div>
+</div>
+<a id="method_fetchTree"></a><div class="element clickable method public method_fetchTree" data-toggle="collapse" data-target=".method_fetchTree .collapse">
+<h2>Fetch rows for tree like data structure</h2>
+<pre>fetchTree(array $where, array | string $order, integer | null $depth, array $options) : <a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$where</h4>
+<code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$order</h4>
+<code>array</code><code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$depth</h4>
+<code>integer</code><code>null</code>
+</div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></code></div>
+</div></div>
+</div>
+<a id="method_find"></a><div class="element clickable method public method_find" data-toggle="collapse" data-target=".method_find .collapse">
+<h2>Find entity by pk value</h2>
+<pre>find(\numeric $id) : null | <a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>\numeric</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code><a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></code>
+</div>
+</div></div>
+</div>
+<a id="method_findCollection"></a><div class="element clickable method public method_findCollection" data-toggle="collapse" data-target=".method_findCollection .collapse">
+<h2>Find collection by pk values</h2>
+<pre>findCollection(array $idArray) : <a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$idArray</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></code></div>
+</div></div>
+</div>
+<a id="method_formatBranch"></a><div class="element clickable method public method_formatBranch" data-toggle="collapse" data-target=".method_formatBranch .collapse">
+<h2>formatBranch()
+        </h2>
+<pre>formatBranch($collection, $options) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$collection</h4></div>
+<div class="subelement argument"><h4>$options</h4></div>
+</div></div>
+</div>
+<a id="method_formatTree"></a><div class="element clickable method public method_formatTree" data-toggle="collapse" data-target=".method_formatTree .collapse">
+<h2>Post format tree structure</h2>
+<pre>formatTree(<a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a> $collection, array $options) : <a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$collection</h4>
+<code><a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></code>
+</div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></code></div>
+</div></div>
+</div>
+<a id="method_getClassName"></a><div class="element clickable method public method_getClassName" data-toggle="collapse" data-target=".method_getClassName .collapse">
+<h2>Get current class name</h2>
+<pre>getClassName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getCollectionClassName"></a><div class="element clickable method public method_getCollectionClassName" data-toggle="collapse" data-target=".method_getCollectionClassName .collapse">
+<h2>Get collection class name</h2>
+<pre>getCollectionClassName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getEntityClassName"></a><div class="element clickable method public method_getEntityClassName" data-toggle="collapse" data-target=".method_getEntityClassName .collapse">
+<h2>Get entity class name</h2>
+<pre>getEntityClassName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getSource"></a><div class="element clickable method public method_getSource" data-toggle="collapse" data-target=".method_getSource .collapse">
+<h2>Get source object</h2>
+<pre>getSource() : \Core_Model_Source_Abstract</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Core_Model_Source_Abstract</code>Source object</div>
+</div></div>
+</div>
+<a id="method_getSourceClassName"></a><div class="element clickable method public method_getSourceClassName" data-toggle="collapse" data-target=".method_getSourceClassName .collapse">
+<h2>Get source class name</h2>
+<pre>getSourceClassName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_pageToOffset"></a><div class="element clickable method public method_pageToOffset" data-toggle="collapse" data-target=".method_pageToOffset .collapse">
+<h2>Convert page number to offset value for fetch operations</h2>
+<pre>pageToOffset(null | integer $count, null | integer $page) : null | integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$count</h4>
+<code>null</code><code>integer</code><p>Count value for conversion</p></div>
+<div class="subelement argument">
+<h4>$page</h4>
+<code>null</code><code>integer</code><p>Page value for conversion</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code>integer</code>Converted value if $count and $page passed</div>
+</div></div>
+</div>
+<a id="method_save"></a><div class="element clickable method public method_save" data-toggle="collapse" data-target=".method_save .collapse">
+<h2>Save entity</h2>
+<pre>save(\Core_Model_Entity_Abstract $entity) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$entity</h4>
+<code><a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></code>
+</div>
+</div></div>
+</div>
+<a id="method_saveCollection"></a><div class="element clickable method public method_saveCollection" data-toggle="collapse" data-target=".method_saveCollection .collapse">
+<h2>Save all collection entities</h2>
+<pre>saveCollection(\Core_Model_Collection_Abstract $collection) : <a href="../classes/Core_Model_Mapper_Abstract.html">\Core_Model_Mapper_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$collection</h4>
+<code><a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Model_Mapper_Abstract.html">\Core_Model_Mapper_Abstract</a></code></div>
+</div></div>
+</div>
+<a id="method_setClassName"></a><div class="element clickable method public method_setClassName" data-toggle="collapse" data-target=".method_setClassName .collapse">
+<h2>Set new current class name</h2>
+<pre>setClassName(string $name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_setCollectionClassName"></a><div class="element clickable method public method_setCollectionClassName" data-toggle="collapse" data-target=".method_setCollectionClassName .collapse">
+<h2>Set new collection class name</h2>
+<pre>setCollectionClassName(string $name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_setEntityClassName"></a><div class="element clickable method public method_setEntityClassName" data-toggle="collapse" data-target=".method_setEntityClassName .collapse">
+<h2>Set new entity class name</h2>
+<pre>setEntityClassName(string $name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_setSource"></a><div class="element clickable method public method_setSource" data-toggle="collapse" data-target=".method_setSource .collapse">
+<h2>Set source object</h2>
+<pre>setSource(\Core_Model_Source_Interface $source) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$source</h4>
+<code>\Core_Model_Source_Abstract</code><p>Data source object</p></div>
+</div></div>
+</div>
+<a id="method_setSourceClassName"></a><div class="element clickable method public method_setSourceClassName" data-toggle="collapse" data-target=".method_setSourceClassName .collapse">
+<h2>Set new source class name</h2>
+<pre>setSourceClassName(string $name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method__afterDeleteRow"></a><div class="element clickable method protected method__afterDeleteRow" data-toggle="collapse" data-target=".method__afterDeleteRow .collapse">
+<h2>Postprocess delete $entity</h2>
+<pre>_afterDeleteRow(\Core_Model_Entity_Abstract $entity) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$entity</h4>
+<code><a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></code>
+</div>
+</div></div>
+</div>
+<a id="method__afterDeleteRows"></a><div class="element clickable method protected method__afterDeleteRows" data-toggle="collapse" data-target=".method__afterDeleteRows .collapse">
+<h2>Postprocess delete $collection</h2>
+<pre>_afterDeleteRows(\Core_Model_Collection_Abstract $collection) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$collection</h4>
+<code><a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></code>
+</div>
+</div></div>
+</div>
+<a id="method__afterFetchRow"></a><div class="element clickable method protected method__afterFetchRow" data-toggle="collapse" data-target=".method__afterFetchRow .collapse">
+<h2>Postprocess fetch $entity</h2>
+<pre>_afterFetchRow(\Core_Model_Entity_Abstract $entity) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$entity</h4>
+<code><a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></code>
+</div>
+</div></div>
+</div>
+<a id="method__afterFetchRows"></a><div class="element clickable method protected method__afterFetchRows" data-toggle="collapse" data-target=".method__afterFetchRows .collapse">
+<h2>Postprocess fetch collection</h2>
+<pre>_afterFetchRows(\Core_Model_Collection_Abstract $collection) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$collection</h4>
+<code><a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></code>
+</div>
+</div></div>
+</div>
+<a id="method__afterSaveRow"></a><div class="element clickable method protected method__afterSaveRow" data-toggle="collapse" data-target=".method__afterSaveRow .collapse">
+<h2>Postprocess Save $entity</h2>
+<pre>_afterSaveRow(\Core_Model_Entity_Abstract $entity) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$entity</h4>
+<code><a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></code>
+</div>
+</div></div>
+</div>
+<a id="method__afterSaveRows"></a><div class="element clickable method protected method__afterSaveRows" data-toggle="collapse" data-target=".method__afterSaveRows .collapse">
+<h2>Postprocess Save $collection</h2>
+<pre>_afterSaveRows(\Core_Model_Collection_Abstract $collection) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$collection</h4>
+<code><a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></code>
+</div>
+</div></div>
+</div>
+<a id="method__beforeDeleteRow"></a><div class="element clickable method protected method__beforeDeleteRow" data-toggle="collapse" data-target=".method__beforeDeleteRow .collapse">
+<h2>Preprocess delete $entity</h2>
+<pre>_beforeDeleteRow(\Core_Model_Entity_Abstract $entity) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$entity</h4>
+<code><a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></code>
+</div>
+</div></div>
+</div>
+<a id="method__beforeDeleteRows"></a><div class="element clickable method protected method__beforeDeleteRows" data-toggle="collapse" data-target=".method__beforeDeleteRows .collapse">
+<h2>Preprocess delete $collection</h2>
+<pre>_beforeDeleteRows(\Core_Model_Collection_Abstract $collection) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$collection</h4>
+<code><a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></code>
+</div>
+</div></div>
+</div>
+<a id="method__beforeFetchRow"></a><div class="element clickable method protected method__beforeFetchRow" data-toggle="collapse" data-target=".method__beforeFetchRow .collapse">
+<h2>Preprocess fetch $entity</h2>
+<pre>_beforeFetchRow(\Core_Model_Entity_Abstract $entity) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$entity</h4>
+<code><a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></code>
+</div>
+</div></div>
+</div>
+<a id="method__beforeFetchRows"></a><div class="element clickable method protected method__beforeFetchRows" data-toggle="collapse" data-target=".method__beforeFetchRows .collapse">
+<h2>Preprocess fetch collection</h2>
+<pre>_beforeFetchRows(\Core_Model_Collection_Abstract $collection) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$collection</h4>
+<code><a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></code>
+</div>
+</div></div>
+</div>
+<a id="method__beforeSaveRow"></a><div class="element clickable method protected method__beforeSaveRow" data-toggle="collapse" data-target=".method__beforeSaveRow .collapse">
+<h2>Preprocess Save $entity</h2>
+<pre>_beforeSaveRow(\Core_Model_Entity_Abstract $entity) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$entity</h4>
+<code><a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></code>
+</div>
+</div></div>
+</div>
+<a id="method__beforeSaveRows"></a><div class="element clickable method protected method__beforeSaveRows" data-toggle="collapse" data-target=".method__beforeSaveRows .collapse">
+<h2>Preprocess Save $collection</h2>
+<pre>_beforeSaveRows(\Core_Model_Collection_Abstract $collection) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$collection</h4>
+<code><a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></code>
+</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__className"> </a><div class="element clickable property protected property__className" data-toggle="collapse" data-target=".property__className .collapse">
+<h2></h2>
+<pre>$_className : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__collectionClassName"> </a><div class="element clickable property protected property__collectionClassName" data-toggle="collapse" data-target=".property__collectionClassName .collapse">
+<h2></h2>
+<pre>$_collectionClassName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__entityClassName"> </a><div class="element clickable property protected property__entityClassName" data-toggle="collapse" data-target=".property__entityClassName .collapse">
+<h2></h2>
+<pre>$_entityClassName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__primaryName"> </a><div class="element clickable property protected property__primaryName" data-toggle="collapse" data-target=".property__primaryName .collapse">
+<h2></h2>
+<pre>$_primaryName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__source"> </a><div class="element clickable property protected property__source" data-toggle="collapse" data-target=".property__source .collapse">
+<h2></h2>
+<pre>$_source : \Core_Model_Source</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__sourceClassName"> </a><div class="element clickable property protected property__sourceClassName" data-toggle="collapse" data-target=".property__sourceClassName .collapse">
+<h2></h2>
+<pre>$_sourceClassName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2012-12-14T14:55:10+02:00.<br></footer></div>
+</div>
+</body>
+</html>

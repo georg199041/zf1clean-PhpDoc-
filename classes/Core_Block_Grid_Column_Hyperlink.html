@@ -1,0 +1,1212 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \Core_Block_Grid_Column_Hyperlink</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Zend.html"><i class="icon-folder-open"></i> Zend</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">466</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">7</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public inherited"><a href="#method___construct" title="__construct :: "><span class="description">__construct()
+        </span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#method_addAttribute" title="addAttribute :: Add attribute"><span class="description">Add attribute</span><pre>addAttribute()</pre></a></li>
+<li class="method public inherited"><a href="#method_addAttributes" title="addAttributes :: Add array of attributes"><span class="description">Add array of attributes</span><pre>addAttributes()</pre></a></li>
+<li class="method public inherited"><a href="#method_delAttribute" title="delAttribute :: Delete attribute"><span class="description">Delete attribute</span><pre>delAttribute()</pre></a></li>
+<li class="method public inherited"><a href="#method_delAttributes" title="delAttributes :: Delete array of attributes"><span class="description">Delete array of attributes</span><pre>delAttributes()</pre></a></li>
+<li class="method public inherited"><a href="#method_getAttribute" title="getAttribute :: Get attribute"><span class="description">Get attribute</span><pre>getAttribute()</pre></a></li>
+<li class="method public inherited"><a href="#method_getAttributes" title="getAttributes :: Get all attributes"><span class="description">Get all attributes</span><pre>getAttributes()</pre></a></li>
+<li class="method public inherited"><a href="#method_getFilterableOptions" title="getFilterableOptions :: "><span class="description">getFilterableOptions()
+        </span><pre>getFilterableOptions()</pre></a></li>
+<li class="method public inherited"><a href="#method_getFilterableType" title="getFilterableType :: "><span class="description">getFilterableType()
+        </span><pre>getFilterableType()</pre></a></li>
+<li class="method public inherited"><a href="#method_getGrid" title="getGrid :: "><span class="description">getGrid()
+        </span><pre>getGrid()</pre></a></li>
+<li class="method public "><a href="#method_getLinkBindFields" title="getLinkBindFields :: "><span class="description">getLinkBindFields()
+        </span><pre>getLinkBindFields()</pre></a></li>
+<li class="method public "><a href="#method_getLinkOptions" title="getLinkOptions :: "><span class="description">getLinkOptions()
+        </span><pre>getLinkOptions()</pre></a></li>
+<li class="method public "><a href="#method_getLinkRoute" title="getLinkRoute :: "><span class="description">getLinkRoute()
+        </span><pre>getLinkRoute()</pre></a></li>
+<li class="method public "><a href="#method_getLinkStaticText" title="getLinkStaticText :: "><span class="description">getLinkStaticText()
+        </span><pre>getLinkStaticText()</pre></a></li>
+<li class="method public "><a href="#method_getLinkStaticUrl" title="getLinkStaticUrl :: "><span class="description">getLinkStaticUrl()
+        </span><pre>getLinkStaticUrl()</pre></a></li>
+<li class="method public "><a href="#method_getLinkTarget" title="getLinkTarget :: "><span class="description">getLinkTarget()
+        </span><pre>getLinkTarget()</pre></a></li>
+<li class="method public inherited"><a href="#method_getName" title="getName :: "><span class="description">getName()
+        </span><pre>getName()</pre></a></li>
+<li class="method public inherited"><a href="#method_getRow" title="getRow :: "><span class="description">getRow()
+        </span><pre>getRow()</pre></a></li>
+<li class="method public inherited"><a href="#method_getTitle" title="getTitle :: "><span class="description">getTitle()
+        </span><pre>getTitle()</pre></a></li>
+<li class="method public inherited"><a href="#method_getValue" title="getValue :: "><span class="description">getValue()
+        </span><pre>getValue()</pre></a></li>
+<li class="method public inherited"><a href="#method_getView" title="getView :: "><span class="description">getView()
+        </span><pre>getView()</pre></a></li>
+<li class="method public inherited"><a href="#method_hasAttribute" title="hasAttribute :: Check for has attribute"><span class="description">Check for has attribute</span><pre>hasAttribute()</pre></a></li>
+<li class="method public inherited"><a href="#method_hasAttributes" title="hasAttributes :: Check for has all attributes"><span class="description">Check for has all attributes</span><pre>hasAttributes()</pre></a></li>
+<li class="method public inherited"><a href="#method_isFilterable" title="isFilterable :: "><span class="description">isFilterable()
+        </span><pre>isFilterable()</pre></a></li>
+<li class="method public inherited"><a href="#method_isSortable" title="isSortable :: "><span class="description">isSortable()
+        </span><pre>isSortable()</pre></a></li>
+<li class="method public "><a href="#method_render" title="render :: "><span class="description">render()
+        </span><pre>render()</pre></a></li>
+<li class="method public inherited"><a href="#method_renderColAttribs" title="renderColAttribs :: "><span class="description">renderColAttribs()
+        </span><pre>renderColAttribs()</pre></a></li>
+<li class="method public inherited"><a href="#method_renderThAttribs" title="renderThAttribs :: "><span class="description">renderThAttribs()
+        </span><pre>renderThAttribs()</pre></a></li>
+<li class="method public inherited"><a href="#method_setAttribute" title="setAttribute :: Set attribute"><span class="description">Set attribute</span><pre>setAttribute()</pre></a></li>
+<li class="method public inherited"><a href="#method_setAttributes" title="setAttributes :: Set array of attributes at once"><span class="description">Set array of attributes at once</span><pre>setAttributes()</pre></a></li>
+<li class="method public inherited"><a href="#method_setFilterable" title="setFilterable :: "><span class="description">setFilterable()
+        </span><pre>setFilterable()</pre></a></li>
+<li class="method public inherited"><a href="#method_setFilterableOptions" title="setFilterableOptions :: "><span class="description">setFilterableOptions()
+        </span><pre>setFilterableOptions()</pre></a></li>
+<li class="method public inherited"><a href="#method_setFilterableType" title="setFilterableType :: "><span class="description">setFilterableType()
+        </span><pre>setFilterableType()</pre></a></li>
+<li class="method public inherited"><a href="#method_setGrid" title="setGrid :: "><span class="description">setGrid()
+        </span><pre>setGrid()</pre></a></li>
+<li class="method public "><a href="#method_setLinkBindFields" title="setLinkBindFields :: "><span class="description">setLinkBindFields()
+        </span><pre>setLinkBindFields()</pre></a></li>
+<li class="method public "><a href="#method_setLinkOptions" title="setLinkOptions :: "><span class="description">setLinkOptions()
+        </span><pre>setLinkOptions()</pre></a></li>
+<li class="method public "><a href="#method_setLinkRoute" title="setLinkRoute :: "><span class="description">setLinkRoute()
+        </span><pre>setLinkRoute()</pre></a></li>
+<li class="method public "><a href="#method_setLinkStaticText" title="setLinkStaticText :: "><span class="description">setLinkStaticText()
+        </span><pre>setLinkStaticText()</pre></a></li>
+<li class="method public "><a href="#method_setLinkStaticUrl" title="setLinkStaticUrl :: "><span class="description">setLinkStaticUrl()
+        </span><pre>setLinkStaticUrl()</pre></a></li>
+<li class="method public "><a href="#method_setLinkTarget" title="setLinkTarget :: "><span class="description">setLinkTarget()
+        </span><pre>setLinkTarget()</pre></a></li>
+<li class="method public inherited"><a href="#method_setName" title="setName :: "><span class="description">setName()
+        </span><pre>setName()</pre></a></li>
+<li class="method public "><a href="#method_setOptions" title="setOptions :: "><span class="description">setOptions()
+        </span><pre>setOptions()</pre></a></li>
+<li class="method public inherited"><a href="#method_setRow" title="setRow :: "><span class="description">setRow()
+        </span><pre>setRow()</pre></a></li>
+<li class="method public inherited"><a href="#method_setSortable" title="setSortable :: "><span class="description">setSortable()
+        </span><pre>setSortable()</pre></a></li>
+<li class="method public inherited"><a href="#method_setTitle" title="setTitle :: "><span class="description">setTitle()
+        </span><pre>setTitle()</pre></a></li>
+<li class="method public inherited"><a href="#method_setValue" title="setValue :: "><span class="description">setValue()
+        </span><pre>setValue()</pre></a></li>
+<li class="method public inherited"><a href="#method_setView" title="setView :: "><span class="description">setView()
+        </span><pre>setView()</pre></a></li>
+<li class="method public inherited"><a href="#method_toHtmlAttributes" title="toHtmlAttributes :: Render attributes to use in html/xml tags"><span class="description">Render attributes to use in html/xml tags</span><pre>toHtmlAttributes()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected inherited"><a href="#property__attributes" title="$_attributes :: Attributes container"><span class="description"></span><pre>$_attributes</pre></a></li>
+<li class="property protected "><a href="#property__availableTargets" title="$_availableTargets :: "><span class="description"></span><pre>$_availableTargets</pre></a></li>
+<li class="property protected inherited"><a href="#property__colAttribs" title="$_colAttribs :: "><span class="description"></span><pre>$_colAttribs</pre></a></li>
+<li class="property protected inherited"><a href="#property__colAttribsNames" title="$_colAttribsNames :: "><span class="description"></span><pre>$_colAttribsNames</pre></a></li>
+<li class="property protected inherited"><a href="#property__filterable" title="$_filterable :: "><span class="description"></span><pre>$_filterable</pre></a></li>
+<li class="property protected inherited"><a href="#property__filterableAvailableTypes" title="$_filterableAvailableTypes :: "><span class="description"></span><pre>$_filterableAvailableTypes</pre></a></li>
+<li class="property protected inherited"><a href="#property__filterableOptions" title="$_filterableOptions :: "><span class="description"></span><pre>$_filterableOptions</pre></a></li>
+<li class="property protected inherited"><a href="#property__filterableType" title="$_filterableType :: "><span class="description"></span><pre>$_filterableType</pre></a></li>
+<li class="property protected inherited"><a href="#property__grid" title="$_grid :: "><span class="description"></span><pre>$_grid</pre></a></li>
+<li class="property protected "><a href="#property__linkBindFields" title="$_linkBindFields :: "><span class="description"></span><pre>$_linkBindFields</pre></a></li>
+<li class="property protected "><a href="#property__linkOptions" title="$_linkOptions :: "><span class="description"></span><pre>$_linkOptions</pre></a></li>
+<li class="property protected "><a href="#property__linkRoute" title="$_linkRoute :: "><span class="description"></span><pre>$_linkRoute</pre></a></li>
+<li class="property protected "><a href="#property__linkStaticText" title="$_linkStaticText :: "><span class="description"></span><pre>$_linkStaticText</pre></a></li>
+<li class="property protected "><a href="#property__linkStaticUrl" title="$_linkStaticUrl :: "><span class="description"></span><pre>$_linkStaticUrl</pre></a></li>
+<li class="property protected "><a href="#property__linkTarget" title="$_linkTarget :: "><span class="description"></span><pre>$_linkTarget</pre></a></li>
+<li class="property protected inherited"><a href="#property__name" title="$_name :: "><span class="description"></span><pre>$_name</pre></a></li>
+<li class="property protected inherited"><a href="#property__row" title="$_row :: "><span class="description"></span><pre>$_row</pre></a></li>
+<li class="property protected inherited"><a href="#property__sortable" title="$_sortable :: "><span class="description"></span><pre>$_sortable</pre></a></li>
+<li class="property protected inherited"><a href="#property__thAttribs" title="$_thAttribs :: "><span class="description"></span><pre>$_thAttribs</pre></a></li>
+<li class="property protected inherited"><a href="#property__thAttribsNames" title="$_thAttribsNames :: "><span class="description"></span><pre>$_thAttribsNames</pre></a></li>
+<li class="property protected inherited"><a href="#property__title" title="$_title :: "><span class="description"></span><pre>$_title</pre></a></li>
+<li class="property protected inherited"><a href="#property__value" title="$_value :: "><span class="description"></span><pre>$_value</pre></a></li>
+<li class="property protected inherited"><a href="#property__view" title="$_view :: "><span class="description"></span><pre>$_view</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant__BLANK" title="_BLANK :: "><span class="description">_BLANK</span><pre>_BLANK</pre></a></li>
+<li class="constant  "><a href="#constant__PARENT" title="_PARENT :: "><span class="description">_PARENT</span><pre>_PARENT</pre></a></li>
+<li class="constant  "><a href="#constant__SELF" title="_SELF :: "><span class="description">_SELF</span><pre>_SELF</pre></a></li>
+<li class="constant  "><a href="#constant__TOP" title="_TOP :: "><span class="description">_TOP</span><pre>_TOP</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\Core_Block_Grid_Column_Hyperlink"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Core_Block_Grid_Column_Hyperlink.html">Core_Block_Grid_Column_Hyperlink</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Attributes aggregator class</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>author</th>
+<td><a href="">Pavlenko Evgeniy</a></td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Core</a></td>
+</tr>
+<tr>
+<th>version</th>
+<td>2.3</td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2012 SunNY Creative Technologies. (http://www.sunny.net)</td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>__construct()
+        </h2>
+<pre>__construct($options) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::__construct()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$options</h4></div>
+</div></div>
+</div>
+<a id="method_addAttribute"></a><div class="element clickable method public method_addAttribute" data-toggle="collapse" data-target=".method_addAttribute .collapse">
+<h2>Add attribute</h2>
+<pre>addAttribute(\numeric | string $key, mixed $val) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::addAttribute()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::addAttribute()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>\numeric</code><code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$val</h4>
+<code>mixed</code>
+</div>
+</div></div>
+</div>
+<a id="method_addAttributes"></a><div class="element clickable method public method_addAttributes" data-toggle="collapse" data-target=".method_addAttributes .collapse">
+<h2>Add array of attributes</h2>
+<pre>addAttributes(array $attributes) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::addAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::addAttributes()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$attributes</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a id="method_delAttribute"></a><div class="element clickable method public method_delAttribute" data-toggle="collapse" data-target=".method_delAttribute .collapse">
+<h2>Delete attribute</h2>
+<pre>delAttribute(\numeric | string $key) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::delAttribute()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::delAttribute()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>\numeric</code><code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_delAttributes"></a><div class="element clickable method public method_delAttributes" data-toggle="collapse" data-target=".method_delAttributes .collapse">
+<h2>Delete array of attributes</h2>
+<pre>delAttributes(array $keys) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::delAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::delAttributes()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$keys</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a id="method_getAttribute"></a><div class="element clickable method public method_getAttribute" data-toggle="collapse" data-target=".method_getAttribute .collapse">
+<h2>Get attribute</h2>
+<pre>getAttribute(\numeric | string $key) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::getAttribute()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::getAttribute()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>\numeric</code><code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_getAttributes"></a><div class="element clickable method public method_getAttributes" data-toggle="collapse" data-target=".method_getAttributes .collapse">
+<h2>Get all attributes</h2>
+<pre>getAttributes() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::getAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::getAttributes()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getFilterableOptions"></a><div class="element clickable method public method_getFilterableOptions" data-toggle="collapse" data-target=".method_getFilterableOptions .collapse">
+<h2>getFilterableOptions()
+        </h2>
+<pre>getFilterableOptions() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::getFilterableOptions()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getFilterableType"></a><div class="element clickable method public method_getFilterableType" data-toggle="collapse" data-target=".method_getFilterableType .collapse">
+<h2>getFilterableType()
+        </h2>
+<pre>getFilterableType() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::getFilterableType()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getGrid"></a><div class="element clickable method public method_getGrid" data-toggle="collapse" data-target=".method_getGrid .collapse">
+<h2>getGrid()
+        </h2>
+<pre>getGrid() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::getGrid()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getLinkBindFields"></a><div class="element clickable method public method_getLinkBindFields" data-toggle="collapse" data-target=".method_getLinkBindFields .collapse">
+<h2>getLinkBindFields()
+        </h2>
+<pre>getLinkBindFields() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getLinkOptions"></a><div class="element clickable method public method_getLinkOptions" data-toggle="collapse" data-target=".method_getLinkOptions .collapse">
+<h2>getLinkOptions()
+        </h2>
+<pre>getLinkOptions() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getLinkRoute"></a><div class="element clickable method public method_getLinkRoute" data-toggle="collapse" data-target=".method_getLinkRoute .collapse">
+<h2>getLinkRoute()
+        </h2>
+<pre>getLinkRoute() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getLinkStaticText"></a><div class="element clickable method public method_getLinkStaticText" data-toggle="collapse" data-target=".method_getLinkStaticText .collapse">
+<h2>getLinkStaticText()
+        </h2>
+<pre>getLinkStaticText() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getLinkStaticUrl"></a><div class="element clickable method public method_getLinkStaticUrl" data-toggle="collapse" data-target=".method_getLinkStaticUrl .collapse">
+<h2>getLinkStaticUrl()
+        </h2>
+<pre>getLinkStaticUrl() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getLinkTarget"></a><div class="element clickable method public method_getLinkTarget" data-toggle="collapse" data-target=".method_getLinkTarget .collapse">
+<h2>getLinkTarget()
+        </h2>
+<pre>getLinkTarget() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getName"></a><div class="element clickable method public method_getName" data-toggle="collapse" data-target=".method_getName .collapse">
+<h2>getName()
+        </h2>
+<pre>getName() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::getName()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getRow"></a><div class="element clickable method public method_getRow" data-toggle="collapse" data-target=".method_getRow .collapse">
+<h2>getRow()
+        </h2>
+<pre>getRow($key) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::getRow()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$key</h4></div>
+</div></div>
+</div>
+<a id="method_getTitle"></a><div class="element clickable method public method_getTitle" data-toggle="collapse" data-target=".method_getTitle .collapse">
+<h2>getTitle()
+        </h2>
+<pre>getTitle() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::getTitle()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getValue"></a><div class="element clickable method public method_getValue" data-toggle="collapse" data-target=".method_getValue .collapse">
+<h2>getValue()
+        </h2>
+<pre>getValue() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::getValue()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getView"></a><div class="element clickable method public method_getView" data-toggle="collapse" data-target=".method_getView .collapse">
+<h2>getView()
+        </h2>
+<pre>getView() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::getView()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_hasAttribute"></a><div class="element clickable method public method_hasAttribute" data-toggle="collapse" data-target=".method_hasAttribute .collapse">
+<h2>Check for has attribute</h2>
+<pre>hasAttribute(\numeric | string $key) : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::hasAttribute()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::hasAttribute()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>\numeric</code><code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_hasAttributes"></a><div class="element clickable method public method_hasAttributes" data-toggle="collapse" data-target=".method_hasAttributes .collapse">
+<h2>Check for has all attributes</h2>
+<pre>hasAttributes(array $keys) : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::hasAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::hasAttributes()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$keys</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_isFilterable"></a><div class="element clickable method public method_isFilterable" data-toggle="collapse" data-target=".method_isFilterable .collapse">
+<h2>isFilterable()
+        </h2>
+<pre>isFilterable() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::isFilterable()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_isSortable"></a><div class="element clickable method public method_isSortable" data-toggle="collapse" data-target=".method_isSortable .collapse">
+<h2>isSortable()
+        </h2>
+<pre>isSortable() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::isSortable()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_render"></a><div class="element clickable method public method_render" data-toggle="collapse" data-target=".method_render .collapse">
+<h2>render()
+        </h2>
+<pre>render() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_renderColAttribs"></a><div class="element clickable method public method_renderColAttribs" data-toggle="collapse" data-target=".method_renderColAttribs .collapse">
+<h2>renderColAttribs()
+        </h2>
+<pre>renderColAttribs() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::renderColAttribs()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_renderThAttribs"></a><div class="element clickable method public method_renderThAttribs" data-toggle="collapse" data-target=".method_renderThAttribs .collapse">
+<h2>renderThAttribs()
+        </h2>
+<pre>renderThAttribs() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::renderThAttribs()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_setAttribute"></a><div class="element clickable method public method_setAttribute" data-toggle="collapse" data-target=".method_setAttribute .collapse">
+<h2>Set attribute</h2>
+<pre>setAttribute(\numeric | string $key, mixed $val) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::setAttribute()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::setAttribute()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>\numeric</code><code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$val</h4>
+<code>mixed</code>
+</div>
+</div></div>
+</div>
+<a id="method_setAttributes"></a><div class="element clickable method public method_setAttributes" data-toggle="collapse" data-target=".method_setAttributes .collapse">
+<h2>Set array of attributes at once</h2>
+<pre>setAttributes(array $attributes) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::setAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::setAttributes()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$attributes</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a id="method_setFilterable"></a><div class="element clickable method public method_setFilterable" data-toggle="collapse" data-target=".method_setFilterable .collapse">
+<h2>setFilterable()
+        </h2>
+<pre>setFilterable($flag) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::setFilterable()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$flag</h4></div>
+</div></div>
+</div>
+<a id="method_setFilterableOptions"></a><div class="element clickable method public method_setFilterableOptions" data-toggle="collapse" data-target=".method_setFilterableOptions .collapse">
+<h2>setFilterableOptions()
+        </h2>
+<pre>setFilterableOptions(array $options) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::setFilterableOptions()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$options</h4></div>
+</div></div>
+</div>
+<a id="method_setFilterableType"></a><div class="element clickable method public method_setFilterableType" data-toggle="collapse" data-target=".method_setFilterableType .collapse">
+<h2>setFilterableType()
+        </h2>
+<pre>setFilterableType($type) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::setFilterableType()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$type</h4></div>
+</div></div>
+</div>
+<a id="method_setGrid"></a><div class="element clickable method public method_setGrid" data-toggle="collapse" data-target=".method_setGrid .collapse">
+<h2>setGrid()
+        </h2>
+<pre>setGrid(\Core_Block_Grid_Widget $grid) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::setGrid()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$grid</h4></div>
+</div></div>
+</div>
+<a id="method_setLinkBindFields"></a><div class="element clickable method public method_setLinkBindFields" data-toggle="collapse" data-target=".method_setLinkBindFields .collapse">
+<h2>setLinkBindFields()
+        </h2>
+<pre>setLinkBindFields(array $value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setLinkOptions"></a><div class="element clickable method public method_setLinkOptions" data-toggle="collapse" data-target=".method_setLinkOptions .collapse">
+<h2>setLinkOptions()
+        </h2>
+<pre>setLinkOptions($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setLinkRoute"></a><div class="element clickable method public method_setLinkRoute" data-toggle="collapse" data-target=".method_setLinkRoute .collapse">
+<h2>setLinkRoute()
+        </h2>
+<pre>setLinkRoute($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setLinkStaticText"></a><div class="element clickable method public method_setLinkStaticText" data-toggle="collapse" data-target=".method_setLinkStaticText .collapse">
+<h2>setLinkStaticText()
+        </h2>
+<pre>setLinkStaticText($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setLinkStaticUrl"></a><div class="element clickable method public method_setLinkStaticUrl" data-toggle="collapse" data-target=".method_setLinkStaticUrl .collapse">
+<h2>setLinkStaticUrl()
+        </h2>
+<pre>setLinkStaticUrl($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setLinkTarget"></a><div class="element clickable method public method_setLinkTarget" data-toggle="collapse" data-target=".method_setLinkTarget .collapse">
+<h2>setLinkTarget()
+        </h2>
+<pre>setLinkTarget($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setName"></a><div class="element clickable method public method_setName" data-toggle="collapse" data-target=".method_setName .collapse">
+<h2>setName()
+        </h2>
+<pre>setName($value) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::setName()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setOptions"></a><div class="element clickable method public method_setOptions" data-toggle="collapse" data-target=".method_setOptions .collapse">
+<h2>setOptions()
+        </h2>
+<pre>setOptions(array $options) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$options</h4></div>
+</div></div>
+</div>
+<a id="method_setRow"></a><div class="element clickable method public method_setRow" data-toggle="collapse" data-target=".method_setRow .collapse">
+<h2>setRow()
+        </h2>
+<pre>setRow($row) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::setRow()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$row</h4></div>
+</div></div>
+</div>
+<a id="method_setSortable"></a><div class="element clickable method public method_setSortable" data-toggle="collapse" data-target=".method_setSortable .collapse">
+<h2>setSortable()
+        </h2>
+<pre>setSortable($value) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::setSortable()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setTitle"></a><div class="element clickable method public method_setTitle" data-toggle="collapse" data-target=".method_setTitle .collapse">
+<h2>setTitle()
+        </h2>
+<pre>setTitle($value) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::setTitle()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setValue"></a><div class="element clickable method public method_setValue" data-toggle="collapse" data-target=".method_setValue .collapse">
+<h2>setValue()
+        </h2>
+<pre>setValue($value) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::setValue()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_setView"></a><div class="element clickable method public method_setView" data-toggle="collapse" data-target=".method_setView .collapse">
+<h2>setView()
+        </h2>
+<pre>setView(\Zend_View_Interface $view) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::setView()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$view</h4></div>
+</div></div>
+</div>
+<a id="method_toHtmlAttributes"></a><div class="element clickable method public method_toHtmlAttributes" data-toggle="collapse" data-target=".method_toHtmlAttributes .collapse">
+<h2>Render attributes to use in html/xml tags</h2>
+<pre>toHtmlAttributes() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::toHtmlAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::toHtmlAttributes()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__attributes"> </a><div class="element clickable property protected property__attributes" data-toggle="collapse" data-target=".property__attributes .collapse">
+<h2></h2>
+<pre>$_attributes : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Core_Attributes::$$_attributes</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::$$_attributes</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property__availableTargets"> </a><div class="element clickable property protected property__availableTargets" data-toggle="collapse" data-target=".property__availableTargets .collapse">
+<h2></h2>
+<pre>$_availableTargets </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__colAttribs"> </a><div class="element clickable property protected property__colAttribs" data-toggle="collapse" data-target=".property__colAttribs .collapse">
+<h2></h2>
+<pre>$_colAttribs </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::$$_colAttribs</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__colAttribsNames"> </a><div class="element clickable property protected property__colAttribsNames" data-toggle="collapse" data-target=".property__colAttribsNames .collapse">
+<h2></h2>
+<pre>$_colAttribsNames </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::$$_colAttribsNames</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__filterable"> </a><div class="element clickable property protected property__filterable" data-toggle="collapse" data-target=".property__filterable .collapse">
+<h2></h2>
+<pre>$_filterable </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::$$_filterable</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__filterableAvailableTypes"> </a><div class="element clickable property protected property__filterableAvailableTypes" data-toggle="collapse" data-target=".property__filterableAvailableTypes .collapse">
+<h2></h2>
+<pre>$_filterableAvailableTypes </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::$$_filterableAvailableTypes</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__filterableOptions"> </a><div class="element clickable property protected property__filterableOptions" data-toggle="collapse" data-target=".property__filterableOptions .collapse">
+<h2></h2>
+<pre>$_filterableOptions </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::$$_filterableOptions</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__filterableType"> </a><div class="element clickable property protected property__filterableType" data-toggle="collapse" data-target=".property__filterableType .collapse">
+<h2></h2>
+<pre>$_filterableType </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::$$_filterableType</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__grid"> </a><div class="element clickable property protected property__grid" data-toggle="collapse" data-target=".property__grid .collapse">
+<h2></h2>
+<pre>$_grid </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::$$_grid</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__linkBindFields"> </a><div class="element clickable property protected property__linkBindFields" data-toggle="collapse" data-target=".property__linkBindFields .collapse">
+<h2></h2>
+<pre>$_linkBindFields </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__linkOptions"> </a><div class="element clickable property protected property__linkOptions" data-toggle="collapse" data-target=".property__linkOptions .collapse">
+<h2></h2>
+<pre>$_linkOptions </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__linkRoute"> </a><div class="element clickable property protected property__linkRoute" data-toggle="collapse" data-target=".property__linkRoute .collapse">
+<h2></h2>
+<pre>$_linkRoute </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__linkStaticText"> </a><div class="element clickable property protected property__linkStaticText" data-toggle="collapse" data-target=".property__linkStaticText .collapse">
+<h2></h2>
+<pre>$_linkStaticText </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__linkStaticUrl"> </a><div class="element clickable property protected property__linkStaticUrl" data-toggle="collapse" data-target=".property__linkStaticUrl .collapse">
+<h2></h2>
+<pre>$_linkStaticUrl </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__linkTarget"> </a><div class="element clickable property protected property__linkTarget" data-toggle="collapse" data-target=".property__linkTarget .collapse">
+<h2></h2>
+<pre>$_linkTarget </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__name"> </a><div class="element clickable property protected property__name" data-toggle="collapse" data-target=".property__name .collapse">
+<h2></h2>
+<pre>$_name </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::$$_name</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__row"> </a><div class="element clickable property protected property__row" data-toggle="collapse" data-target=".property__row .collapse">
+<h2></h2>
+<pre>$_row </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::$$_row</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__sortable"> </a><div class="element clickable property protected property__sortable" data-toggle="collapse" data-target=".property__sortable .collapse">
+<h2></h2>
+<pre>$_sortable </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::$$_sortable</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__thAttribs"> </a><div class="element clickable property protected property__thAttribs" data-toggle="collapse" data-target=".property__thAttribs .collapse">
+<h2></h2>
+<pre>$_thAttribs </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::$$_thAttribs</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__thAttribsNames"> </a><div class="element clickable property protected property__thAttribsNames" data-toggle="collapse" data-target=".property__thAttribsNames .collapse">
+<h2></h2>
+<pre>$_thAttribsNames </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::$$_thAttribsNames</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__title"> </a><div class="element clickable property protected property__title" data-toggle="collapse" data-target=".property__title .collapse">
+<h2></h2>
+<pre>$_title </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::$$_title</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__value"> </a><div class="element clickable property protected property__value" data-toggle="collapse" data-target=".property__value .collapse">
+<h2></h2>
+<pre>$_value </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::$$_value</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__view"> </a><div class="element clickable property protected property__view" data-toggle="collapse" data-target=".property__view .collapse">
+<h2></h2>
+<pre>$_view </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_Grid_Column_Default::$$_view</td>
+</tr></table>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant__BLANK"> </a><div class="element clickable constant  constant__BLANK" data-toggle="collapse" data-target=".constant__BLANK .collapse">
+<h2>_BLANK</h2>
+<pre>_BLANK </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant__PARENT"> </a><div class="element clickable constant  constant__PARENT" data-toggle="collapse" data-target=".constant__PARENT .collapse">
+<h2>_PARENT</h2>
+<pre>_PARENT </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant__SELF"> </a><div class="element clickable constant  constant__SELF" data-toggle="collapse" data-target=".constant__SELF .collapse">
+<h2>_SELF</h2>
+<pre>_SELF </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant__TOP"> </a><div class="element clickable constant  constant__TOP" data-toggle="collapse" data-target=".constant__TOP .collapse">
+<h2>_TOP</h2>
+<pre>_TOP </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2012-12-14T14:55:09+02:00.<br></footer></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,982 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \Core_Image_Adapter_Abstract</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Zend.html"><i class="icon-folder-open"></i> Zend</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">466</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">7</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: Load image process"><span class="description">Load image process</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___destruct" title="__destruct :: Clean memory on destruct"><span class="description">Clean memory on destruct</span><pre>__destruct()</pre></a></li>
+<li class="method public "><a href="#method_createBlank" title="createBlank :: Create new blank image resource"><span class="description">Create new blank image resource</span><pre>createBlank()</pre></a></li>
+<li class="method public "><a href="#method_getBackgroundColor" title="getBackgroundColor :: Get background color for image"><span class="description">Get background color for image</span><pre>getBackgroundColor()</pre></a></li>
+<li class="method public "><a href="#method_getCompression" title="getCompression :: Get compression (only for jpeg or png)"><span class="description">Get compression (only for jpeg or png)</span><pre>getCompression()</pre></a></li>
+<li class="method public "><a href="#method_getHeight" title="getHeight :: Get resize source height"><span class="description">Get resize source height</span><pre>getHeight()</pre></a></li>
+<li class="method public "><a href="#method_getLifeTime" title="getLifeTime :: Get time before die of image"><span class="description">Get time before die of image</span><pre>getLifeTime()</pre></a></li>
+<li class="method public "><a href="#method_getMethod" title="getMethod :: Get used resize method name"><span class="description">Get used resize method name</span><pre>getMethod()</pre></a></li>
+<li class="method public "><a href="#method_getNewHeight" title="getNewHeight :: Get resize new height"><span class="description">Get resize new height</span><pre>getNewHeight()</pre></a></li>
+<li class="method public "><a href="#method_getNewOffsetLeft" title="getNewOffsetLeft :: Get resize new offset left"><span class="description">Get resize new offset left</span><pre>getNewOffsetLeft()</pre></a></li>
+<li class="method public "><a href="#method_getNewOffsetTop" title="getNewOffsetTop :: Get resize new offset top"><span class="description">Get resize new offset top</span><pre>getNewOffsetTop()</pre></a></li>
+<li class="method public "><a href="#method_getNewWidth" title="getNewWidth :: Get resize new width"><span class="description">Get resize new width</span><pre>getNewWidth()</pre></a></li>
+<li class="method public "><a href="#method_getOffsetLeft" title="getOffsetLeft :: Get resize source offset left"><span class="description">Get resize source offset left</span><pre>getOffsetLeft()</pre></a></li>
+<li class="method public "><a href="#method_getOffsetTop" title="getOffsetTop :: Get resize source offset top"><span class="description">Get resize source offset top</span><pre>getOffsetTop()</pre></a></li>
+<li class="method public "><a href="#method_getPath" title="getPath :: Get file path"><span class="description">Get file path</span><pre>getPath()</pre></a></li>
+<li class="method public "><a href="#method_getSavePath" title="getSavePath :: Get save path (generate if needed)"><span class="description">Get save path (generate if needed)</span><pre>getSavePath()</pre></a></li>
+<li class="method public "><a href="#method_getSrcHeight" title="getSrcHeight :: Get original resource height"><span class="description">Get original resource height</span><pre>getSrcHeight()</pre></a></li>
+<li class="method public "><a href="#method_getSrcWidth" title="getSrcWidth :: Get original resource width"><span class="description">Get original resource width</span><pre>getSrcWidth()</pre></a></li>
+<li class="method public "><a href="#method_getWidth" title="getWidth :: Get resize source width"><span class="description">Get resize source width</span><pre>getWidth()</pre></a></li>
+<li class="method public "><a href="#method_isNeedResizeSmallerThan" title="isNeedResizeSmallerThan :: Check if need processing smaller than parameters"><span class="description">Check if need processing smaller than parameters</span><pre>isNeedResizeSmallerThan()</pre></a></li>
+<li class="method public "><a href="#method_isTransparensyPreserved" title="isTransparensyPreserved :: Check if transparency preserved"><span class="description">Check if transparency preserved</span><pre>isTransparensyPreserved()</pre></a></li>
+<li class="method public "><a href="#method_reset" title="reset :: Reset options"><span class="description">Reset options</span><pre>reset()</pre></a></li>
+<li class="method public "><a href="#method_resize" title="resize :: Basic resize method"><span class="description">Basic resize method</span><pre>resize()</pre></a></li>
+<li class="method public "><a href="#method_resizeToCrop" title="resizeToCrop :: Resize by crop to fill dimensions"><span class="description">Resize by crop to fill dimensions</span><pre>resizeToCrop()</pre></a></li>
+<li class="method public "><a href="#method_resizeToFitBounds" title="resizeToFitBounds :: Resize to fit bounds dimension"><span class="description">Resize to fit bounds dimension</span><pre>resizeToFitBounds()</pre></a></li>
+<li class="method public "><a href="#method_resizeToFitCanvas" title="resizeToFitCanvas :: Resize by fit to canvas dimensions"><span class="description">Resize by fit to canvas dimensions</span><pre>resizeToFitCanvas()</pre></a></li>
+<li class="method public "><a href="#method_resizeToHeight" title="resizeToHeight :: Resize by height value"><span class="description">Resize by height value</span><pre>resizeToHeight()</pre></a></li>
+<li class="method public "><a href="#method_resizeToLongSide" title="resizeToLongSide :: Resize to long side value"><span class="description">Resize to long side value</span><pre>resizeToLongSide()</pre></a></li>
+<li class="method public "><a href="#method_resizeToPercentage" title="resizeToPercentage :: Resize by percentage of original"><span class="description">Resize by percentage of original</span><pre>resizeToPercentage()</pre></a></li>
+<li class="method public "><a href="#method_resizeToShortSide" title="resizeToShortSide :: Resize to short side value"><span class="description">Resize to short side value</span><pre>resizeToShortSide()</pre></a></li>
+<li class="method public "><a href="#method_resizeToWidth" title="resizeToWidth :: Resize by width value"><span class="description">Resize by width value</span><pre>resizeToWidth()</pre></a></li>
+<li class="method public "><a href="#method_save" title="save :: Save image to file"><span class="description">Save image to file</span><pre>save()</pre></a></li>
+<li class="method public "><a href="#method_setBackgroundColor" title="setBackgroundColor :: Set background color for image"><span class="description">Set background color for image</span><pre>setBackgroundColor()</pre></a></li>
+<li class="method public "><a href="#method_setCompression" title="setCompression :: Set new compression between 1 and 100"><span class="description">Set new compression between 1 and 100</span><pre>setCompression()</pre></a></li>
+<li class="method public "><a href="#method_setHeight" title="setHeight :: Set resize source height"><span class="description">Set resize source height</span><pre>setHeight()</pre></a></li>
+<li class="method public "><a href="#method_setLifeTime" title="setLifeTime :: Set time before die of image"><span class="description">Set time before die of image</span><pre>setLifeTime()</pre></a></li>
+<li class="method public "><a href="#method_setMethod" title="setMethod :: Set used resize method"><span class="description">Set used resize method</span><pre>setMethod()</pre></a></li>
+<li class="method public "><a href="#method_setNeedResizeSmallerThan" title="setNeedResizeSmallerThan :: Set need processing smaller than parameters flag"><span class="description">Set need processing smaller than parameters flag</span><pre>setNeedResizeSmallerThan()</pre></a></li>
+<li class="method public "><a href="#method_setNewHeight" title="setNewHeight :: Set resize new height"><span class="description">Set resize new height</span><pre>setNewHeight()</pre></a></li>
+<li class="method public "><a href="#method_setNewOffsetLeft" title="setNewOffsetLeft :: Set resize new offset left"><span class="description">Set resize new offset left</span><pre>setNewOffsetLeft()</pre></a></li>
+<li class="method public "><a href="#method_setNewOffsetTop" title="setNewOffsetTop :: Set resize new offset top"><span class="description">Set resize new offset top</span><pre>setNewOffsetTop()</pre></a></li>
+<li class="method public "><a href="#method_setNewWidth" title="setNewWidth :: Set resize new width"><span class="description">Set resize new width</span><pre>setNewWidth()</pre></a></li>
+<li class="method public "><a href="#method_setOffsetLeft" title="setOffsetLeft :: Set resize source offset left"><span class="description">Set resize source offset left</span><pre>setOffsetLeft()</pre></a></li>
+<li class="method public "><a href="#method_setOffsetTop" title="setOffsetTop :: Set resize source offset top"><span class="description">Set resize source offset top</span><pre>setOffsetTop()</pre></a></li>
+<li class="method public "><a href="#method_setSavePath" title="setSavePath :: Set new save path"><span class="description">Set new save path</span><pre>setSavePath()</pre></a></li>
+<li class="method public "><a href="#method_setTransparensyPreserved" title="setTransparensyPreserved :: Set transparency preserved flag"><span class="description">Set transparency preserved flag</span><pre>setTransparensyPreserved()</pre></a></li>
+<li class="method public "><a href="#method_setWidth" title="setWidth :: Set resize source width"><span class="description">Set resize source width</span><pre>setWidth()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method__load" title="_load :: Load image from file (specified in extension)"><span class="description">Load image from file (specified in extension)</span><pre>_load()</pre></a></li>
+<li class="method protected "><a href="#method__resolveSavePath" title="_resolveSavePath :: Retrieve new save path"><span class="description">Retrieve new save path</span><pre>_resolveSavePath()</pre></a></li>
+<li class="method protected "><a href="#method__save" title="_save :: Save image to filesystem"><span class="description">Save image to filesystem</span><pre>_save()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property__backgroundColor" title="$_backgroundColor :: Background color code"><span class="description"></span><pre>$_backgroundColor</pre></a></li>
+<li class="property protected "><a href="#property__compression" title="$_compression :: "><span class="description"></span><pre>$_compression</pre></a></li>
+<li class="property protected "><a href="#property__height" title="$_height :: "><span class="description"></span><pre>$_height</pre></a></li>
+<li class="property protected "><a href="#property__lifeTime" title="$_lifeTime :: "><span class="description"></span><pre>$_lifeTime</pre></a></li>
+<li class="property protected "><a href="#property__method" title="$_method :: "><span class="description"></span><pre>$_method</pre></a></li>
+<li class="property protected "><a href="#property__needResizeSmallerThan" title="$_needResizeSmallerThan :: Need resize smaller images"><span class="description"></span><pre>$_needResizeSmallerThan</pre></a></li>
+<li class="property protected "><a href="#property__newHeight" title="$_newHeight :: "><span class="description"></span><pre>$_newHeight</pre></a></li>
+<li class="property protected "><a href="#property__newOffsetLeft" title="$_newOffsetLeft :: "><span class="description"></span><pre>$_newOffsetLeft</pre></a></li>
+<li class="property protected "><a href="#property__newOffsetTop" title="$_newOffsetTop :: "><span class="description"></span><pre>$_newOffsetTop</pre></a></li>
+<li class="property protected "><a href="#property__newWidth" title="$_newWidth :: "><span class="description"></span><pre>$_newWidth</pre></a></li>
+<li class="property protected "><a href="#property__offsetLeft" title="$_offsetLeft :: "><span class="description"></span><pre>$_offsetLeft</pre></a></li>
+<li class="property protected "><a href="#property__offsetTop" title="$_offsetTop :: "><span class="description"></span><pre>$_offsetTop</pre></a></li>
+<li class="property protected "><a href="#property__path" title="$_path :: Path to image file"><span class="description"></span><pre>$_path</pre></a></li>
+<li class="property protected "><a href="#property__resource" title="$_resource :: Image resource container"><span class="description"></span><pre>$_resource</pre></a></li>
+<li class="property protected "><a href="#property__savePath" title="$_savePath :: Path to save image to"><span class="description"></span><pre>$_savePath</pre></a></li>
+<li class="property protected "><a href="#property__transparensyPreserved" title="$_transparensyPreserved :: Preserved transparensy flag"><span class="description"></span><pre>$_transparensyPreserved</pre></a></li>
+<li class="property protected "><a href="#property__width" title="$_width :: "><span class="description"></span><pre>$_width</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_ALIGN_BOTTOM" title="ALIGN_BOTTOM :: "><span class="description">ALIGN_BOTTOM</span><pre>ALIGN_BOTTOM</pre></a></li>
+<li class="constant  "><a href="#constant_ALIGN_CENTER" title="ALIGN_CENTER :: "><span class="description">ALIGN_CENTER</span><pre>ALIGN_CENTER</pre></a></li>
+<li class="constant  "><a href="#constant_ALIGN_LEFT" title="ALIGN_LEFT :: "><span class="description">ALIGN_LEFT</span><pre>ALIGN_LEFT</pre></a></li>
+<li class="constant  "><a href="#constant_ALIGN_RIGHT" title="ALIGN_RIGHT :: "><span class="description">ALIGN_RIGHT</span><pre>ALIGN_RIGHT</pre></a></li>
+<li class="constant  "><a href="#constant_ALIGN_TOP" title="ALIGN_TOP :: "><span class="description">ALIGN_TOP</span><pre>ALIGN_TOP</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\Core_Image_Adapter_Abstract"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Core_Image_Adapter_Abstract.html">Core_Image_Adapter_Abstract</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Image resizer base class</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>author</th>
+<td><a href="">Pavlenko Evgeniy</a></td>
+</tr>
+<tr>
+<th>category</th>
+<td>Core</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Core.Image.Abstract.html">Core_Image</a></td>
+</tr>
+<tr>
+<th>version</th>
+<td>2.3</td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Abstract</td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2005-2009 SunNY Creative Technologies. (http://www.sunny.net)</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://framework.zend.com/license/new-bsd">New BSD License</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Load image process</h2>
+<pre>__construct(string $filename) : \Core_Image_Abstract</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$filename</h4>
+<code>string</code><p>Path to file</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code></th>
+<td>If file not found or cann't load</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Core_Image_Abstract</code></div>
+</div></div>
+</div>
+<a id="method___destruct"></a><div class="element clickable method public method___destruct" data-toggle="collapse" data-target=".method___destruct .collapse">
+<h2>Clean memory on destruct</h2>
+<pre>__destruct() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_createBlank"></a><div class="element clickable method public method_createBlank" data-toggle="collapse" data-target=".method_createBlank .collapse">
+<h2>Create new blank image resource</h2>
+<pre>createBlank() : resource</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>resource</code></div>
+</div></div>
+</div>
+<a id="method_getBackgroundColor"></a><div class="element clickable method public method_getBackgroundColor" data-toggle="collapse" data-target=".method_getBackgroundColor .collapse">
+<h2>Get background color for image</h2>
+<pre>getBackgroundColor(resource $image) : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$image</h4>
+<code>resource</code><p>Optional image resource</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method_getCompression"></a><div class="element clickable method public method_getCompression" data-toggle="collapse" data-target=".method_getCompression .collapse">
+<h2>Get compression (only for jpeg or png)</h2>
+<pre>getCompression() : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method_getHeight"></a><div class="element clickable method public method_getHeight" data-toggle="collapse" data-target=".method_getHeight .collapse">
+<h2>Get resize source height</h2>
+<pre>getHeight() : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method_getLifeTime"></a><div class="element clickable method public method_getLifeTime" data-toggle="collapse" data-target=".method_getLifeTime .collapse">
+<h2>Get time before die of image</h2>
+<pre>getLifeTime() : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>integer</code>$value</div>
+</div></div>
+</div>
+<a id="method_getMethod"></a><div class="element clickable method public method_getMethod" data-toggle="collapse" data-target=".method_getMethod .collapse">
+<h2>Get used resize method name</h2>
+<pre>getMethod() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getNewHeight"></a><div class="element clickable method public method_getNewHeight" data-toggle="collapse" data-target=".method_getNewHeight .collapse">
+<h2>Get resize new height</h2>
+<pre>getNewHeight() : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method_getNewOffsetLeft"></a><div class="element clickable method public method_getNewOffsetLeft" data-toggle="collapse" data-target=".method_getNewOffsetLeft .collapse">
+<h2>Get resize new offset left</h2>
+<pre>getNewOffsetLeft() : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method_getNewOffsetTop"></a><div class="element clickable method public method_getNewOffsetTop" data-toggle="collapse" data-target=".method_getNewOffsetTop .collapse">
+<h2>Get resize new offset top</h2>
+<pre>getNewOffsetTop() : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method_getNewWidth"></a><div class="element clickable method public method_getNewWidth" data-toggle="collapse" data-target=".method_getNewWidth .collapse">
+<h2>Get resize new width</h2>
+<pre>getNewWidth() : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method_getOffsetLeft"></a><div class="element clickable method public method_getOffsetLeft" data-toggle="collapse" data-target=".method_getOffsetLeft .collapse">
+<h2>Get resize source offset left</h2>
+<pre>getOffsetLeft() : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method_getOffsetTop"></a><div class="element clickable method public method_getOffsetTop" data-toggle="collapse" data-target=".method_getOffsetTop .collapse">
+<h2>Get resize source offset top</h2>
+<pre>getOffsetTop() : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method_getPath"></a><div class="element clickable method public method_getPath" data-toggle="collapse" data-target=".method_getPath .collapse">
+<h2>Get file path</h2>
+<pre>getPath() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getSavePath"></a><div class="element clickable method public method_getSavePath" data-toggle="collapse" data-target=".method_getSavePath .collapse">
+<h2>Get save path (generate if needed)</h2>
+<pre>getSavePath() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getSrcHeight"></a><div class="element clickable method public method_getSrcHeight" data-toggle="collapse" data-target=".method_getSrcHeight .collapse">
+<h2>Get original resource height</h2>
+<pre>getSrcHeight() : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method_getSrcWidth"></a><div class="element clickable method public method_getSrcWidth" data-toggle="collapse" data-target=".method_getSrcWidth .collapse">
+<h2>Get original resource width</h2>
+<pre>getSrcWidth() : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method_getWidth"></a><div class="element clickable method public method_getWidth" data-toggle="collapse" data-target=".method_getWidth .collapse">
+<h2>Get resize source width</h2>
+<pre>getWidth() : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method_isNeedResizeSmallerThan"></a><div class="element clickable method public method_isNeedResizeSmallerThan" data-toggle="collapse" data-target=".method_isNeedResizeSmallerThan .collapse">
+<h2>Check if need processing smaller than parameters</h2>
+<pre>isNeedResizeSmallerThan() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_isTransparensyPreserved"></a><div class="element clickable method public method_isTransparensyPreserved" data-toggle="collapse" data-target=".method_isTransparensyPreserved .collapse">
+<h2>Check if transparency preserved</h2>
+<pre>isTransparensyPreserved() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_reset"></a><div class="element clickable method public method_reset" data-toggle="collapse" data-target=".method_reset .collapse">
+<h2>Reset options</h2>
+<pre>reset() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_resize"></a><div class="element clickable method public method_resize" data-toggle="collapse" data-target=".method_resize .collapse">
+<h2>Basic resize method</h2>
+<pre>resize(integer $width, integer $height, string $savePath) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$width</h4>
+<code>integer</code><p>Optional width</p></div>
+<div class="subelement argument">
+<h4>$height</h4>
+<code>integer</code><p>Optional height</p></div>
+<div class="subelement argument">
+<h4>$savePath</h4>
+<code>string</code><p>Optional savepath</p></div>
+</div></div>
+</div>
+<a id="method_resizeToCrop"></a><div class="element clickable method public method_resizeToCrop" data-toggle="collapse" data-target=".method_resizeToCrop .collapse">
+<h2>Resize by crop to fill dimensions</h2>
+<pre>resizeToCrop(integer $width, integer $height, integer $hAlign, integer $vAlign, string $savePath) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$width</h4>
+<code>integer</code>
+</div>
+<div class="subelement argument">
+<h4>$height</h4>
+<code>integer</code>
+</div>
+<div class="subelement argument">
+<h4>$hAlign</h4>
+<code>integer</code><p>Optional horisontal align</p></div>
+<div class="subelement argument">
+<h4>$vAlign</h4>
+<code>integer</code><p>Optional vertical align</p></div>
+<div class="subelement argument">
+<h4>$savePath</h4>
+<code>string</code><p>Optional savepath</p></div>
+</div></div>
+</div>
+<a id="method_resizeToFitBounds"></a><div class="element clickable method public method_resizeToFitBounds" data-toggle="collapse" data-target=".method_resizeToFitBounds .collapse">
+<h2>Resize to fit bounds dimension</h2>
+<pre>resizeToFitBounds(integer $width, integer $height, string $savePath) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$width</h4>
+<code>integer</code>
+</div>
+<div class="subelement argument">
+<h4>$height</h4>
+<code>integer</code>
+</div>
+<div class="subelement argument">
+<h4>$savePath</h4>
+<code>string</code><p>Optional savepath</p></div>
+</div></div>
+</div>
+<a id="method_resizeToFitCanvas"></a><div class="element clickable method public method_resizeToFitCanvas" data-toggle="collapse" data-target=".method_resizeToFitCanvas .collapse">
+<h2>Resize by fit to canvas dimensions</h2>
+<pre>resizeToFitCanvas(integer $width, integer $height, integer $hAlign, integer $vAlign, string $savePath) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$width</h4>
+<code>integer</code>
+</div>
+<div class="subelement argument">
+<h4>$height</h4>
+<code>integer</code>
+</div>
+<div class="subelement argument">
+<h4>$hAlign</h4>
+<code>integer</code><p>Optional horisontal align</p></div>
+<div class="subelement argument">
+<h4>$vAlign</h4>
+<code>integer</code><p>Optional vertical align</p></div>
+<div class="subelement argument">
+<h4>$savePath</h4>
+<code>string</code><p>Optional savepath</p></div>
+</div></div>
+</div>
+<a id="method_resizeToHeight"></a><div class="element clickable method public method_resizeToHeight" data-toggle="collapse" data-target=".method_resizeToHeight .collapse">
+<h2>Resize by height value</h2>
+<pre>resizeToHeight(integer $height, string $savePath) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$height</h4>
+<code>integer</code>
+</div>
+<div class="subelement argument">
+<h4>$savePath</h4>
+<code>string</code><p>Optional savepath</p></div>
+</div></div>
+</div>
+<a id="method_resizeToLongSide"></a><div class="element clickable method public method_resizeToLongSide" data-toggle="collapse" data-target=".method_resizeToLongSide .collapse">
+<h2>Resize to long side value</h2>
+<pre>resizeToLongSide(integer $size, string $savePath) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$size</h4>
+<code>integer</code><p>Long side dimension</p></div>
+<div class="subelement argument">
+<h4>$savePath</h4>
+<code>string</code><p>Optional savepath</p></div>
+</div></div>
+</div>
+<a id="method_resizeToPercentage"></a><div class="element clickable method public method_resizeToPercentage" data-toggle="collapse" data-target=".method_resizeToPercentage .collapse">
+<h2>Resize by percentage of original</h2>
+<pre>resizeToPercentage(integer $percentage, string $savePath) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$percentage</h4>
+<code>integer</code><p>Percentage</p></div>
+<div class="subelement argument">
+<h4>$savePath</h4>
+<code>string</code><p>Optional savepath</p></div>
+</div></div>
+</div>
+<a id="method_resizeToShortSide"></a><div class="element clickable method public method_resizeToShortSide" data-toggle="collapse" data-target=".method_resizeToShortSide .collapse">
+<h2>Resize to short side value</h2>
+<pre>resizeToShortSide(integer $size, string $savePath) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$size</h4>
+<code>integer</code><p>Long side dimension</p></div>
+<div class="subelement argument">
+<h4>$savePath</h4>
+<code>string</code><p>Optional savepath</p></div>
+</div></div>
+</div>
+<a id="method_resizeToWidth"></a><div class="element clickable method public method_resizeToWidth" data-toggle="collapse" data-target=".method_resizeToWidth .collapse">
+<h2>Resize by width value</h2>
+<pre>resizeToWidth(integer $width, string $savePath) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$width</h4>
+<code>integer</code>
+</div>
+<div class="subelement argument">
+<h4>$savePath</h4>
+<code>string</code><p>Optional savepath</p></div>
+</div></div>
+</div>
+<a id="method_save"></a><div class="element clickable method public method_save" data-toggle="collapse" data-target=".method_save .collapse">
+<h2>Save image to file</h2>
+<pre>save(string $savePath) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$savePath</h4>
+<code>string</code><p>New path for save</p></div>
+</div></div>
+</div>
+<a id="method_setBackgroundColor"></a><div class="element clickable method public method_setBackgroundColor" data-toggle="collapse" data-target=".method_setBackgroundColor .collapse">
+<h2>Set background color for image</h2>
+<pre>setBackgroundColor(string $hexCode, resource $image) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$hexCode</h4>
+<code>string</code><p>Hex code 24 bit or 32 bit for use alpha channel</p></div>
+<div class="subelement argument">
+<h4>$image</h4>
+<code>resource</code><p>Optional image resource</p></div>
+</div></div>
+</div>
+<a id="method_setCompression"></a><div class="element clickable method public method_setCompression" data-toggle="collapse" data-target=".method_setCompression .collapse">
+<h2>Set new compression between 1 and 100</h2>
+<pre>setCompression(integer $compression) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$compression</h4>
+<code>integer</code>
+</div>
+</div></div>
+</div>
+<a id="method_setHeight"></a><div class="element clickable method public method_setHeight" data-toggle="collapse" data-target=".method_setHeight .collapse">
+<h2>Set resize source height</h2>
+<pre>setHeight(integer $height) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$height</h4>
+<code>integer</code>
+</div>
+</div></div>
+</div>
+<a id="method_setLifeTime"></a><div class="element clickable method public method_setLifeTime" data-toggle="collapse" data-target=".method_setLifeTime .collapse">
+<h2>Set time before die of image</h2>
+<pre>setLifeTime(integer $value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>integer</code>
+</div>
+</div></div>
+</div>
+<a id="method_setMethod"></a><div class="element clickable method public method_setMethod" data-toggle="collapse" data-target=".method_setMethod .collapse">
+<h2>Set used resize method</h2>
+<pre>setMethod(array $method) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a id="method_setNeedResizeSmallerThan"></a><div class="element clickable method public method_setNeedResizeSmallerThan" data-toggle="collapse" data-target=".method_setNeedResizeSmallerThan .collapse">
+<h2>Set need processing smaller than parameters flag</h2>
+<pre>setNeedResizeSmallerThan(boolean $flag) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>boolean</code>
+</div>
+</div></div>
+</div>
+<a id="method_setNewHeight"></a><div class="element clickable method public method_setNewHeight" data-toggle="collapse" data-target=".method_setNewHeight .collapse">
+<h2>Set resize new height</h2>
+<pre>setNewHeight(integer $height) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$height</h4>
+<code>integer</code>
+</div>
+</div></div>
+</div>
+<a id="method_setNewOffsetLeft"></a><div class="element clickable method public method_setNewOffsetLeft" data-toggle="collapse" data-target=".method_setNewOffsetLeft .collapse">
+<h2>Set resize new offset left</h2>
+<pre>setNewOffsetLeft(integer $offset) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$offset</h4>
+<code>integer</code>
+</div>
+</div></div>
+</div>
+<a id="method_setNewOffsetTop"></a><div class="element clickable method public method_setNewOffsetTop" data-toggle="collapse" data-target=".method_setNewOffsetTop .collapse">
+<h2>Set resize new offset top</h2>
+<pre>setNewOffsetTop(integer $offset) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$offset</h4>
+<code>integer</code>
+</div>
+</div></div>
+</div>
+<a id="method_setNewWidth"></a><div class="element clickable method public method_setNewWidth" data-toggle="collapse" data-target=".method_setNewWidth .collapse">
+<h2>Set resize new width</h2>
+<pre>setNewWidth(integer $width) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$width</h4>
+<code>integer</code>
+</div>
+</div></div>
+</div>
+<a id="method_setOffsetLeft"></a><div class="element clickable method public method_setOffsetLeft" data-toggle="collapse" data-target=".method_setOffsetLeft .collapse">
+<h2>Set resize source offset left</h2>
+<pre>setOffsetLeft(integer $offset) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$offset</h4>
+<code>integer</code>
+</div>
+</div></div>
+</div>
+<a id="method_setOffsetTop"></a><div class="element clickable method public method_setOffsetTop" data-toggle="collapse" data-target=".method_setOffsetTop .collapse">
+<h2>Set resize source offset top</h2>
+<pre>setOffsetTop(integer $offset) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$offset</h4>
+<code>integer</code>
+</div>
+</div></div>
+</div>
+<a id="method_setSavePath"></a><div class="element clickable method public method_setSavePath" data-toggle="collapse" data-target=".method_setSavePath .collapse">
+<h2>Set new save path</h2>
+<pre>setSavePath(string $savePath) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$savePath</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_setTransparensyPreserved"></a><div class="element clickable method public method_setTransparensyPreserved" data-toggle="collapse" data-target=".method_setTransparensyPreserved .collapse">
+<h2>Set transparency preserved flag</h2>
+<pre>setTransparensyPreserved(boolean $flag) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>boolean</code>
+</div>
+</div></div>
+</div>
+<a id="method_setWidth"></a><div class="element clickable method public method_setWidth" data-toggle="collapse" data-target=".method_setWidth .collapse">
+<h2>Set resize source width</h2>
+<pre>setWidth(integer $width) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$width</h4>
+<code>integer</code>
+</div>
+</div></div>
+</div>
+<a id="method__load"></a><div class="element clickable method protected method__load" data-toggle="collapse" data-target=".method__load .collapse">
+<h2>Load image from file (specified in extension)</h2>
+<pre>_load(string $filename) : false | resource</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$filename</h4>
+<code>string</code><p>Path to file</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>false</code><code>resource</code>Resource id if success</div>
+</div></div>
+</div>
+<a id="method__resolveSavePath"></a><div class="element clickable method protected method__resolveSavePath" data-toggle="collapse" data-target=".method__resolveSavePath .collapse">
+<h2>Retrieve new save path</h2>
+<pre>_resolveSavePath() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>New path</div>
+</div></div>
+</div>
+<a id="method__save"></a><div class="element clickable method protected method__save" data-toggle="collapse" data-target=".method__save .collapse">
+<h2>Save image to filesystem</h2>
+<pre>_save() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__backgroundColor"> </a><div class="element clickable property protected property__backgroundColor" data-toggle="collapse" data-target=".property__backgroundColor .collapse">
+<h2></h2>
+<pre>$_backgroundColor : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__compression"> </a><div class="element clickable property protected property__compression" data-toggle="collapse" data-target=".property__compression .collapse">
+<h2></h2>
+<pre>$_compression : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__height"> </a><div class="element clickable property protected property__height" data-toggle="collapse" data-target=".property__height .collapse">
+<h2></h2>
+<pre>$_height : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__lifeTime"> </a><div class="element clickable property protected property__lifeTime" data-toggle="collapse" data-target=".property__lifeTime .collapse">
+<h2></h2>
+<pre>$_lifeTime : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__method"> </a><div class="element clickable property protected property__method" data-toggle="collapse" data-target=".property__method .collapse">
+<h2></h2>
+<pre>$_method : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__needResizeSmallerThan"> </a><div class="element clickable property protected property__needResizeSmallerThan" data-toggle="collapse" data-target=".property__needResizeSmallerThan .collapse">
+<h2></h2>
+<pre>$_needResizeSmallerThan : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__newHeight"> </a><div class="element clickable property protected property__newHeight" data-toggle="collapse" data-target=".property__newHeight .collapse">
+<h2></h2>
+<pre>$_newHeight : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__newOffsetLeft"> </a><div class="element clickable property protected property__newOffsetLeft" data-toggle="collapse" data-target=".property__newOffsetLeft .collapse">
+<h2></h2>
+<pre>$_newOffsetLeft : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__newOffsetTop"> </a><div class="element clickable property protected property__newOffsetTop" data-toggle="collapse" data-target=".property__newOffsetTop .collapse">
+<h2></h2>
+<pre>$_newOffsetTop : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__newWidth"> </a><div class="element clickable property protected property__newWidth" data-toggle="collapse" data-target=".property__newWidth .collapse">
+<h2></h2>
+<pre>$_newWidth : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__offsetLeft"> </a><div class="element clickable property protected property__offsetLeft" data-toggle="collapse" data-target=".property__offsetLeft .collapse">
+<h2></h2>
+<pre>$_offsetLeft : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__offsetTop"> </a><div class="element clickable property protected property__offsetTop" data-toggle="collapse" data-target=".property__offsetTop .collapse">
+<h2></h2>
+<pre>$_offsetTop : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__path"> </a><div class="element clickable property protected property__path" data-toggle="collapse" data-target=".property__path .collapse">
+<h2></h2>
+<pre>$_path : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__resource"> </a><div class="element clickable property protected property__resource" data-toggle="collapse" data-target=".property__resource .collapse">
+<h2></h2>
+<pre>$_resource : resource</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__savePath"> </a><div class="element clickable property protected property__savePath" data-toggle="collapse" data-target=".property__savePath .collapse">
+<h2></h2>
+<pre>$_savePath : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__transparensyPreserved"> </a><div class="element clickable property protected property__transparensyPreserved" data-toggle="collapse" data-target=".property__transparensyPreserved .collapse">
+<h2></h2>
+<pre>$_transparensyPreserved : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__width"> </a><div class="element clickable property protected property__width" data-toggle="collapse" data-target=".property__width .collapse">
+<h2></h2>
+<pre>$_width : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_ALIGN_BOTTOM"> </a><div class="element clickable constant  constant_ALIGN_BOTTOM" data-toggle="collapse" data-target=".constant_ALIGN_BOTTOM .collapse">
+<h2>ALIGN_BOTTOM</h2>
+<pre>ALIGN_BOTTOM </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_ALIGN_CENTER"> </a><div class="element clickable constant  constant_ALIGN_CENTER" data-toggle="collapse" data-target=".constant_ALIGN_CENTER .collapse">
+<h2>ALIGN_CENTER</h2>
+<pre>ALIGN_CENTER </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_ALIGN_LEFT"> </a><div class="element clickable constant  constant_ALIGN_LEFT" data-toggle="collapse" data-target=".constant_ALIGN_LEFT .collapse">
+<h2>ALIGN_LEFT</h2>
+<pre>ALIGN_LEFT </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_ALIGN_RIGHT"> </a><div class="element clickable constant  constant_ALIGN_RIGHT" data-toggle="collapse" data-target=".constant_ALIGN_RIGHT .collapse">
+<h2>ALIGN_RIGHT</h2>
+<pre>ALIGN_RIGHT </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_ALIGN_TOP"> </a><div class="element clickable constant  constant_ALIGN_TOP" data-toggle="collapse" data-target=".constant_ALIGN_TOP .collapse">
+<h2>ALIGN_TOP</h2>
+<pre>ALIGN_TOP </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2012-12-14T14:55:09+02:00.<br></footer></div>
+</div>
+</body>
+</html>
