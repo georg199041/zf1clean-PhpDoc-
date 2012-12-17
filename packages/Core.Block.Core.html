@@ -21,7 +21,6 @@
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a>Packages</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
-<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -32,10 +31,10 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">271</span></a></li>
+                <span class="label label-info">0</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
-                <span class="label label-info">5</span>
+                <span class="label label-info">4</span>
 </li></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
                 <span class="label label-info">1</span></a></li>
@@ -72,12 +71,15 @@
 </li></ul>
 </li>
 <li>
-<span class="empty-package"><i class="icon-folder-close"></i>Grid</span><ul class="nav nav-list nav-packages"><li>
+<a href="../packages/Core.Block.Core.Block.Grid.html" title="Grid"><i class="icon-folder-open"></i>Grid</a><ul class="nav nav-list nav-packages"><li>
 <a href="../packages/Core.Block.Core.Block.Grid.Column.html" title="Column"><i class="icon-folder-open"></i>Column</a><ul class="nav nav-list nav-packages"></ul>
 </li></ul>
 </li>
 <li>
 <a href="../packages/Core.Block.Core.Block.Pagination.html" title="Pagination"><i class="icon-folder-open"></i>Pagination</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<a href="../packages/Core.Block.Core.Block.Toolbar.html" title="Toolbar"><i class="icon-folder-open"></i>Toolbar</a><ul class="nav nav-list nav-packages"></ul>
 </li>
 <li>
 <span class="empty-package"><i class="icon-folder-close"></i>View</span><ul class="nav nav-list nav-packages"><li>
@@ -255,6 +257,15 @@ Basic usage implementing to add buttons to form input element like as viewed inp
 </li>
 </li></ul>
 <div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="Core_Block_Grid_Widget" class="element ajax clickable class">
+<h1>Core_Block_Grid_Widget<a href="../classes/Core_Block_Grid_Widget.html">¶</a>
+</h1>
+<p class="short_description">Base grid class</p>
+<div class="details collapse"></div>
+<a href="../classes/Core_Block_Grid_Widget.html" class="more">« More »</a>
+</div>
 <ul class="breadcrumb"><li>
 <a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Core.html">Core</a></li>
 <li>
@@ -308,6 +319,53 @@ Warning this column now is uncomplete</p>
 <div class="details collapse"></div>
 <a href="../classes/Core_Block_Grid_Column_Editor.html" class="more">« More »</a>
 </div>
+<div id="Core_Block_Grid_Column_Formelement" class="element ajax clickable class">
+<h1>Core_Block_Grid_Column_Formelement<a href="../classes/Core_Block_Grid_Column_Formelement.html">¶</a>
+</h1>
+<p class="short_description">Renders column like as inline grid editor
+Warning this column now is uncomplete</p>
+<div class="details collapse"></div>
+<a href="../classes/Core_Block_Grid_Column_Formelement.html" class="more">« More »</a>
+</div>
+<div id="Core_Block_Grid_Column_Hyperlink" class="element ajax clickable class">
+<h1>Core_Block_Grid_Column_Hyperlink<a href="../classes/Core_Block_Grid_Column_Hyperlink.html">¶</a>
+</h1>
+<p class="short_description">Renders column like as inline grid editor
+Warning this column now is uncomplete</p>
+<div class="details collapse"></div>
+<a href="../classes/Core_Block_Grid_Column_Hyperlink.html" class="more">« More »</a>
+</div>
+<div id="Core_Block_Grid_Column_Literal" class="element ajax clickable class">
+<h1>Core_Block_Grid_Column_Literal<a href="../classes/Core_Block_Grid_Column_Literal.html">¶</a>
+</h1>
+<p class="short_description">Renders column like as static literal string ir value is empty</p>
+<div class="details collapse"></div>
+<a href="../classes/Core_Block_Grid_Column_Literal.html" class="more">« More »</a>
+</div>
+<div id="Core_Block_Grid_Column_Partial" class="element ajax clickable class">
+<h1>Core_Block_Grid_Column_Partial<a href="../classes/Core_Block_Grid_Column_Partial.html">¶</a>
+</h1>
+<p class="short_description">Maximum customized type of column,
+used templating system for rendering</p>
+<div class="details collapse"></div>
+<a href="../classes/Core_Block_Grid_Column_Partial.html" class="more">« More »</a>
+</div>
+<div id="Core_Block_Grid_Column_Radio" class="element ajax clickable class">
+<h1>Core_Block_Grid_Column_Radio<a href="../classes/Core_Block_Grid_Column_Radio.html">¶</a>
+</h1>
+<p class="short_description">Renders grid column as checkbox form element
+You can configure checked and unchecked values</p>
+<div class="details collapse"></div>
+<a href="../classes/Core_Block_Grid_Column_Radio.html" class="more">« More »</a>
+</div>
+<div id="Core_Block_Grid_Column_Select" class="element ajax clickable class">
+<h1>Core_Block_Grid_Column_Select<a href="../classes/Core_Block_Grid_Column_Select.html">¶</a>
+</h1>
+<p class="short_description">Renders grid column as checkbox form element
+You can configure checked and unchecked values</p>
+<div class="details collapse"></div>
+<a href="../classes/Core_Block_Grid_Column_Select.html" class="more">« More »</a>
+</div>
 </div>
 </div>
 <ul class="breadcrumb"><li>
@@ -334,6 +392,46 @@ Warning this column now is uncomplete</p>
 <p class="short_description">Render pagination template from Zend_Paginator like class</p>
 <div class="details collapse"></div>
 <a href="../classes/Core_Block_Pagination_Widget.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Core.html">Core</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/Core.Block.html">Block</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/Core.Block.Core.html">Core</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/Core.Block.Core.Block.html">Block</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/Core.Block.Core.Block.Toolbar.html">Toolbar</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="Core_Block_Toolbar_Button" class="element ajax clickable class">
+<h1>Core_Block_Toolbar_Button<a href="../classes/Core_Block_Toolbar_Button.html">¶</a>
+</h1>
+<p class="short_description">Toolbar button implementation class</p>
+<div class="details collapse"></div>
+<a href="../classes/Core_Block_Toolbar_Button.html" class="more">« More »</a>
+</div>
+<div id="Core_Block_Toolbar_Link" class="element ajax clickable class">
+<h1>Core_Block_Toolbar_Link<a href="../classes/Core_Block_Toolbar_Link.html">¶</a>
+</h1>
+<p class="short_description">Toolbar link implementation class</p>
+<div class="details collapse"></div>
+<a href="../classes/Core_Block_Toolbar_Link.html" class="more">« More »</a>
+</div>
+<div id="Core_Block_Toolbar_Widget" class="element ajax clickable class">
+<h1>Core_Block_Toolbar_Widget<a href="../classes/Core_Block_Toolbar_Widget.html">¶</a>
+</h1>
+<p class="short_description">Base toolbar class</p>
+<div class="details collapse"></div>
+<a href="../classes/Core_Block_Toolbar_Widget.html" class="more">« More »</a>
 </div>
 </div>
 <ul class="breadcrumb"><li>
@@ -390,7 +488,7 @@ Added parse * like options as current associated in request</p>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2012-12-14T17:59:05+02:00.<br></footer></div>
+            generated on 2012-12-16T21:19:30+02:00.<br></footer></div>
 </div>
 </body>
 </html>

@@ -21,7 +21,6 @@
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a>Packages</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
-<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -32,10 +31,10 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">271</span></a></li>
+                <span class="label label-info">0</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
-                <span class="label label-info">5</span>
+                <span class="label label-info">4</span>
 </li></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
                 <span class="label label-info">1</span></a></li>
@@ -76,17 +75,14 @@ Proxied to engine"><span class="description">Add base path
 Proxied to engine</span><pre>addBasePath()</pre></a></li>
 <li class="method public inherited"><a href="#method_addBlockChild" title="addBlockChild :: Add single child block"><span class="description">Add single child block</span><pre>addBlockChild()</pre></a></li>
 <li class="method public inherited"><a href="#method_addBlockChilds" title="addBlockChilds :: Add childs blocks"><span class="description">Add childs blocks</span><pre>addBlockChilds()</pre></a></li>
-<li class="method public "><a href="#method_addColumn" title="addColumn :: "><span class="description">addColumn()
-        </span><pre>addColumn()</pre></a></li>
-<li class="method public "><a href="#method_addColumns" title="addColumns :: "><span class="description">addColumns()
-        </span><pre>addColumns()</pre></a></li>
+<li class="method public "><a href="#method_addColumn" title="addColumn :: Add single column"><span class="description">Add single column</span><pre>addColumn()</pre></a></li>
+<li class="method public "><a href="#method_addColumns" title="addColumns :: Add columns list"><span class="description">Add columns list</span><pre>addColumns()</pre></a></li>
 <li class="method public inherited"><a href="#method_assign" title="assign :: Assign propert(y|ies)"><span class="description">Assign propert(y|ies)</span><pre>assign()</pre></a></li>
 <li class="method public inherited"><a href="#method_clearVars" title="clearVars :: Clear all properties"><span class="description">Clear all properties</span><pre>clearVars()</pre></a></li>
 <li class="method public inherited"><a href="#method_delAttribute" title="delAttribute :: Delete attribute"><span class="description">Delete attribute</span><pre>delAttribute()</pre></a></li>
 <li class="method public inherited"><a href="#method_delAttributes" title="delAttributes :: Delete array of attributes"><span class="description">Delete array of attributes</span><pre>delAttributes()</pre></a></li>
 <li class="method public inherited"><a href="#method_delBlockChild" title="delBlockChild :: Delete block from childs"><span class="description">Delete block from childs</span><pre>delBlockChild()</pre></a></li>
-<li class="method public "><a href="#method_delColumn" title="delColumn :: "><span class="description">delColumn()
-        </span><pre>delColumn()</pre></a></li>
+<li class="method public "><a href="#method_delColumn" title="delColumn :: Delete specified column"><span class="description">Delete specified column</span><pre>delColumn()</pre></a></li>
 <li class="method public inherited"><a href="#method_getAttribute" title="getAttribute :: Get attribute"><span class="description">Get attribute</span><pre>getAttribute()</pre></a></li>
 <li class="method public inherited"><a href="#method_getAttributes" title="getAttributes :: Get all attributes"><span class="description">Get all attributes</span><pre>getAttributes()</pre></a></li>
 <li class="method public inherited"><a href="#method_getBlockChild" title="getBlockChild :: Get block by name"><span class="description">Get block by name</span><pre>getBlockChild()</pre></a></li>
@@ -98,28 +94,18 @@ Create from class name if not defined</span><pre>getBlockName()</pre></a></li>
 <li class="method public inherited"><a href="#method_getBlockPlacement" title="getBlockPlacement :: Get block placement"><span class="description">Get block placement</span><pre>getBlockPlacement()</pre></a></li>
 <li class="method public inherited"><a href="#method_getCache" title="getCache :: Get cache object"><span class="description">Get cache object</span><pre>getCache()</pre></a></li>
 <li class="method public inherited"><a href="#method_getCacheId" title="getCacheId :: Generate cache id"><span class="description">Generate cache id</span><pre>getCacheId()</pre></a></li>
-<li class="method public "><a href="#method_getColumn" title="getColumn :: "><span class="description">getColumn()
-        </span><pre>getColumn()</pre></a></li>
-<li class="method public "><a href="#method_getColumns" title="getColumns :: "><span class="description">getColumns()
-        </span><pre>getColumns()</pre></a></li>
-<li class="method public "><a href="#method_getData" title="getData :: "><span class="description">getData()
-        </span><pre>getData()</pre></a></li>
+<li class="method public "><a href="#method_getColumn" title="getColumn :: Get column by name"><span class="description">Get column by name</span><pre>getColumn()</pre></a></li>
+<li class="method public "><a href="#method_getColumns" title="getColumns :: Get column objects"><span class="description">Get column objects</span><pre>getColumns()</pre></a></li>
+<li class="method public "><a href="#method_getData" title="getData :: Get all grid data"><span class="description">Get all grid data</span><pre>getData()</pre></a></li>
 <li class="method public inherited"><a href="#method_getEngine" title="getEngine :: Get rendering core engine"><span class="description">Get rendering core engine</span><pre>getEngine()</pre></a></li>
-<li class="method public "><a href="#method_getFilterValues" title="getFilterValues :: "><span class="description">getFilterValues()
-        </span><pre>getFilterValues()</pre></a></li>
-<li class="method public "><a href="#method_getIdColumnName" title="getIdColumnName :: "><span class="description">getIdColumnName()
-        </span><pre>getIdColumnName()</pre></a></li>
+<li class="method public "><a href="#method_getFilterValues" title="getFilterValues :: Load filters data from request"><span class="description">Load filters data from request</span><pre>getFilterValues()</pre></a></li>
+<li class="method public "><a href="#method_getIdColumnName" title="getIdColumnName :: Get identity column name"><span class="description">Get identity column name</span><pre>getIdColumnName()</pre></a></li>
 <li class="method public inherited"><a href="#method_getLogger" title="getLogger :: Gets logger instance"><span class="description">Gets logger instance</span><pre>getLogger()</pre></a></li>
-<li class="method public "><a href="#method_getMessage" title="getMessage :: "><span class="description">getMessage()
-        </span><pre>getMessage()</pre></a></li>
-<li class="method public "><a href="#method_getName" title="getName :: "><span class="description">getName()
-        </span><pre>getName()</pre></a></li>
+<li class="method public "><a href="#method_getName" title="getName :: Get (setup if need) grid name"><span class="description">Get (setup if need) grid name</span><pre>getName()</pre></a></li>
 <li class="method public inherited"><a href="#method_getRequest" title="getRequest :: Get front controller request object"><span class="description">Get front controller request object</span><pre>getRequest()</pre></a></li>
 <li class="method public inherited"><a href="#method_getResponse" title="getResponse :: Get front controller response"><span class="description">Get front controller response</span><pre>getResponse()</pre></a></li>
-<li class="method public "><a href="#method_getRouteName" title="getRouteName :: "><span class="description">getRouteName()
-        </span><pre>getRouteName()</pre></a></li>
-<li class="method public "><a href="#method_getRouteOptions" title="getRouteOptions :: "><span class="description">getRouteOptions()
-        </span><pre>getRouteOptions()</pre></a></li>
+<li class="method public "><a href="#method_getRouteName" title="getRouteName :: Get used route name"><span class="description">Get used route name</span><pre>getRouteName()</pre></a></li>
+<li class="method public "><a href="#method_getRouteOptions" title="getRouteOptions :: Get (setup default) route options"><span class="description">Get (setup default) route options</span><pre>getRouteOptions()</pre></a></li>
 <li class="method public inherited"><a href="#method_getScriptName" title="getScriptName :: Get script name"><span class="description">Get script name</span><pre>getScriptName()</pre></a></li>
 <li class="method public inherited"><a href="#method_getScriptPaths" title="getScriptPaths :: Get search script paths"><span class="description">Get search script paths</span><pre>getScriptPaths()</pre></a></li>
 <li class="method public inherited"><a href="#method_hasAttribute" title="hasAttribute :: Check for has attribute"><span class="description">Check for has attribute</span><pre>hasAttribute()</pre></a></li>
@@ -128,7 +114,7 @@ Create from class name if not defined</span><pre>getBlockName()</pre></a></li>
 <li class="method public inherited"><a href="#method_isCacheable" title="isCacheable :: Check if localy cache s enabled"><span class="description">Check if localy cache s enabled</span><pre>isCacheable()</pre></a></li>
 <li class="method public inherited"><a href="#method_isRendered" title="isRendered :: Check if rendered flag set"><span class="description">Check if rendered flag set</span><pre>isRendered()</pre></a></li>
 <li class="method public inherited"><a href="#method_preRender" title="preRender :: Direct before render initializations"><span class="description">Direct before render initializations</span><pre>preRender()</pre></a></li>
-<li class="method public "><a href="#method_render" title="render :: Render script, highlighter and blocks"><span class="description">Render script, highlighter and blocks</span><pre>render()</pre></a></li>
+<li class="method public "><a href="#method_render" title="render :: Render entrie grid html"><span class="description">Render entrie grid html</span><pre>render()</pre></a></li>
 <li class="method public inherited"><a href="#method_renderBlockChilds" title="renderBlockChilds :: Render only blocks of specified placement"><span class="description">Render only blocks of specified placement</span><pre>renderBlockChilds()</pre></a></li>
 <li class="method public inherited"><a href="#method_setAttribute" title="setAttribute :: Set attribute"><span class="description">Set attribute</span><pre>setAttribute()</pre></a></li>
 <li class="method public inherited"><a href="#method_setAttributes" title="setAttributes :: Set array of attributes at once"><span class="description">Set array of attributes at once</span><pre>setAttributes()</pre></a></li>
@@ -141,23 +127,15 @@ Proxied to engine</span><pre>setBasePath()</pre></a></li>
 <li class="method public inherited"><a href="#method_setBlockPlacement" title="setBlockPlacement :: Set block placement relative to arent"><span class="description">Set block placement relative to arent</span><pre>setBlockPlacement()</pre></a></li>
 <li class="method public inherited"><a href="#method_setCache" title="setCache :: Set new cache object"><span class="description">Set new cache object</span><pre>setCache()</pre></a></li>
 <li class="method public inherited"><a href="#method_setCacheable" title="setCacheable :: Set local use cache"><span class="description">Set local use cache</span><pre>setCacheable()</pre></a></li>
-<li class="method public "><a href="#method_setColumns" title="setColumns :: "><span class="description">setColumns()
-        </span><pre>setColumns()</pre></a></li>
-<li class="method public "><a href="#method_setData" title="setData :: "><span class="description">setData()
-        </span><pre>setData()</pre></a></li>
-<li class="method public "><a href="#method_setIdColumnName" title="setIdColumnName :: "><span class="description">setIdColumnName()
-        </span><pre>setIdColumnName()</pre></a></li>
+<li class="method public "><a href="#method_setColumns" title="setColumns :: Set all columns objects"><span class="description">Set all columns objects</span><pre>setColumns()</pre></a></li>
+<li class="method public "><a href="#method_setData" title="setData :: Set grid source data"><span class="description">Set grid source data</span><pre>setData()</pre></a></li>
+<li class="method public "><a href="#method_setIdColumnName" title="setIdColumnName :: Set identity column name"><span class="description">Set identity column name</span><pre>setIdColumnName()</pre></a></li>
 <li class="method public inherited"><a href="#method_setLogger" title="setLogger :: Set new logger instance"><span class="description">Set new logger instance</span><pre>setLogger()</pre></a></li>
-<li class="method public "><a href="#method_setMessage" title="setMessage :: "><span class="description">setMessage()
-        </span><pre>setMessage()</pre></a></li>
-<li class="method public "><a href="#method_setName" title="setName :: "><span class="description">setName()
-        </span><pre>setName()</pre></a></li>
+<li class="method public "><a href="#method_setName" title="setName :: Set grid name"><span class="description">Set grid name</span><pre>setName()</pre></a></li>
 <li class="method public "><a href="#method_setOptions" title="setOptions :: Set all options at once"><span class="description">Set all options at once</span><pre>setOptions()</pre></a></li>
 <li class="method public inherited"><a href="#method_setRendered" title="setRendered :: Set rendered flag"><span class="description">Set rendered flag</span><pre>setRendered()</pre></a></li>
-<li class="method public "><a href="#method_setRouteName" title="setRouteName :: "><span class="description">setRouteName()
-        </span><pre>setRouteName()</pre></a></li>
-<li class="method public "><a href="#method_setRouteOptions" title="setRouteOptions :: "><span class="description">setRouteOptions()
-        </span><pre>setRouteOptions()</pre></a></li>
+<li class="method public "><a href="#method_setRouteName" title="setRouteName :: Set used route name"><span class="description">Set used route name</span><pre>setRouteName()</pre></a></li>
+<li class="method public "><a href="#method_setRouteOptions" title="setRouteOptions :: Set route options"><span class="description">Set route options</span><pre>setRouteOptions()</pre></a></li>
 <li class="method public inherited"><a href="#method_setScriptName" title="setScriptName :: Set new script name"><span class="description">Set new script name</span><pre>setScriptName()</pre></a></li>
 <li class="method public inherited"><a href="#method_setScriptPath" title="setScriptPath :: Set script search path
 Proxied to engine"><span class="description">Set script search path
@@ -176,14 +154,10 @@ Proxied to engine</span><pre>setScriptPath()</pre></a></li>
 <li class="method protected inherited"><a href="#method__getBlockNames" title="_getBlockNames :: Get block name variants for loader"><span class="description">Get block name variants for loader</span><pre>_getBlockNames()</pre></a></li>
 <li class="method protected inherited"><a href="#method__getScriptFile" title="_getScriptFile :: Search script file"><span class="description">Search script file</span><pre>_getScriptFile()</pre></a></li>
 <li class="method protected inherited"><a href="#method__log" title="_log :: Add log message"><span class="description">Add log message</span><pre>_log()</pre></a></li>
-<li class="method protected "><a href="#method__renderColAttribs" title="_renderColAttribs :: "><span class="description">_renderColAttribs()
-        </span><pre>_renderColAttribs()</pre></a></li>
-<li class="method protected "><a href="#method__renderTbody" title="_renderTbody :: "><span class="description">_renderTbody()
-        </span><pre>_renderTbody()</pre></a></li>
-<li class="method protected "><a href="#method__renderTfoot" title="_renderTfoot :: "><span class="description">_renderTfoot()
-        </span><pre>_renderTfoot()</pre></a></li>
-<li class="method protected "><a href="#method__renderThead" title="_renderThead :: "><span class="description">_renderThead()
-        </span><pre>_renderThead()</pre></a></li>
+<li class="method protected "><a href="#method__renderColAttribs" title="_renderColAttribs :: Render &lt;col&gt; tag html"><span class="description">Render &lt;col&gt; tag html</span><pre>_renderColAttribs()</pre></a></li>
+<li class="method protected "><a href="#method__renderTbody" title="_renderTbody :: Rendet table body rows"><span class="description">Rendet table body rows</span><pre>_renderTbody()</pre></a></li>
+<li class="method protected "><a href="#method__renderTfoot" title="_renderTfoot :: Render table footer tag (currently not used)"><span class="description">Render table footer tag (currently not used)</span><pre>_renderTfoot()</pre></a></li>
+<li class="method protected "><a href="#method__renderThead" title="_renderThead :: Render table header tag"><span class="description">Render table header tag</span><pre>_renderThead()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header">
@@ -200,16 +174,15 @@ Proxied to engine</span><pre>setScriptPath()</pre></a></li>
 <li class="property protected inherited"><a href="#property__blockPlacment" title="$_blockPlacment :: Plock placement relative to parent"><span class="description"></span><pre>$_blockPlacment</pre></a></li>
 <li class="property protected inherited"><a href="#property__cache" title="$_cache :: Global cache object"><span class="description"></span><pre>$_cache</pre></a></li>
 <li class="property protected inherited"><a href="#property__cacheable" title="$_cacheable :: Cache local use flag"><span class="description"></span><pre>$_cacheable</pre></a></li>
-<li class="property protected "><a href="#property__columns" title="$_columns :: "><span class="description"></span><pre>$_columns</pre></a></li>
-<li class="property protected "><a href="#property__data" title="$_data :: "><span class="description"></span><pre>$_data</pre></a></li>
+<li class="property protected "><a href="#property__columns" title="$_columns :: Defined columns for render"><span class="description"></span><pre>$_columns</pre></a></li>
+<li class="property protected "><a href="#property__data" title="$_data :: Column filling data"><span class="description"></span><pre>$_data</pre></a></li>
 <li class="property protected inherited"><a href="#property__engine" title="$_engine :: Global engine object"><span class="description"></span><pre>$_engine</pre></a></li>
-<li class="property protected "><a href="#property__idColumnName" title="$_idColumnName :: "><span class="description"></span><pre>$_idColumnName</pre></a></li>
+<li class="property protected "><a href="#property__idColumnName" title="$_idColumnName :: Identity column name"><span class="description"></span><pre>$_idColumnName</pre></a></li>
 <li class="property protected inherited"><a href="#property__logger" title="$_logger :: Logger instance"><span class="description"></span><pre>$_logger</pre></a></li>
-<li class="property protected "><a href="#property__messages" title="$_messages :: "><span class="description"></span><pre>$_messages</pre></a></li>
-<li class="property protected "><a href="#property__name" title="$_name :: "><span class="description"></span><pre>$_name</pre></a></li>
+<li class="property protected "><a href="#property__name" title="$_name :: Grid name"><span class="description"></span><pre>$_name</pre></a></li>
 <li class="property protected inherited"><a href="#property__rendered" title="$_rendered :: Flag of rendering completed"><span class="description"></span><pre>$_rendered</pre></a></li>
-<li class="property protected "><a href="#property__routeName" title="$_routeName :: "><span class="description"></span><pre>$_routeName</pre></a></li>
-<li class="property protected "><a href="#property__routeOptions" title="$_routeOptions :: "><span class="description"></span><pre>$_routeOptions</pre></a></li>
+<li class="property protected "><a href="#property__routeName" title="$_routeName :: Used route name"><span class="description"></span><pre>$_routeName</pre></a></li>
+<li class="property protected "><a href="#property__routeOptions" title="$_routeOptions :: Grid route options"><span class="description"></span><pre>$_routeOptions</pre></a></li>
 <li class="property protected inherited"><a href="#property__scriptName" title="$_scriptName :: Template script name"><span class="description"></span><pre>$_scriptName</pre></a></li>
 </ul>
 </li>
@@ -240,29 +213,29 @@ Proxied to engine</span><pre>setScriptPath()</pre></a></li>
 </li>
 </ul>
 <div class="element class">
-<p class="short_description">Zend Framework</p>
+<p class="short_description">Base grid class</p>
 <div class="details">
-<div class="long_description"><p>LICENSE</p>
-
-<p>This source file is subject to the new BSD license that is bundled
-with this package in the file LICENSE.txt.
-It is also available through the world-wide-web at this URL:
-http://framework.zend.com/license/new-bsd
-If you did not receive a copy of the license and are unable to
-obtain it through the world-wide-web, please send an email
-to license@zend.com so we can send you a copy immediately.</p></div>
+<div class="long_description"></div>
 <table class="table table-bordered">
 <tr>
+<th>category</th>
+<td>Core</td>
+</tr>
+<tr>
 <th>package</th>
-<td><a href="../packages/Default.html">Core_Block</a></td>
+<td><a href="../packages/Core.Block.Core.Block.Grid.html">Core_Block</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Core_Block_Grid</td>
 </tr>
 <tr>
 <th>copyright</th>
 <td>Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)</td>
 </tr>
 <tr>
-<th>version</th>
-<td>$Id: View.php 0.1 2012-12-12 pavlenko $</td>
+<th>license</th>
+<td><a href="http://framework.zend.com/license/new-bsd">New BSD License</a></td>
 </tr>
 </table>
 <h3>
@@ -504,7 +477,7 @@ Proxied to engine</h2>
 </div>
 <a id="method_addBlockChild"></a><div class="element clickable method public method_addBlockChild" data-toggle="collapse" data-target=".method_addBlockChild .collapse">
 <h2>Add single child block</h2>
-<pre>addBlockChild(string | \Core_View_Block $child, $placement) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<pre>addBlockChild(string | \Core_View_Block $child, string $placement) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -515,9 +488,10 @@ Proxied to engine</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$child</h4>
-<code>string</code><code>\Core_View_Block</code>
-</div>
-<div class="subelement argument"><h4>$placement</h4></div>
+<code>string</code><code>\Core_View_Block</code><p>Block to add</p></div>
+<div class="subelement argument">
+<h4>$placement</h4>
+<code>string</code><p>Block placement</p></div>
 <h3>Exceptions</h3>
 <table class="table table-bordered"><tr>
 <th><code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code></th>
@@ -529,7 +503,7 @@ Proxied to engine</h2>
 </div>
 <a id="method_addBlockChilds"></a><div class="element clickable method public method_addBlockChilds" data-toggle="collapse" data-target=".method_addBlockChilds .collapse">
 <h2>Add childs blocks</h2>
-<pre>addBlockChilds(array $childs, $placement) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<pre>addBlockChilds(array $childs, string $placement) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -540,33 +514,47 @@ Proxied to engine</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$childs</h4>
-<code>array</code>
-</div>
-<div class="subelement argument"><h4>$placement</h4></div>
+<code>array</code><p>Block list to add</p></div>
+<div class="subelement argument">
+<h4>$placement</h4>
+<code>string</code><p>Blocks pacement name</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
 </div></div>
 </div>
 <a id="method_addColumn"></a><div class="element clickable method public method_addColumn" data-toggle="collapse" data-target=".method_addColumn .collapse">
-<h2>addColumn()
-        </h2>
-<pre>addColumn($element) </pre>
+<h2>Add single column</h2>
+<pre>addColumn(array | <a href="../classes/Core_Block_Grid_Column_Default.html">\Core_Block_Grid_Column_Default</a> $element) : <a href="../classes/Core_Block_Grid_Widget.html">\Core_Block_Grid_Widget</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$element</h4></div>
+<div class="subelement argument">
+<h4>$element</h4>
+<code>array</code><code><a href="../classes/Core_Block_Grid_Column_Default.html">\Core_Block_Grid_Column_Default</a></code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/Core_Block_Exception.html">\Core_Block_Exception</a></code></th>
+<td>If column definition invalid</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Grid_Widget.html">\Core_Block_Grid_Widget</a></code></div>
 </div></div>
 </div>
 <a id="method_addColumns"></a><div class="element clickable method public method_addColumns" data-toggle="collapse" data-target=".method_addColumns .collapse">
-<h2>addColumns()
-        </h2>
-<pre>addColumns(array $value) </pre>
+<h2>Add columns list</h2>
+<pre>addColumns(array $value) : <a href="../classes/Core_Block_Grid_Widget.html">\Core_Block_Grid_Widget</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$value</h4></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Grid_Widget.html">\Core_Block_Grid_Widget</a></code></div>
 </div></div>
 </div>
 <a id="method_assign"></a><div class="element clickable method public method_assign" data-toggle="collapse" data-target=".method_assign .collapse">
@@ -672,14 +660,18 @@ Proxied to engine</h2>
 </div></div>
 </div>
 <a id="method_delColumn"></a><div class="element clickable method public method_delColumn" data-toggle="collapse" data-target=".method_delColumn .collapse">
-<h2>delColumn()
-        </h2>
-<pre>delColumn($name) </pre>
+<h2>Delete specified column</h2>
+<pre>delColumn(\unknown_type $name) : <a href="../classes/Core_Block_Grid_Widget.html">\Core_Block_Grid_Widget</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$name</h4></div>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>\unknown_type</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Grid_Widget.html">\Core_Block_Grid_Widget</a></code></div>
 </div></div>
 </div>
 <a id="method_getAttribute"></a><div class="element clickable method public method_getAttribute" data-toggle="collapse" data-target=".method_getAttribute .collapse">
@@ -748,7 +740,7 @@ Proxied to engine</h2>
 </div>
 <a id="method_getBlockChilds"></a><div class="element clickable method public method_getBlockChilds" data-toggle="collapse" data-target=".method_getBlockChilds .collapse">
 <h2>Get childs blocks</h2>
-<pre>getBlockChilds($placement) : array</pre>
+<pre>getBlockChilds(string $placement) : array</pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -757,7 +749,9 @@ Proxied to engine</h2>
 <td>\Core_Block_View::getBlockChilds()</td>
 </tr></table>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$placement</h4></div>
+<div class="subelement argument">
+<h4>$placement</h4>
+<code>string</code><p>Blocks pacement name</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -834,29 +828,41 @@ Create from class name if not defined</h2>
 </div></div>
 </div>
 <a id="method_getColumn"></a><div class="element clickable method public method_getColumn" data-toggle="collapse" data-target=".method_getColumn .collapse">
-<h2>getColumn()
-        </h2>
-<pre>getColumn($name) </pre>
+<h2>Get column by name</h2>
+<pre>getColumn(string $name) : <a href="../classes/Core_Block_Grid_Column_Default.html">\Core_Block_Grid_Column_Default</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$name</h4></div>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Grid_Column_Default.html">\Core_Block_Grid_Column_Default</a></code></div>
 </div></div>
 </div>
 <a id="method_getColumns"></a><div class="element clickable method public method_getColumns" data-toggle="collapse" data-target=".method_getColumns .collapse">
-<h2>getColumns()
-        </h2>
-<pre>getColumns() </pre>
+<h2>Get column objects</h2>
+<pre>getColumns() : array</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
 </div>
 <a id="method_getData"></a><div class="element clickable method public method_getData" data-toggle="collapse" data-target=".method_getData .collapse">
-<h2>getData()
-        </h2>
-<pre>getData() </pre>
+<h2>Get all grid data</h2>
+<pre>getData() : array | \Iterator</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code><code>\Iterator</code>
+</div>
+</div></div>
 </div>
 <a id="method_getEngine"></a><div class="element clickable method public method_getEngine" data-toggle="collapse" data-target=".method_getEngine .collapse">
 <h2>Get rendering core engine</h2>
@@ -873,18 +879,24 @@ Create from class name if not defined</h2>
 </div></div>
 </div>
 <a id="method_getFilterValues"></a><div class="element clickable method public method_getFilterValues" data-toggle="collapse" data-target=".method_getFilterValues .collapse">
-<h2>getFilterValues()
-        </h2>
-<pre>getFilterValues() </pre>
+<h2>Load filters data from request</h2>
+<pre>getFilterValues() : array</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
 </div>
 <a id="method_getIdColumnName"></a><div class="element clickable method public method_getIdColumnName" data-toggle="collapse" data-target=".method_getIdColumnName .collapse">
-<h2>getIdColumnName()
-        </h2>
-<pre>getIdColumnName() </pre>
+<h2>Get identity column name</h2>
+<pre>getIdColumnName() : string</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
 </div>
 <a id="method_getLogger"></a><div class="element clickable method public method_getLogger" data-toggle="collapse" data-target=".method_getLogger .collapse">
 <h2>Gets logger instance</h2>
@@ -900,24 +912,15 @@ Create from class name if not defined</h2>
 <div class="subelement response"><code>\Zend_Log</code></div>
 </div></div>
 </div>
-<a id="method_getMessage"></a><div class="element clickable method public method_getMessage" data-toggle="collapse" data-target=".method_getMessage .collapse">
-<h2>getMessage()
-        </h2>
-<pre>getMessage($name, $default) </pre>
+<a id="method_getName"></a><div class="element clickable method public method_getName" data-toggle="collapse" data-target=".method_getName .collapse">
+<h2>Get (setup if need) grid name</h2>
+<pre>getName() : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$name</h4></div>
-<div class="subelement argument"><h4>$default</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
 </div></div>
-</div>
-<a id="method_getName"></a><div class="element clickable method public method_getName" data-toggle="collapse" data-target=".method_getName .collapse">
-<h2>getName()
-        </h2>
-<pre>getName() </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_getRequest"></a><div class="element clickable method public method_getRequest" data-toggle="collapse" data-target=".method_getRequest .collapse">
 <h2>Get front controller request object</h2>
@@ -948,18 +951,24 @@ Create from class name if not defined</h2>
 </div></div>
 </div>
 <a id="method_getRouteName"></a><div class="element clickable method public method_getRouteName" data-toggle="collapse" data-target=".method_getRouteName .collapse">
-<h2>getRouteName()
-        </h2>
-<pre>getRouteName() </pre>
+<h2>Get used route name</h2>
+<pre>getRouteName() : string</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
 </div>
 <a id="method_getRouteOptions"></a><div class="element clickable method public method_getRouteOptions" data-toggle="collapse" data-target=".method_getRouteOptions .collapse">
-<h2>getRouteOptions()
-        </h2>
-<pre>getRouteOptions() </pre>
+<h2>Get (setup default) route options</h2>
+<pre>getRouteOptions() : array</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
 </div>
 <a id="method_getScriptName"></a><div class="element clickable method public method_getScriptName" data-toggle="collapse" data-target=".method_getScriptName .collapse">
 <h2>Get script name</h2>
@@ -1094,15 +1103,20 @@ Create from class name if not defined</h2>
 </div></div>
 </div>
 <a id="method_render"></a><div class="element clickable method public method_render" data-toggle="collapse" data-target=".method_render .collapse">
-<h2>Render script, highlighter and blocks</h2>
+<h2>Render entrie grid html</h2>
 <pre>render(string $name) : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
+<div class="long_description"><p>(non-PHPdoc)</p></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="Core.Block.View.html#%5CCore_Block_View::render()">\Core_Block_View::render()</a></td>
+</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$name</h4>
-<code>string</code><p>overrided script name</p></div>
+<code>string</code><p>script name for render (use  BLOCK_DUMMY for prevent errors)</p>
+</div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
 </div></div>
@@ -1202,7 +1216,7 @@ Proxied to engine</h2>
 </div>
 <a id="method_setBlockChilds"></a><div class="element clickable method public method_setBlockChilds" data-toggle="collapse" data-target=".method_setBlockChilds .collapse">
 <h2>Set childs blocks</h2>
-<pre>setBlockChilds(array $childs, $placement) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<pre>setBlockChilds(array $childs, string $placement) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -1213,9 +1227,10 @@ Proxied to engine</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$childs</h4>
-<code>array</code>
-</div>
-<div class="subelement argument"><h4>$placement</h4></div>
+<code>array</code><p>Blocks list to set</p></div>
+<div class="subelement argument">
+<h4>$placement</h4>
+<code>string</code><p>Blocks pacement name</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
 </div></div>
@@ -1271,8 +1286,7 @@ Proxied to engine</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$placement</h4>
-<code>string</code>
-</div>
+<code>string</code><p>Blocks pacement name</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
 </div></div>
@@ -1314,36 +1328,53 @@ Proxied to engine</h2>
 </div></div>
 </div>
 <a id="method_setColumns"></a><div class="element clickable method public method_setColumns" data-toggle="collapse" data-target=".method_setColumns .collapse">
-<h2>setColumns()
-        </h2>
-<pre>setColumns(array $options) </pre>
+<h2>Set all columns objects</h2>
+<pre>setColumns(array $options) : <a href="../classes/Core_Block_Grid_Widget.html">\Core_Block_Grid_Widget</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$options</h4></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Grid_Widget.html">\Core_Block_Grid_Widget</a></code></div>
 </div></div>
 </div>
 <a id="method_setData"></a><div class="element clickable method public method_setData" data-toggle="collapse" data-target=".method_setData .collapse">
-<h2>setData()
-        </h2>
-<pre>setData($data) </pre>
+<h2>Set grid source data</h2>
+<pre>setData(array | \Iterator $data) : <a href="../classes/Core_Block_Grid_Widget.html">\Core_Block_Grid_Widget</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$data</h4></div>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code><code>\Iterator</code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/Core_Block_Exception.html">\Core_Block_Exception</a></code></th>
+<td>If data has invalid type</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Grid_Widget.html">\Core_Block_Grid_Widget</a></code></div>
 </div></div>
 </div>
 <a id="method_setIdColumnName"></a><div class="element clickable method public method_setIdColumnName" data-toggle="collapse" data-target=".method_setIdColumnName .collapse">
-<h2>setIdColumnName()
-        </h2>
-<pre>setIdColumnName($name) </pre>
+<h2>Set identity column name</h2>
+<pre>setIdColumnName(string $name) : <a href="../classes/Core_Block_Grid_Widget.html">\Core_Block_Grid_Widget</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$name</h4></div>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Grid_Widget.html">\Core_Block_Grid_Widget</a></code></div>
 </div></div>
 </div>
 <a id="method_setLogger"></a><div class="element clickable method public method_setLogger" data-toggle="collapse" data-target=".method_setLogger .collapse">
@@ -1365,42 +1396,38 @@ Proxied to engine</h2>
 <div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
 </div></div>
 </div>
-<a id="method_setMessage"></a><div class="element clickable method public method_setMessage" data-toggle="collapse" data-target=".method_setMessage .collapse">
-<h2>setMessage()
-        </h2>
-<pre>setMessage($name, $message) </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$name</h4></div>
-<div class="subelement argument"><h4>$message</h4></div>
-</div></div>
-</div>
 <a id="method_setName"></a><div class="element clickable method public method_setName" data-toggle="collapse" data-target=".method_setName .collapse">
-<h2>setName()
-        </h2>
-<pre>setName($name) </pre>
+<h2>Set grid name</h2>
+<pre>setName(string $name) : <a href="../classes/Core_Block_Grid_Widget.html">\Core_Block_Grid_Widget</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$name</h4></div>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Grid_Widget.html">\Core_Block_Grid_Widget</a></code></div>
 </div></div>
 </div>
 <a id="method_setOptions"></a><div class="element clickable method public method_setOptions" data-toggle="collapse" data-target=".method_setOptions .collapse">
 <h2>Set all options at once</h2>
-<pre>setOptions(array $options) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<pre>setOptions(array $options) : <a href="../classes/Core_Block_Grid_Widget.html">\Core_Block_Grid_Widget</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
+<div class="long_description"><p>(non-PHPdoc)</p></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="Core.Block.View.html#%5CCore_Block_View::setOptions()">\Core_Block_View::setOptions()</a></td>
+</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$options</h4>
 <code>array</code>
 </div>
 <h3>Returns</h3>
-<div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
+<div class="subelement response"><code><a href="../classes/Core_Block_Grid_Widget.html">\Core_Block_Grid_Widget</a></code></div>
 </div></div>
 </div>
 <a id="method_setRendered"></a><div class="element clickable method public method_setRendered" data-toggle="collapse" data-target=".method_setRendered .collapse">
@@ -1423,25 +1450,33 @@ Proxied to engine</h2>
 </div></div>
 </div>
 <a id="method_setRouteName"></a><div class="element clickable method public method_setRouteName" data-toggle="collapse" data-target=".method_setRouteName .collapse">
-<h2>setRouteName()
-        </h2>
-<pre>setRouteName($name) </pre>
+<h2>Set used route name</h2>
+<pre>setRouteName(string $name) : <a href="../classes/Core_Block_Grid_Widget.html">\Core_Block_Grid_Widget</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$name</h4></div>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Grid_Widget.html">\Core_Block_Grid_Widget</a></code></div>
 </div></div>
 </div>
 <a id="method_setRouteOptions"></a><div class="element clickable method public method_setRouteOptions" data-toggle="collapse" data-target=".method_setRouteOptions .collapse">
-<h2>setRouteOptions()
-        </h2>
-<pre>setRouteOptions(array $options) </pre>
+<h2>Set route options</h2>
+<pre>setRouteOptions(array $options) : <a href="../classes/Core_Block_Grid_Widget.html">\Core_Block_Grid_Widget</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$options</h4></div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Grid_Widget.html">\Core_Block_Grid_Widget</a></code></div>
 </div></div>
 </div>
 <a id="method_setScriptName"></a><div class="element clickable method public method_setScriptName" data-toggle="collapse" data-target=".method_setScriptName .collapse">
@@ -1669,32 +1704,44 @@ Proxied to engine</h2>
 </div></div>
 </div>
 <a id="method__renderColAttribs"></a><div class="element clickable method protected method__renderColAttribs" data-toggle="collapse" data-target=".method__renderColAttribs .collapse">
-<h2>_renderColAttribs()
-        </h2>
-<pre>_renderColAttribs() </pre>
+<h2>Render &lt;col&gt; tag html</h2>
+<pre>_renderColAttribs() : string</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
 </div>
 <a id="method__renderTbody"></a><div class="element clickable method protected method__renderTbody" data-toggle="collapse" data-target=".method__renderTbody .collapse">
-<h2>_renderTbody()
-        </h2>
-<pre>_renderTbody() </pre>
+<h2>Rendet table body rows</h2>
+<pre>_renderTbody() : string</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
 </div>
 <a id="method__renderTfoot"></a><div class="element clickable method protected method__renderTfoot" data-toggle="collapse" data-target=".method__renderTfoot .collapse">
-<h2>_renderTfoot()
-        </h2>
-<pre>_renderTfoot() </pre>
+<h2>Render table footer tag (currently not used)</h2>
+<pre>_renderTfoot() : string</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
 </div>
 <a id="method__renderThead"></a><div class="element clickable method protected method__renderThead" data-toggle="collapse" data-target=".method__renderThead .collapse">
-<h2>_renderThead()
-        </h2>
-<pre>_renderThead() </pre>
+<h2>Render table header tag</h2>
+<pre>_renderThead() : string</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
 </div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
@@ -1802,13 +1849,13 @@ Proxied to engine</h2>
 </div>
 <a id="property__columns"> </a><div class="element clickable property protected property__columns" data-toggle="collapse" data-target=".property__columns .collapse">
 <h2></h2>
-<pre>$_columns </pre>
+<pre>$_columns : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property__data"> </a><div class="element clickable property protected property__data" data-toggle="collapse" data-target=".property__data .collapse">
 <h2></h2>
-<pre>$_data </pre>
+<pre>$_data : array | \Iterator</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -1826,7 +1873,7 @@ Proxied to engine</h2>
 </div>
 <a id="property__idColumnName"> </a><div class="element clickable property protected property__idColumnName" data-toggle="collapse" data-target=".property__idColumnName .collapse">
 <h2></h2>
-<pre>$_idColumnName </pre>
+<pre>$_idColumnName : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -1842,15 +1889,9 @@ Proxied to engine</h2>
 </tr></table>
 </div></div>
 </div>
-<a id="property__messages"> </a><div class="element clickable property protected property__messages" data-toggle="collapse" data-target=".property__messages .collapse">
-<h2></h2>
-<pre>$_messages </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
-</div>
 <a id="property__name"> </a><div class="element clickable property protected property__name" data-toggle="collapse" data-target=".property__name .collapse">
 <h2></h2>
-<pre>$_name </pre>
+<pre>$_name : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -1868,13 +1909,13 @@ Proxied to engine</h2>
 </div>
 <a id="property__routeName"> </a><div class="element clickable property protected property__routeName" data-toggle="collapse" data-target=".property__routeName .collapse">
 <h2></h2>
-<pre>$_routeName </pre>
+<pre>$_routeName : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property__routeOptions"> </a><div class="element clickable property protected property__routeOptions" data-toggle="collapse" data-target=".property__routeOptions .collapse">
 <h2></h2>
-<pre>$_routeOptions </pre>
+<pre>$_routeOptions : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -1977,7 +2018,7 @@ Proxied to engine</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2012-12-14T17:59:06+02:00.<br></footer></div>
+            generated on 2012-12-16T21:19:32+02:00.<br></footer></div>
 </div>
 </body>
 </html>

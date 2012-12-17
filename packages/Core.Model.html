@@ -21,7 +21,6 @@
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a>Packages</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
-<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -32,10 +31,10 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">271</span></a></li>
+                <span class="label label-info">0</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
-                <span class="label label-info">5</span>
+                <span class="label label-info">4</span>
 </li></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
                 <span class="label label-info">1</span></a></li>
@@ -59,10 +58,28 @@
 <li class="nav-header">
 <i class="icon-map-marker"></i> Packages</li>
 <li>
-<span class="empty-package"><i class="icon-folder-close"></i>Model</span><ul class="nav nav-list nav-packages"><li>
-<a href="../packages/Core.Model.Collection.html" title="Collection"><i class="icon-folder-open"></i>Collection</a><ul class="nav nav-list nav-packages"></ul>
+<a href="../packages/Core.Model.html" title="Model"><i class="icon-folder-open"></i>Model</a><ul class="nav nav-list nav-packages"><li>
+<span class="empty-package"><i class="icon-folder-close"></i>Core</span><ul class="nav nav-list nav-packages"><li>
+<span class="empty-package"><i class="icon-folder-close"></i>Model</span><ul class="nav nav-list nav-packages">
+<li>
+<a href="../packages/Core.Model.Core.Model.Collection.html" title="Collection"><i class="icon-folder-open"></i>Collection</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<a href="../packages/Core.Model.Core.Model.Entity.html" title="Entity"><i class="icon-folder-open"></i>Entity</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<a href="../packages/Core.Model.Core.Model.Mapper.html" title="Mapper"><i class="icon-folder-open"></i>Mapper</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li>
+<a href="../packages/Core.Model.Core.Model.Source.html" title="Source"><i class="icon-folder-open"></i>Source</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+</ul>
+</li></ul>
 </li></ul>
 </li>
+<li class="nav-header">
+<i class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#Core_Model_Exception" title="Model base exception class">Core_Model_Exception</a></li>
 </ul>
 </div>
 <div class="span8 package-contents">
@@ -73,13 +90,51 @@
 </li>
 </li></ul>
 <div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="Core_Model_Exception" class="element ajax clickable class">
+<h1>Core_Model_Exception<a href="../classes/Core_Model_Exception.html">¶</a>
+</h1>
+<p class="short_description">Model base exception class</p>
+<div class="details collapse"></div>
+<a href="../classes/Core_Model_Exception.html" class="more">« More »</a>
+</div>
 <ul class="breadcrumb"><li>
 <a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Core.html">Core</a></li>
 <li>
 <span class="divider">\</span><a href="../packages/Core.Model.html">Model</a>
 </li>
 <li class="active">
-<span class="divider">\</span><a href="../packages/Core.Model.Collection.html">Collection</a>
+<span class="divider">\</span><a href="../packages/Core.Model.Core.html">Core</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Core.html">Core</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/Core.Model.html">Model</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/Core.Model.Core.html">Core</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/Core.Model.Core.Model.html">Model</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Core.html">Core</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/Core.Model.html">Model</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/Core.Model.Core.html">Core</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/Core.Model.Core.Model.html">Model</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/Core.Model.Core.Model.Collection.html">Collection</a>
 </li>
 </li></ul>
 <div class="package-indent">
@@ -88,9 +143,132 @@
 <div id="Core_Model_Collection_Abstract" class="element ajax clickable class">
 <h1>Core_Model_Collection_Abstract<a href="../classes/Core_Model_Collection_Abstract.html">¶</a>
 </h1>
-<p class="short_description">Base collection</p>
+<p class="short_description">Base collection class</p>
 <div class="details collapse"></div>
 <a href="../classes/Core_Model_Collection_Abstract.html" class="more">« More »</a>
+</div>
+<div id="Core_Model_Collection_Exception" class="element ajax clickable class">
+<h1>Core_Model_Collection_Exception<a href="../classes/Core_Model_Collection_Exception.html">¶</a>
+</h1>
+<p class="short_description">Collection exception class</p>
+<div class="details collapse"></div>
+<a href="../classes/Core_Model_Collection_Exception.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Core.html">Core</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/Core.Model.html">Model</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/Core.Model.Core.html">Core</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/Core.Model.Core.Model.html">Model</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/Core.Model.Core.Model.Entity.html">Entity</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="Core_Model_Entity_Abstract" class="element ajax clickable class">
+<h1>Core_Model_Entity_Abstract<a href="../classes/Core_Model_Entity_Abstract.html">¶</a>
+</h1>
+<p class="short_description">Entity base class</p>
+<div class="details collapse"></div>
+<a href="../classes/Core_Model_Entity_Abstract.html" class="more">« More »</a>
+</div>
+<div id="Core_Model_Entity_Exception" class="element ajax clickable class">
+<h1>Core_Model_Entity_Exception<a href="../classes/Core_Model_Entity_Exception.html">¶</a>
+</h1>
+<p class="short_description">Entity exception class</p>
+<div class="details collapse"></div>
+<a href="../classes/Core_Model_Entity_Exception.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Core.html">Core</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/Core.Model.html">Model</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/Core.Model.Core.html">Core</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/Core.Model.Core.Model.html">Model</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/Core.Model.Core.Model.Mapper.html">Mapper</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="Core_Model_Mapper_Abstract" class="element ajax clickable class">
+<h1>Core_Model_Mapper_Abstract<a href="../classes/Core_Model_Mapper_Abstract.html">¶</a>
+</h1>
+<p class="short_description">Base mapper class</p>
+<div class="details collapse"></div>
+<a href="../classes/Core_Model_Mapper_Abstract.html" class="more">« More »</a>
+</div>
+<div id="Core_Model_Mapper_Exception" class="element ajax clickable class">
+<h1>Core_Model_Mapper_Exception<a href="../classes/Core_Model_Mapper_Exception.html">¶</a>
+</h1>
+<p class="short_description">Mapper exception class</p>
+<div class="details collapse"></div>
+<a href="../classes/Core_Model_Mapper_Exception.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Core.html">Core</a></li>
+<li>
+<span class="divider">\</span><a href="../packages/Core.Model.html">Model</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/Core.Model.Core.html">Core</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../packages/Core.Model.Core.Model.html">Model</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/Core.Model.Core.Model.Source.html">Source</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="Core_Model_Source_Interface" class="element ajax clickable interface">
+<h1>Core_Model_Source_Interface<a href="../classes/Core_Model_Source_Interface.html">¶</a>
+</h1>
+<p class="short_description">Source base type interface</p>
+<div class="details collapse"></div>
+<a href="../classes/Core_Model_Source_Interface.html" class="more">« More »</a>
+</div>
+<div id="Core_Model_Source_DbTable" class="element ajax clickable class">
+<h1>Core_Model_Source_DbTable<a href="../classes/Core_Model_Source_DbTable.html">¶</a>
+</h1>
+<p class="short_description">DbTable pattern implementation of DataMapper pattern source</p>
+<div class="details collapse"></div>
+<a href="../classes/Core_Model_Source_DbTable.html" class="more">« More »</a>
+</div>
+<div id="Core_Model_Source_Exception" class="element ajax clickable class">
+<h1>Core_Model_Source_Exception<a href="../classes/Core_Model_Source_Exception.html">¶</a>
+</h1>
+<p class="short_description">Source exception class</p>
+<div class="details collapse"></div>
+<a href="../classes/Core_Model_Source_Exception.html" class="more">« More »</a>
+</div>
+<div id="Core_Model_Source_Filesystem" class="element ajax clickable class">
+<h1>Core_Model_Source_Filesystem<a href="../classes/Core_Model_Source_Filesystem.html">¶</a>
+</h1>
+<p class="short_description">Filesystem source implementation of DataMapper pattern
+WARNING: realization not yet implemented</p>
+<div class="details collapse"></div>
+<a href="../classes/Core_Model_Source_Filesystem.html" class="more">« More »</a>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -99,7 +277,7 @@
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2012-12-14T17:59:05+02:00.<br></footer></div>
+            generated on 2012-12-16T21:19:31+02:00.<br></footer></div>
 </div>
 </body>
 </html>

@@ -21,7 +21,6 @@
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a>Packages</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
-<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -32,10 +31,10 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">271</span></a></li>
+                <span class="label label-info">0</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
-                <span class="label label-info">5</span>
+                <span class="label label-info">4</span>
 </li></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
                 <span class="label label-info">1</span></a></li>
@@ -68,12 +67,9 @@
 <li class="method public inherited"><a href="#method_getAttributes" title="getAttributes :: Get all attributes"><span class="description">Get all attributes</span><pre>getAttributes()</pre></a></li>
 <li class="method public inherited"><a href="#method_getFilterableOptions" title="getFilterableOptions :: Get all filterable options array"><span class="description">Get all filterable options array</span><pre>getFilterableOptions()</pre></a></li>
 <li class="method public inherited"><a href="#method_getFilterableType" title="getFilterableType :: Get filterable type"><span class="description">Get filterable type</span><pre>getFilterableType()</pre></a></li>
-<li class="method public "><a href="#method_getFormactionBind" title="getFormactionBind :: "><span class="description">getFormactionBind()
-        </span><pre>getFormactionBind()</pre></a></li>
-<li class="method public "><a href="#method_getFormactionOptions" title="getFormactionOptions :: "><span class="description">getFormactionOptions()
-        </span><pre>getFormactionOptions()</pre></a></li>
-<li class="method public "><a href="#method_getFormactionRoute" title="getFormactionRoute :: "><span class="description">getFormactionRoute()
-        </span><pre>getFormactionRoute()</pre></a></li>
+<li class="method public "><a href="#method_getFormactionBind" title="getFormactionBind :: Get formaction added fields names"><span class="description">Get formaction added fields names</span><pre>getFormactionBind()</pre></a></li>
+<li class="method public "><a href="#method_getFormactionOptions" title="getFormactionOptions :: Get formaction route options"><span class="description">Get formaction route options</span><pre>getFormactionOptions()</pre></a></li>
+<li class="method public "><a href="#method_getFormactionRoute" title="getFormactionRoute :: Get formaction route name"><span class="description">Get formaction route name</span><pre>getFormactionRoute()</pre></a></li>
 <li class="method public inherited"><a href="#method_getGrid" title="getGrid :: Gets grid object"><span class="description">Gets grid object</span><pre>getGrid()</pre></a></li>
 <li class="method public inherited"><a href="#method_getName" title="getName :: Gets column name"><span class="description">Gets column name</span><pre>getName()</pre></a></li>
 <li class="method public inherited"><a href="#method_getRow" title="getRow :: Gets all row data or if key passed try to get row item"><span class="description">Gets all row data or if key passed try to get row item</span><pre>getRow()</pre></a></li>
@@ -96,12 +92,9 @@ If not exists try to instantiate it from ViewRenderer action helper</span><pre>g
 <li class="method public inherited"><a href="#method_setFilterable" title="setFilterable :: Set column as filterable"><span class="description">Set column as filterable</span><pre>setFilterable()</pre></a></li>
 <li class="method public inherited"><a href="#method_setFilterableOptions" title="setFilterableOptions :: Set advanced filterable options"><span class="description">Set advanced filterable options</span><pre>setFilterableOptions()</pre></a></li>
 <li class="method public inherited"><a href="#method_setFilterableType" title="setFilterableType :: Set column filterable type (equivalent, like or or one of &lt;select&gt; options)"><span class="description">Set column filterable type (equivalent, like or or one of &lt;select&gt; options)</span><pre>setFilterableType()</pre></a></li>
-<li class="method public "><a href="#method_setFormactionBind" title="setFormactionBind :: "><span class="description">setFormactionBind()
-        </span><pre>setFormactionBind()</pre></a></li>
-<li class="method public "><a href="#method_setFormactionOptions" title="setFormactionOptions :: "><span class="description">setFormactionOptions()
-        </span><pre>setFormactionOptions()</pre></a></li>
-<li class="method public "><a href="#method_setFormactionRoute" title="setFormactionRoute :: "><span class="description">setFormactionRoute()
-        </span><pre>setFormactionRoute()</pre></a></li>
+<li class="method public "><a href="#method_setFormactionBind" title="setFormactionBind :: Set formaction added fields names"><span class="description">Set formaction added fields names</span><pre>setFormactionBind()</pre></a></li>
+<li class="method public "><a href="#method_setFormactionOptions" title="setFormactionOptions :: Set formaction route options"><span class="description">Set formaction route options</span><pre>setFormactionOptions()</pre></a></li>
+<li class="method public "><a href="#method_setFormactionRoute" title="setFormactionRoute :: Set formaction route name"><span class="description">Set formaction route name</span><pre>setFormactionRoute()</pre></a></li>
 <li class="method public inherited"><a href="#method_setGrid" title="setGrid :: Set parent grid object"><span class="description">Set parent grid object</span><pre>setGrid()</pre></a></li>
 <li class="method public inherited"><a href="#method_setName" title="setName :: Set column name"><span class="description">Set column name</span><pre>setName()</pre></a></li>
 <li class="method public inherited"><a href="#method_setOptions" title="setOptions :: Setted column options array at once"><span class="description">Setted column options array at once</span><pre>setOptions()</pre></a></li>
@@ -127,9 +120,9 @@ If not exists try to instantiate it from ViewRenderer action helper</span><pre>g
 <li class="property protected inherited"><a href="#property__filterableOptions" title="$_filterableOptions :: Advanced filter options
 Example: select filter type must have variants options"><span class="description"></span><pre>$_filterableOptions</pre></a></li>
 <li class="property protected inherited"><a href="#property__filterableType" title="$_filterableType :: Type of column filtering method"><span class="description"></span><pre>$_filterableType</pre></a></li>
-<li class="property protected "><a href="#property__formactionBind" title="$_formactionBind :: "><span class="description"></span><pre>$_formactionBind</pre></a></li>
-<li class="property protected "><a href="#property__formactionOptions" title="$_formactionOptions :: "><span class="description"></span><pre>$_formactionOptions</pre></a></li>
-<li class="property protected "><a href="#property__formactionRoute" title="$_formactionRoute :: "><span class="description"></span><pre>$_formactionRoute</pre></a></li>
+<li class="property protected "><a href="#property__formactionBind" title="$_formactionBind :: Formaction attribute url building added fields names"><span class="description"></span><pre>$_formactionBind</pre></a></li>
+<li class="property protected "><a href="#property__formactionOptions" title="$_formactionOptions :: Formaction attribute url building options"><span class="description"></span><pre>$_formactionOptions</pre></a></li>
+<li class="property protected "><a href="#property__formactionRoute" title="$_formactionRoute :: Formaction attribute url building route name"><span class="description"></span><pre>$_formactionRoute</pre></a></li>
 <li class="property protected inherited"><a href="#property__grid" title="$_grid :: Grid parent object"><span class="description"></span><pre>$_grid</pre></a></li>
 <li class="property protected inherited"><a href="#property__name" title="$_name :: Column name (like column name in db), required"><span class="description"></span><pre>$_name</pre></a></li>
 <li class="property protected inherited"><a href="#property__row" title="$_row :: Entrie row data to between column processing"><span class="description"></span><pre>$_row</pre></a></li>
@@ -155,22 +148,30 @@ For use it helpers or some other methods"><span class="description"></span><pre>
 </li>
 </ul>
 <div class="element class">
-<p class="short_description">Base grid column class
-Rendered as simple text</p>
+<p class="short_description">Renders column like as inline grid editor
+Warning this column now is uncomplete</p>
 <div class="details">
 <div class="long_description"></div>
 <table class="table table-bordered">
 <tr>
+<th>category</th>
+<td>Core</td>
+</tr>
+<tr>
 <th>package</th>
-<td><a href="../packages/Default.html">Core_Block</a></td>
+<td><a href="../packages/Core.Block.Core.Block.Grid.Column.html">Core_Block</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Core_Block_Grid_Column</td>
 </tr>
 <tr>
 <th>copyright</th>
 <td>Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)</td>
 </tr>
 <tr>
-<th>subpackage</th>
-<td>Core_Block_Grid_Column</td>
+<th>license</th>
+<td><a href="http://framework.zend.com/license/new-bsd">New BSD License</a></td>
 </tr>
 </table>
 <h3>
@@ -359,25 +360,34 @@ Rendered as simple text</p>
 </div></div>
 </div>
 <a id="method_getFormactionBind"></a><div class="element clickable method public method_getFormactionBind" data-toggle="collapse" data-target=".method_getFormactionBind .collapse">
-<h2>getFormactionBind()
-        </h2>
-<pre>getFormactionBind() </pre>
+<h2>Get formaction added fields names</h2>
+<pre>getFormactionBind() : array</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
 </div>
 <a id="method_getFormactionOptions"></a><div class="element clickable method public method_getFormactionOptions" data-toggle="collapse" data-target=".method_getFormactionOptions .collapse">
-<h2>getFormactionOptions()
-        </h2>
-<pre>getFormactionOptions() </pre>
+<h2>Get formaction route options</h2>
+<pre>getFormactionOptions() : string</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
 </div>
 <a id="method_getFormactionRoute"></a><div class="element clickable method public method_getFormactionRoute" data-toggle="collapse" data-target=".method_getFormactionRoute .collapse">
-<h2>getFormactionRoute()
-        </h2>
-<pre>getFormactionRoute() </pre>
+<h2>Get formaction route name</h2>
+<pre>getFormactionRoute() : string</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
 </div>
 <a id="method_getGrid"></a><div class="element clickable method public method_getGrid" data-toggle="collapse" data-target=".method_getGrid .collapse">
 <h2>Gets grid object</h2>
@@ -711,36 +721,48 @@ If not exists try to instantiate it from ViewRenderer action helper</h2>
 </div></div>
 </div>
 <a id="method_setFormactionBind"></a><div class="element clickable method public method_setFormactionBind" data-toggle="collapse" data-target=".method_setFormactionBind .collapse">
-<h2>setFormactionBind()
-        </h2>
-<pre>setFormactionBind(array $value) </pre>
+<h2>Set formaction added fields names</h2>
+<pre>setFormactionBind(array $value) : <a href="../classes/Core_Block_Grid_Column_Formelement.html">\Core_Block_Grid_Column_Formelement</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$value</h4></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Grid_Column_Formelement.html">\Core_Block_Grid_Column_Formelement</a></code></div>
 </div></div>
 </div>
 <a id="method_setFormactionOptions"></a><div class="element clickable method public method_setFormactionOptions" data-toggle="collapse" data-target=".method_setFormactionOptions .collapse">
-<h2>setFormactionOptions()
-        </h2>
-<pre>setFormactionOptions($value) </pre>
+<h2>Set formaction route options</h2>
+<pre>setFormactionOptions(array $value) : <a href="../classes/Core_Block_Grid_Column_Formelement.html">\Core_Block_Grid_Column_Formelement</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$value</h4></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Grid_Column_Formelement.html">\Core_Block_Grid_Column_Formelement</a></code></div>
 </div></div>
 </div>
 <a id="method_setFormactionRoute"></a><div class="element clickable method public method_setFormactionRoute" data-toggle="collapse" data-target=".method_setFormactionRoute .collapse">
-<h2>setFormactionRoute()
-        </h2>
-<pre>setFormactionRoute($value) </pre>
+<h2>Set formaction route name</h2>
+<pre>setFormactionRoute(string $value) : <a href="../classes/Core_Block_Grid_Column_Formelement.html">\Core_Block_Grid_Column_Formelement</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$value</h4></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Grid_Column_Formelement.html">\Core_Block_Grid_Column_Formelement</a></code></div>
 </div></div>
 </div>
 <a id="method_setGrid"></a><div class="element clickable method public method_setGrid" data-toggle="collapse" data-target=".method_setGrid .collapse">
@@ -1014,19 +1036,19 @@ If not exists try to instantiate it from ViewRenderer action helper</h2>
 </div>
 <a id="property__formactionBind"> </a><div class="element clickable property protected property__formactionBind" data-toggle="collapse" data-target=".property__formactionBind .collapse">
 <h2></h2>
-<pre>$_formactionBind </pre>
+<pre>$_formactionBind : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property__formactionOptions"> </a><div class="element clickable property protected property__formactionOptions" data-toggle="collapse" data-target=".property__formactionOptions .collapse">
 <h2></h2>
-<pre>$_formactionOptions </pre>
+<pre>$_formactionOptions : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property__formactionRoute"> </a><div class="element clickable property protected property__formactionRoute" data-toggle="collapse" data-target=".property__formactionRoute .collapse">
 <h2></h2>
-<pre>$_formactionRoute </pre>
+<pre>$_formactionRoute : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -1145,7 +1167,7 @@ If not exists try to instantiate it from ViewRenderer action helper</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2012-12-14T17:59:05+02:00.<br></footer></div>
+            generated on 2012-12-16T21:19:31+02:00.<br></footer></div>
 </div>
 </body>
 </html>

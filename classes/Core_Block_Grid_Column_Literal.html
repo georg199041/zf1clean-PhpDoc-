@@ -21,7 +21,6 @@
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a>Packages</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
-<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -32,10 +31,10 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">271</span></a></li>
+                <span class="label label-info">0</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
-                <span class="label label-info">5</span>
+                <span class="label label-info">4</span>
 </li></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
                 <span class="label label-info">1</span></a></li>
@@ -66,17 +65,14 @@
 <li class="method public inherited"><a href="#method_delAttributes" title="delAttributes :: Delete array of attributes"><span class="description">Delete array of attributes</span><pre>delAttributes()</pre></a></li>
 <li class="method public inherited"><a href="#method_getAttribute" title="getAttribute :: Get attribute"><span class="description">Get attribute</span><pre>getAttribute()</pre></a></li>
 <li class="method public inherited"><a href="#method_getAttributes" title="getAttributes :: Get all attributes"><span class="description">Get all attributes</span><pre>getAttributes()</pre></a></li>
-<li class="method public "><a href="#method_getDefaultLiteral" title="getDefaultLiteral :: "><span class="description">getDefaultLiteral()
-        </span><pre>getDefaultLiteral()</pre></a></li>
+<li class="method public "><a href="#method_getDefaultLiteral" title="getDefaultLiteral :: Get setted default literal string"><span class="description">Get setted default literal string</span><pre>getDefaultLiteral()</pre></a></li>
 <li class="method public inherited"><a href="#method_getFilterableOptions" title="getFilterableOptions :: Get all filterable options array"><span class="description">Get all filterable options array</span><pre>getFilterableOptions()</pre></a></li>
 <li class="method public inherited"><a href="#method_getFilterableType" title="getFilterableType :: Get filterable type"><span class="description">Get filterable type</span><pre>getFilterableType()</pre></a></li>
 <li class="method public inherited"><a href="#method_getGrid" title="getGrid :: Gets grid object"><span class="description">Gets grid object</span><pre>getGrid()</pre></a></li>
 <li class="method public inherited"><a href="#method_getName" title="getName :: Gets column name"><span class="description">Gets column name</span><pre>getName()</pre></a></li>
 <li class="method public inherited"><a href="#method_getRow" title="getRow :: Gets all row data or if key passed try to get row item"><span class="description">Gets all row data or if key passed try to get row item</span><pre>getRow()</pre></a></li>
 <li class="method public inherited"><a href="#method_getTitle" title="getTitle :: Get column header title"><span class="description">Get column header title</span><pre>getTitle()</pre></a></li>
-<li class="method public "><a href="#method_getValue" title="getValue :: Get column value
-If not set try to get it from row or filter (if column is filterable)"><span class="description">Get column value
-If not set try to get it from row or filter (if column is filterable)</span><pre>getValue()</pre></a></li>
+<li class="method public "><a href="#method_getValue" title="getValue :: Override value getter for use default literal"><span class="description">Override value getter for use default literal</span><pre>getValue()</pre></a></li>
 <li class="method public inherited"><a href="#method_getView" title="getView :: Gets view engine
 If not exists try to instantiate it from ViewRenderer action helper"><span class="description">Gets view engine
 If not exists try to instantiate it from ViewRenderer action helper</span><pre>getView()</pre></a></li>
@@ -89,8 +85,7 @@ If not exists try to instantiate it from ViewRenderer action helper</span><pre>g
 <li class="method public inherited"><a href="#method_renderThAttribs" title="renderThAttribs :: Render column header attributes to html"><span class="description">Render column header attributes to html</span><pre>renderThAttribs()</pre></a></li>
 <li class="method public inherited"><a href="#method_setAttribute" title="setAttribute :: Set attribute"><span class="description">Set attribute</span><pre>setAttribute()</pre></a></li>
 <li class="method public inherited"><a href="#method_setAttributes" title="setAttributes :: Set array of attributes at once"><span class="description">Set array of attributes at once</span><pre>setAttributes()</pre></a></li>
-<li class="method public "><a href="#method_setDefaultLiteral" title="setDefaultLiteral :: "><span class="description">setDefaultLiteral()
-        </span><pre>setDefaultLiteral()</pre></a></li>
+<li class="method public "><a href="#method_setDefaultLiteral" title="setDefaultLiteral :: Set default literal string"><span class="description">Set default literal string</span><pre>setDefaultLiteral()</pre></a></li>
 <li class="method public inherited"><a href="#method_setFilterable" title="setFilterable :: Set column as filterable"><span class="description">Set column as filterable</span><pre>setFilterable()</pre></a></li>
 <li class="method public inherited"><a href="#method_setFilterableOptions" title="setFilterableOptions :: Set advanced filterable options"><span class="description">Set advanced filterable options</span><pre>setFilterableOptions()</pre></a></li>
 <li class="method public inherited"><a href="#method_setFilterableType" title="setFilterableType :: Set column filterable type (equivalent, like or or one of &lt;select&gt; options)"><span class="description">Set column filterable type (equivalent, like or or one of &lt;select&gt; options)</span><pre>setFilterableType()</pre></a></li>
@@ -114,7 +109,7 @@ If not exists try to instantiate it from ViewRenderer action helper</span><pre>g
 <li class="property protected inherited"><a href="#property__attributes" title="$_attributes :: Attributes container"><span class="description"></span><pre>$_attributes</pre></a></li>
 <li class="property protected inherited"><a href="#property__colAttribs" title="$_colAttribs :: Column attributes values"><span class="description"></span><pre>$_colAttribs</pre></a></li>
 <li class="property protected inherited"><a href="#property__colAttribsNames" title="$_colAttribsNames :: Array of attributes that passed to column"><span class="description"></span><pre>$_colAttribsNames</pre></a></li>
-<li class="property protected "><a href="#property__defaultLiteral" title="$_defaultLiteral :: "><span class="description"></span><pre>$_defaultLiteral</pre></a></li>
+<li class="property protected "><a href="#property__defaultLiteral" title="$_defaultLiteral :: Default literal string"><span class="description"></span><pre>$_defaultLiteral</pre></a></li>
 <li class="property protected inherited"><a href="#property__filterable" title="$_filterable :: Flag of column can be filtered"><span class="description"></span><pre>$_filterable</pre></a></li>
 <li class="property protected inherited"><a href="#property__filterableAvailableTypes" title="$_filterableAvailableTypes :: Available types of filtering"><span class="description"></span><pre>$_filterableAvailableTypes</pre></a></li>
 <li class="property protected inherited"><a href="#property__filterableOptions" title="$_filterableOptions :: Advanced filter options
@@ -145,18 +140,29 @@ For use it helpers or some other methods"><span class="description"></span><pre>
 </li>
 </ul>
 <div class="element class">
-<p class="short_description">Base grid column class
-Rendered as simple text</p>
+<p class="short_description">Renders column like as static literal string ir value is empty</p>
 <div class="details">
 <div class="long_description"></div>
 <table class="table table-bordered">
 <tr>
+<th>category</th>
+<td>Core</td>
+</tr>
+<tr>
 <th>package</th>
-<td><a href="../packages/Default.html">Core_Block</a></td>
+<td><a href="../packages/Core.Block.Core.Block.Grid.Column.html">Core_Block</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Core_Block_Grid_Column</td>
 </tr>
 <tr>
 <th>copyright</th>
 <td>Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://framework.zend.com/license/new-bsd">New BSD License</a></td>
 </tr>
 </table>
 <h3>
@@ -317,11 +323,14 @@ Rendered as simple text</p>
 </div></div>
 </div>
 <a id="method_getDefaultLiteral"></a><div class="element clickable method public method_getDefaultLiteral" data-toggle="collapse" data-target=".method_getDefaultLiteral .collapse">
-<h2>getDefaultLiteral()
-        </h2>
-<pre>getDefaultLiteral() </pre>
+<h2>Get setted default literal string</h2>
+<pre>getDefaultLiteral() : string</pre>
 <div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
 </div>
 <a id="method_getFilterableOptions"></a><div class="element clickable method public method_getFilterableOptions" data-toggle="collapse" data-target=".method_getFilterableOptions .collapse">
 <h2>Get all filterable options array</h2>
@@ -421,14 +430,19 @@ Rendered as simple text</p>
 </div></div>
 </div>
 <a id="method_getValue"></a><div class="element clickable method public method_getValue" data-toggle="collapse" data-target=".method_getValue .collapse">
-<h2>Get column value
-If not set try to get it from row or filter (if column is filterable)</h2>
-<pre>getValue() : mixed</pre>
+<h2>Override value getter for use default literal</h2>
+<pre>getValue() : mixed | string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
+<div class="long_description"><p>(non-PHPdoc)</p></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="Core.Block.Grid.Column.Default.html#%5CCore_Block_Grid_Column_Default::getValue()">\Core_Block_Grid_Column_Default::getValue()</a></td>
+</tr></table>
 <h3>Returns</h3>
-<div class="subelement response"><code>mixed</code></div>
+<div class="subelement response">
+<code>mixed</code><code>string</code>
+</div>
 </div></div>
 </div>
 <a id="method_getView"></a><div class="element clickable method public method_getView" data-toggle="collapse" data-target=".method_getView .collapse">
@@ -617,14 +631,23 @@ If not exists try to instantiate it from ViewRenderer action helper</h2>
 </div></div>
 </div>
 <a id="method_setDefaultLiteral"></a><div class="element clickable method public method_setDefaultLiteral" data-toggle="collapse" data-target=".method_setDefaultLiteral .collapse">
-<h2>setDefaultLiteral()
-        </h2>
-<pre>setDefaultLiteral($value) </pre>
+<h2>Set default literal string</h2>
+<pre>setDefaultLiteral(string $value) : <a href="../classes/Core_Block_Grid_Column_Literal.html">\Core_Block_Grid_Column_Literal</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$value</h4></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/Core_Block_Exception.html">\Core_Block_Exception</a></code></th>
+<td>If literal is not a string</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Block_Grid_Column_Literal.html">\Core_Block_Grid_Column_Literal</a></code></div>
 </div></div>
 </div>
 <a id="method_setFilterable"></a><div class="element clickable method public method_setFilterable" data-toggle="collapse" data-target=".method_setFilterable .collapse">
@@ -912,7 +935,7 @@ If not exists try to instantiate it from ViewRenderer action helper</h2>
 </div>
 <a id="property__defaultLiteral"> </a><div class="element clickable property protected property__defaultLiteral" data-toggle="collapse" data-target=".property__defaultLiteral .collapse">
 <h2></h2>
-<pre>$_defaultLiteral </pre>
+<pre>$_defaultLiteral : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -1079,7 +1102,7 @@ If not exists try to instantiate it from ViewRenderer action helper</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2012-12-14T17:59:05+02:00.<br></footer></div>
+            generated on 2012-12-16T21:19:31+02:00.<br></footer></div>
 </div>
 </body>
 </html>

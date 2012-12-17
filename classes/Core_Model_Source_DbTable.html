@@ -21,7 +21,6 @@
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a>Packages</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
-<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -32,10 +31,10 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">271</span></a></li>
+                <span class="label label-info">0</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
-                <span class="label label-info">5</span>
+                <span class="label label-info">4</span>
 </li></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
                 <span class="label label-info">1</span></a></li>
@@ -59,19 +58,23 @@
 <li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
-<li class="method public "><a href="#method_cacheLoad" title="cacheLoad :: Dummy method if cache not used"><span class="description">Dummy method if cache not used</span><pre>cacheLoad()</pre></a></li>
-<li class="method public "><a href="#method_cacheSave" title="cacheSave :: Dummy method if cache not used"><span class="description">Dummy method if cache not used</span><pre>cacheSave()</pre></a></li>
-<li class="method public "><a href="#method_cacheTest" title="cacheTest :: Dummy method if cache not used"><span class="description">Dummy method if cache not used</span><pre>cacheTest()</pre></a></li>
+<li class="method public "><a href="#method_cacheLoad" title="cacheLoad :: Dummy method if cache not used
+Load cached data if possible"><span class="description">Dummy method if cache not used
+Load cached data if possible</span><pre>cacheLoad()</pre></a></li>
+<li class="method public "><a href="#method_cacheSave" title="cacheSave :: Dummy method if cache not used
+Save cache data"><span class="description">Dummy method if cache not used
+Save cache data</span><pre>cacheSave()</pre></a></li>
+<li class="method public "><a href="#method_cacheTest" title="cacheTest :: Dummy method if cache not used
+Test cache record exists"><span class="description">Dummy method if cache not used
+Test cache record exists</span><pre>cacheTest()</pre></a></li>
 <li class="method public "><a href="#method_createSelect" title="createSelect :: Create Zend_Db_Table_Select object for fetch operations
 Based on offset mode"><span class="description">Create Zend_Db_Table_Select object for fetch operations
 Based on offset mode</span><pre>createSelect()</pre></a></li>
 <li class="method public "><a href="#method_fetchAll" title="fetchAll :: Fetch all rows (use cache)"><span class="description">Fetch all rows (use cache)</span><pre>fetchAll()</pre></a></li>
-<li class="method public "><a href="#method_fetchBranch" title="fetchBranch :: "><span class="description">fetchBranch()
-        </span><pre>fetchBranch()</pre></a></li>
+<li class="method public "><a href="#method_fetchBranch" title="fetchBranch :: Fetch parents branch data"><span class="description">Fetch parents branch data</span><pre>fetchBranch()</pre></a></li>
 <li class="method public "><a href="#method_fetchCount" title="fetchCount :: Fetch count of rows"><span class="description">Fetch count of rows</span><pre>fetchCount()</pre></a></li>
 <li class="method public "><a href="#method_fetchPrimaryAll" title="fetchPrimaryAll :: Fetch only primary column"><span class="description">Fetch only primary column</span><pre>fetchPrimaryAll()</pre></a></li>
-<li class="method public "><a href="#method_fetchRow" title="fetchRow :: "><span class="description">fetchRow()
-        </span><pre>fetchRow()</pre></a></li>
+<li class="method public "><a href="#method_fetchRow" title="fetchRow :: Fetch single row"><span class="description">Fetch single row</span><pre>fetchRow()</pre></a></li>
 <li class="method public "><a href="#method_fetchTree" title="fetchTree :: Fetch tree data
 Used identity map cache pattern"><span class="description">Fetch tree data
 Used identity map cache pattern</span><pre>fetchTree()</pre></a></li>
@@ -87,7 +90,9 @@ Setup if not provided</span><pre>getFilter()</pre></a></li>
 <li class="method public "><a href="#method_getName" title="getName :: Acessor method"><span class="description">Acessor method</span><pre>getName()</pre></a></li>
 <li class="method public "><a href="#method_getPrimaryName" title="getPrimaryName :: Get primary key name"><span class="description">Get primary key name</span><pre>getPrimaryName()</pre></a></li>
 <li class="method public "><a href="#method_install" title="install :: Installation state method"><span class="description">Installation state method</span><pre>install()</pre></a></li>
-<li class="method public "><a href="#method_prepareTreeIds" title="prepareTreeIds :: Prepare tree identifiers array"><span class="description">Prepare tree identifiers array</span><pre>prepareTreeIds()</pre></a></li>
+<li class="method public "><a href="#method_prepareTreeIds" title="prepareTreeIds :: Prepare tree identifiers array
+for tree fetcher"><span class="description">Prepare tree identifiers array
+for tree fetcher</span><pre>prepareTreeIds()</pre></a></li>
 <li class="method public "><a href="#method_setCache" title="setCache :: Set cache frontend"><span class="description">Set cache frontend</span><pre>setCache()</pre></a></li>
 <li class="method public "><a href="#method_setClassName" title="setClassName :: Set new current class name"><span class="description">Set new current class name</span><pre>setClassName()</pre></a></li>
 <li class="method public "><a href="#method_setFilter" title="setFilter :: Set new filter instance"><span class="description">Set new filter instance</span><pre>setFilter()</pre></a></li>
@@ -126,43 +131,110 @@ Setup if not provided</span><pre>getFilter()</pre></a></li>
 <span class="divider">\</span><a href="../classes/Core_Model_Source_DbTable.html">Core_Model_Source_DbTable</a>
 </li>
 </ul>
-<div class="element class"><div class="details">
+<div class="element class">
+<p class="short_description">DbTable pattern implementation of DataMapper pattern source</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Core</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Core.Model.Core.Model.Source.html">Core_Model</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Core_Model_Source</td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://framework.zend.com/license/new-bsd">New BSD License</a></td>
+</tr>
+</table>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
 <a id="method_cacheLoad"></a><div class="element clickable method public method_cacheLoad" data-toggle="collapse" data-target=".method_cacheLoad .collapse">
-<h2>Dummy method if cache not used</h2>
-<pre>cacheLoad($id, $doNotTestCacheValidity, $doNotUnserialize) </pre>
+<h2>Dummy method if cache not used
+Load cached data if possible</h2>
+<pre>cacheLoad(string $id, boolean $doNotTestCacheValidity, boolean $doNotUnserialize) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="">\Zend_Cache_Core::load</a></td>
+</tr></table>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$id</h4></div>
-<div class="subelement argument"><h4>$doNotTestCacheValidity</h4></div>
-<div class="subelement argument"><h4>$doNotUnserialize</h4></div>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$doNotTestCacheValidity</h4>
+<code>boolean</code>
+</div>
+<div class="subelement argument">
+<h4>$doNotUnserialize</h4>
+<code>boolean</code>
+</div>
 </div></div>
 </div>
 <a id="method_cacheSave"></a><div class="element clickable method public method_cacheSave" data-toggle="collapse" data-target=".method_cacheSave .collapse">
-<h2>Dummy method if cache not used</h2>
-<pre>cacheSave($data, $id, $tags, $specificLifetime, $priority) </pre>
+<h2>Dummy method if cache not used
+Save cache data</h2>
+<pre>cacheSave(mixed $data, string $id, array $tags, int $specificLifetime, int $priority) : boolean</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$data</h4></div>
-<div class="subelement argument"><h4>$id</h4></div>
-<div class="subelement argument"><h4>$tags</h4></div>
-<div class="subelement argument"><h4>$specificLifetime</h4></div>
-<div class="subelement argument"><h4>$priority</h4></div>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>mixed</code>
+</div>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$tags</h4>
+<code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$specificLifetime</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$priority</h4>
+<code>int</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
 <a id="method_cacheTest"></a><div class="element clickable method public method_cacheTest" data-toggle="collapse" data-target=".method_cacheTest .collapse">
-<h2>Dummy method if cache not used</h2>
-<pre>cacheTest($id) </pre>
+<h2>Dummy method if cache not used
+Test cache record exists</h2>
+<pre>cacheTest(string $id) : boolean</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="">\Zend_Cache_Core::test</a></td>
+</tr></table>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$id</h4></div>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
 <a id="method_createSelect"></a><div class="element clickable method public method_createSelect" data-toggle="collapse" data-target=".method_createSelect .collapse">
@@ -194,7 +266,7 @@ Based on offset mode</h2>
 </div>
 <a id="method_fetchAll"></a><div class="element clickable method public method_fetchAll" data-toggle="collapse" data-target=".method_fetchAll .collapse">
 <h2>Fetch all rows (use cache)</h2>
-<pre>fetchAll(array $where, $order, $count, $offset) </pre>
+<pre>fetchAll(array $where, string | array $order, int $count, int $offset) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"><p>(non-PHPdoc)</p></div>
@@ -203,23 +275,47 @@ Based on offset mode</h2>
 <td><a href="">\Zend_Db_Table_Abstract::fetchAll()</a></td>
 </tr></table>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$where</h4></div>
-<div class="subelement argument"><h4>$order</h4></div>
-<div class="subelement argument"><h4>$count</h4></div>
-<div class="subelement argument"><h4>$offset</h4></div>
+<div class="subelement argument">
+<h4>$where</h4>
+<code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$order</h4>
+<code>string</code><code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$count</h4>
+<code>int</code>
+</div>
+<div class="subelement argument">
+<h4>$offset</h4>
+<code>int</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
 <a id="method_fetchBranch"></a><div class="element clickable method public method_fetchBranch" data-toggle="collapse" data-target=".method_fetchBranch .collapse">
-<h2>fetchBranch()
-        </h2>
-<pre>fetchBranch(array $where, $order, array $options) </pre>
+<h2>Fetch parents branch data</h2>
+<pre>fetchBranch(array $where, string | array $order, array $options) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$where</h4></div>
-<div class="subelement argument"><h4>$order</h4></div>
-<div class="subelement argument"><h4>$options</h4></div>
+<div class="subelement argument">
+<h4>$where</h4>
+<code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$order</h4>
+<code>string</code><code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$options</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
 <a id="method_fetchCount"></a><div class="element clickable method public method_fetchCount" data-toggle="collapse" data-target=".method_fetchCount .collapse">
@@ -247,7 +343,7 @@ Based on offset mode</h2>
 </div>
 <a id="method_fetchPrimaryAll"></a><div class="element clickable method public method_fetchPrimaryAll" data-toggle="collapse" data-target=".method_fetchPrimaryAll .collapse">
 <h2>Fetch only primary column</h2>
-<pre>fetchPrimaryAll(array $where, string | array $order, integer $count, integer $offset) </pre>
+<pre>fetchPrimaryAll(array $where, string | array $order, integer $count, integer $offset) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -268,19 +364,33 @@ Based on offset mode</h2>
 <h4>$offset</h4>
 <code>integer</code>
 </div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
 <a id="method_fetchRow"></a><div class="element clickable method public method_fetchRow" data-toggle="collapse" data-target=".method_fetchRow .collapse">
-<h2>fetchRow()
-        </h2>
-<pre>fetchRow(array $where, $order, $offset) </pre>
+<h2>Fetch single row</h2>
+<pre>fetchRow(array $where, string | array $order, int $offset) : null | array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$where</h4></div>
-<div class="subelement argument"><h4>$order</h4></div>
-<div class="subelement argument"><h4>$offset</h4></div>
+<div class="subelement argument">
+<h4>$where</h4>
+<code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$order</h4>
+<code>string</code><code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$offset</h4>
+<code>int</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code>array</code>
+</div>
 </div></div>
 </div>
 <a id="method_fetchTree"></a><div class="element clickable method public method_fetchTree" data-toggle="collapse" data-target=".method_fetchTree .collapse">
@@ -402,7 +512,8 @@ Setup if not provided</h2>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method_prepareTreeIds"></a><div class="element clickable method public method_prepareTreeIds" data-toggle="collapse" data-target=".method_prepareTreeIds .collapse">
-<h2>Prepare tree identifiers array</h2>
+<h2>Prepare tree identifiers array
+for tree fetcher</h2>
 <pre>prepareTreeIds(array $rows, array $options, integer $depth, array $identifiers) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
@@ -430,7 +541,7 @@ Setup if not provided</h2>
 </div>
 <a id="method_setCache"></a><div class="element clickable method public method_setCache" data-toggle="collapse" data-target=".method_setCache .collapse">
 <h2>Set cache frontend</h2>
-<pre>setCache(\Zend_Cache_Core $cache) </pre>
+<pre>setCache(\Zend_Cache_Core $cache) : <a href="../classes/Core_Model_Source_DbTable.html">\Core_Model_Source_DbTable</a></pre>
 <div class="labels"><span class="label">Static</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -439,6 +550,8 @@ Setup if not provided</h2>
 <h4>$cache</h4>
 <code>\Zend_Cache_Core</code>
 </div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Model_Source_DbTable.html">\Core_Model_Source_DbTable</a></code></div>
 </div></div>
 </div>
 <a id="method_setClassName"></a><div class="element clickable method public method_setClassName" data-toggle="collapse" data-target=".method_setClassName .collapse">
@@ -458,7 +571,7 @@ Setup if not provided</h2>
 </div>
 <a id="method_setFilter"></a><div class="element clickable method public method_setFilter" data-toggle="collapse" data-target=".method_setFilter .collapse">
 <h2>Set new filter instance</h2>
-<pre>setFilter(\Zend_Filter_Interface $filter) </pre>
+<pre>setFilter(\Zend_Filter_Interface $filter) : <a href="../classes/Core_Model_Source_DbTable.html">\Core_Model_Source_DbTable</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -467,11 +580,13 @@ Setup if not provided</h2>
 <h4>$filter</h4>
 <code>\Zend_Filter_Interface</code>
 </div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Model_Source_DbTable.html">\Core_Model_Source_DbTable</a></code></div>
 </div></div>
 </div>
 <a id="method_setName"></a><div class="element clickable method public method_setName" data-toggle="collapse" data-target=".method_setName .collapse">
 <h2>Acessor method</h2>
-<pre>setName(string $name) </pre>
+<pre>setName(string $name) : <a href="../classes/Core_Model_Source_DbTable.html">\Core_Model_Source_DbTable</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -480,6 +595,8 @@ Setup if not provided</h2>
 <h4>$name</h4>
 <code>string</code>
 </div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Model_Source_DbTable.html">\Core_Model_Source_DbTable</a></code></div>
 </div></div>
 </div>
 <a id="method_setPrimaryName"></a><div class="element clickable method public method_setPrimaryName" data-toggle="collapse" data-target=".method_setPrimaryName .collapse">
@@ -499,7 +616,7 @@ Setup if not provided</h2>
 </div>
 <a id="method__fetch"></a><div class="element clickable method protected method__fetch" data-toggle="collapse" data-target=".method__fetch .collapse">
 <h2>Support method for fetching rows (adding fetch mode).</h2>
-<pre>_fetch(\Zend_Db_Table_Select $select, $fetchMode) : array</pre>
+<pre>_fetch(\Zend_Db_Table_Select $select, string $fetchMode) : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -511,7 +628,10 @@ Setup if not provided</h2>
 <div class="subelement argument">
 <h4>$select</h4>
 <code>\Zend_Db_Table_Select</code><p>query options.</p></div>
-<div class="subelement argument"><h4>$fetchMode</h4></div>
+<div class="subelement argument">
+<h4>$fetchMode</h4>
+<code>string</code><p>One of Zend_Db::FETCH_* constants</p>
+</div>
 <h3>Returns</h3>
 <div class="subelement response">
 <code>array</code>An array containing the row results in FETCH_ mode.</div>
@@ -525,7 +645,7 @@ Setup if not provided</h2>
 </div>
 <a id="method__setupTableName"></a><div class="element clickable method protected method__setupTableName" data-toggle="collapse" data-target=".method__setupTableName .collapse">
 <h2>Override default logic - inflect class name as table name</h2>
-<pre>_setupTableName() </pre>
+<pre>_setupTableName() : <a href="../classes/Core_Model_Source_DbTable.html">\Core_Model_Source_DbTable</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"><p>(non-PHPdoc)</p></div>
@@ -533,6 +653,8 @@ Setup if not provided</h2>
 <th>see</th>
 <td><a href="">\Zend_Db_Table_Abstract::_setupTableName()</a></td>
 </tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Model_Source_DbTable.html">\Core_Model_Source_DbTable</a></code></div>
 </div></div>
 </div>
 <h3>
@@ -561,13 +683,14 @@ Setup if not provided</h2>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-</div></div>
+</div>
+</div>
 </div>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2012-12-14T17:59:06+02:00.<br></footer></div>
+            generated on 2012-12-16T21:19:31+02:00.<br></footer></div>
 </div>
 </body>
 </html>

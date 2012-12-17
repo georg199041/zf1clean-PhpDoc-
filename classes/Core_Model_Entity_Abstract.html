@@ -21,7 +21,6 @@
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a>Packages</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
-<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -32,10 +31,10 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">271</span></a></li>
+                <span class="label label-info">0</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
-                <span class="label label-info">5</span>
+                <span class="label label-info">4</span>
 </li></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
                 <span class="label label-info">1</span></a></li>
@@ -118,7 +117,32 @@ Required by ArrayAccess</span><pre>offsetUnset()</pre></a></li>
 <span class="divider">\</span><a href="../classes/Core_Model_Entity_Abstract.html">Core_Model_Entity_Abstract</a>
 </li>
 </ul>
-<div class="element class"><div class="details">
+<div class="element class">
+<p class="short_description">Entity base class</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Core</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Core.Model.Core.Model.Entity.html">Core_Model</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Core_Model_Entity</td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://framework.zend.com/license/new-bsd">New BSD License</a></td>
+</tr>
+</table>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
 <a id="method___call"></a><div class="element clickable method public method___call" data-toggle="collapse" data-target=".method___call .collapse">
@@ -154,14 +178,14 @@ Required by ArrayAccess</span><pre>offsetUnset()</pre></a></li>
 </div>
 <a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
 <h2>Alias of get</h2>
-<pre>__get(mixed $offset) : mixed | null</pre>
+<pre>__get(string $offset) : mixed | null</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$offset</h4>
-<code>mixed</code>
+<code>string</code>
 </div>
 <h3>Returns</h3>
 <div class="subelement response">
@@ -171,14 +195,14 @@ Required by ArrayAccess</span><pre>offsetUnset()</pre></a></li>
 </div>
 <a id="method___isset"></a><div class="element clickable method public method___isset" data-toggle="collapse" data-target=".method___isset .collapse">
 <h2>Alias of has method</h2>
-<pre>__isset(mixed $offset) : boolean</pre>
+<pre>__isset(string $offset) : boolean</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$offset</h4>
-<code>mixed</code>
+<code>string</code>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>boolean</code></div>
@@ -203,7 +227,7 @@ Required by ArrayAccess</span><pre>offsetUnset()</pre></a></li>
 </div>
 <a id="method___unset"></a><div class="element clickable method public method___unset" data-toggle="collapse" data-target=".method___unset .collapse">
 <h2>Alias of uns</h2>
-<pre>__unset(mixed $offset) </pre>
+<pre>__unset(mixed $offset) : mixed</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -212,6 +236,8 @@ Required by ArrayAccess</span><pre>offsetUnset()</pre></a></li>
 <h4>$offset</h4>
 <code>mixed</code>
 </div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
 </div></div>
 </div>
 <a id="method_delete"></a><div class="element clickable method public method_delete" data-toggle="collapse" data-target=".method_delete .collapse">
@@ -269,7 +295,7 @@ Required by ArrayAccess</span><pre>offsetUnset()</pre></a></li>
 <a id="method_offsetExists"></a><div class="element clickable method public method_offsetExists" data-toggle="collapse" data-target=".method_offsetExists .collapse">
 <h2>Alias of has method
 Required by ArrayAccess</h2>
-<pre>offsetExists($offset) </pre>
+<pre>offsetExists(string $offset) </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"><p>(non-PHPdoc)</p></div>
@@ -278,13 +304,16 @@ Required by ArrayAccess</h2>
 <td><a href="">\ArrayAccess::offsetExists()</a></td>
 </tr></table>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$offset</h4></div>
+<div class="subelement argument">
+<h4>$offset</h4>
+<code>string</code>
+</div>
 </div></div>
 </div>
 <a id="method_offsetGet"></a><div class="element clickable method public method_offsetGet" data-toggle="collapse" data-target=".method_offsetGet .collapse">
 <h2>Alias of get
 Required by ArrayAccess</h2>
-<pre>offsetGet(mixed $offset) : mixed | null</pre>
+<pre>offsetGet(string $offset) : mixed</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"><p>(non-PHPdoc)</p></div>
@@ -295,18 +324,16 @@ Required by ArrayAccess</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$offset</h4>
-<code>mixed</code>
+<code>string</code>
 </div>
 <h3>Returns</h3>
-<div class="subelement response">
-<code>mixed</code><code>null</code>
-</div>
+<div class="subelement response"><code>mixed</code></div>
 </div></div>
 </div>
 <a id="method_offsetSet"></a><div class="element clickable method public method_offsetSet" data-toggle="collapse" data-target=".method_offsetSet .collapse">
 <h2>Alias of set
 Required by ArrayAccess</h2>
-<pre>offsetSet($offset, $value) </pre>
+<pre>offsetSet(string $offset, mixed $value) : mixed</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"><p>(non-PHPdoc)</p></div>
@@ -315,14 +342,22 @@ Required by ArrayAccess</h2>
 <td><a href="">\ArrayAccess::offsetSet()</a></td>
 </tr></table>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$offset</h4></div>
-<div class="subelement argument"><h4>$value</h4></div>
+<div class="subelement argument">
+<h4>$offset</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
 </div></div>
 </div>
 <a id="method_offsetUnset"></a><div class="element clickable method public method_offsetUnset" data-toggle="collapse" data-target=".method_offsetUnset .collapse">
 <h2>Alias of uns
 Required by ArrayAccess</h2>
-<pre>offsetUnset($offset) </pre>
+<pre>offsetUnset(string $offset) : mixed</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"><p>(non-PHPdoc)</p></div>
@@ -331,7 +366,12 @@ Required by ArrayAccess</h2>
 <td><a href="">\ArrayAccess::offsetUnset()</a></td>
 </tr></table>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$offset</h4></div>
+<div class="subelement argument">
+<h4>$offset</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
 </div></div>
 </div>
 <a id="method_save"></a><div class="element clickable method public method_save" data-toggle="collapse" data-target=".method_save .collapse">
@@ -346,7 +386,7 @@ Required by ArrayAccess</h2>
 </div>
 <a id="method_setCollection"></a><div class="element clickable method public method_setCollection" data-toggle="collapse" data-target=".method_setCollection .collapse">
 <h2>Set parent collection or reset collection property</h2>
-<pre>setCollection(\Core_Model_Collection_Abstract $collection) </pre>
+<pre>setCollection(\Core_Model_Collection_Abstract $collection) : <a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -355,6 +395,8 @@ Required by ArrayAccess</h2>
 <h4>$collection</h4>
 <code><a href="../classes/Core_Model_Collection_Abstract.html">\Core_Model_Collection_Abstract</a></code>
 </div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></code></div>
 </div></div>
 </div>
 <a id="method_setMapper"></a><div class="element clickable method public method_setMapper" data-toggle="collapse" data-target=".method_setMapper .collapse">
@@ -429,7 +471,7 @@ Required by ArrayAccess</h2>
 </div>
 <a id="method__set"></a><div class="element clickable method protected method__set" data-toggle="collapse" data-target=".method__set .collapse">
 <h2>Internal setter</h2>
-<pre>_set(string $key, mixed $val) </pre>
+<pre>_set(string $key, mixed $val) : <a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -442,6 +484,8 @@ Required by ArrayAccess</h2>
 <h4>$val</h4>
 <code>mixed</code>
 </div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Core_Model_Entity_Abstract.html">\Core_Model_Entity_Abstract</a></code></div>
 </div></div>
 </div>
 <h3>
@@ -464,13 +508,14 @@ Required by ArrayAccess</h2>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-</div></div>
+</div>
+</div>
 </div>
 </div>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2012-12-14T17:59:06+02:00.<br></footer></div>
+            generated on 2012-12-16T21:19:31+02:00.<br></footer></div>
 </div>
 </body>
 </html>

@@ -21,7 +21,6 @@
                                     API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a>Packages</a></li>
 <li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
-<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 </ul>
 </li>
 <li class="dropdown" id="charts-menu">
@@ -32,10 +31,10 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">271</span></a></li>
+                <span class="label label-info">0</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
-                <span class="label label-info">5</span>
+                <span class="label label-info">4</span>
 </li></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
                 <span class="label label-info">1</span></a></li>
@@ -219,15 +218,7 @@ Must be a valid path and readable"><span class="description"></span><pre>$_parti
 <div class="element class">
 <p class="short_description">Render pagination template from Zend_Paginator like class</p>
 <div class="details">
-<div class="long_description"><p>LICENSE</p>
-
-<p>This source file is subject to the new BSD license that is bundled
-with this package in the file LICENSE.txt.
-It is also available through the world-wide-web at this URL:
-http://framework.zend.com/license/new-bsd
-If you did not receive a copy of the license and are unable to
-obtain it through the world-wide-web, please send an email
-to license@zend.com so we can send you a copy immediately.</p></div>
+<div class="long_description"></div>
 <table class="table table-bordered">
 <tr>
 <th>category</th>
@@ -248,10 +239,6 @@ to license@zend.com so we can send you a copy immediately.</p></div>
 <tr>
 <th>license</th>
 <td><a href="http://framework.zend.com/license/new-bsd">New BSD License</a></td>
-</tr>
-<tr>
-<th>version</th>
-<td>$Id: View.php 0.1 2012-12-12 pavlenko $</td>
 </tr>
 </table>
 <h3>
@@ -493,7 +480,7 @@ Proxied to engine</h2>
 </div>
 <a id="method_addBlockChild"></a><div class="element clickable method public method_addBlockChild" data-toggle="collapse" data-target=".method_addBlockChild .collapse">
 <h2>Add single child block</h2>
-<pre>addBlockChild(string | \Core_View_Block $child, $placement) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<pre>addBlockChild(string | \Core_View_Block $child, string $placement) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -504,9 +491,10 @@ Proxied to engine</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$child</h4>
-<code>string</code><code>\Core_View_Block</code>
-</div>
-<div class="subelement argument"><h4>$placement</h4></div>
+<code>string</code><code>\Core_View_Block</code><p>Block to add</p></div>
+<div class="subelement argument">
+<h4>$placement</h4>
+<code>string</code><p>Block placement</p></div>
 <h3>Exceptions</h3>
 <table class="table table-bordered"><tr>
 <th><code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code></th>
@@ -518,7 +506,7 @@ Proxied to engine</h2>
 </div>
 <a id="method_addBlockChilds"></a><div class="element clickable method public method_addBlockChilds" data-toggle="collapse" data-target=".method_addBlockChilds .collapse">
 <h2>Add childs blocks</h2>
-<pre>addBlockChilds(array $childs, $placement) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<pre>addBlockChilds(array $childs, string $placement) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -529,9 +517,10 @@ Proxied to engine</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$childs</h4>
-<code>array</code>
-</div>
-<div class="subelement argument"><h4>$placement</h4></div>
+<code>array</code><p>Block list to add</p></div>
+<div class="subelement argument">
+<h4>$placement</h4>
+<code>string</code><p>Blocks pacement name</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
 </div></div>
@@ -715,7 +704,7 @@ For we can use custo, pagination styles on same pages</h2>
 </div>
 <a id="method_getBlockChilds"></a><div class="element clickable method public method_getBlockChilds" data-toggle="collapse" data-target=".method_getBlockChilds .collapse">
 <h2>Get childs blocks</h2>
-<pre>getBlockChilds($placement) : array</pre>
+<pre>getBlockChilds(string $placement) : array</pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -724,7 +713,9 @@ For we can use custo, pagination styles on same pages</h2>
 <td>\Core_Block_View::getBlockChilds()</td>
 </tr></table>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$placement</h4></div>
+<div class="subelement argument">
+<h4>$placement</h4>
+<code>string</code><p>Blocks pacement name</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
@@ -1180,7 +1171,7 @@ Proxied to engine</h2>
 </div>
 <a id="method_setBlockChilds"></a><div class="element clickable method public method_setBlockChilds" data-toggle="collapse" data-target=".method_setBlockChilds .collapse">
 <h2>Set childs blocks</h2>
-<pre>setBlockChilds(array $childs, $placement) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
+<pre>setBlockChilds(array $childs, string $placement) : <a href="../classes/Core_Block_View.html">\Core_Block_View</a></pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -1191,9 +1182,10 @@ Proxied to engine</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$childs</h4>
-<code>array</code>
-</div>
-<div class="subelement argument"><h4>$placement</h4></div>
+<code>array</code><p>Blocks list to set</p></div>
+<div class="subelement argument">
+<h4>$placement</h4>
+<code>string</code><p>Blocks pacement name</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
 </div></div>
@@ -1249,8 +1241,7 @@ Proxied to engine</h2>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$placement</h4>
-<code>string</code>
-</div>
+<code>string</code><p>Blocks pacement name</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/Core_Block_View.html">\Core_Block_View</a></code></div>
 </div></div>
@@ -1949,7 +1940,7 @@ Proxied to engine</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2012-12-14T17:59:06+02:00.<br></footer></div>
+            generated on 2012-12-16T21:19:32+02:00.<br></footer></div>
 </div>
 </body>
 </html>
