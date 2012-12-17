@@ -7055,8 +7055,8 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
     <include line="26" type="Require Once" package="Default">
       <name>Zend/Controller/Plugin/Abstract.php</name>
       <docblock line="23">
-        <description></description>
-        <long-description></long-description>
+        <description/>
+        <long-description/>
         <tag line="23" name="see" description="\Zend_Controller_Plugin_Abstract" refers="\Zend_Controller_Plugin_Abstract"/>
       </docblock>
     </include>
@@ -7066,7 +7066,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
       <full_name>\Core_Controller_Plugin_Acl</full_name>
       <docblock line="28">
         <description>Access control list controller plugin class</description>
-        <long-description></long-description>
+        <long-description/>
         <tag line="28" name="category" description="Core"/>
         <tag line="28" name="package" description="Core_Controller"/>
         <tag line="28" name="subpackage" description="Core_Controller_Plugin"/>
@@ -7079,7 +7079,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
         <value>'Zend_Acl'</value>
         <docblock line="39">
           <description>Default registry key</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="39" name="var" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
@@ -7087,10 +7087,10 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
       </constant>
       <property final="false" static="false" visibility="protected" line="51" namespace="global" package="Default">
         <name>$_acl</name>
-        <default></default>
+        <default/>
         <docblock line="46">
           <description>ACL container</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="46" name="var" description="" type="\Zend_Acl">
             <type by_reference="false">\Zend_Acl</type>
           </tag>
@@ -7101,7 +7101,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
         <default>array()</default>
         <docblock line="53">
           <description>List of resources for each will not check access</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="53" name="var" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
@@ -7112,7 +7112,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
         <default>'default/error/error'</default>
         <docblock line="60">
           <description>Error page route</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="60" name="var" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
@@ -7123,7 +7123,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
         <full_name>__construct</full_name>
         <docblock line="67">
           <description>Constructor</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="67" name="param" description="" type="array|\Zend_Config" variable="$options">
             <type by_reference="false">array</type>
             <type by_reference="false">\Zend_Config</type>
@@ -7140,7 +7140,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
         <full_name>setOptions</full_name>
         <docblock line="81">
           <description>Set plugin options</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="81" name="param" description="" type="array" variable="$options">
             <type by_reference="false">array</type>
           </tag>
@@ -7153,7 +7153,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
         </docblock>
         <argument line="88">
           <name>$options</name>
-          <default></default>
+          <default/>
           <type>array</type>
         </argument>
       </method>
@@ -7162,7 +7162,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
         <full_name>setAcl</full_name>
         <docblock line="104">
           <description>Set acl object</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="104" name="param" description="" type="\Zend_Acl" variable="$acl">
             <type by_reference="false">\Zend_Acl</type>
           </tag>
@@ -7172,7 +7172,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
         </docblock>
         <argument line="110">
           <name>$acl</name>
-          <default></default>
+          <default/>
           <type>\Zend_Acl</type>
         </argument>
       </method>
@@ -7183,7 +7183,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
           <description>Get acl object
 Try to load at first access if possible
 Otherwise fallback it to false</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="116" name="return" description="" type="false|\Zend_Acl">
             <type by_reference="false">false</type>
             <type by_reference="false">\Zend_Acl</type>
@@ -7215,7 +7215,7 @@ $plugin-&gt;setExcludedResources(array(
         </docblock>
         <argument line="159">
           <name>$options</name>
-          <default></default>
+          <default/>
           <type>array</type>
         </argument>
       </method>
@@ -7224,7 +7224,7 @@ $plugin-&gt;setExcludedResources(array(
         <full_name>getExcludedResources</full_name>
         <docblock line="182">
           <description>Get excluded resources list</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="182" name="return" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
@@ -7235,7 +7235,7 @@ $plugin-&gt;setExcludedResources(array(
         <full_name>setRoute</full_name>
         <docblock line="192">
           <description>Set error page route in format &lt;module_name&gt;/&lt;controller_name&gt;/&lt;action_name&gt;</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="192" name="param" description="" type="string" variable="$route">
             <type by_reference="false">string</type>
           </tag>
@@ -7248,7 +7248,7 @@ $plugin-&gt;setExcludedResources(array(
         </docblock>
         <argument line="199">
           <name>$route</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -7258,7 +7258,7 @@ $plugin-&gt;setExcludedResources(array(
         <docblock line="222">
           <description>Get current error page route
 If $asArray == true returns as array</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="222" name="param" description="" type="boolean" variable="$asArray">
             <type by_reference="false">boolean</type>
           </tag>
@@ -7278,7 +7278,7 @@ If $asArray == true returns as array</description>
         <full_name>preDispatch</full_name>
         <docblock line="240">
           <description>Main processing method</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="240" name="param" description="" type="\Zend_Controller_Request_Abstract" variable="$request">
             <type by_reference="false">\Zend_Controller_Request_Abstract</type>
           </tag>
@@ -7288,7 +7288,7 @@ If $asArray == true returns as array</description>
         </docblock>
         <argument line="246">
           <name>$request</name>
-          <default></default>
+          <default/>
           <type>\Zend_Controller_Request_Abstract</type>
         </argument>
       </method>
@@ -7297,14 +7297,14 @@ If $asArray == true returns as array</description>
         <full_name>_gotoErrorPage</full_name>
         <docblock line="283">
           <description>Redirect processing</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="283" name="param" description="" type="\Zend_Controller_Request_Abstract" variable="$request">
             <type by_reference="false">\Zend_Controller_Request_Abstract</type>
           </tag>
         </docblock>
         <argument line="288">
           <name>$request</name>
-          <default></default>
+          <default/>
           <type>\Zend_Controller_Request_Abstract</type>
         </argument>
       </method>
@@ -12012,6 +12012,296 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
       </docblock>
     </class>
   </file>
+  <file path="Core\Model\Provider\DataMapperModel.php" hash="eef9cbc8735de91dd81d0d8769c7e16c" package="Core">
+    <docblock line="2">
+      <description>Zend Framework</description>
+      <long-description>&lt;p&gt;LICENSE&lt;/p&gt;
+
+&lt;p&gt;This source file is subject to the new BSD license that is bundled
+with this package in the file LICENSE.txt.
+It is also available through the world-wide-web at this URL:
+http://framework.zend.com/license/new-bsd
+If you did not receive a copy of the license and are unable to
+obtain it through the world-wide-web, please send an email
+to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-description>
+      <tag line="2" name="category" description="Core"/>
+      <tag line="2" name="package" description="Core"/>
+      <tag line="2" name="copyright" description="Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)"/>
+      <tag line="2" name="license" description="http://framework.zend.com/license/new-bsd     New BSD License"/>
+      <tag line="2" name="version" description="$Id: DataMapperModel.php 24218 2011-07-10 01:22:58Z ramon $"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="global" line="30" package="Core">
+      <extends>\Zend_Tool_Project_Provider_Abstract</extends>
+      <name>Core_Model_Provider_DataMapperModel</name>
+      <full_name>\Core_Model_Provider_DataMapperModel</full_name>
+      <docblock line="22">
+        <description>Data mapper model generation class</description>
+        <long-description></long-description>
+        <tag line="22" name="category" description="Core"/>
+        <tag line="22" name="package" description="Core"/>
+        <tag line="22" name="copyright" description="Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)"/>
+        <tag line="22" name="license" description="http://framework.zend.com/license/new-bsd     New BSD License"/>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="38" namespace="global" package="Default">
+        <name>$modulesPath</name>
+        <default>'modules'</default>
+        <docblock line="33">
+          <description>Base application modules path</description>
+          <long-description></long-description>
+          <tag line="33" name="var" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="45" namespace="global" package="Default">
+        <name>$collectionPath</name>
+        <default>'Model/Collection'</default>
+        <docblock line="40">
+          <description>Collection relative path</description>
+          <long-description></long-description>
+          <tag line="40" name="var" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="52" namespace="global" package="Default">
+        <name>$entityPath</name>
+        <default>'Model/Entity'</default>
+        <docblock line="47">
+          <description>Entity relative path</description>
+          <long-description></long-description>
+          <tag line="47" name="var" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="59" namespace="global" package="Default">
+        <name>$mapperPath</name>
+        <default>'Model/Mapper'</default>
+        <docblock line="54">
+          <description>Mapper relative path</description>
+          <long-description></long-description>
+          <tag line="54" name="var" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="66" namespace="global" package="Default">
+        <name>$sourcePath</name>
+        <default>'Model/Source'</default>
+        <docblock line="61">
+          <description>Source relative path</description>
+          <long-description></long-description>
+          <tag line="61" name="var" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="protected" line="73" namespace="global" package="Default">
+        <name>$_availableSources</name>
+        <default>array('DbTable')</default>
+        <docblock line="68">
+          <description>List of available sources</description>
+          <long-description></long-description>
+          <tag line="68" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="protected" line="82" namespace="global" package="Default">
+        <name>$_filter</name>
+        <default></default>
+        <docblock line="77">
+          <description>Inflector filter</description>
+          <long-description></long-description>
+          <tag line="77" name="var" description="" type="\unknown_type">
+            <type by_reference="false">\unknown_type</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="89" package="Core">
+        <name>_getFilter</name>
+        <full_name>_getFilter</full_name>
+        <docblock line="84">
+          <description>Filter instantiate method</description>
+          <long-description></long-description>
+          <tag line="84" name="return" description="" type="\Zend_Filter">
+            <type by_reference="false">\Zend_Filter</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="108" package="Core">
+        <name>_applyFilter</name>
+        <full_name>_applyFilter</full_name>
+        <docblock line="102">
+          <description>Apply filter helper method</description>
+          <long-description></long-description>
+          <tag line="102" name="param" description="" type="string" variable="$string">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="102" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+        <argument line="108">
+          <name>$string</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="120" package="Core">
+        <name>_generateCollection</name>
+        <full_name>_generateCollection</full_name>
+        <docblock line="113">
+          <description>Create collection part of model</description>
+          <long-description></long-description>
+          <tag line="113" name="param" description="" type="string" variable="$name">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="113" name="param" description="" type="string" variable="$module">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="113" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+        <argument line="120">
+          <name>$name</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="120">
+          <name>$module</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="175" package="Core">
+        <name>_generateEntity</name>
+        <full_name>_generateEntity</full_name>
+        <docblock line="168">
+          <description>Create entity part of model</description>
+          <long-description></long-description>
+          <tag line="168" name="param" description="" type="string" variable="$name">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="168" name="param" description="" type="string" variable="$module">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="168" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+        <argument line="175">
+          <name>$name</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="175">
+          <name>$module</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="230" package="Core">
+        <name>_generateMapper</name>
+        <full_name>_generateMapper</full_name>
+        <docblock line="223">
+          <description>Create mapper part of model</description>
+          <long-description></long-description>
+          <tag line="223" name="param" description="" type="string" variable="$name">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="223" name="param" description="" type="string" variable="$module">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="223" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+        <argument line="230">
+          <name>$name</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="230">
+          <name>$module</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="286" package="Core">
+        <name>_generateSource</name>
+        <full_name>_generateSource</full_name>
+        <docblock line="278">
+          <description>Create mapper part of model</description>
+          <long-description></long-description>
+          <tag line="278" name="param" description="" type="string" variable="$name">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="278" name="param" description="" type="string" variable="$module">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="278" name="param" description="" type="string" variable="$type">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="278" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+        <argument line="286">
+          <name>$name</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="286">
+          <name>$module</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="286">
+          <name>$type</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="342" package="Core">
+        <name>create</name>
+        <full_name>create</full_name>
+        <docblock line="334">
+          <description>CLI method</description>
+          <long-description></long-description>
+          <tag line="334" name="param" description="" type="string" variable="$name">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="334" name="param" description="" type="string" variable="$module">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="334" name="param" description="" type="string" variable="$sourcetype">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="334" name="throws" description="" type="\Exception">
+            <type by_reference="false">\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="342">
+          <name>$name</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="342">
+          <name>$module</name>
+          <default>'default'</default>
+          <type/>
+        </argument>
+        <argument line="342">
+          <name>$sourcetype</name>
+          <default>'DbTable'</default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
   <file path="Core\Model\Source\DbTable.php" hash="eb51bba0a3aea863531a43746f189e19" package="Core\Model\Core\Model\Source">
     <docblock line="2">
       <description>Zend Framework</description>
@@ -12923,6 +13213,59 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
         <tag line="23" name="license" description="http://framework.zend.com/license/new-bsd     New BSD License"/>
       </docblock>
     </interface>
+  </file>
+  <file path="Core\Tool\Manifest.php" hash="da020cdff2c71d6ef09943a4ca484b21" package="Core">
+    <docblock line="2">
+      <description>Zend Framework</description>
+      <long-description>&lt;p&gt;LICENSE&lt;/p&gt;
+
+&lt;p&gt;This source file is subject to the new BSD license that is bundled
+with this package in the file LICENSE.txt.
+It is also available through the world-wide-web at this URL:
+http://framework.zend.com/license/new-bsd
+If you did not receive a copy of the license and are unable to
+obtain it through the world-wide-web, please send an email
+to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-description>
+      <tag line="2" name="category" description="Core"/>
+      <tag line="2" name="package" description="Core"/>
+      <tag line="2" name="copyright" description="Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)"/>
+      <tag line="2" name="license" description="http://framework.zend.com/license/new-bsd     New BSD License"/>
+      <tag line="2" name="version" description="$Id: Manifest.php 24218 2011-07-10 01:22:58Z ramon $"/>
+    </docblock>
+    <include line="25" type="Require Once" package="Default">
+      <name>Zend/Tool/Framework/Manifest/ProviderManifestable.php</name>
+      <docblock line="22">
+        <description/>
+        <long-description/>
+        <tag line="22" name="see" description="\Zend_Tool_Framework_Manifest_ProviderManifestable" refers="\Zend_Tool_Framework_Manifest_ProviderManifestable"/>
+      </docblock>
+    </include>
+    <class final="false" abstract="false" namespace="global" line="35" package="Core">
+      <extends/>
+      <implements>\Zend_Tool_Framework_Manifest_ProviderManifestable</implements>
+      <name>Core_Tool_Manifest</name>
+      <full_name>\Core_Tool_Manifest</full_name>
+      <docblock line="27">
+        <description>Providers aggregator manifest class</description>
+        <long-description/>
+        <tag line="27" name="category" description="Core"/>
+        <tag line="27" name="package" description="Core"/>
+        <tag line="27" name="copyright" description="Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)"/>
+        <tag line="27" name="license" description="http://framework.zend.com/license/new-bsd     New BSD License"/>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="45" package="Core">
+        <name>getProviders</name>
+        <full_name>getProviders</full_name>
+        <docblock line="38">
+          <description>Returns array of custom providers instances</description>
+          <long-description>&lt;p&gt;(non-PHPdoc)&lt;/p&gt;</long-description>
+          <tag line="38" name="see" description="\Zend_Tool_Framework_Manifest_ProviderManifestable::getProviders()" refers="\Zend_Tool_Framework_Manifest_ProviderManifestable::getProviders()"/>
+          <tag line="38" name="return" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
   </file>
   <file path="Core.php" hash="0a61cd17e5c6a19237d13f97799c0f2f" package="Core">
     <docblock line="2">

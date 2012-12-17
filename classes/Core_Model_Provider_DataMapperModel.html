@@ -1,0 +1,309 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \Core_Model_Provider_DataMapperModel</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Core.html"><i class="icon-folder-open"></i> Core</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">0</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">4</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">1</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul><li class="method public "><a href="#method_create" title="create :: CLI method"><span class="description">CLI method</span><pre>create()</pre></a></li></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method__applyFilter" title="_applyFilter :: Apply filter helper method"><span class="description">Apply filter helper method</span><pre>_applyFilter()</pre></a></li>
+<li class="method protected "><a href="#method__generateCollection" title="_generateCollection :: Create collection part of model"><span class="description">Create collection part of model</span><pre>_generateCollection()</pre></a></li>
+<li class="method protected "><a href="#method__generateEntity" title="_generateEntity :: Create entity part of model"><span class="description">Create entity part of model</span><pre>_generateEntity()</pre></a></li>
+<li class="method protected "><a href="#method__generateMapper" title="_generateMapper :: Create mapper part of model"><span class="description">Create mapper part of model</span><pre>_generateMapper()</pre></a></li>
+<li class="method protected "><a href="#method__generateSource" title="_generateSource :: Create mapper part of model"><span class="description">Create mapper part of model</span><pre>_generateSource()</pre></a></li>
+<li class="method protected "><a href="#method__getFilter" title="_getFilter :: Filter instantiate method"><span class="description">Filter instantiate method</span><pre>_getFilter()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_collectionPath" title="$collectionPath :: Collection relative path"><span class="description"></span><pre>$collectionPath</pre></a></li>
+<li class="property public "><a href="#property_entityPath" title="$entityPath :: Entity relative path"><span class="description"></span><pre>$entityPath</pre></a></li>
+<li class="property public "><a href="#property_mapperPath" title="$mapperPath :: Mapper relative path"><span class="description"></span><pre>$mapperPath</pre></a></li>
+<li class="property public "><a href="#property_modulesPath" title="$modulesPath :: Base application modules path"><span class="description"></span><pre>$modulesPath</pre></a></li>
+<li class="property public "><a href="#property_sourcePath" title="$sourcePath :: Source relative path"><span class="description"></span><pre>$sourcePath</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property__availableSources" title="$_availableSources :: List of available sources"><span class="description"></span><pre>$_availableSources</pre></a></li>
+<li class="property protected "><a href="#property__filter" title="$_filter :: Inflector filter"><span class="description"></span><pre>$_filter</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\Core_Model_Provider_DataMapperModel"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Core_Model_Provider_DataMapperModel.html">Core_Model_Provider_DataMapperModel</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Data mapper model generation class</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Core</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Core.html">Core</a></td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://framework.zend.com/license/new-bsd">New BSD License</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_create"></a><div class="element clickable method public method_create" data-toggle="collapse" data-target=".method_create .collapse">
+<h2>CLI method</h2>
+<pre>create(string $name, string $module, string $sourcetype) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$module</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$sourcetype</h4>
+<code>string</code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code></th>
+<td></td>
+</tr></table>
+</div></div>
+</div>
+<a id="method__applyFilter"></a><div class="element clickable method protected method__applyFilter" data-toggle="collapse" data-target=".method__applyFilter .collapse">
+<h2>Apply filter helper method</h2>
+<pre>_applyFilter(string $string) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$string</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__generateCollection"></a><div class="element clickable method protected method__generateCollection" data-toggle="collapse" data-target=".method__generateCollection .collapse">
+<h2>Create collection part of model</h2>
+<pre>_generateCollection(string $name, string $module) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$module</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__generateEntity"></a><div class="element clickable method protected method__generateEntity" data-toggle="collapse" data-target=".method__generateEntity .collapse">
+<h2>Create entity part of model</h2>
+<pre>_generateEntity(string $name, string $module) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$module</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__generateMapper"></a><div class="element clickable method protected method__generateMapper" data-toggle="collapse" data-target=".method__generateMapper .collapse">
+<h2>Create mapper part of model</h2>
+<pre>_generateMapper(string $name, string $module) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$module</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__generateSource"></a><div class="element clickable method protected method__generateSource" data-toggle="collapse" data-target=".method__generateSource .collapse">
+<h2>Create mapper part of model</h2>
+<pre>_generateSource(string $name, string $module, string $type) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$module</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__getFilter"></a><div class="element clickable method protected method__getFilter" data-toggle="collapse" data-target=".method__getFilter .collapse">
+<h2>Filter instantiate method</h2>
+<pre>_getFilter() : \Zend_Filter</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Zend_Filter</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_collectionPath"> </a><div class="element clickable property public property_collectionPath" data-toggle="collapse" data-target=".property_collectionPath .collapse">
+<h2></h2>
+<pre>$collectionPath : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_entityPath"> </a><div class="element clickable property public property_entityPath" data-toggle="collapse" data-target=".property_entityPath .collapse">
+<h2></h2>
+<pre>$entityPath : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_mapperPath"> </a><div class="element clickable property public property_mapperPath" data-toggle="collapse" data-target=".property_mapperPath .collapse">
+<h2></h2>
+<pre>$mapperPath : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_modulesPath"> </a><div class="element clickable property public property_modulesPath" data-toggle="collapse" data-target=".property_modulesPath .collapse">
+<h2></h2>
+<pre>$modulesPath : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_sourcePath"> </a><div class="element clickable property public property_sourcePath" data-toggle="collapse" data-target=".property_sourcePath .collapse">
+<h2></h2>
+<pre>$sourcePath : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__availableSources"> </a><div class="element clickable property protected property__availableSources" data-toggle="collapse" data-target=".property__availableSources .collapse">
+<h2></h2>
+<pre>$_availableSources : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__filter"> </a><div class="element clickable property protected property__filter" data-toggle="collapse" data-target=".property__filter .collapse">
+<h2></h2>
+<pre>$_filter : \unknown_type</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2012-12-17T13:42:07+02:00.<br></footer></div>
+</div>
+</body>
+</html>
