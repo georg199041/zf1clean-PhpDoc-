@@ -71,26 +71,8 @@ If $asArray == true returns as array</span><pre>getRoute()</pre></a></li>
 <li class="method public "><a href="#method_preDispatch" title="preDispatch :: Main processing method"><span class="description">Main processing method</span><pre>preDispatch()</pre></a></li>
 <li class="method public "><a href="#method_setAcl" title="setAcl :: Set acl object"><span class="description">Set acl object</span><pre>setAcl()</pre></a></li>
 <li class="method public "><a href="#method_setExcludedResources" title="setExcludedResources :: Set excluded resources params
-Example list item:
-&lt;code&gt;
-$item = array(
-    'module'     =&gt; '&lt;module_name&gt;',
-    'controller' =&gt; '&lt;controller_name&gt;',
-    'action'     =&gt; '&lt;action_name&gt;'
-);
-//OR
-$item = '&lt;module_name&gt;/&lt;controller_name&gt;/&lt;action_name&gt;';
-&lt;/code&gt;"><span class="description">Set excluded resources params
-Example list item:
-&lt;code&gt;
-$item = array(
-    'module'     =&gt; '&lt;module_name&gt;',
-    'controller' =&gt; '&lt;controller_name&gt;',
-    'action'     =&gt; '&lt;action_name&gt;'
-);
-//OR
-$item = '&lt;module_name&gt;/&lt;controller_name&gt;/&lt;action_name&gt;';
-&lt;/code&gt;</span><pre>setExcludedResources()</pre></a></li>
+Example list item:"><span class="description">Set excluded resources params
+Example list item:</span><pre>setExcludedResources()</pre></a></li>
 <li class="method public "><a href="#method_setOptions" title="setOptions :: Set plugin options"><span class="description">Set plugin options</span><pre>setOptions()</pre></a></li>
 <li class="method public "><a href="#method_setRoute" title="setRoute :: Set error page route in format &lt;module_name&gt;/&lt;controller_name&gt;/&lt;action_name&gt;"><span class="description">Set error page route in format &lt;module_name&gt;/&lt;controller_name&gt;/&lt;action_name&gt;</span><pre>setRoute()</pre></a></li>
 </ul>
@@ -243,20 +225,20 @@ If $asArray == true returns as array</h2>
 </div>
 <a id="method_setExcludedResources"></a><div class="element clickable method public method_setExcludedResources" data-toggle="collapse" data-target=".method_setExcludedResources .collapse">
 <h2>Set excluded resources params
-Example list item:
-&lt;code&gt;
-$item = array(
-    'module'     =&gt; '&lt;module_name&gt;',
-    'controller' =&gt; '&lt;controller_name&gt;',
-    'action'     =&gt; '&lt;action_name&gt;'
-);
-//OR
-$item = '&lt;module_name&gt;/&lt;controller_name&gt;/&lt;action_name&gt;';
-&lt;/code&gt;</h2>
+Example list item:</h2>
 <pre>setExcludedResources(array $options) : <a href="../classes/Core_Controller_Plugin_Acl.html">\Core_Controller_Plugin_Acl</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
+<div class="long_description"><pre><code>$plugin = new Core_Controller_Plugin_Acl();
+$plugin->setExcludedResources(array(
+    'module_name/controller_name/action_name', // String item representation
+    array( // Array item representation
+        'module'     => 'module_name',
+        'controller' =>'controller_name',
+        'action'     => 'action_name'
+    )
+));
+</code></pre></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$options</h4>
@@ -354,7 +336,7 @@ $item = '&lt;module_name&gt;/&lt;controller_name&gt;/&lt;action_name&gt;';
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2012-12-16T21:19:31+02:00.<br></footer></div>
+            generated on 2012-12-17T09:53:24+02:00.<br></footer></div>
 </div>
 </body>
 </html>
