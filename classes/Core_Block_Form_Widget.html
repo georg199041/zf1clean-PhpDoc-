@@ -220,19 +220,21 @@ Implementing Zend_Form like forms with all it functional</p>
 <i class="icon-custom icon-method"></i> Methods</h3>
 <a id="method___"></a><div class="element clickable method public method___" data-toggle="collapse" data-target=".method___ .collapse">
 <h2>Helper function to translate some strings</h2>
-<pre>__(string $string) : string</pre>
+<pre>__(string $string, string | \Zend_Locale $locale) : string</pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"><p>Internaly use Zend_Translate</p>
 
-<p>Usage anywhere in block class or in template:
-<php>
-    $this->__('Untranslated string');
-</php></p></div>
+<pre><code>//You can use this method anywhere in extended block class or in template file
+echo $this->__('Untranslated string');
+
+// Or with specified locale
+echo $this->__('Untranslated string', 'ru');
+</code></pre></div>
 <table class="table table-bordered">
 <tr>
 <th>see</th>
-<td><a href="">\Zend_Translate</a></td>
+<td><a href="Core.Translate.Manager.html#%5CCore_Translate_Manager">\Core_Translate_Manager</a></td>
 </tr>
 <tr>
 <th>inherited_from</th>
@@ -243,6 +245,9 @@ Implementing Zend_Form like forms with all it functional</p>
 <div class="subelement argument">
 <h4>$string</h4>
 <code>string</code><p>Input string in default language</p></div>
+<div class="subelement argument">
+<h4>$locale</h4>
+<code>string</code><code>\Zend_Locale</code><p>Specified locale for translation</p></div>
 <h3>Returns</h3>
 <div class="subelement response">
 <code>string</code>Translated into selected language string</div>
@@ -1721,7 +1726,7 @@ Proxied to engine</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2012-12-17T13:42:06+02:00.<br></footer></div>
+            generated on 2012-12-18T11:29:04+02:00.<br></footer></div>
 </div>
 </body>
 </html>

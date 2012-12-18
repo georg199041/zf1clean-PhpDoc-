@@ -5236,7 +5236,7 @@ Added parse * like options as current associated in request</description>
       </method>
     </class>
   </file>
-  <file path="Core\Block\View.php" hash="8ff63904616c0dc0f673fcde33e9757c" package="Core\Block">
+  <file path="Core\Block\View.php" hash="d7c4559cc0181afd58bb92e8f84218ec" package="Core\Block">
     <docblock line="2">
       <description>Zend Framework</description>
       <long-description>&lt;p&gt;LICENSE&lt;/p&gt;
@@ -5257,1144 +5257,1163 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
     <include line="25" type="Require Once" package="Default">
       <name>Zend/View/Interface.php</name>
       <docblock line="22">
-        <description/>
-        <long-description/>
+        <description></description>
+        <long-description></long-description>
         <tag line="22" name="see" description="\Zend_View_Interface" refers="\Zend_View_Interface"/>
       </docblock>
     </include>
     <include line="30" type="Require Once" package="Default">
-      <name>Core/Attributes.php</name>
+      <name>Zend/Registry.php</name>
       <docblock line="27">
-        <description/>
-        <long-description/>
-        <tag line="27" name="see" description="\Core_Attributes" refers="\Core_Attributes"/>
+        <description></description>
+        <long-description></long-description>
+        <tag line="27" name="see" description="\Zend_Registry" refers="\Zend_Registry"/>
       </docblock>
     </include>
-    <include line="162" type="Require Once" package="Default">
+    <include line="35" type="Require Once" package="Default">
+      <name>Core/Attributes.php</name>
+      <docblock line="32">
+        <description></description>
+        <long-description></long-description>
+        <tag line="32" name="see" description="\Core_Attributes" refers="\Core_Attributes"/>
+      </docblock>
+    </include>
+    <include line="167" type="Require Once" package="Default">
       <name>Core/Block/Exception.php</name>
     </include>
-    <include line="176" type="Require Once" package="Default">
+    <include line="181" type="Require Once" package="Default">
       <name>Core/Block/Exception.php</name>
     </include>
-    <include line="193" type="Require Once" package="Default">
+    <include line="198" type="Require Once" package="Default">
       <name>Core/Block/Exception.php</name>
     </include>
-    <include line="199" type="Require Once" package="Default">
+    <include line="204" type="Require Once" package="Default">
       <name>Zend/Controller/Action/HelperBroker.php</name>
     </include>
-    <include line="203" type="Require Once" package="Default">
+    <include line="208" type="Require Once" package="Default">
       <name>Zend/Controller/Front.php</name>
     </include>
-    <include line="383" type="Require Once" package="Default">
+    <include line="396" type="Require Once" package="Default">
       <name>Zend/Controller/Action/HelperBroker.php</name>
     </include>
-    <include line="577" type="Require Once" package="Default">
+    <include line="590" type="Require Once" package="Default">
       <name>Core/Block/Exception.php</name>
     </include>
-    <include line="589" type="Require Once" package="Default">
+    <include line="602" type="Require Once" package="Default">
       <name>Core/Block/Exception.php</name>
     </include>
-    <include line="1009" type="Include" package="Default">
+    <include line="1022" type="Include" package="Default">
       <name/>
     </include>
-    <include line="1022" type="Require Once" package="Default">
+    <include line="1035" type="Require Once" package="Default">
       <name>Core/Block/Exception.php</name>
     </include>
-    <class final="false" abstract="false" namespace="global" line="40" package="Core\Block">
+    <class final="false" abstract="false" namespace="global" line="45" package="Core\Block">
       <extends>\Core_Attributes</extends>
       <implements>\Zend_View_Interface</implements>
       <name>Core_Block_View</name>
       <full_name>\Core_Block_View</full_name>
-      <docblock line="32">
+      <docblock line="37">
         <description>Block templating strategy view engine</description>
-        <long-description/>
-        <tag line="32" name="category" description="Core"/>
-        <tag line="32" name="package" description="Core_Block"/>
-        <tag line="32" name="copyright" description="Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)"/>
-        <tag line="32" name="license" description="http://framework.zend.com/license/new-bsd     New BSD License"/>
+        <long-description></long-description>
+        <tag line="37" name="category" description="Core"/>
+        <tag line="37" name="package" description="Core_Block"/>
+        <tag line="37" name="copyright" description="Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)"/>
+        <tag line="37" name="license" description="http://framework.zend.com/license/new-bsd     New BSD License"/>
       </docblock>
-      <constant namespace="global" line="45" package="Core\Block">
+      <constant namespace="global" line="50" package="Core\Block">
         <name>BLOCK_DUMMY</name>
         <full_name>BLOCK_DUMMY</full_name>
         <value>'DUMMY'</value>
-        <docblock line="42">
+        <docblock line="47">
           <description>Dummy string, uses fron no script file required renreds</description>
-          <long-description/>
+          <long-description></long-description>
         </docblock>
       </constant>
-      <constant namespace="global" line="47" package="Core\Block">
+      <constant namespace="global" line="52" package="Core\Block">
         <name>BLOCK_PLACEMENT_BEFORE</name>
         <full_name>BLOCK_PLACEMENT_BEFORE</full_name>
         <value>'BEFORE'</value>
       </constant>
-      <constant namespace="global" line="48" package="Core\Block">
+      <constant namespace="global" line="53" package="Core\Block">
         <name>BLOCK_PLACEMENT_AFTER</name>
         <full_name>BLOCK_PLACEMENT_AFTER</full_name>
         <value>'AFTER'</value>
       </constant>
-      <constant namespace="global" line="53" package="Core\Block">
+      <constant namespace="global" line="58" package="Core\Block">
         <name>BLOCK_CACHEMANAGER_KEY</name>
         <full_name>BLOCK_CACHEMANAGER_KEY</full_name>
         <value>'Core_Block_View'</value>
-        <docblock line="50">
+        <docblock line="55">
           <description>Cache manager place key</description>
-          <long-description/>
+          <long-description></long-description>
         </docblock>
       </constant>
-      <property final="false" static="true" visibility="protected" line="60" namespace="global" package="Default">
+      <property final="false" static="true" visibility="protected" line="65" namespace="global" package="Default">
         <name>$_engine</name>
-        <default/>
-        <docblock line="55">
+        <default></default>
+        <docblock line="60">
           <description>Global engine object</description>
-          <long-description/>
-          <tag line="55" name="var" description="" type="object">
+          <long-description></long-description>
+          <tag line="60" name="var" description="" type="object">
             <type by_reference="false">object</type>
           </tag>
         </docblock>
       </property>
-      <property final="false" static="true" visibility="protected" line="67" namespace="global" package="Default">
+      <property final="false" static="true" visibility="protected" line="72" namespace="global" package="Default">
         <name>$_cache</name>
-        <default/>
-        <docblock line="62">
+        <default></default>
+        <docblock line="67">
           <description>Global cache object</description>
-          <long-description/>
-          <tag line="62" name="var" description="" type="object">
+          <long-description></long-description>
+          <tag line="67" name="var" description="" type="object">
             <type by_reference="false">object</type>
           </tag>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="protected" line="74" namespace="global" package="Default">
+      <property final="false" static="false" visibility="protected" line="79" namespace="global" package="Default">
         <name>$_cacheable</name>
         <default>false</default>
-        <docblock line="69">
+        <docblock line="74">
           <description>Cache local use flag</description>
-          <long-description/>
-          <tag line="69" name="var" description="" type="boolean">
+          <long-description></long-description>
+          <tag line="74" name="var" description="" type="boolean">
             <type by_reference="false">boolean</type>
           </tag>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="protected" line="81" namespace="global" package="Default">
+      <property final="false" static="false" visibility="protected" line="86" namespace="global" package="Default">
         <name>$_scriptName</name>
-        <default/>
-        <docblock line="76">
+        <default></default>
+        <docblock line="81">
           <description>Template script name</description>
-          <long-description/>
-          <tag line="76" name="var" description="" type="string">
+          <long-description></long-description>
+          <tag line="81" name="var" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="protected" line="88" namespace="global" package="Default">
+      <property final="false" static="false" visibility="protected" line="93" namespace="global" package="Default">
         <name>$_rendered</name>
         <default>false</default>
-        <docblock line="83">
+        <docblock line="88">
           <description>Flag of rendering completed</description>
-          <long-description/>
-          <tag line="83" name="var" description="" type="boolean">
+          <long-description></long-description>
+          <tag line="88" name="var" description="" type="boolean">
             <type by_reference="false">boolean</type>
           </tag>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="protected" line="95" namespace="global" package="Default">
+      <property final="false" static="false" visibility="protected" line="100" namespace="global" package="Default">
         <name>$_blockName</name>
-        <default/>
-        <docblock line="90">
+        <default></default>
+        <docblock line="95">
           <description>Internal block name</description>
-          <long-description/>
-          <tag line="90" name="var" description="" type="string">
+          <long-description></long-description>
+          <tag line="95" name="var" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="protected" line="102" namespace="global" package="Default">
+      <property final="false" static="false" visibility="protected" line="107" namespace="global" package="Default">
         <name>$_blockParent</name>
-        <default/>
-        <docblock line="97">
+        <default></default>
+        <docblock line="102">
           <description>Parent block object</description>
-          <long-description/>
-          <tag line="97" name="var" description="" type="null|\Core_Block_View">
+          <long-description></long-description>
+          <tag line="102" name="var" description="" type="null|\Core_Block_View">
             <type by_reference="false">null</type>
             <type by_reference="false">\Core_Block_View</type>
           </tag>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="protected" line="109" namespace="global" package="Default">
+      <property final="false" static="false" visibility="protected" line="114" namespace="global" package="Default">
         <name>$_blockChilds</name>
         <default>array()</default>
-        <docblock line="104">
+        <docblock line="109">
           <description>Array of childs blocks</description>
-          <long-description/>
-          <tag line="104" name="var" description="" type="array">
+          <long-description></long-description>
+          <tag line="109" name="var" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="protected" line="116" namespace="global" package="Default">
+      <property final="false" static="false" visibility="protected" line="121" namespace="global" package="Default">
         <name>$_blockPlacment</name>
         <default>self::BLOCK_PLACEMENT_AFTER</default>
-        <docblock line="111">
+        <docblock line="116">
           <description>Plock placement relative to parent</description>
-          <long-description/>
-          <tag line="111" name="var" description="" type="string">
+          <long-description></long-description>
+          <tag line="116" name="var" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="protected" line="123" namespace="global" package="Default">
+      <property final="false" static="false" visibility="protected" line="128" namespace="global" package="Default">
         <name>$_blockAvailablePlacements</name>
         <default>array(self::BLOCK_PLACEMENT_BEFORE, self::BLOCK_PLACEMENT_AFTER)</default>
-        <docblock line="118">
+        <docblock line="123">
           <description>All available placements for comarison functions</description>
-          <long-description/>
-          <tag line="118" name="var" description="" type="array">
+          <long-description></long-description>
+          <tag line="123" name="var" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
         </docblock>
       </property>
-      <property final="false" static="true" visibility="protected" line="133" namespace="global" package="Default">
+      <property final="false" static="true" visibility="protected" line="138" namespace="global" package="Default">
         <name>$_logger</name>
-        <default/>
-        <docblock line="128">
+        <default></default>
+        <docblock line="133">
           <description>Logger instance</description>
-          <long-description/>
-          <tag line="128" name="var" description="" type="\Zend_Log">
+          <long-description></long-description>
+          <tag line="133" name="var" description="" type="\Zend_Log">
             <type by_reference="false">\Zend_Log</type>
           </tag>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="142" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="147" package="Core\Block">
         <name>_log</name>
         <full_name>_log</full_name>
-        <docblock line="135">
+        <docblock line="140">
           <description>Add log message</description>
-          <long-description/>
-          <tag line="135" name="param" description="Log message" type="string" variable="$message">
+          <long-description></long-description>
+          <tag line="140" name="param" description="Log message" type="string" variable="$message">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="135" name="param" description="Log priority (message status)" type="string" variable="$priority">
+          <tag line="140" name="param" description="Log priority (message status)" type="string" variable="$priority">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="135" name="return" description="" type="\Core_Block_View">
+          <tag line="140" name="return" description="" type="\Core_Block_View">
             <type by_reference="false">\Core_Block_View</type>
           </tag>
         </docblock>
-        <argument line="142">
+        <argument line="147">
           <name>$message</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
-        <argument line="142">
+        <argument line="147">
           <name>$priority</name>
           <default>\Zend_Log::INFO</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="157" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="162" package="Core\Block">
         <name>_getScriptFile</name>
         <full_name>_getScriptFile</full_name>
-        <docblock line="151">
+        <docblock line="156">
           <description>Search script file</description>
-          <long-description/>
-          <tag line="151" name="throws" description="" type="\Exception">
+          <long-description></long-description>
+          <tag line="156" name="throws" description="" type="\Exception">
             <type by_reference="false">\Exception</type>
           </tag>
-          <tag line="151" name="return" description="" type="string">
+          <tag line="156" name="return" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="188" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="193" package="Core\Block">
         <name>_getBlockNames</name>
         <full_name>_getBlockNames</full_name>
-        <docblock line="182">
+        <docblock line="187">
           <description>Get block name variants for loader</description>
-          <long-description/>
-          <tag line="182" name="throws" description="" type="\Exception">
+          <long-description></long-description>
+          <tag line="187" name="throws" description="" type="\Exception">
             <type by_reference="false">\Exception</type>
           </tag>
-          <tag line="182" name="return" description="" type="array">
+          <tag line="187" name="return" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="216" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="221" package="Core\Block">
         <name>_cacheId</name>
         <full_name>_cacheId</full_name>
-        <docblock line="211">
+        <docblock line="216">
           <description>Generate cache id</description>
-          <long-description/>
-          <tag line="211" name="return" description="" type="string">
+          <long-description></long-description>
+          <tag line="216" name="return" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="229" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="234" package="Core\Block">
         <name>_cacheTest</name>
         <full_name>_cacheTest</full_name>
-        <docblock line="223">
+        <docblock line="228">
           <description>Helper for test cache record exists</description>
-          <long-description/>
-          <tag line="223" name="param" description="" type="string" variable="$id">
+          <long-description></long-description>
+          <tag line="228" name="param" description="" type="string" variable="$id">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="223" name="return" description="" type="boolean">
+          <tag line="228" name="return" description="" type="boolean">
             <type by_reference="false">boolean</type>
           </tag>
         </docblock>
-        <argument line="229">
+        <argument line="234">
           <name>$id</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="245" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="250" package="Core\Block">
         <name>_cacheLoad</name>
         <full_name>_cacheLoad</full_name>
-        <docblock line="239">
+        <docblock line="244">
           <description>Helper for load cache record data</description>
-          <long-description/>
-          <tag line="239" name="param" description="" type="string" variable="$id">
+          <long-description></long-description>
+          <tag line="244" name="param" description="" type="string" variable="$id">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="239" name="return" description="" type="boolean">
+          <tag line="244" name="return" description="" type="boolean">
             <type by_reference="false">boolean</type>
           </tag>
         </docblock>
-        <argument line="245">
+        <argument line="250">
           <name>$id</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="262" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="267" package="Core\Block">
         <name>_cacheSave</name>
         <full_name>_cacheSave</full_name>
-        <docblock line="255">
+        <docblock line="260">
           <description>Helper for save cache record data</description>
-          <long-description/>
-          <tag line="255" name="param" description="" type="mixed" variable="$data">
+          <long-description></long-description>
+          <tag line="260" name="param" description="" type="mixed" variable="$data">
             <type by_reference="false">mixed</type>
           </tag>
-          <tag line="255" name="param" description="" type="string" variable="$id">
+          <tag line="260" name="param" description="" type="string" variable="$id">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="255" name="return" description="" type="boolean">
+          <tag line="260" name="return" description="" type="boolean">
             <type by_reference="false">boolean</type>
           </tag>
         </docblock>
-        <argument line="262">
+        <argument line="267">
           <name>$data</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
-        <argument line="262">
+        <argument line="267">
           <name>$id</name>
           <default>null</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="277" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="282" package="Core\Block">
         <name>_findAndRenderBlock</name>
         <full_name>_findAndRenderBlock</full_name>
-        <docblock line="272">
+        <docblock line="277">
           <description>Try to render 'BLOCK' strategy</description>
-          <long-description/>
-          <tag line="272" name="return" description="" type="boolean|string">
+          <long-description></long-description>
+          <tag line="277" name="return" description="" type="boolean|string">
             <type by_reference="false">boolean</type>
             <type by_reference="false">string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="305" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="310" package="Core\Block">
         <name>__construct</name>
         <full_name>__construct</full_name>
-        <docblock line="300">
+        <docblock line="305">
           <description>Constructor</description>
-          <long-description/>
-          <tag line="300" name="param" description="" type="array|\Zend_Config" variable="$options">
+          <long-description></long-description>
+          <tag line="305" name="param" description="" type="array|\Zend_Config" variable="$options">
             <type by_reference="false">array</type>
             <type by_reference="false">\Zend_Config</type>
           </tag>
         </docblock>
-        <argument line="305">
+        <argument line="310">
           <name>$options</name>
           <default>null</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="327" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="332" package="Core\Block">
         <name>setOptions</name>
         <full_name>setOptions</full_name>
-        <docblock line="321">
+        <docblock line="326">
           <description>Set all options at once</description>
-          <long-description/>
-          <tag line="321" name="param" description="" type="array" variable="$options">
+          <long-description></long-description>
+          <tag line="326" name="param" description="" type="array" variable="$options">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="321" name="return" description="" type="\Core_Block_View">
+          <tag line="326" name="return" description="" type="\Core_Block_View">
             <type by_reference="false">\Core_Block_View</type>
           </tag>
         </docblock>
-        <argument line="327">
+        <argument line="332">
           <name>$options</name>
-          <default/>
+          <default></default>
           <type>array</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="353" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="362" package="Core\Block">
         <name>__</name>
         <full_name>__</full_name>
-        <docblock line="339">
+        <docblock line="344">
           <description>Helper function to translate some strings</description>
           <long-description>&lt;p&gt;Internaly use Zend_Translate&lt;/p&gt;
 
-&lt;p&gt;Usage anywhere in block class or in template:
-&lt;php&gt;
-    $this-&gt;__('Untranslated string');
-&lt;/php&gt;&lt;/p&gt;</long-description>
-          <tag line="339" name="see" description="\Zend_Translate" refers="\Zend_Translate"/>
-          <tag line="339" name="param" description="Input string in default language" type="string" variable="$string">
+&lt;pre&gt;&lt;code&gt;//You can use this method anywhere in extended block class or in template file
+echo $this-&gt;__('Untranslated string');
+
+// Or with specified locale
+echo $this-&gt;__('Untranslated string', 'ru');
+&lt;/code&gt;&lt;/pre&gt;</long-description>
+          <tag line="344" name="see" description="\Core_Translate_Manager" refers="\Core_Translate_Manager"/>
+          <tag line="344" name="param" description="Input string in default language" type="string" variable="$string">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="339" name="return" description="Translated into selected language string" type="string">
+          <tag line="344" name="param" description="Specified locale for translation" type="string|\Zend_Locale" variable="$locale">
+            <type by_reference="false">string</type>
+            <type by_reference="false">\Zend_Locale</type>
+          </tag>
+          <tag line="344" name="return" description="Translated into selected language string" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
-        <argument line="353">
+        <argument line="362">
           <name>$string</name>
-          <default/>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="362">
+          <name>$locale</name>
+          <default>null</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="364" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="377" package="Core\Block">
         <name>setScriptName</name>
         <full_name>setScriptName</full_name>
-        <docblock line="358">
+        <docblock line="371">
           <description>Set new script name</description>
-          <long-description/>
-          <tag line="358" name="param" description="" type="string" variable="$name">
+          <long-description></long-description>
+          <tag line="371" name="param" description="" type="string" variable="$name">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="358" name="return" description="" type="\Core_Block_View">
+          <tag line="371" name="return" description="" type="\Core_Block_View">
             <type by_reference="false">\Core_Block_View</type>
           </tag>
         </docblock>
-        <argument line="364">
+        <argument line="377">
           <name>$name</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="379" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="392" package="Core\Block">
         <name>getScriptName</name>
         <full_name>getScriptName</full_name>
-        <docblock line="374">
+        <docblock line="387">
           <description>Get script name</description>
-          <long-description/>
-          <tag line="374" name="return" description="" type="null|string">
+          <long-description></long-description>
+          <tag line="387" name="return" description="" type="null|string">
             <type by_reference="false">null</type>
             <type by_reference="false">string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="406" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="419" package="Core\Block">
         <name>setBlockName</name>
         <full_name>setBlockName</full_name>
-        <docblock line="400">
+        <docblock line="413">
           <description>Set block name</description>
-          <long-description/>
-          <tag line="400" name="param" description="" type="string" variable="$name">
+          <long-description></long-description>
+          <tag line="413" name="param" description="" type="string" variable="$name">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="400" name="return" description="" type="\Core_Block_View">
+          <tag line="413" name="return" description="" type="\Core_Block_View">
             <type by_reference="false">\Core_Block_View</type>
           </tag>
         </docblock>
-        <argument line="406">
+        <argument line="419">
           <name>$name</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="419" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="432" package="Core\Block">
         <name>getBlockName</name>
         <full_name>getBlockName</full_name>
-        <docblock line="413">
+        <docblock line="426">
           <description>Get block name
 Create from class name if not defined</description>
-          <long-description/>
-          <tag line="413" name="return" description="" type="string">
+          <long-description></long-description>
+          <tag line="426" name="return" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="443" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="456" package="Core\Block">
         <name>setBlockPlacement</name>
         <full_name>setBlockPlacement</full_name>
-        <docblock line="437">
+        <docblock line="450">
           <description>Set block placement relative to arent</description>
-          <long-description/>
-          <tag line="437" name="param" description="Blocks pacement name" type="string" variable="$placement">
+          <long-description></long-description>
+          <tag line="450" name="param" description="Blocks pacement name" type="string" variable="$placement">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="437" name="return" description="" type="\Core_Block_View">
+          <tag line="450" name="return" description="" type="\Core_Block_View">
             <type by_reference="false">\Core_Block_View</type>
           </tag>
         </docblock>
-        <argument line="443">
+        <argument line="456">
           <name>$placement</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="458" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="471" package="Core\Block">
         <name>getBlockPlacement</name>
         <full_name>getBlockPlacement</full_name>
-        <docblock line="453">
+        <docblock line="466">
           <description>Get block placement</description>
-          <long-description/>
-          <tag line="453" name="return" description="" type="string">
+          <long-description></long-description>
+          <tag line="466" name="return" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="470" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="483" package="Core\Block">
         <name>setBlockParent</name>
         <full_name>setBlockParent</full_name>
-        <docblock line="464">
-          <description>Set parent block</description>
-          <long-description/>
-          <tag line="464" name="param" description="" type="\Core_Block_View" variable="$parent">
-            <type by_reference="false">\Core_Block_View</type>
-          </tag>
-          <tag line="464" name="return" description="" type="\Core_Block_View">
-            <type by_reference="false">\Core_Block_View</type>
-          </tag>
-        </docblock>
-        <argument line="470">
-          <name>$parent</name>
-          <default/>
-          <type>\Core_Block_View</type>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="482" package="Core\Block">
-        <name>getBlockParent</name>
-        <full_name>getBlockParent</full_name>
         <docblock line="477">
-          <description>Get parent block</description>
-          <long-description/>
+          <description>Set parent block</description>
+          <long-description></long-description>
+          <tag line="477" name="param" description="" type="\Core_Block_View" variable="$parent">
+            <type by_reference="false">\Core_Block_View</type>
+          </tag>
           <tag line="477" name="return" description="" type="\Core_Block_View">
             <type by_reference="false">\Core_Block_View</type>
           </tag>
         </docblock>
+        <argument line="483">
+          <name>$parent</name>
+          <default></default>
+          <type>\Core_Block_View</type>
+        </argument>
       </method>
       <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="495" package="Core\Block">
-        <name>setBlockChilds</name>
-        <full_name>setBlockChilds</full_name>
-        <docblock line="488">
-          <description>Set childs blocks</description>
-          <long-description/>
-          <tag line="488" name="param" description="Blocks list to set" type="array" variable="$childs">
-            <type by_reference="false">array</type>
-          </tag>
-          <tag line="488" name="param" description="Blocks pacement name" type="string" variable="$placement">
-            <type by_reference="false">string</type>
-          </tag>
-          <tag line="488" name="return" description="" type="\Core_Block_View">
+        <name>getBlockParent</name>
+        <full_name>getBlockParent</full_name>
+        <docblock line="490">
+          <description>Get parent block</description>
+          <long-description></long-description>
+          <tag line="490" name="return" description="" type="\Core_Block_View">
             <type by_reference="false">\Core_Block_View</type>
           </tag>
         </docblock>
-        <argument line="495">
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="508" package="Core\Block">
+        <name>setBlockChilds</name>
+        <full_name>setBlockChilds</full_name>
+        <docblock line="501">
+          <description>Set childs blocks</description>
+          <long-description></long-description>
+          <tag line="501" name="param" description="Blocks list to set" type="array" variable="$childs">
+            <type by_reference="false">array</type>
+          </tag>
+          <tag line="501" name="param" description="Blocks pacement name" type="string" variable="$placement">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="501" name="return" description="" type="\Core_Block_View">
+            <type by_reference="false">\Core_Block_View</type>
+          </tag>
+        </docblock>
+        <argument line="508">
           <name>$childs</name>
-          <default/>
+          <default></default>
           <type>array</type>
         </argument>
-        <argument line="495">
+        <argument line="508">
           <name>$placement</name>
           <default>self::BLOCK_PLACEMENT_AFTER</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="509" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="522" package="Core\Block">
         <name>getBlockChilds</name>
         <full_name>getBlockChilds</full_name>
-        <docblock line="503">
+        <docblock line="516">
           <description>Get childs blocks</description>
-          <long-description/>
-          <tag line="503" name="param" description="Blocks pacement name" type="string" variable="$placement">
+          <long-description></long-description>
+          <tag line="516" name="param" description="Blocks pacement name" type="string" variable="$placement">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="503" name="return" description="" type="array">
+          <tag line="516" name="return" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
         </docblock>
-        <argument line="509">
+        <argument line="522">
           <name>$placement</name>
           <default>null</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="538" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="551" package="Core\Block">
         <name>addBlockChilds</name>
         <full_name>addBlockChilds</full_name>
-        <docblock line="531">
+        <docblock line="544">
           <description>Add childs blocks</description>
-          <long-description/>
-          <tag line="531" name="param" description="Block list to add" type="array" variable="$childs">
+          <long-description></long-description>
+          <tag line="544" name="param" description="Block list to add" type="array" variable="$childs">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="531" name="param" description="Blocks pacement name" type="string" variable="$placement">
+          <tag line="544" name="param" description="Blocks pacement name" type="string" variable="$placement">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="531" name="return" description="" type="\Core_Block_View">
+          <tag line="544" name="return" description="" type="\Core_Block_View">
             <type by_reference="false">\Core_Block_View</type>
           </tag>
         </docblock>
-        <argument line="538">
+        <argument line="551">
           <name>$childs</name>
-          <default/>
+          <default></default>
           <type>array</type>
         </argument>
-        <argument line="538">
+        <argument line="551">
           <name>$placement</name>
           <default>self::BLOCK_PLACEMENT_AFTER</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="564" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="577" package="Core\Block">
         <name>addBlockChild</name>
         <full_name>addBlockChild</full_name>
-        <docblock line="556">
+        <docblock line="569">
           <description>Add single child block</description>
-          <long-description/>
-          <tag line="556" name="param" description="Block to add" type="string|\Core_View_Block" variable="$child">
+          <long-description></long-description>
+          <tag line="569" name="param" description="Block to add" type="string|\Core_View_Block" variable="$child">
             <type by_reference="false">string</type>
             <type by_reference="false">\Core_View_Block</type>
           </tag>
-          <tag line="556" name="param" description="Block placement" type="string" variable="$placement">
+          <tag line="569" name="param" description="Block placement" type="string" variable="$placement">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="556" name="throws" description="If not found" type="\Exception">
+          <tag line="569" name="throws" description="If not found" type="\Exception">
             <type by_reference="false">\Exception</type>
           </tag>
-          <tag line="556" name="return" description="" type="\Core_Block_View">
+          <tag line="569" name="return" description="" type="\Core_Block_View">
             <type by_reference="false">\Core_Block_View</type>
           </tag>
         </docblock>
-        <argument line="564">
+        <argument line="577">
           <name>$child</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
-        <argument line="564">
+        <argument line="577">
           <name>$placement</name>
           <default>self::BLOCK_PLACEMENT_AFTER</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="611" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="624" package="Core\Block">
         <name>getBlockChild</name>
         <full_name>getBlockChild</full_name>
-        <docblock line="605">
+        <docblock line="618">
           <description>Get block by name</description>
-          <long-description/>
-          <tag line="605" name="param" description="" type="string" variable="$name">
+          <long-description></long-description>
+          <tag line="618" name="param" description="" type="string" variable="$name">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="605" name="return" description="" type="null|\Core_Block_View">
+          <tag line="618" name="return" description="" type="null|\Core_Block_View">
             <type by_reference="false">null</type>
             <type by_reference="false">\Core_Block_View</type>
           </tag>
         </docblock>
-        <argument line="611">
+        <argument line="624">
           <name>$name</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="623" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="636" package="Core\Block">
         <name>delBlockChild</name>
         <full_name>delBlockChild</full_name>
-        <docblock line="617">
+        <docblock line="630">
           <description>Delete block from childs</description>
-          <long-description/>
-          <tag line="617" name="param" description="" type="string" variable="$name">
+          <long-description></long-description>
+          <tag line="630" name="param" description="" type="string" variable="$name">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="617" name="return" description="" type="\Core_Block_View">
+          <tag line="630" name="return" description="" type="\Core_Block_View">
             <type by_reference="false">\Core_Block_View</type>
           </tag>
         </docblock>
-        <argument line="623">
+        <argument line="636">
           <name>$name</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="637" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="650" package="Core\Block">
         <name>setRendered</name>
         <full_name>setRendered</full_name>
-        <docblock line="631">
+        <docblock line="644">
           <description>Set rendered flag</description>
-          <long-description/>
-          <tag line="631" name="param" description="" type="boolean" variable="$flag">
+          <long-description></long-description>
+          <tag line="644" name="param" description="" type="boolean" variable="$flag">
             <type by_reference="false">boolean</type>
           </tag>
-          <tag line="631" name="return" description="" type="\Core_Block_View">
+          <tag line="644" name="return" description="" type="\Core_Block_View">
             <type by_reference="false">\Core_Block_View</type>
           </tag>
         </docblock>
-        <argument line="637">
+        <argument line="650">
           <name>$flag</name>
           <default>false</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="649" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="662" package="Core\Block">
         <name>isRendered</name>
         <full_name>isRendered</full_name>
-        <docblock line="644">
+        <docblock line="657">
           <description>Check if rendered flag set</description>
-          <long-description/>
-          <tag line="644" name="return" description="" type="boolean">
+          <long-description></long-description>
+          <tag line="657" name="return" description="" type="boolean">
             <type by_reference="false">boolean</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="660" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="673" package="Core\Block">
         <name>getRequest</name>
         <full_name>getRequest</full_name>
-        <docblock line="655">
+        <docblock line="668">
           <description>Get front controller request object</description>
-          <long-description/>
-          <tag line="655" name="return" description="" type="\Zend_Controller_Request_Http">
+          <long-description></long-description>
+          <tag line="668" name="return" description="" type="\Zend_Controller_Request_Http">
             <type by_reference="false">\Zend_Controller_Request_Http</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="670" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="683" package="Core\Block">
         <name>getResponse</name>
         <full_name>getResponse</full_name>
-        <docblock line="665">
+        <docblock line="678">
           <description>Get front controller response</description>
-          <long-description/>
-          <tag line="665" name="return" description="" type="\Zend_Controller_Response_Abstract">
+          <long-description></long-description>
+          <tag line="678" name="return" description="" type="\Zend_Controller_Response_Abstract">
             <type by_reference="false">\Zend_Controller_Response_Abstract</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="678" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="691" package="Core\Block">
         <name>init</name>
         <full_name>init</full_name>
-        <docblock line="675">
+        <docblock line="688">
           <description>Extensions initialize method</description>
-          <long-description/>
+          <long-description></long-description>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="684" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="697" package="Core\Block">
         <name>preRender</name>
         <full_name>preRender</full_name>
-        <docblock line="681">
+        <docblock line="694">
           <description>Direct before render initializations</description>
-          <long-description/>
+          <long-description></long-description>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="692" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="705" package="Core\Block">
         <name>getEngine</name>
         <full_name>getEngine</full_name>
-        <docblock line="687">
+        <docblock line="700">
           <description>Get rendering core engine</description>
-          <long-description/>
-          <tag line="687" name="return" description="" type="object">
+          <long-description></long-description>
+          <tag line="700" name="return" description="" type="object">
             <type by_reference="false">object</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="707" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="720" package="Core\Block">
         <name>setLogger</name>
         <full_name>setLogger</full_name>
-        <docblock line="701">
+        <docblock line="714">
           <description>Set new logger instance</description>
-          <long-description/>
-          <tag line="701" name="param" description="" type="array|\Zend_Log" variable="$logger">
+          <long-description></long-description>
+          <tag line="714" name="param" description="" type="array|\Zend_Log" variable="$logger">
             <type by_reference="false">array</type>
             <type by_reference="false">\Zend_Log</type>
           </tag>
-          <tag line="701" name="return" description="" type="\Core_Block_View">
+          <tag line="714" name="return" description="" type="\Core_Block_View">
             <type by_reference="false">\Core_Block_View</type>
           </tag>
         </docblock>
-        <argument line="707">
+        <argument line="720">
           <name>$logger</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="725" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="738" package="Core\Block">
         <name>getLogger</name>
         <full_name>getLogger</full_name>
-        <docblock line="720">
+        <docblock line="733">
           <description>Gets logger instance</description>
-          <long-description/>
-          <tag line="720" name="return" description="" type="\Zend_Log">
+          <long-description></long-description>
+          <tag line="733" name="return" description="" type="\Zend_Log">
             <type by_reference="false">\Zend_Log</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="741" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="754" package="Core\Block">
         <name>setScriptPath</name>
         <full_name>setScriptPath</full_name>
-        <docblock line="734">
+        <docblock line="747">
           <description>Set script search path
 Proxied to engine</description>
-          <long-description/>
-          <tag line="734" name="param" description="" type="string" variable="$path">
+          <long-description></long-description>
+          <tag line="747" name="param" description="" type="string" variable="$path">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="734" name="return" description="" type="\Core_Block_View">
+          <tag line="747" name="return" description="" type="\Core_Block_View">
             <type by_reference="false">\Core_Block_View</type>
           </tag>
         </docblock>
-        <argument line="741">
+        <argument line="754">
           <name>$path</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="752" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="765" package="Core\Block">
         <name>getScriptPaths</name>
         <full_name>getScriptPaths</full_name>
-        <docblock line="747">
+        <docblock line="760">
           <description>Get search script paths</description>
-          <long-description/>
-          <tag line="747" name="return" description="" type="array">
+          <long-description></long-description>
+          <tag line="760" name="return" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="765" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="778" package="Core\Block">
         <name>setBasePath</name>
         <full_name>setBasePath</full_name>
-        <docblock line="757">
+        <docblock line="770">
           <description>Set base path
 Proxied to engine</description>
-          <long-description/>
-          <tag line="757" name="param" description="" type="string" variable="$path">
+          <long-description></long-description>
+          <tag line="770" name="param" description="" type="string" variable="$path">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="757" name="param" description="" type="string" variable="$classPrefix">
+          <tag line="770" name="param" description="" type="string" variable="$classPrefix">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="757" name="return" description="" type="\Core_Block_View">
+          <tag line="770" name="return" description="" type="\Core_Block_View">
             <type by_reference="false">\Core_Block_View</type>
           </tag>
         </docblock>
-        <argument line="765">
+        <argument line="778">
           <name>$path</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
-        <argument line="765">
+        <argument line="778">
           <name>$classPrefix</name>
           <default>'Zend_View'</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="779" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="792" package="Core\Block">
         <name>addBasePath</name>
         <full_name>addBasePath</full_name>
-        <docblock line="771">
+        <docblock line="784">
           <description>Add base path
 Proxied to engine</description>
-          <long-description/>
-          <tag line="771" name="param" description="" type="string" variable="$path">
+          <long-description></long-description>
+          <tag line="784" name="param" description="" type="string" variable="$path">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="771" name="param" description="" type="string" variable="$classPrefix">
+          <tag line="784" name="param" description="" type="string" variable="$classPrefix">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="771" name="return" description="" type="\Core_Block_View">
+          <tag line="784" name="return" description="" type="\Core_Block_View">
             <type by_reference="false">\Core_Block_View</type>
           </tag>
         </docblock>
-        <argument line="779">
+        <argument line="792">
           <name>$path</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
-        <argument line="779">
+        <argument line="792">
           <name>$classPrefix</name>
           <default>'Zend_View'</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="790" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="803" package="Core\Block">
         <name>setCache</name>
         <full_name>setCache</full_name>
-        <docblock line="785">
+        <docblock line="798">
           <description>Set new cache object</description>
-          <long-description/>
-          <tag line="785" name="param" description="" type="\Zend_Cache_Core" variable="$core">
+          <long-description></long-description>
+          <tag line="798" name="param" description="" type="\Zend_Cache_Core" variable="$core">
             <type by_reference="false">\Zend_Cache_Core</type>
           </tag>
         </docblock>
-        <argument line="790">
+        <argument line="803">
           <name>$core</name>
-          <default/>
+          <default></default>
           <type>\Zend_Cache_Core</type>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="801" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="814" package="Core\Block">
         <name>getCache</name>
         <full_name>getCache</full_name>
-        <docblock line="796">
+        <docblock line="809">
           <description>Get cache object</description>
-          <long-description/>
-          <tag line="796" name="return" description="" type="\Zend_Cache_Core">
+          <long-description></long-description>
+          <tag line="809" name="return" description="" type="\Zend_Cache_Core">
             <type by_reference="false">\Zend_Cache_Core</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="826" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="839" package="Core\Block">
         <name>setCacheable</name>
         <full_name>setCacheable</full_name>
-        <docblock line="820">
+        <docblock line="833">
           <description>Set local use cache</description>
-          <long-description/>
-          <tag line="820" name="param" description="" type="string" variable="$flag">
+          <long-description></long-description>
+          <tag line="833" name="param" description="" type="string" variable="$flag">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="820" name="return" description="" type="\Core_Block_View">
+          <tag line="833" name="return" description="" type="\Core_Block_View">
             <type by_reference="false">\Core_Block_View</type>
           </tag>
         </docblock>
-        <argument line="826">
+        <argument line="839">
           <name>$flag</name>
           <default>true</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="838" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="851" package="Core\Block">
         <name>isCacheable</name>
         <full_name>isCacheable</full_name>
-        <docblock line="833">
+        <docblock line="846">
           <description>Check if localy cache s enabled</description>
-          <long-description/>
-          <tag line="833" name="return" description="" type="boolean">
+          <long-description></long-description>
+          <tag line="846" name="return" description="" type="boolean">
             <type by_reference="false">boolean</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="849" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="862" package="Core\Block">
         <name>getCacheId</name>
         <full_name>getCacheId</full_name>
-        <docblock line="844">
+        <docblock line="857">
           <description>Generate cache id</description>
-          <long-description/>
-          <tag line="844" name="return" description="" type="string">
+          <long-description></long-description>
+          <tag line="857" name="return" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="863" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="876" package="Core\Block">
         <name>__call</name>
         <full_name>__call</full_name>
-        <docblock line="856">
+        <docblock line="869">
           <description>Proxy undefined methods to engine</description>
-          <long-description/>
-          <tag line="856" name="param" description="" type="string" variable="$method">
+          <long-description></long-description>
+          <tag line="869" name="param" description="" type="string" variable="$method">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="856" name="param" description="" type="array" variable="$args">
+          <tag line="869" name="param" description="" type="array" variable="$args">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="856" name="return" description="" type="mixed|\Core_Block_View">
+          <tag line="869" name="return" description="" type="mixed|\Core_Block_View">
             <type by_reference="false">mixed</type>
             <type by_reference="false">\Core_Block_View</type>
           </tag>
         </docblock>
-        <argument line="863">
+        <argument line="876">
           <name>$method</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
-        <argument line="863">
+        <argument line="876">
           <name>$args</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="881" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="894" package="Core\Block">
         <name>__get</name>
         <full_name>__get</full_name>
-        <docblock line="875">
+        <docblock line="888">
           <description>Get property
 Currently not used</description>
-          <long-description/>
-          <tag line="875" name="param" description="" type="mixed" variable="$key">
+          <long-description></long-description>
+          <tag line="888" name="param" description="" type="mixed" variable="$key">
             <type by_reference="false">mixed</type>
           </tag>
         </docblock>
-        <argument line="881">
+        <argument line="894">
           <name>$key</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="892" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="905" package="Core\Block">
         <name>__set</name>
         <full_name>__set</full_name>
-        <docblock line="886">
+        <docblock line="899">
           <description>Set new property</description>
-          <long-description/>
-          <tag line="886" name="param" description="" type="mixed" variable="$key">
+          <long-description></long-description>
+          <tag line="899" name="param" description="" type="mixed" variable="$key">
             <type by_reference="false">mixed</type>
           </tag>
-          <tag line="886" name="param" description="" type="mixed" variable="$val">
+          <tag line="899" name="param" description="" type="mixed" variable="$val">
             <type by_reference="false">mixed</type>
           </tag>
         </docblock>
-        <argument line="892">
+        <argument line="905">
           <name>$key</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
-        <argument line="892">
+        <argument line="905">
           <name>$val</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="903" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="916" package="Core\Block">
         <name>__isset</name>
         <full_name>__isset</full_name>
-        <docblock line="897">
+        <docblock line="910">
           <description>Check property exists</description>
-          <long-description/>
-          <tag line="897" name="param" description="" type="mixed" variable="$key">
+          <long-description></long-description>
+          <tag line="910" name="param" description="" type="mixed" variable="$key">
             <type by_reference="false">mixed</type>
           </tag>
-          <tag line="897" name="return" description="" type="boolean">
+          <tag line="910" name="return" description="" type="boolean">
             <type by_reference="false">boolean</type>
           </tag>
         </docblock>
-        <argument line="903">
+        <argument line="916">
           <name>$key</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="913" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="926" package="Core\Block">
         <name>__unset</name>
         <full_name>__unset</full_name>
-        <docblock line="908">
+        <docblock line="921">
           <description>Delete property</description>
-          <long-description/>
-          <tag line="908" name="param" description="" type="mixed" variable="$key">
+          <long-description></long-description>
+          <tag line="921" name="param" description="" type="mixed" variable="$key">
             <type by_reference="false">mixed</type>
           </tag>
         </docblock>
-        <argument line="913">
+        <argument line="926">
           <name>$key</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="925" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="938" package="Core\Block">
         <name>assign</name>
         <full_name>assign</full_name>
-        <docblock line="918">
+        <docblock line="931">
           <description>Assign propert(y|ies)</description>
-          <long-description/>
-          <tag line="918" name="param" description="" type="mixed" variable="$spec">
+          <long-description></long-description>
+          <tag line="931" name="param" description="" type="mixed" variable="$spec">
             <type by_reference="false">mixed</type>
           </tag>
-          <tag line="918" name="param" description="" type="mixed" variable="$value">
+          <tag line="931" name="param" description="" type="mixed" variable="$value">
             <type by_reference="false">mixed</type>
           </tag>
-          <tag line="918" name="return" description="" type="\Core_Block_View">
+          <tag line="931" name="return" description="" type="\Core_Block_View">
             <type by_reference="false">\Core_Block_View</type>
           </tag>
         </docblock>
-        <argument line="925">
+        <argument line="938">
           <name>$spec</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
-        <argument line="925">
+        <argument line="938">
           <name>$value</name>
           <default>null</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="936" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="949" package="Core\Block">
         <name>clearVars</name>
         <full_name>clearVars</full_name>
-        <docblock line="931">
+        <docblock line="944">
           <description>Clear all properties</description>
-          <long-description/>
-          <tag line="931" name="return" description="" type="\Core_Block_View">
+          <long-description></long-description>
+          <tag line="944" name="return" description="" type="\Core_Block_View">
             <type by_reference="false">\Core_Block_View</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="948" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="961" package="Core\Block">
         <name>renderBlockChilds</name>
         <full_name>renderBlockChilds</full_name>
-        <docblock line="942">
+        <docblock line="955">
           <description>Render only blocks of specified placement</description>
-          <long-description/>
-          <tag line="942" name="param" description="" type="string" variable="$placement">
+          <long-description></long-description>
+          <tag line="955" name="param" description="" type="string" variable="$placement">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="942" name="return" description="" type="string">
+          <tag line="955" name="return" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
-        <argument line="948">
+        <argument line="961">
           <name>$placement</name>
           <default>null</default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="973" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="986" package="Core\Block">
         <name>render</name>
         <full_name>render</full_name>
-        <docblock line="967">
+        <docblock line="980">
           <description>Render script, highlighter and blocks</description>
-          <long-description/>
-          <tag line="967" name="param" description="overrided script name" type="string" variable="$name">
+          <long-description></long-description>
+          <tag line="980" name="param" description="overrided script name" type="string" variable="$name">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="967" name="return" description="" type="string">
+          <tag line="980" name="return" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
-        <argument line="973">
+        <argument line="986">
           <name>$name</name>
-          <default/>
+          <default></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="1042" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="1055" package="Core\Block">
         <name>__toString</name>
         <full_name>__toString</full_name>
-        <docblock line="1037">
+        <docblock line="1050">
           <description>Rendering by echo call</description>
-          <long-description/>
-          <tag line="1037" name="return" description="" type="string">
+          <long-description></long-description>
+          <tag line="1050" name="return" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="1052" package="Core\Block">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="1065" package="Core\Block">
         <name>toArray</name>
         <full_name>toArray</full_name>
-        <docblock line="1047">
+        <docblock line="1060">
           <description>Converts all variables to array representation</description>
-          <long-description/>
-          <tag line="1047" name="return" description="" type="\array();">
+          <long-description></long-description>
+          <tag line="1060" name="return" description="" type="\array();">
             <type by_reference="false">\array();</type>
           </tag>
         </docblock>
@@ -12012,7 +12031,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
       </docblock>
     </class>
   </file>
-  <file path="Core\Model\Provider\DataMapperModel.php" hash="eef9cbc8735de91dd81d0d8769c7e16c" package="Core">
+  <file path="Core\Model\Provider\DataMapperModel.php" hash="e22446fb5c50a0cacfdb9b66ce4b56be" package="Core">
     <docblock line="2">
       <description>Zend Framework</description>
       <long-description>&lt;p&gt;LICENSE&lt;/p&gt;
@@ -12036,7 +12055,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
       <full_name>\Core_Model_Provider_DataMapperModel</full_name>
       <docblock line="22">
         <description>Data mapper model generation class</description>
-        <long-description></long-description>
+        <long-description/>
         <tag line="22" name="category" description="Core"/>
         <tag line="22" name="package" description="Core"/>
         <tag line="22" name="copyright" description="Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)"/>
@@ -12047,7 +12066,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
         <default>'modules'</default>
         <docblock line="33">
           <description>Base application modules path</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="33" name="var" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
@@ -12058,7 +12077,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
         <default>'Model/Collection'</default>
         <docblock line="40">
           <description>Collection relative path</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="40" name="var" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
@@ -12069,7 +12088,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
         <default>'Model/Entity'</default>
         <docblock line="47">
           <description>Entity relative path</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="47" name="var" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
@@ -12080,7 +12099,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
         <default>'Model/Mapper'</default>
         <docblock line="54">
           <description>Mapper relative path</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="54" name="var" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
@@ -12091,7 +12110,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
         <default>'Model/Source'</default>
         <docblock line="61">
           <description>Source relative path</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="61" name="var" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
@@ -12102,7 +12121,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
         <default>array('DbTable')</default>
         <docblock line="68">
           <description>List of available sources</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="68" name="var" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
@@ -12110,10 +12129,10 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
       </property>
       <property final="false" static="false" visibility="protected" line="82" namespace="global" package="Default">
         <name>$_filter</name>
-        <default></default>
+        <default/>
         <docblock line="77">
           <description>Inflector filter</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="77" name="var" description="" type="\unknown_type">
             <type by_reference="false">\unknown_type</type>
           </tag>
@@ -12124,7 +12143,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
         <full_name>_getFilter</full_name>
         <docblock line="84">
           <description>Filter instantiate method</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="84" name="return" description="" type="\Zend_Filter">
             <type by_reference="false">\Zend_Filter</type>
           </tag>
@@ -12135,7 +12154,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
         <full_name>_applyFilter</full_name>
         <docblock line="102">
           <description>Apply filter helper method</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="102" name="param" description="" type="string" variable="$string">
             <type by_reference="false">string</type>
           </tag>
@@ -12145,7 +12164,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
         </docblock>
         <argument line="108">
           <name>$string</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
@@ -12154,7 +12173,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
         <full_name>_generateCollection</full_name>
         <docblock line="113">
           <description>Create collection part of model</description>
-          <long-description></long-description>
+          <long-description/>
           <tag line="113" name="param" description="" type="string" variable="$name">
             <type by_reference="false">string</type>
           </tag>
@@ -12167,134 +12186,134 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
         </docblock>
         <argument line="120">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
         <argument line="120">
           <name>$module</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="175" package="Core">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="179" package="Core">
         <name>_generateEntity</name>
         <full_name>_generateEntity</full_name>
-        <docblock line="168">
+        <docblock line="172">
           <description>Create entity part of model</description>
-          <long-description></long-description>
-          <tag line="168" name="param" description="" type="string" variable="$name">
+          <long-description/>
+          <tag line="172" name="param" description="" type="string" variable="$name">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="168" name="param" description="" type="string" variable="$module">
+          <tag line="172" name="param" description="" type="string" variable="$module">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="168" name="return" description="" type="string">
+          <tag line="172" name="return" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
-        <argument line="175">
+        <argument line="179">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
-        <argument line="175">
+        <argument line="179">
           <name>$module</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="230" package="Core">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="238" package="Core">
         <name>_generateMapper</name>
         <full_name>_generateMapper</full_name>
-        <docblock line="223">
+        <docblock line="231">
           <description>Create mapper part of model</description>
-          <long-description></long-description>
-          <tag line="223" name="param" description="" type="string" variable="$name">
+          <long-description/>
+          <tag line="231" name="param" description="" type="string" variable="$name">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="223" name="param" description="" type="string" variable="$module">
+          <tag line="231" name="param" description="" type="string" variable="$module">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="223" name="return" description="" type="string">
+          <tag line="231" name="return" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
-        <argument line="230">
+        <argument line="238">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
-        <argument line="230">
+        <argument line="238">
           <name>$module</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="286" package="Core">
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="298" package="Core">
         <name>_generateSource</name>
         <full_name>_generateSource</full_name>
-        <docblock line="278">
+        <docblock line="290">
           <description>Create mapper part of model</description>
-          <long-description></long-description>
-          <tag line="278" name="param" description="" type="string" variable="$name">
+          <long-description/>
+          <tag line="290" name="param" description="" type="string" variable="$name">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="278" name="param" description="" type="string" variable="$module">
+          <tag line="290" name="param" description="" type="string" variable="$module">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="278" name="param" description="" type="string" variable="$type">
+          <tag line="290" name="param" description="" type="string" variable="$type">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="278" name="return" description="" type="string">
+          <tag line="290" name="return" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
         </docblock>
-        <argument line="286">
+        <argument line="298">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
-        <argument line="286">
+        <argument line="298">
           <name>$module</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
-        <argument line="286">
+        <argument line="298">
           <name>$type</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="342" package="Core">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="358" package="Core">
         <name>create</name>
         <full_name>create</full_name>
-        <docblock line="334">
+        <docblock line="350">
           <description>CLI method</description>
-          <long-description></long-description>
-          <tag line="334" name="param" description="" type="string" variable="$name">
+          <long-description/>
+          <tag line="350" name="param" description="" type="string" variable="$name">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="334" name="param" description="" type="string" variable="$module">
+          <tag line="350" name="param" description="" type="string" variable="$module">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="334" name="param" description="" type="string" variable="$sourcetype">
+          <tag line="350" name="param" description="" type="string" variable="$sourcetype">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="334" name="throws" description="" type="\Exception">
+          <tag line="350" name="throws" description="" type="\Exception">
             <type by_reference="false">\Exception</type>
           </tag>
         </docblock>
-        <argument line="342">
+        <argument line="358">
           <name>$name</name>
-          <default></default>
+          <default/>
           <type/>
         </argument>
-        <argument line="342">
+        <argument line="358">
           <name>$module</name>
           <default>'default'</default>
           <type/>
         </argument>
-        <argument line="342">
+        <argument line="358">
           <name>$sourcetype</name>
           <default>'DbTable'</default>
           <type/>
@@ -13267,6 +13286,394 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
       </method>
     </class>
   </file>
+  <file path="Core\Translate\Application\Resource\Translate.php" hash="e34f96d97579e23f692b47283b759852" package="Core\Translate\Resource">
+    <docblock line="2">
+      <description>Zend Framework</description>
+      <long-description>&lt;p&gt;LICENSE&lt;/p&gt;
+
+&lt;p&gt;This source file is subject to the new BSD license that is bundled
+with this package in the file LICENSE.txt.
+It is also available through the world-wide-web at this URL:
+http://framework.zend.com/license/new-bsd
+If you did not receive a copy of the license and are unable to
+obtain it through the world-wide-web, please send an email
+to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-description>
+      <tag line="2" name="category" description="Core"/>
+      <tag line="2" name="package" description="Core_Translate"/>
+      <tag line="2" name="subpackage" description="Resource"/>
+      <tag line="2" name="copyright" description="Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)"/>
+      <tag line="2" name="license" description="http://framework.zend.com/license/new-bsd     New BSD License"/>
+      <tag line="2" name="version" description="$Id: Manager.php 0.1 2012-12-12 pavlenko $"/>
+    </docblock>
+    <include line="26" type="Require Once" package="Default">
+      <name>Zend/Application/Resource/ResourceAbstract.php</name>
+      <docblock line="23">
+        <description/>
+        <long-description/>
+        <tag line="23" name="see" description="\Zend_Application_Resource_ResourceAbstract" refers="\Zend_Application_Resource_ResourceAbstract"/>
+      </docblock>
+    </include>
+    <include line="31" type="Require Once" package="Default">
+      <name>Core/Application/Bootstrap/Abstract.php</name>
+      <docblock line="28">
+        <description/>
+        <long-description/>
+        <tag line="28" name="see" description="\Core_Application_Bootstrap_Abstract" refers="\Core_Application_Bootstrap_Abstract"/>
+      </docblock>
+    </include>
+    <include line="36" type="Require Once" package="Default">
+      <name>Core/Application/Module/Bootstrap.php</name>
+      <docblock line="33">
+        <description/>
+        <long-description/>
+        <tag line="33" name="see" description="\Core_Application_Module_Bootstrap" refers="\Core_Application_Module_Bootstrap"/>
+      </docblock>
+    </include>
+    <include line="41" type="Require Once" package="Default">
+      <name>Core/Translate/Manager.php</name>
+      <docblock line="38">
+        <description/>
+        <long-description/>
+        <tag line="38" name="see" description="\Core_Translate_Manager" refers="\Core_Translate_Manager"/>
+      </docblock>
+    </include>
+    <include line="74" type="Require Once" package="Default">
+      <name>Zend/Application/Resource/Exception.php</name>
+    </include>
+    <include line="111" type="Require Once" package="Default">
+      <name>Zend/Application/Resource/Exception.php</name>
+    </include>
+    <include line="114" type="Require Once" package="Default">
+      <name>Zend/Application/Resource/Exception.php</name>
+    </include>
+    <include line="140" type="Require Once" package="Default">
+      <name>Zend/Application/Resource/Exception.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="global" line="53" package="Core\Translate\Resource">
+      <extends>\Zend_Application_Resource_ResourceAbstract</extends>
+      <name>Core_Translate_Application_Resource_Translate</name>
+      <full_name>\Core_Translate_Application_Resource_Translate</full_name>
+      <docblock line="43">
+        <description>Resource for setting translation options</description>
+        <long-description/>
+        <tag line="43" name="uses" description="\global\Zend_Application_Resource_ResourceAbstract" refers="\global\Zend_Application_Resource_ResourceAbstract"/>
+        <tag line="43" name="category" description="Core"/>
+        <tag line="43" name="package" description="Core_Translate"/>
+        <tag line="43" name="subpackage" description="Resource"/>
+        <tag line="43" name="copyright" description="Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)"/>
+        <tag line="43" name="license" description="http://framework.zend.com/license/new-bsd     New BSD License"/>
+      </docblock>
+      <constant namespace="global" line="56" package="Core\Translate\Resource">
+        <name>DEFAULT_REGISTRY_KEY</name>
+        <full_name>DEFAULT_REGISTRY_KEY</full_name>
+        <value>'Zend_Translate'</value>
+      </constant>
+      <property final="false" static="false" visibility="protected" line="63" namespace="global" package="Default">
+        <name>$_translate</name>
+        <default/>
+        <docblock line="58">
+          <description>Translate aggregator object</description>
+          <long-description/>
+          <tag line="58" name="var" description="" type="\Core_Translate_Manager">
+            <type by_reference="false">\Core_Translate_Manager</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="71" package="Core\Translate\Resource">
+        <name>_setTranslator</name>
+        <full_name>_setTranslator</full_name>
+        <docblock line="65">
+          <description>Set traslator to manager with retrieved by bootstrap key</description>
+          <long-description/>
+          <tag line="65" name="param" description="" type="array|\Zend_Config" variable="$options">
+            <type by_reference="false">array</type>
+            <type by_reference="false">\Zend_Config</type>
+          </tag>
+          <tag line="65" name="throws" description="If translate manager not instantiated inside $this before call" type="\Zend_Application_Resource_Exception">
+            <type by_reference="false">\Zend_Application_Resource_Exception</type>
+          </tag>
+        </docblock>
+        <argument line="71">
+          <name>$options</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="94" package="Core\Translate\Resource">
+        <name>init</name>
+        <full_name>init</full_name>
+        <docblock line="89">
+          <description>Defined by Zend_Application_Resource_Resource</description>
+          <long-description/>
+          <tag line="89" name="return" description="" type="\Core_Translate_Manager">
+            <type by_reference="false">\Core_Translate_Manager</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="105" package="Core\Translate\Resource">
+        <name>getTranslate</name>
+        <full_name>getTranslate</full_name>
+        <docblock line="99">
+          <description>Retrieve translate object</description>
+          <long-description/>
+          <tag line="99" name="return" description="" type="\Core_Translate_Manager">
+            <type by_reference="false">\Core_Translate_Manager</type>
+          </tag>
+          <tag line="99" name="throws" description="if registry key was used already but is no instance of Zend_Translate" type="\Zend_Application_Resource_Exception">
+            <type by_reference="false">\Zend_Application_Resource_Exception</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+  </file>
+  <file path="Core\Translate\Exception.php" hash="e8b9341e461dc7d44494dc498825e3bc" package="Core\Model">
+    <docblock line="2">
+      <description>Zend Framework</description>
+      <long-description>&lt;p&gt;LICENSE&lt;/p&gt;
+
+&lt;p&gt;This source file is subject to the new BSD license that is bundled
+with this package in the file LICENSE.txt.
+It is also available through the world-wide-web at this URL:
+http://framework.zend.com/license/new-bsd
+If you did not receive a copy of the license and are unable to
+obtain it through the world-wide-web, please send an email
+to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-description>
+      <tag line="2" name="category" description="Core"/>
+      <tag line="2" name="package" description="Core_Model"/>
+      <tag line="2" name="copyright" description="Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)"/>
+      <tag line="2" name="license" description="http://framework.zend.com/license/new-bsd     New BSD License"/>
+      <tag line="2" name="version" description="$Id: Exception.php 24218 2011-07-10 01:22:58Z ramon $"/>
+    </docblock>
+    <include line="25" type="Require Once" package="Default">
+      <name>Zend/Exception.php</name>
+      <docblock line="22">
+        <description/>
+        <long-description/>
+        <tag line="22" name="see" description="\Zend_Exception" refers="\Zend_Exception"/>
+      </docblock>
+    </include>
+    <class final="false" abstract="false" namespace="global" line="35" package="Core\Model">
+      <extends>\Zend_Exception</extends>
+      <name>Core_Translate_Exception</name>
+      <full_name>\Core_Translate_Exception</full_name>
+      <docblock line="27">
+        <description>Model base exception class</description>
+        <long-description/>
+        <tag line="27" name="category" description="Core"/>
+        <tag line="27" name="package" description="Core_Model"/>
+        <tag line="27" name="copyright" description="Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)"/>
+        <tag line="27" name="license" description="http://framework.zend.com/license/new-bsd     New BSD License"/>
+      </docblock>
+    </class>
+  </file>
+  <file path="Core\Translate\Manager.php" hash="0908f91fe40c75adf0f9c9ce3a339c3d" package="Core\Translate">
+    <docblock line="2">
+      <description>Zend Framework</description>
+      <long-description>&lt;p&gt;LICENSE&lt;/p&gt;
+
+&lt;p&gt;This source file is subject to the new BSD license that is bundled
+with this package in the file LICENSE.txt.
+It is also available through the world-wide-web at this URL:
+http://framework.zend.com/license/new-bsd
+If you did not receive a copy of the license and are unable to
+obtain it through the world-wide-web, please send an email
+to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-description>
+      <tag line="2" name="category" description="Core"/>
+      <tag line="2" name="package" description="Core_Translate"/>
+      <tag line="2" name="copyright" description="Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)"/>
+      <tag line="2" name="license" description="http://framework.zend.com/license/new-bsd     New BSD License"/>
+      <tag line="2" name="version" description="$Id: Manager.php 0.1 2012-12-12 pavlenko $"/>
+    </docblock>
+    <include line="25" type="Require Once" package="Default">
+      <name>Zend/Translate.php</name>
+      <docblock line="22">
+        <description/>
+        <long-description/>
+        <tag line="22" name="see" description="\Zend_Translate" refers="\Zend_Translate"/>
+      </docblock>
+    </include>
+    <include line="30" type="Require Once" package="Default">
+      <name>Zend/Controller/Front.php</name>
+      <docblock line="27">
+        <description/>
+        <long-description/>
+        <tag line="27" name="see" description="\Zend_Controller_Front" refers="\Zend_Controller_Front"/>
+      </docblock>
+    </include>
+    <include line="102" type="Require Once" package="Default">
+      <name>Core/Translate/Exception.php</name>
+    </include>
+    <class final="false" abstract="false" namespace="global" line="40" package="Core\Translate">
+      <extends/>
+      <name>Core_Translate_Manager</name>
+      <full_name>\Core_Translate_Manager</full_name>
+      <docblock line="32">
+        <description>Translate objects aggregator</description>
+        <long-description/>
+        <tag line="32" name="category" description="Core"/>
+        <tag line="32" name="package" description="Core_Translate"/>
+        <tag line="32" name="copyright" description="Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)"/>
+        <tag line="32" name="license" description="http://framework.zend.com/license/new-bsd     New BSD License"/>
+      </docblock>
+      <constant namespace="global" line="42" package="Core\Translate">
+        <name>APPLICATION_TRANSLATOR_KEY</name>
+        <full_name>APPLICATION_TRANSLATOR_KEY</full_name>
+        <value>'application'</value>
+      </constant>
+      <property final="false" static="false" visibility="protected" line="49" namespace="global" package="Default">
+        <name>$_translators</name>
+        <default>array()</default>
+        <docblock line="44">
+          <description>Translators objects list</description>
+          <long-description/>
+          <tag line="44" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="protected" namespace="global" line="57" package="Core\Translate">
+        <name>_validateTranslator</name>
+        <full_name>_validateTranslator</full_name>
+        <docblock line="51">
+          <description>Check valid translate definition</description>
+          <long-description/>
+          <tag line="51" name="param" description="" type="array|\Zend_Translate" variable="$translator">
+            <type by_reference="false">array</type>
+            <type by_reference="false">\Zend_Translate</type>
+          </tag>
+          <tag line="51" name="return" description="True if valid" type="boolean">
+            <type by_reference="false">boolean</type>
+          </tag>
+        </docblock>
+        <argument line="57">
+          <name>$translator</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="68" package="Core\Translate">
+        <name>setTranslators</name>
+        <full_name>setTranslators</full_name>
+        <docblock line="62">
+          <description>Set translators list</description>
+          <long-description/>
+          <tag line="62" name="param" description="" type="array" variable="$translators">
+            <type by_reference="false">array</type>
+          </tag>
+          <tag line="62" name="return" description="" type="\Core_Translate_Manager">
+            <type by_reference="false">\Core_Translate_Manager</type>
+          </tag>
+        </docblock>
+        <argument line="68">
+          <name>$translators</name>
+          <default/>
+          <type>array</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="82" package="Core\Translate">
+        <name>getTranslators</name>
+        <full_name>getTranslators</full_name>
+        <docblock line="77">
+          <description>Get and instantiate all translators</description>
+          <long-description/>
+          <tag line="77" name="return" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="99" package="Core\Translate">
+        <name>setTranslator</name>
+        <full_name>setTranslator</full_name>
+        <docblock line="91">
+          <description>Set single translator</description>
+          <long-description/>
+          <tag line="91" name="param" description="" type="string" variable="$name">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="91" name="param" description="" type="array|\Zend_Translate" variable="$translator">
+            <type by_reference="false">array</type>
+            <type by_reference="false">\Zend_Translate</type>
+          </tag>
+          <tag line="91" name="throws" description="" type="\Core_Translate_Exception">
+            <type by_reference="false">\Core_Translate_Exception</type>
+          </tag>
+          <tag line="91" name="return" description="" type="\Core_Translate_Manager">
+            <type by_reference="false">\Core_Translate_Manager</type>
+          </tag>
+        </docblock>
+        <argument line="99">
+          <name>$name</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="99">
+          <name>$translator</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="116" package="Core\Translate">
+        <name>getTranslator</name>
+        <full_name>getTranslator</full_name>
+        <docblock line="110">
+          <description>Get and instantiate translator</description>
+          <long-description/>
+          <tag line="110" name="param" description="" type="string" variable="$name">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="110" name="return" description="" type="\Zend_Translate">
+            <type by_reference="false">\Zend_Translate</type>
+          </tag>
+        </docblock>
+        <argument line="116">
+          <name>$name</name>
+          <default/>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="149" package="Core\Translate">
+        <name>translate</name>
+        <full_name>translate</full_name>
+        <docblock line="127">
+          <description>Translate message to specified or automatic locale</description>
+          <long-description>&lt;p&gt;Opposite to default Zend_Translate this class aggregates many Zend_Translate objects
+for module specific translates available&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// Manager must be registered previously
+$manager = Zend_Registry::get('Zend_Translate');
+
+// Example with auto locale
+echo $manager-&gt;translate('Untranslated string');
+
+// Example with specified locale
+echo $manager-&gt;translate('Untranslated string', 'ru');
+&lt;/code&gt;&lt;/pre&gt;</long-description>
+          <tag line="127" name="see" description="\Zend_Translate_Adapter" refers="\Zend_Translate_Adapter"/>
+          <tag line="127" name="param" description="" type="string|array" variable="$messageId">
+            <type by_reference="false">string</type>
+            <type by_reference="false">array</type>
+          </tag>
+          <tag line="127" name="param" description="" type="string|\Zend_Locale" variable="$locale">
+            <type by_reference="false">string</type>
+            <type by_reference="false">\Zend_Locale</type>
+          </tag>
+          <tag line="127" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+        <argument line="149">
+          <name>$messageId</name>
+          <default/>
+          <type/>
+        </argument>
+        <argument line="149">
+          <name>$locale</name>
+          <default>null</default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
   <file path="Core.php" hash="0a61cd17e5c6a19237d13f97799c0f2f" package="Core">
     <docblock line="2">
       <description>Zend Framework</description>
@@ -13603,6 +14010,9 @@ Basic loader method implemented here</description>
           <package name="Source" full_name="Core\Model\Core\Model\Source"/>
         </package>
       </package>
+    </package>
+    <package name="Translate" full_name="Core\Translate">
+      <package name="Resource" full_name="Core\Translate\Resource"/>
     </package>
   </package>
   <package name="Default" full_name="Default"/>

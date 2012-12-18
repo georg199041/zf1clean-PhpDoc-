@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta charset="utf-8">
-<title>phpDocumentor » \Core_Image_Cache_Frontend_Image</title>
+<title>phpDocumentor » \Core_Translate_Manager</title>
 <meta name="author" content="Mike van Riel">
 <meta name="description" content="">
 <link href="../css/template.css" rel="stylesheet" media="all">
@@ -58,38 +58,41 @@
 <li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
-<li class="method public "><a href="#method_clean" title="clean :: Clean cache"><span class="description">Clean cache</span><pre>clean()</pre></a></li>
-<li class="method public "><a href="#method_getBackend" title="getBackend :: Get cache backend and check instance of it"><span class="description">Get cache backend and check instance of it</span><pre>getBackend()</pre></a></li>
-<li class="method public "><a href="#method_load" title="load :: Load cache data (path to cached file) (if enabled) COMPLETE"><span class="description">Load cache data (path to cached file) (if enabled) COMPLETE</span><pre>load()</pre></a></li>
-<li class="method public "><a href="#method_remove" title="remove :: Remove cache record"><span class="description">Remove cache record</span><pre>remove()</pre></a></li>
-<li class="method public "><a href="#method_save" title="save :: Save file info"><span class="description">Save file info</span><pre>save()</pre></a></li>
-<li class="method public "><a href="#method_test" title="test :: Test cache exists (if enabled) COMPLETE"><span class="description">Test cache exists (if enabled) COMPLETE</span><pre>test()</pre></a></li>
+<li class="method public "><a href="#method_getTranslator" title="getTranslator :: Get and instantiate translator"><span class="description">Get and instantiate translator</span><pre>getTranslator()</pre></a></li>
+<li class="method public "><a href="#method_getTranslators" title="getTranslators :: Get and instantiate all translators"><span class="description">Get and instantiate all translators</span><pre>getTranslators()</pre></a></li>
+<li class="method public "><a href="#method_setTranslator" title="setTranslator :: Set single translator"><span class="description">Set single translator</span><pre>setTranslator()</pre></a></li>
+<li class="method public "><a href="#method_setTranslators" title="setTranslators :: Set translators list"><span class="description">Set translators list</span><pre>setTranslators()</pre></a></li>
+<li class="method public "><a href="#method_translate" title="translate :: Translate message to specified or automatic locale"><span class="description">Translate message to specified or automatic locale</span><pre>translate()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header protected">» Protected
-                    <ul><li class="method protected "><a href="#method__path" title="_path :: Cleanup path from starting slashes"><span class="description">Cleanup path from starting slashes</span><pre>_path()</pre></a></li></ul>
+                    <ul><li class="method protected "><a href="#method__validateTranslator" title="_validateTranslator :: Check valid translate definition"><span class="description">Check valid translate definition</span><pre>_validateTranslator()</pre></a></li></ul>
 </li>
 <li class="nav-header">
 <i class="icon-custom icon-property"></i> Properties
                     <ul></ul>
 </li>
 <li class="nav-header protected">» Protected
-                    <ul><li class="property protected "><a href="#property__specificOptions" title="$_specificOptions :: Adapter only specific options"><span class="description"></span><pre>$_specificOptions</pre></a></li></ul>
+                    <ul><li class="property protected "><a href="#property__translators" title="$_translators :: Translators objects list"><span class="description"></span><pre>$_translators</pre></a></li></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul><li class="constant  "><a href="#constant_APPLICATION_TRANSLATOR_KEY" title="APPLICATION_TRANSLATOR_KEY :: "><span class="description">APPLICATION_TRANSLATOR_KEY</span><pre>APPLICATION_TRANSLATOR_KEY</pre></a></li></ul>
 </li>
 </ul>
 </div>
 <div class="span8">
-<a id="\Core_Image_Cache_Frontend_Image"></a><ul class="breadcrumb">
+<a id="\Core_Translate_Manager"></a><ul class="breadcrumb">
 <li>
 <a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
 </li>
 <li><a href="../namespaces/global.html">global</a></li>
 <li class="active">
-<span class="divider">\</span><a href="../classes/Core_Image_Cache_Frontend_Image.html">Core_Image_Cache_Frontend_Image</a>
+<span class="divider">\</span><a href="../classes/Core_Translate_Manager.html">Core_Translate_Manager</a>
 </li>
 </ul>
 <div class="element class">
-<p class="short_description">Image cache frontend adapter class</p>
+<p class="short_description">Translate objects aggregator</p>
 <div class="details">
 <div class="long_description"></div>
 <table class="table table-bordered">
@@ -99,11 +102,7 @@
 </tr>
 <tr>
 <th>package</th>
-<td><a href="../packages/Core.Image.Core.Image.Cache.Frontend.html">Core_Image</a></td>
-</tr>
-<tr>
-<th>subpackage</th>
-<td>Core_Image_Cache_Frontend</td>
+<td><a href="../packages/Core.Translate.html">Core_Translate</a></td>
 </tr>
 <tr>
 <th>copyright</th>
@@ -116,146 +115,133 @@
 </table>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
-<a id="method_clean"></a><div class="element clickable method public method_clean" data-toggle="collapse" data-target=".method_clean .collapse">
-<h2>Clean cache</h2>
-<pre>clean(string $mode, \tags $tags) : boolean</pre>
+<a id="method_getTranslator"></a><div class="element clickable method public method_getTranslator" data-toggle="collapse" data-target=".method_getTranslator .collapse">
+<h2>Get and instantiate translator</h2>
+<pre>getTranslator(string $name) : \Zend_Translate</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
-<h4>$mode</h4>
+<h4>$name</h4>
 <code>string</code>
 </div>
-<div class="subelement argument">
-<h4>$tags</h4>
-<code>\tags</code>
-</div>
 <h3>Returns</h3>
-<div class="subelement response"><code>boolean</code></div>
+<div class="subelement response"><code>\Zend_Translate</code></div>
 </div></div>
 </div>
-<a id="method_getBackend"></a><div class="element clickable method public method_getBackend" data-toggle="collapse" data-target=".method_getBackend .collapse">
-<h2>Get cache backend and check instance of it</h2>
-<pre>getBackend() : <a href="../classes/Core_Image_Cache_Backend_Image.html">\Core_Image_Cache_Backend_Image</a></pre>
+<a id="method_getTranslators"></a><div class="element clickable method public method_getTranslators" data-toggle="collapse" data-target=".method_getTranslators .collapse">
+<h2>Get and instantiate all translators</h2>
+<pre>getTranslators() : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_setTranslator"></a><div class="element clickable method public method_setTranslator" data-toggle="collapse" data-target=".method_setTranslator .collapse">
+<h2>Set single translator</h2>
+<pre>setTranslator(string $name, array | \Zend_Translate $translator) : <a href="../classes/Core_Translate_Manager.html">\Core_Translate_Manager</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$translator</h4>
+<code>array</code><code>\Zend_Translate</code>
+</div>
 <h3>Exceptions</h3>
 <table class="table table-bordered"><tr>
-<th><code><a href="../classes/Core_Image_Cache_Exception.html">\Core_Image_Cache_Exception</a></code></th>
+<th><code><a href="../classes/Core_Translate_Exception.html">\Core_Translate_Exception</a></code></th>
 <td></td>
 </tr></table>
 <h3>Returns</h3>
-<div class="subelement response"><code><a href="../classes/Core_Image_Cache_Backend_Image.html">\Core_Image_Cache_Backend_Image</a></code></div>
+<div class="subelement response"><code><a href="../classes/Core_Translate_Manager.html">\Core_Translate_Manager</a></code></div>
 </div></div>
 </div>
-<a id="method_load"></a><div class="element clickable method public method_load" data-toggle="collapse" data-target=".method_load .collapse">
-<h2>Load cache data (path to cached file) (if enabled) COMPLETE</h2>
-<pre>load(string $id, boolean $doNotTestCacheValidity, boolean $doNotUnserialize) : boolean | string</pre>
+<a id="method_setTranslators"></a><div class="element clickable method public method_setTranslators" data-toggle="collapse" data-target=".method_setTranslators .collapse">
+<h2>Set translators list</h2>
+<pre>setTranslators(array $translators) : <a href="../classes/Core_Translate_Manager.html">\Core_Translate_Manager</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <h3>Parameters</h3>
 <div class="subelement argument">
-<h4>$id</h4>
-<code>string</code><p>Cache id</p></div>
-<div class="subelement argument">
-<h4>$doNotTestCacheValidity</h4>
-<code>boolean</code><p>[OPTIONAL] Unused in this frontend</p>
-</div>
-<div class="subelement argument">
-<h4>$doNotUnserialize</h4>
-<code>boolean</code><p>[OPTIONAL] Unused in this frontend</p>
+<h4>$translators</h4>
+<code>array</code>
 </div>
 <h3>Returns</h3>
-<div class="subelement response">
-<code>boolean</code><code>string</code>Path to cached file or false if file not exists</div>
+<div class="subelement response"><code><a href="../classes/Core_Translate_Manager.html">\Core_Translate_Manager</a></code></div>
 </div></div>
 </div>
-<a id="method_remove"></a><div class="element clickable method public method_remove" data-toggle="collapse" data-target=".method_remove .collapse">
-<h2>Remove cache record</h2>
-<pre>remove(string $id) : boolean</pre>
+<a id="method_translate"></a><div class="element clickable method public method_translate" data-toggle="collapse" data-target=".method_translate .collapse">
+<h2>Translate message to specified or automatic locale</h2>
+<pre>translate(string | array $messageId, string | \Zend_Locale $locale) : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
+<div class="long_description"><p>Opposite to default Zend_Translate this class aggregates many Zend_Translate objects
+for module specific translates available</p>
+
+<pre><code>// Manager must be registered previously
+$manager = Zend_Registry::get('Zend_Translate');
+
+// Example with auto locale
+echo $manager->translate('Untranslated string');
+
+// Example with specified locale
+echo $manager->translate('Untranslated string', 'ru');
+</code></pre></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="">\Zend_Translate_Adapter</a></td>
+</tr></table>
 <h3>Parameters</h3>
 <div class="subelement argument">
-<h4>$id</h4>
-<code>string</code>
-</div>
-<h3>Returns</h3>
-<div class="subelement response"><code>boolean</code></div>
-</div></div>
-</div>
-<a id="method_save"></a><div class="element clickable method public method_save" data-toggle="collapse" data-target=".method_save .collapse">
-<h2>Save file info</h2>
-<pre>save(mixed $data, string $id, array $tags, int $specificLifetime, int $priority) : boolean</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$data</h4>
-<code>mixed</code><p>Data (uses as id argument if single)</p>
+<h4>$messageId</h4>
+<code>string</code><code>array</code>
 </div>
 <div class="subelement argument">
-<h4>$id</h4>
-<code>string</code><p>[OPTIONAL] Cache id hash</p>
-</div>
-<div class="subelement argument">
-<h4>$tags</h4>
-<code>array</code><p>[OPTIONAL] Unused in this backend</p>
-</div>
-<div class="subelement argument">
-<h4>$specificLifetime</h4>
-<code>int</code><p>[OPTIONAL] Unused in this backend</p>
-</div>
-<div class="subelement argument">
-<h4>$priority</h4>
-<code>int</code><p>[OPTIONAL] Unused in this backend</p>
-</div>
-<h3>Returns</h3>
-<div class="subelement response">
-<code>boolean</code>Returns true if success</div>
-</div></div>
-</div>
-<a id="method_test"></a><div class="element clickable method public method_test" data-toggle="collapse" data-target=".method_test .collapse">
-<h2>Test cache exists (if enabled) COMPLETE</h2>
-<pre>test(string $id) : boolean | integer</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$id</h4>
-<code>string</code><p>Cache id (path to file without basedir)</p>
-</div>
-<h3>Returns</h3>
-<div class="subelement response">
-<code>boolean</code><code>integer</code>Last modified or false</div>
-</div></div>
-</div>
-<a id="method__path"></a><div class="element clickable method protected method__path" data-toggle="collapse" data-target=".method__path .collapse">
-<h2>Cleanup path from starting slashes</h2>
-<pre>_path(string $path) : string</pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<h3>Parameters</h3>
-<div class="subelement argument">
-<h4>$path</h4>
-<code>string</code>
+<h4>$locale</h4>
+<code>string</code><code>\Zend_Locale</code>
 </div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
 </div></div>
 </div>
+<a id="method__validateTranslator"></a><div class="element clickable method protected method__validateTranslator" data-toggle="collapse" data-target=".method__validateTranslator .collapse">
+<h2>Check valid translate definition</h2>
+<pre>_validateTranslator(array | \Zend_Translate $translator) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$translator</h4>
+<code>array</code><code>\Zend_Translate</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if valid</div>
+</div></div>
+</div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
-<a id="property__specificOptions"> </a><div class="element clickable property protected property__specificOptions" data-toggle="collapse" data-target=".property__specificOptions .collapse">
+<a id="property__translators"> </a><div class="element clickable property protected property__translators" data-toggle="collapse" data-target=".property__translators .collapse">
 <h2></h2>
-<pre>$_specificOptions : array</pre>
+<pre>$_translators : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_APPLICATION_TRANSLATOR_KEY"> </a><div class="element clickable constant  constant_APPLICATION_TRANSLATOR_KEY" data-toggle="collapse" data-target=".constant_APPLICATION_TRANSLATOR_KEY .collapse">
+<h2>APPLICATION_TRANSLATOR_KEY</h2>
+<pre>APPLICATION_TRANSLATOR_KEY </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
