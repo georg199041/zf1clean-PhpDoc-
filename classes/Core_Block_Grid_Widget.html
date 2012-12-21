@@ -31,7 +31,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">0</span></a></li>
+                <span class="label label-info">4</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
                 <span class="label label-info">4</span>
@@ -62,8 +62,8 @@
 <li class="method public inherited"><a href="#method___call" title="__call :: Proxy undefined methods to engine"><span class="description">Proxy undefined methods to engine</span><pre>__call()</pre></a></li>
 <li class="method public inherited"><a href="#method___construct" title="__construct :: Constructor"><span class="description">Constructor</span><pre>__construct()</pre></a></li>
 <li class="method public inherited"><a href="#method___get" title="__get :: Get property
-Currently not used"><span class="description">Get property
-Currently not used</span><pre>__get()</pre></a></li>
+Proxied to engine property named by $key"><span class="description">Get property
+Proxied to engine property named by $key</span><pre>__get()</pre></a></li>
 <li class="method public inherited"><a href="#method___isset" title="__isset :: Check property exists"><span class="description">Check property exists</span><pre>__isset()</pre></a></li>
 <li class="method public inherited"><a href="#method___set" title="__set :: Set new property"><span class="description">Set new property</span><pre>__set()</pre></a></li>
 <li class="method public inherited"><a href="#method___toString" title="__toString :: Rendering by echo call"><span class="description">Rendering by echo call</span><pre>__toString()</pre></a></li>
@@ -108,6 +108,7 @@ Create from class name if not defined</span><pre>getBlockName()</pre></a></li>
 <li class="method public "><a href="#method_getRouteOptions" title="getRouteOptions :: Get (setup default) route options"><span class="description">Get (setup default) route options</span><pre>getRouteOptions()</pre></a></li>
 <li class="method public inherited"><a href="#method_getScriptName" title="getScriptName :: Get script name"><span class="description">Get script name</span><pre>getScriptName()</pre></a></li>
 <li class="method public inherited"><a href="#method_getScriptPaths" title="getScriptPaths :: Get search script paths"><span class="description">Get search script paths</span><pre>getScriptPaths()</pre></a></li>
+<li class="method public inherited"><a href="#method_getVars" title="getVars :: Get engine vars"><span class="description">Get engine vars</span><pre>getVars()</pre></a></li>
 <li class="method public inherited"><a href="#method_hasAttribute" title="hasAttribute :: Check for has attribute"><span class="description">Check for has attribute</span><pre>hasAttribute()</pre></a></li>
 <li class="method public inherited"><a href="#method_hasAttributes" title="hasAttributes :: Check for has all attributes"><span class="description">Check for has all attributes</span><pre>hasAttributes()</pre></a></li>
 <li class="method public inherited"><a href="#method_init" title="init :: Extensions initialize method"><span class="description">Extensions initialize method</span><pre>init()</pre></a></li>
@@ -319,7 +320,7 @@ echo $this->__('Untranslated string', 'ru');
 </div>
 <a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
 <h2>Get property
-Currently not used</h2>
+Proxied to engine property named by $key</h2>
 <pre>__get(mixed $key) </pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
@@ -1000,6 +1001,20 @@ Create from class name if not defined</h2>
 <table class="table table-bordered"><tr>
 <th>inherited_from</th>
 <td>\Core_Block_View::getScriptPaths()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getVars"></a><div class="element clickable method public method_getVars" data-toggle="collapse" data-target=".method_getVars .collapse">
+<h2>Get engine vars</h2>
+<pre>getVars() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Core_Block_View::getVars()</td>
 </tr></table>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
@@ -2023,7 +2038,7 @@ Proxied to engine</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2012-12-18T11:29:04+02:00.<br></footer></div>
+            generated on 2012-12-21T13:17:52+02:00.<br></footer></div>
 </div>
 </body>
 </html>

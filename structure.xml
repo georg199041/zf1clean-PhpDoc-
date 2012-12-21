@@ -677,7 +677,7 @@ Can use as html element attributes aggregator and renderer</description>
       </method>
     </class>
   </file>
-  <file path="Core\Block\Application\Resource\Block.php" hash="d9b3d540349b6a5c8e76cb0b392d706c" package="Core\Block\Core\Block\Application\Resource">
+  <file path="Core\Block\Application\Resource\Block.php" hash="2ac7d05cc014a6fc4ea69179ca2c89de" package="Core\Block\Core\Block\Application\Resource">
     <docblock line="2">
       <description>Zend Framework</description>
       <long-description>&lt;p&gt;LICENSE&lt;/p&gt;
@@ -699,16 +699,16 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
     <include line="26" type="Require Once" package="Default">
       <name>Zend/Application/Resource/ResourceAbstract.php</name>
       <docblock line="23">
-        <description/>
-        <long-description/>
+        <description></description>
+        <long-description></long-description>
         <tag line="23" name="see" description="\Zend_Application_Resource_ResourceAbstract" refers="\Zend_Application_Resource_ResourceAbstract"/>
       </docblock>
     </include>
     <include line="31" type="Require Once" package="Default">
       <name>Core/Block/View.php</name>
       <docblock line="28">
-        <description/>
-        <long-description/>
+        <description></description>
+        <long-description></long-description>
         <tag line="28" name="see" description="\Core_Block_View" refers="\Core_Block_View"/>
       </docblock>
     </include>
@@ -719,7 +719,7 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
       <docblock line="33">
         <description>Block templating system instantiate resource
 Can configure many block options</description>
-        <long-description/>
+        <long-description></long-description>
         <tag line="33" name="category" description="Core"/>
         <tag line="33" name="package" description="Core_Block"/>
         <tag line="33" name="subpackage" description="Core_Block_Application_Resource"/>
@@ -728,10 +728,10 @@ Can configure many block options</description>
       </docblock>
       <property final="false" static="false" visibility="protected" line="51" namespace="global" package="Default">
         <name>$_block</name>
-        <default/>
+        <default></default>
         <docblock line="46">
           <description>Main block class container</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="46" name="var" description="" type="\Core_Block_View">
             <type by_reference="false">\Core_Block_View</type>
           </tag>
@@ -745,7 +745,7 @@ Can configure many block options</description>
 Here were made modifies in:
 view renderer (change view template engine)
 layout (change view template engine)</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="53" name="return" description="" type="\Core_Block_View">
             <type by_reference="false">\Core_Block_View</type>
           </tag>
@@ -756,7 +756,7 @@ layout (change view template engine)</description>
         <full_name>getBlockContainer</full_name>
         <docblock line="84">
           <description>Instantiate and configure main block class</description>
-          <long-description/>
+          <long-description></long-description>
           <tag line="84" name="return" description="" type="\Core_Block_View">
             <type by_reference="false">\Core_Block_View</type>
           </tag>
@@ -5236,7 +5236,7 @@ Added parse * like options as current associated in request</description>
       </method>
     </class>
   </file>
-  <file path="Core\Block\View.php" hash="d7c4559cc0181afd58bb92e8f84218ec" package="Core\Block">
+  <file path="Core\Block\View.php" hash="71deaa4f79bb1c10f7337e82f8529fc5" package="Core\Block">
     <docblock line="2">
       <description>Zend Framework</description>
       <long-description>&lt;p&gt;LICENSE&lt;/p&gt;
@@ -6249,7 +6249,7 @@ Proxied to engine</description>
         <full_name>__get</full_name>
         <docblock line="888">
           <description>Get property
-Currently not used</description>
+Proxied to engine property named by $key</description>
           <long-description></long-description>
           <tag line="888" name="param" description="" type="mixed" variable="$key">
             <type by_reference="false">mixed</type>
@@ -6415,6 +6415,17 @@ Currently not used</description>
           <long-description></long-description>
           <tag line="1060" name="return" description="" type="\array();">
             <type by_reference="false">\array();</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="1073" package="Core\Block">
+        <name>getVars</name>
+        <full_name>getVars</full_name>
+        <docblock line="1068">
+          <description>Get engine vars</description>
+          <long-description></long-description>
+          <tag line="1068" name="return" description="" type="array">
+            <type by_reference="false">array</type>
           </tag>
         </docblock>
       </method>
@@ -13425,6 +13436,230 @@ to license@zend.com so we can send you a copy immediately.&lt;/p&gt;</long-descr
         </docblock>
       </method>
     </class>
+  </file>
+  <file path="Core\Translate\Controller\Action\Helper\Translate.php" hash="2879fbf64991db7bbd3534aa68475ec7" package="Core\Translate">
+    <docblock line="2">
+      <description>SunNY Creative Technologies</description>
+      <long-description>&lt;h5&gt;##     ##    ##&lt;/h5&gt;
+
+&lt;h2&gt;##                              ###    ##    ##&lt;/h2&gt;
+
+&lt;h2&gt;####   ##     ##&lt;/h2&gt;
+
+&lt;h2&gt;##     ##    ## #####     ## ##  ##      ##&lt;/h2&gt;
+
+&lt;p&gt;#####      ##     ##    ###    ##    ##  ## ##       ####
+       ##    ##     ##    ##     ##    ##   ####        ##
+       ##    ##     ##    ##     ##    ##    ###        ##&lt;/p&gt;
+
+&lt;h2&gt;##    ##     ##    ##     ##    ##     ##&lt;/h2&gt;
+
+&lt;p&gt;#####        #######    ##     ##    ##     ##        ##&lt;/p&gt;
+
+&lt;p&gt;C  R  E  A  T  I  V  E     T  E  C  H  N  O  L  O  G  I  E  S&lt;/p&gt;</long-description>
+      <tag line="2" name="category" description="Core"/>
+      <tag line="2" name="package" description="Core_Translate"/>
+      <tag line="2" name="copyright" description="Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)"/>
+      <tag line="2" name="license" description="http://framework.zend.com/license/new-bsd     New BSD License"/>
+      <tag line="2" name="version" description="$Id: Translate.php 0.1 2012-12-12 pavlenko $"/>
+    </docblock>
+    <include line="27" type="Require Once" package="Default">
+      <name>Zend/Controller/Action/Helper/Abstract.php</name>
+      <docblock line="24">
+        <description></description>
+        <long-description></long-description>
+        <tag line="24" name="see" description="\Zend_Controller_Action_Helper_Abstract" refers="\Zend_Controller_Action_Helper_Abstract"/>
+      </docblock>
+    </include>
+    <class final="false" abstract="false" namespace="global" line="37" package="Core\Translate">
+      <extends>\Zend_Controller_Action_Helper_Abstract</extends>
+      <name>Core_Translate_Controller_Action_Helper_Translate</name>
+      <full_name>\Core_Translate_Controller_Action_Helper_Translate</full_name>
+      <docblock line="29">
+        <description>Translate action helper class</description>
+        <long-description></long-description>
+        <tag line="29" name="category" description="Core"/>
+        <tag line="29" name="package" description="Core_Translate"/>
+        <tag line="29" name="copyright" description="Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)"/>
+        <tag line="29" name="license" description="http://framework.zend.com/license/new-bsd     New BSD License"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="45" namespace="global" package="Default">
+        <name>$_translator</name>
+        <default></default>
+        <docblock line="40">
+          <description>Translator instance</description>
+          <long-description></long-description>
+          <tag line="40" name="var" description="" type="\Zend_Translate|\Zend_Translate_Adapter">
+            <type by_reference="false">\Zend_Translate</type>
+            <type by_reference="false">\Zend_Translate_Adapter</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="54" package="Core\Translate">
+        <name>setTranslator</name>
+        <full_name>setTranslator</full_name>
+        <docblock line="47">
+          <description>Set new translator instance</description>
+          <long-description></long-description>
+          <tag line="47" name="param" description="" type="\Zend_Translate|\Zend_Translate_Adapter" variable="$translate">
+            <type by_reference="false">\Zend_Translate</type>
+            <type by_reference="false">\Zend_Translate_Adapter</type>
+          </tag>
+          <tag line="47" name="throws" description="If passed invalid instance object" type="\Zend_Controller_Action_Exception">
+            <type by_reference="false">\Zend_Controller_Action_Exception</type>
+          </tag>
+          <tag line="47" name="return" description="" type="\Core_Controller_Action_Helper_Translate">
+            <type by_reference="false">\Core_Controller_Action_Helper_Translate</type>
+          </tag>
+        </docblock>
+        <argument line="54">
+          <name>$translate</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="71" package="Core\Translate">
+        <name>getTranslator</name>
+        <full_name>getTranslator</full_name>
+        <docblock line="66">
+          <description>Get (or try to instantiate from registry) translator object</description>
+          <long-description></long-description>
+          <tag line="66" name="return" description="" type="\Zend_Translate|\Zend_Translate_Adapter">
+            <type by_reference="false">\Zend_Translate</type>
+            <type by_reference="false">\Zend_Translate_Adapter</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="101" package="Core\Translate">
+        <name>translate</name>
+        <full_name>translate</full_name>
+        <docblock line="84">
+          <description>Translate message to specified or automatic locale</description>
+          <long-description>&lt;p&gt;If you want to output another locale just set it as last single parameter&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// Example 1:
+translate('%1\$s + %2\$s', $value1, $value2, $locale);
+
+// Example 2:
+translate('%1\$s + %2\$s', array($value1, $value2), $locale);
+&lt;/code&gt;&lt;/pre&gt;</long-description>
+          <tag line="84" name="see" description="\Zend_Translate_Adapter" refers="\Zend_Translate_Adapter"/>
+          <tag line="84" name="param" description="" type="string|array" variable="$messageId">
+            <type by_reference="false">string</type>
+            <type by_reference="false">array</type>
+          </tag>
+          <tag line="84" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+        <argument line="101">
+          <name>$messageid</name>
+          <default>null</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="147" package="Core\Translate">
+        <name>__</name>
+        <full_name>__</full_name>
+        <docblock line="134">
+          <description>Short form record of translate</description>
+          <long-description>&lt;p&gt;Proxy translation process to main method&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// Example:
+$this-&gt;getHelper('Translate')-&gt;__('Untranslated string');
+&lt;/code&gt;&lt;/pre&gt;</long-description>
+          <tag line="134" name="see" description="for more information about arguments" refers="\Core_Controller_Action_Helper_Translate::translate()"/>
+          <tag line="134" name="return" description="" type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="165" package="Core\Translate">
+        <name>direct</name>
+        <full_name>direct</full_name>
+        <docblock line="152">
+          <description>Short form record of translate</description>
+          <long-description>&lt;p&gt;Proxy translation process to main method&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// Example:
+$this-&gt;_helper-&gt;translate('Untranslated string');
+&lt;/code&gt;&lt;/pre&gt;</long-description>
+          <tag line="152" name="see" description="for more information about arguments" refers="\Core_Controller_Action_Helper_Translate::translate()"/>
+          <tag line="152" name="return" description="" type="mixed">
+            <type by_reference="false">mixed</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="84" code="50014">Name of argument $messageid does not match with the DocBlock's name $messageId in translate()</error>
+      <notice line="84" code="50013">Parameter $messageId could not be found in translate()</notice>
+    </parse_markers>
+  </file>
+  <file path="Core\Translate\Controller\Plugin\Translate.php" hash="240e91da3d0580c52476c3fedd35fac3" package="Core\Translate">
+    <docblock line="2">
+      <description>SunNY Creative Technologies</description>
+      <long-description>&lt;h5&gt;##     ##    ##&lt;/h5&gt;
+
+&lt;h2&gt;##                              ###    ##    ##&lt;/h2&gt;
+
+&lt;h2&gt;####   ##     ##&lt;/h2&gt;
+
+&lt;h2&gt;##     ##    ## #####     ## ##  ##      ##&lt;/h2&gt;
+
+&lt;p&gt;#####      ##     ##    ###    ##    ##  ## ##       ####
+       ##    ##     ##    ##     ##    ##   ####        ##
+       ##    ##     ##    ##     ##    ##    ###        ##&lt;/p&gt;
+
+&lt;h2&gt;##    ##     ##    ##     ##    ##     ##&lt;/h2&gt;
+
+&lt;p&gt;#####        #######    ##     ##    ##     ##        ##&lt;/p&gt;
+
+&lt;p&gt;C  R  E  A  T  I  V  E     T  E  C  H  N  O  L  O  G  I  E  S&lt;/p&gt;</long-description>
+      <tag line="2" name="category" description="Core"/>
+      <tag line="2" name="package" description="Core_Translate"/>
+      <tag line="2" name="copyright" description="Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)"/>
+      <tag line="2" name="license" description="http://framework.zend.com/license/new-bsd     New BSD License"/>
+      <tag line="2" name="version" description="$Id: Translate.php 0.1 2012-12-12 pavlenko $"/>
+    </docblock>
+    <include line="27" type="Require Once" package="Default">
+      <name>Zend/Controller/Plugin/Abstract.php</name>
+      <docblock line="24">
+        <description></description>
+        <long-description></long-description>
+        <tag line="24" name="see" description="\Zend_Controller_Plugin_Abstract" refers="\Zend_Controller_Plugin_Abstract"/>
+      </docblock>
+    </include>
+    <class final="false" abstract="false" namespace="global" line="37" package="Core\Translate">
+      <extends>\Zend_Controller_Plugin_Abstract</extends>
+      <name>Core_Translate_Controller_Plugin_Translate</name>
+      <full_name>\Core_Translate_Controller_Plugin_Translate</full_name>
+      <docblock line="29">
+        <description>Translate connection plugin class</description>
+        <long-description></long-description>
+        <tag line="29" name="category" description="Core"/>
+        <tag line="29" name="package" description="Core_Translate"/>
+        <tag line="29" name="copyright" description="Copyright (c) 2005-2012 SunNY Creative Technologies. (http://www.sunny.net.ua)"/>
+        <tag line="29" name="license" description="http://framework.zend.com/license/new-bsd     New BSD License"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="40" namespace="global" package="Default">
+        <name>$_helper</name>
+        <default></default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="42" package="Core\Translate">
+        <name>routeStartup</name>
+        <full_name>routeStartup</full_name>
+        <argument line="42">
+          <name>$request</name>
+          <default></default>
+          <type>\Zend_Controller_Request_Abstract</type>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="40" code="50018">No DocBlock was found for property $_helper</error>
+      <error line="42" code="50010">No DocBlock was found for method routeStartup()</error>
+    </parse_markers>
   </file>
   <file path="Core\Translate\Exception.php" hash="e8b9341e461dc7d44494dc498825e3bc" package="Core\Model">
     <docblock line="2">
